@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #1D4ED8;
+  --color-brand-dark: #1E3A8A;
+  --color-brand-mid: #2563EB;
+  --color-brand-light: #EFF6FF;
+  --color-brand-pale: #F0F6FF;
+  --color-brand-accent: #60A5FA;
+  --font-display: var(--font-outfit), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-inter), Inter, sans-serif;
+  color: #111827;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide {
+  animation: fadeSlide 0.5s ease forwards;
+}

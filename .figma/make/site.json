@@ -1,0 +1,10 @@
+{
+  "description": "Shop home appliances effortlessly with AI-powered search, curated deals, top brands, and expert tips for informed purchasing decisions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
