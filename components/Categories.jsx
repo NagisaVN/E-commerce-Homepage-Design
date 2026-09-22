@@ -2,7 +2,7 @@
 
 const categories = [
   {
-    name: 'Refrigerators',
+    name: 'Tủ lạnh',
     count: '240+ models',
     bg: '#EFF6FF',
     icon: (
@@ -15,7 +15,7 @@ const categories = [
     ),
   },
   {
-    name: 'Air Conditioners',
+    name: 'Máy Lạnh',
     count: '180+ models',
     bg: '#E0F2FE',
     icon: (
@@ -27,7 +27,7 @@ const categories = [
     ),
   },
   {
-    name: 'Washing Machines',
+    name: 'Máy Giặt',
     count: '120+ models',
     bg: '#EFF6FF',
     icon: (
@@ -41,7 +41,7 @@ const categories = [
     ),
   },
   {
-    name: 'Microwaves',
+    name: 'Lò Vi Sóng',
     count: '95+ models',
     bg: '#F0F9FF',
     icon: (
@@ -54,7 +54,7 @@ const categories = [
     ),
   },
   {
-    name: 'Dishwashers',
+    name: 'Máy Rửa Chén',
     count: '60+ models',
     bg: '#EFF6FF',
     icon: (
@@ -68,7 +68,7 @@ const categories = [
     ),
   },
   {
-    name: 'Water Heaters',
+    name: 'Máy Nước Nóng',
     count: '80+ models',
     bg: '#FFF7ED',
     icon: (
@@ -81,6 +81,20 @@ const categories = [
         <path d="M24 8c2 2 2 6 0 8" strokeWidth={1.4} />
       </svg>
     ),
+  },
+  {
+    name: 'Loa Thanh',
+    count: '50+ models',
+    bg: '#FFF7ED',
+    icon: (
+      <svg viewBox="0 0 32 32" fill="none" stroke="#C2410C" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+        <rect x="4" y="6" width="24" height="20" rx="3" />
+        <rect x="6" y="15" width="20" height="6" rx="1.5" />
+        <circle cx="16" cy="9" r="3.5" />
+        <circle cx="9" cy="27.5" r="1.5" fill="#C2410C" stroke="none" />
+        <circle cx="23" cy="27.5" r="1.5" fill="#C2410C" stroke="none" />
+      </svg>
+    )
   },
 ]
 
@@ -98,14 +112,14 @@ export default function Categories() {
           </a>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-x-6 gap-y-8">
           {categories.map((cat) => (
             <button
               key={cat.name}
               className="group flex flex-col items-center gap-3.5 cursor-pointer"
             >
               <div
-                className="w-[72px] h-[72px] sm:w-20 sm:h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                className="w-[72px] h-[72px] sm:w-20 sm:h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_12px_28px_rgba(37,99,235,0.24)]"
                 style={{ backgroundColor: cat.bg }}
               >
                 {cat.icon}

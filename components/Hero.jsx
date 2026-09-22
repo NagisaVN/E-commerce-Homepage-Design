@@ -2,48 +2,32 @@
 
 import { useState, useEffect, useCallback } from 'react'
 
-const slides = [
-  {
-    id: 0,
-    badge: '🎉 Tết Holiday Sale',
-    headline: 'Welcome Tết with\nSmart Home Upgrades',
-    sub: 'Save up to 40% on premium refrigerators, air conditioners & more — limited time offer',
-    cta: 'Shop Tết Deals',
-    ctaNote: 'Free shipping on all orders',
-    badgeColor: '#FCD34D',
-    badgeText: '#92400E',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&h=700&fit=crop&auto=format',
-    overlay: 'linear-gradient(100deg, rgba(15,23,92,0.93) 0%, rgba(29,78,216,0.72) 55%, rgba(29,78,216,0.1) 100%)',
-  },
-  {
-    id: 1,
-    badge: '☀️ Summer Savings',
-    headline: 'Inverter ACs That\nPay for Themselves',
-    sub: 'Energy-star rated inverter air conditioners — cut electricity bills by up to 60%',
-    cta: 'Browse ACs',
-    ctaNote: '24-month financing, 0% interest',
-    badgeColor: '#6EE7B7',
-    badgeText: '#064E3B',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=700&fit=crop&auto=format',
-    overlay: 'linear-gradient(100deg, rgba(7,36,78,0.93) 0%, rgba(37,99,235,0.72) 55%, rgba(37,99,235,0.1) 100%)',
-  },
-  {
-    id: 2,
-    badge: '🤖 New Arrival 2024',
-    headline: 'AI-Powered Smart\nRefrigerators Are Here',
-    sub: 'Voice control, freshness sensors, and auto grocery ordering — the future of freshness',
-    cta: 'Discover AI Fridges',
-    ctaNote: '2-year extended warranty included',
-    badgeColor: '#C4B5FD',
-    badgeText: '#4C1D95',
-    image: 'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1600&h=700&fit=crop&auto=format',
-    overlay: 'linear-gradient(100deg, rgba(30,26,89,0.95) 0%, rgba(67,56,202,0.75) 55%, rgba(67,56,202,0.1) 100%)',
-  },
-]
+
 
 export default function Hero() {
+  const [slides, setSlides] = useState([])
   const [current, setCurrent] = useState(0)
   const [animating, setAnimating] = useState(false)
+
+  useEffect(() => {
+    async function fetchBanners() {
+      const response = await fetch('http://localhost:3001/banner')
+      const banners = await response.json()
+
+      const heroSlides = banners
+        .filter((banner) => Number(banner.trang_thai) === 1)
+        .sort((a, b) => a.thu_tu_hien_thi - b.thu_tu_hien_thi)
+        .map((banner) => ({
+          ...banner,
+          image: banner.url.trim(),
+          ctaHref: banner.link.trim(),
+        }))
+
+      setSlides(heroSlides)
+    }
+
+    fetchBanners()
+  }, [])
 
   const goTo = useCallback((index) => {
     if (index === current) return
@@ -55,12 +39,17 @@ export default function Hero() {
   }, [current])
 
   useEffect(() => {
+    // Chưa tải xong, hoặc chỉ có 1 banner: không tự chuyển
+    if (slides.length < 2) return
+
     const timer = setInterval(() => {
       goTo((current + 1) % slides.length)
     }, 6000)
-    return () => clearInterval(timer)
-  }, [current, goTo])
 
+    return () => clearInterval(timer)
+  }, [current, goTo, slides.length])
+
+  if (slides.length === 0) return null
   const slide = slides[current]
 
   return (
@@ -109,9 +98,8 @@ export default function Hero() {
           <button
             key={i}
             onClick={() => goTo(i)}
-            className={`rounded-full transition-all duration-400 ${
-              i === current ? 'w-8 h-2.5 bg-white' : 'w-2.5 h-2.5 bg-white/40 hover:bg-white/70'
-            }`}
+            className={`rounded-full transition-all duration-400 ${i === current ? 'w-8 h-2.5 bg-white' : 'w-2.5 h-2.5 bg-white/40 hover:bg-white/70'
+              }`}
           />
         ))}
       </div>

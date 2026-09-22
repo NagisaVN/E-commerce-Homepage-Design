@@ -1,0 +1,4356 @@
+{
+  "bai_viet": [
+    {
+      "id": 1,
+      "id_danh_muc": 1,
+      "tieu_de": " Sale Khủng Mùa Hè - Giảm 50%",
+      "slug": " sale-khung-mua-he",
+      "mo_ta_ngan": " Chương trình giảm giá lớn nhất năm cho máy lạnh",
+      "noi_dung": " <p>Nội dung chi tiết chương trình khuyến mãi...</p>",
+      "hinh": " https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=800&auto=format&fit=crop&q=80",
+      "is_featured": 1,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-08-27 09:06:34"
+    },
+    {
+      "id": 2,
+      "id_danh_muc": 2,
+      "tieu_de": " Top 5 Tủ lạnh tiết kiệm điện 2026",
+      "slug": " top-5-tu-lanh-tiet-kiem-dien",
+      "mo_ta_ngan": " Đánh giá các dòng tủ lạnh Inverter đáng mua nhất",
+      "noi_dung": " <p>Bài viết đánh giá chi tiết...</p>",
+      "hinh": " https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=800&auto=format&fit=crop&q=80",
+      "is_featured": 0,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-08-27 09:06:34"
+    }
+  ],
+  "banner": [
+    {
+      "id": 1,
+      "url": " https://plain-apac-prod-public.komododecks.com/202609/10/n2EQSLry8C5kBfUkzHnT/image.png",
+      "link": " /khuyen-mai",
+      "vi_tri": "Home-Top",
+      "thu_tu_hien_thi": 1,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-10 14:33:38",
+      "badge": "🎉 Tết Holiday Sale",
+      "headline": "Welcome Tết with\nSmart Home Upgrades",
+      "sub": "Save up to 40% on premium refrigerators, air conditioners & more — limited time offer",
+      "cta": "Shop Tết Deals",
+      "ctaNote": "Free shipping on all orders",
+      "badgeColor": "#FCD34D",
+      "badgeText": "#92400E",
+      "overlay": "linear-gradient(100deg, rgba(15,23,92,0.93) 0%, rgba(29,78,216,0.72) 55%, rgba(29,78,216,0.1) 100%)"
+    },
+    {
+      "id": 2,
+      "url": " https://plain-apac-prod-public.komododecks.com/202609/10/cKYA5aocO2n8sQcxKW59/image.png",
+      "link": " /danh-muc/may-lanh",
+      "vi_tri": "Home-Mid",
+      "thu_tu_hien_thi": 2,
+      "trang_thai": 0,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-10 14:33:09"
+    },
+    {
+      "id": 3,
+      "url": " https://plain-apac-prod-public.komododecks.com/202609/10/cKYA5aocO2n8sQcxKW59/image.png",
+      "link": " /danh-muc/may-lanh",
+      "vi_tri": "Home-Top",
+      "thu_tu_hien_thi": 2,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-10 14:33:09",
+      "badge": "☀️ Summer  Savings",
+      "headline": "Inverter ACs That\nPay for Themselves",
+      "sub": "Energy-star rated inverter air conditioners — cut electricity bills by up to 60%",
+      "cta": "Browse ACs",
+      "ctaNote": "24-month financing, 0% interest",
+      "badgeColor": "#6EE7B7",
+      "badgeText": "#064E3B",
+      "overlay": "linear-gradient(100deg, rgba(7,36,78,0.93) 0%, rgba(37,99,235,0.72) 55%, rgba(37,99,235,0.1) 100%)"
+    },
+    {
+      "id": 4,
+      "url": " https://plain-apac-prod-public.komododecks.com/202609/18/ERQHNP8SrbNWjq1VkFeA/image.png",
+      "link": " /danh-muc/may-lanh",
+      "vi_tri": "Home-Top",
+      "thu_tu_hien_thi": 3,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-10 14:33:09",
+      "badge": "🤖 New Arrival 2024",
+      "headline": "AI-Powered Smart\nRefrigerators Are Here",
+      "sub": "Voice control, freshness sensors, and auto grocery ordering — the future of freshness",
+      "cta": "Discover AI Fridges",
+      "ctaNote": "2-year extended warranty included",
+      "badgeColor": "#C4B5FD",
+      "badgeText": "#4C1D95",
+      "overlay": "linear-gradient(100deg, rgba(30,26,89,0.95) 0%, rgba(67,56,202,0.75) 55%, rgba(67,56,202,0.1) 100%)"
+    }
+  ],
+  "chi_tiet_don_hang": [
+    {
+      "id": 1,
+      "id_don_hang": 1,
+      "id_san_pham": 1,
+      "so_luong": 1,
+      "gia": 15000000,
+      "created_at": " 2026-09-18 02:30:57"
+    },
+    {
+      "id": 2,
+      "id_don_hang": 2,
+      "id_san_pham": 2,
+      "so_luong": 2,
+      "gia": 2500000,
+      "created_at": " 2026-09-18 02:30:57"
+    }
+  ],
+  "danh_muc_bai_viet": [
+    {
+      "id": 1,
+      "ten": " Khuyến mãi",
+      "slug": " khuyen-mai",
+      "thu_tu_hien_thi": 1,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-08-27 09:06:34"
+    },
+    {
+      "id": 2,
+      "ten": " Tư vấn chọn mua",
+      "slug": " tu-van-chon-mua",
+      "thu_tu_hien_thi": 2,
+      "trang_thai": 1,
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-08-27 09:06:34"
+    }
+  ],
+  "danh_muc_san_pham": [
+    {
+      "id": 1,
+      "ten": " Điện lạnh",
+      "slug": " dien-lanh",
+      "parent_id": null,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/qqzr4zOC5ABNGyONkzum/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 1,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:29:22"
+    },
+    {
+      "id": 2,
+      "ten": " Gia dụng",
+      "slug": " gia-dung",
+      "parent_id": null,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/2ROsqpetOcXfjUX3lA0e/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 2,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:29:38"
+    },
+    {
+      "id": 3,
+      "ten": " Điện tử",
+      "slug": " dien-tu",
+      "parent_id": null,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/cOynsuI3f3e8HYXRUDdg/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 3,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:29:57"
+    },
+    {
+      "id": 4,
+      "ten": " Tủ lạnh",
+      "slug": " tu-lanh",
+      "parent_id": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/D7j1h9ztcVwAQLIOlQsP/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 1,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:29:01"
+    },
+    {
+      "id": 5,
+      "ten": " Máy lạnh",
+      "slug": " may-lanh",
+      "parent_id": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/jsfnhxA0WVKeGxR0g5Ct/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 2,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:30:12"
+    },
+    {
+      "id": 6,
+      "ten": " Máy giặt",
+      "slug": " may-giat",
+      "parent_id": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/9tikaOkYpFz2qNraDmbY/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 3,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:30:29"
+    },
+    {
+      "id": 7,
+      "ten": " Lò vi sóng",
+      "slug": " lo-vi-song",
+      "parent_id": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/VxNx7w484dR9dqNDivdD/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 1,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:31:16"
+    },
+    {
+      "id": 8,
+      "ten": " Nồi cơm điện",
+      "slug": " noi-com-dien",
+      "parent_id": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/iegkffdAtEgrbBtil4We/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 2,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:31:28"
+    },
+    {
+      "id": 9,
+      "ten": " Quạt điều hòa",
+      "slug": " quat-dieu-hoa",
+      "parent_id": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/NRiyFG41VrEKEpkJJqqw/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 3,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:32:01"
+    },
+    {
+      "id": 10,
+      "ten": " Tivi",
+      "slug": " tivi",
+      "parent_id": 3,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/LqoVOlhpr0QesMMTZzmc/image.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 1,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:31:47"
+    },
+    {
+      "id": 11,
+      "ten": " Loa thanh",
+      "slug": " loa-thanh",
+      "parent_id": 3,
+      "image_url": " https://dienmaygiakhang.vn/wp-content/uploads/2025/10/S30A_0000s_0007_S30A-min.jpg",
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 2,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:28:40"
+    }
+  ],
+  "don_hang": [
+    {
+      "id": 1,
+      "id_user": 2,
+      "ma_don_hang": " DH20260918001",
+      "tong_tien_cuoi_cung": 15030000,
+      "ten_nguoi_nhan": " Nguyễn Văn Khách",
+      "dien_thoai_nguoi_nhan": " 0987654321",
+      "dia_chi_nguoi_nhan": " 123 Đường ABC, Quận 1, TP.HCM",
+      "phi_giao_hang": 30000,
+      "phuong_thuc_thanh_toan": " COD",
+      "thoi_diem_thanh_toan": null,
+      "id_phieu_giam_gia": null,
+      "ma_giam_gia": null,
+      "trang_thai_thanh_toan": " Chưa thanh toán",
+      "so_tien_thanh_toan": 0,
+      "ma_giao_dich": null,
+      "trang_thai": " Chờ xác nhận",
+      "created_at": " 2026-09-18 02:30:13",
+      "updated_at": " 2026-09-18 02:30:13"
+    },
+    {
+      "id": 2,
+      "id_user": 2,
+      "ma_don_hang": " DH20260918002",
+      "tong_tien_cuoi_cung": 5000000,
+      "ten_nguoi_nhan": " Nguyễn Văn Khách",
+      "dien_thoai_nguoi_nhan": " 0987654321",
+      "dia_chi_nguoi_nhan": " 123 Đường ABC, Quận 1, TP.HCM",
+      "phi_giao_hang": 0,
+      "phuong_thuc_thanh_toan": " VNPAY",
+      "thoi_diem_thanh_toan": " 2026-09-18 10:30:00",
+      "id_phieu_giam_gia": null,
+      "ma_giam_gia": null,
+      "trang_thai_thanh_toan": " Chưa thanh toán",
+      "so_tien_thanh_toan": 5000000,
+      "ma_giao_dich": " VNP123456789",
+      "trang_thai": " Chờ xác nhận",
+      "created_at": " 2026-09-18 02:30:13",
+      "updated_at": " 2026-09-18 02:30:13"
+    }
+  ],
+  "gio_hang": [
+    {
+      "id": 1,
+      "id_user": 2,
+      "id_san_pham": 3,
+      "so_luong": 1,
+      "created_at": " 2026-09-18 02:31:20",
+      "updated_at": " 2026-09-18 02:31:20"
+    },
+    {
+      "id": 2,
+      "id_user": 2,
+      "id_san_pham": 4,
+      "so_luong": 3,
+      "created_at": " 2026-09-18 02:31:20",
+      "updated_at": " 2026-09-18 02:31:20"
+    }
+  ],
+  "hinh_anh_san_pham": [
+    {
+      "id": 1,
+      "id_san_pham": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/mGrlzkIBwfcB2oarDuQX/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 2,
+      "id_san_pham": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/2SQmJwZ1PWdWt0oFl4cP/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 3,
+      "id_san_pham": 1,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/23Y0O4XgZDLHcIYAQOe1/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 4,
+      "id_san_pham": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/jDqFAe5OgjvzswLdkH7e/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 5,
+      "id_san_pham": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/5zvWdYEvXoSxTFJEvFV2/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 6,
+      "id_san_pham": 2,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/PZb4fSvmx7KO3eVMalcM/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 7,
+      "id_san_pham": 3,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/tj6rbUYyFh2CPKsAOYEd/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 8,
+      "id_san_pham": 3,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/MKXuuRe2SLdBN8AxkJRl/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 9,
+      "id_san_pham": 3,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/QgP8RnE5eRIqH6huBghB/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 10,
+      "id_san_pham": 4,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/jgTQno6aFK3BoLzGjwVQ/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 11,
+      "id_san_pham": 4,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/Zkl5cvkjUHtlJxBMpzsm/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 12,
+      "id_san_pham": 4,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/Vw4w9mTzhS6XFp0nQXs7/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 13,
+      "id_san_pham": 5,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/rvaMU1XpvAJJP9EDOIpj/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 14,
+      "id_san_pham": 5,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/7tHNc6wIV3yZYSGPS7kV/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 15,
+      "id_san_pham": 5,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/EGOaa2JKR5Y4okwYlVgG/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 16,
+      "id_san_pham": 6,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/17/9ddGf2RbXVQIkm12SOvj/image.png",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 17,
+      "id_san_pham": 6,
+      "image_url": " https://plain-apac-prod-public.komododecks.com/202609/10/GhiibFTI92g6xj8dEvDQ/image.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 18,
+      "id_san_pham": 6,
+      "image_url": " https://files.catbox.moe/h90bw2.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 19,
+      "id_san_pham": 7,
+      "image_url": " https://files.catbox.moe/s99r5o.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 20,
+      "id_san_pham": 7,
+      "image_url": " https://files.catbox.moe/scl4xj.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 21,
+      "id_san_pham": 7,
+      "image_url": " https://files.catbox.moe/t7c0pn.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 22,
+      "id_san_pham": 8,
+      "image_url": " https://files.catbox.moe/novz7i.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 23,
+      "id_san_pham": 8,
+      "image_url": " https://files.catbox.moe/um50ox.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 24,
+      "id_san_pham": 8,
+      "image_url": " https://files.catbox.moe/7zb356.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 25,
+      "id_san_pham": 9,
+      "image_url": " https://files.catbox.moe/l5556p.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 26,
+      "id_san_pham": 9,
+      "image_url": " https://files.catbox.moe/b4x9lz.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 27,
+      "id_san_pham": 9,
+      "image_url": " https://files.catbox.moe/jxki0u.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 28,
+      "id_san_pham": 10,
+      "image_url": " https://files.catbox.moe/1mnwe7.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 29,
+      "id_san_pham": 10,
+      "image_url": " https://files.catbox.moe/wn1tkf.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 30,
+      "id_san_pham": 10,
+      "image_url": " https://files.catbox.moe/i1koam.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 31,
+      "id_san_pham": 11,
+      "image_url": " https://files.catbox.moe/l1dfy9.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 32,
+      "id_san_pham": 11,
+      "image_url": " https://files.catbox.moe/rmcoa1.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 33,
+      "id_san_pham": 11,
+      "image_url": " https://files.catbox.moe/6wj70g.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 34,
+      "id_san_pham": 12,
+      "image_url": " https://files.catbox.moe/635fwa.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 35,
+      "id_san_pham": 12,
+      "image_url": " https://files.catbox.moe/20w896.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 36,
+      "id_san_pham": 12,
+      "image_url": " https://files.catbox.moe/jyqdwd.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 37,
+      "id_san_pham": 13,
+      "image_url": " https://files.catbox.moe/qovpao.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 38,
+      "id_san_pham": 13,
+      "image_url": " https://files.catbox.moe/kl3006.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 39,
+      "id_san_pham": 13,
+      "image_url": " https://files.catbox.moe/dh38ua.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 40,
+      "id_san_pham": 14,
+      "image_url": " https://files.catbox.moe/g9i2qz.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 41,
+      "id_san_pham": 14,
+      "image_url": " https://files.catbox.moe/kkg6rc.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 42,
+      "id_san_pham": 14,
+      "image_url": " https://files.catbox.moe/l0yda8.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 43,
+      "id_san_pham": 15,
+      "image_url": " https://files.catbox.moe/py7ggb.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 44,
+      "id_san_pham": 15,
+      "image_url": " https://files.catbox.moe/pofr2m.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 45,
+      "id_san_pham": 15,
+      "image_url": " https://files.catbox.moe/k5k6t6.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 46,
+      "id_san_pham": 16,
+      "image_url": " https://files.catbox.moe/bqu8de.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 47,
+      "id_san_pham": 16,
+      "image_url": " https://files.catbox.moe/vc46ki.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 48,
+      "id_san_pham": 16,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 49,
+      "id_san_pham": 17,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 50,
+      "id_san_pham": 17,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 51,
+      "id_san_pham": 17,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 52,
+      "id_san_pham": 18,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 53,
+      "id_san_pham": 18,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 54,
+      "id_san_pham": 18,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 55,
+      "id_san_pham": 19,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 56,
+      "id_san_pham": 19,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 57,
+      "id_san_pham": 19,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 58,
+      "id_san_pham": 20,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 59,
+      "id_san_pham": 20,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 60,
+      "id_san_pham": 20,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 61,
+      "id_san_pham": 21,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 62,
+      "id_san_pham": 21,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 63,
+      "id_san_pham": 21,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 64,
+      "id_san_pham": 22,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 65,
+      "id_san_pham": 22,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 66,
+      "id_san_pham": 22,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 67,
+      "id_san_pham": 23,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 68,
+      "id_san_pham": 23,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 69,
+      "id_san_pham": 23,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 70,
+      "id_san_pham": 24,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 71,
+      "id_san_pham": 24,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 72,
+      "id_san_pham": 24,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 73,
+      "id_san_pham": 25,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 74,
+      "id_san_pham": 25,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 75,
+      "id_san_pham": 25,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 76,
+      "id_san_pham": 26,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 77,
+      "id_san_pham": 26,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 78,
+      "id_san_pham": 26,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 79,
+      "id_san_pham": 27,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 80,
+      "id_san_pham": 27,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 81,
+      "id_san_pham": 27,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 82,
+      "id_san_pham": 28,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 83,
+      "id_san_pham": 28,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 84,
+      "id_san_pham": 28,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 85,
+      "id_san_pham": 29,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 86,
+      "id_san_pham": 29,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 87,
+      "id_san_pham": 29,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 88,
+      "id_san_pham": 30,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 89,
+      "id_san_pham": 30,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 90,
+      "id_san_pham": 30,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 91,
+      "id_san_pham": 31,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 92,
+      "id_san_pham": 31,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 93,
+      "id_san_pham": 31,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 94,
+      "id_san_pham": 32,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 95,
+      "id_san_pham": 32,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 96,
+      "id_san_pham": 32,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 97,
+      "id_san_pham": 33,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 98,
+      "id_san_pham": 33,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 99,
+      "id_san_pham": 33,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 100,
+      "id_san_pham": 34,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 101,
+      "id_san_pham": 34,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 102,
+      "id_san_pham": 34,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 103,
+      "id_san_pham": 35,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 104,
+      "id_san_pham": 35,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 105,
+      "id_san_pham": 35,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 106,
+      "id_san_pham": 36,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 107,
+      "id_san_pham": 36,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 108,
+      "id_san_pham": 36,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 109,
+      "id_san_pham": 37,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 110,
+      "id_san_pham": 37,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 111,
+      "id_san_pham": 37,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 112,
+      "id_san_pham": 38,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 113,
+      "id_san_pham": 38,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 114,
+      "id_san_pham": 38,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 115,
+      "id_san_pham": 39,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 116,
+      "id_san_pham": 39,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 117,
+      "id_san_pham": 39,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 118,
+      "id_san_pham": 40,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 119,
+      "id_san_pham": 40,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 120,
+      "id_san_pham": 40,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 121,
+      "id_san_pham": 41,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 122,
+      "id_san_pham": 41,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 123,
+      "id_san_pham": 41,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 124,
+      "id_san_pham": 42,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 125,
+      "id_san_pham": 42,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 126,
+      "id_san_pham": 42,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 127,
+      "id_san_pham": 43,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 128,
+      "id_san_pham": 43,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 129,
+      "id_san_pham": 43,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 130,
+      "id_san_pham": 44,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 131,
+      "id_san_pham": 44,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 132,
+      "id_san_pham": 44,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 133,
+      "id_san_pham": 45,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 134,
+      "id_san_pham": 45,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 135,
+      "id_san_pham": 45,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 136,
+      "id_san_pham": 46,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 137,
+      "id_san_pham": 46,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 138,
+      "id_san_pham": 46,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 139,
+      "id_san_pham": 47,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 140,
+      "id_san_pham": 47,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 141,
+      "id_san_pham": 47,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 142,
+      "id_san_pham": 48,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 143,
+      "id_san_pham": 48,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 144,
+      "id_san_pham": 48,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 145,
+      "id_san_pham": 49,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 146,
+      "id_san_pham": 49,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 147,
+      "id_san_pham": 49,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 148,
+      "id_san_pham": 50,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 149,
+      "id_san_pham": 50,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 150,
+      "id_san_pham": 50,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 151,
+      "id_san_pham": 51,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 152,
+      "id_san_pham": 51,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 153,
+      "id_san_pham": 51,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 154,
+      "id_san_pham": 52,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 155,
+      "id_san_pham": 52,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 156,
+      "id_san_pham": 52,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 157,
+      "id_san_pham": 53,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 158,
+      "id_san_pham": 53,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 159,
+      "id_san_pham": 53,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 160,
+      "id_san_pham": 54,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 161,
+      "id_san_pham": 54,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 162,
+      "id_san_pham": 54,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 163,
+      "id_san_pham": 55,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 164,
+      "id_san_pham": 55,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 165,
+      "id_san_pham": 55,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 166,
+      "id_san_pham": 56,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 167,
+      "id_san_pham": 56,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 168,
+      "id_san_pham": 56,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 169,
+      "id_san_pham": 57,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 170,
+      "id_san_pham": 57,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 171,
+      "id_san_pham": 57,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 172,
+      "id_san_pham": 58,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 173,
+      "id_san_pham": 58,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 174,
+      "id_san_pham": 58,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 175,
+      "id_san_pham": 59,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 176,
+      "id_san_pham": 59,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 177,
+      "id_san_pham": 59,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 178,
+      "id_san_pham": 60,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 179,
+      "id_san_pham": 60,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 180,
+      "id_san_pham": 60,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 181,
+      "id_san_pham": 61,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 182,
+      "id_san_pham": 61,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 183,
+      "id_san_pham": 61,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 184,
+      "id_san_pham": 62,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 185,
+      "id_san_pham": 62,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 186,
+      "id_san_pham": 62,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 187,
+      "id_san_pham": 63,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 188,
+      "id_san_pham": 63,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 189,
+      "id_san_pham": 63,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 190,
+      "id_san_pham": 64,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 191,
+      "id_san_pham": 64,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 192,
+      "id_san_pham": 64,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 193,
+      "id_san_pham": 65,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 194,
+      "id_san_pham": 65,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 195,
+      "id_san_pham": 65,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 196,
+      "id_san_pham": 66,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 197,
+      "id_san_pham": 66,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 198,
+      "id_san_pham": 66,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 199,
+      "id_san_pham": 67,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 200,
+      "id_san_pham": 67,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 201,
+      "id_san_pham": 67,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 202,
+      "id_san_pham": 68,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 203,
+      "id_san_pham": 68,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 204,
+      "id_san_pham": 68,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 205,
+      "id_san_pham": 69,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 206,
+      "id_san_pham": 69,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 207,
+      "id_san_pham": 69,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 208,
+      "id_san_pham": 70,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 209,
+      "id_san_pham": 70,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 210,
+      "id_san_pham": 70,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 211,
+      "id_san_pham": 71,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 212,
+      "id_san_pham": 71,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 213,
+      "id_san_pham": 71,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 214,
+      "id_san_pham": 72,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 215,
+      "id_san_pham": 72,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 216,
+      "id_san_pham": 72,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 217,
+      "id_san_pham": 73,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 218,
+      "id_san_pham": 73,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 219,
+      "id_san_pham": 73,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 220,
+      "id_san_pham": 74,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 221,
+      "id_san_pham": 74,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 222,
+      "id_san_pham": 74,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 223,
+      "id_san_pham": 75,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 224,
+      "id_san_pham": 75,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 225,
+      "id_san_pham": 75,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 226,
+      "id_san_pham": 76,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 227,
+      "id_san_pham": 76,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 228,
+      "id_san_pham": 76,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 229,
+      "id_san_pham": 77,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 230,
+      "id_san_pham": 77,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 231,
+      "id_san_pham": 77,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 232,
+      "id_san_pham": 78,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 233,
+      "id_san_pham": 78,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 234,
+      "id_san_pham": 78,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 235,
+      "id_san_pham": 79,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 236,
+      "id_san_pham": 79,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 237,
+      "id_san_pham": 79,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 238,
+      "id_san_pham": 80,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 239,
+      "id_san_pham": 80,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 240,
+      "id_san_pham": 80,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 241,
+      "id_san_pham": 81,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 242,
+      "id_san_pham": 81,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 243,
+      "id_san_pham": 81,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 244,
+      "id_san_pham": 82,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 245,
+      "id_san_pham": 82,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 246,
+      "id_san_pham": 82,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 247,
+      "id_san_pham": 83,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 248,
+      "id_san_pham": 83,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 249,
+      "id_san_pham": 83,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 250,
+      "id_san_pham": 84,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 251,
+      "id_san_pham": 84,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 252,
+      "id_san_pham": 84,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 253,
+      "id_san_pham": 85,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 254,
+      "id_san_pham": 85,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 255,
+      "id_san_pham": 85,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 256,
+      "id_san_pham": 86,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 257,
+      "id_san_pham": 86,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 258,
+      "id_san_pham": 86,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 259,
+      "id_san_pham": 87,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 260,
+      "id_san_pham": 87,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 261,
+      "id_san_pham": 87,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 262,
+      "id_san_pham": 88,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 263,
+      "id_san_pham": 88,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 264,
+      "id_san_pham": 88,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 265,
+      "id_san_pham": 89,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 266,
+      "id_san_pham": 89,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 267,
+      "id_san_pham": 89,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 268,
+      "id_san_pham": 90,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 269,
+      "id_san_pham": 90,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 270,
+      "id_san_pham": 90,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 271,
+      "id_san_pham": 91,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 272,
+      "id_san_pham": 91,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 273,
+      "id_san_pham": 91,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 274,
+      "id_san_pham": 92,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 275,
+      "id_san_pham": 92,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 276,
+      "id_san_pham": 92,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 277,
+      "id_san_pham": 93,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 278,
+      "id_san_pham": 93,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 279,
+      "id_san_pham": 93,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 280,
+      "id_san_pham": 94,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 281,
+      "id_san_pham": 94,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 282,
+      "id_san_pham": 94,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 283,
+      "id_san_pham": 95,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 284,
+      "id_san_pham": 95,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 285,
+      "id_san_pham": 95,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 286,
+      "id_san_pham": 96,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 287,
+      "id_san_pham": 96,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 288,
+      "id_san_pham": 96,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 289,
+      "id_san_pham": 97,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 290,
+      "id_san_pham": 97,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 291,
+      "id_san_pham": 97,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 292,
+      "id_san_pham": 98,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 293,
+      "id_san_pham": 98,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 294,
+      "id_san_pham": 98,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 295,
+      "id_san_pham": 99,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 296,
+      "id_san_pham": 99,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 297,
+      "id_san_pham": 99,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 298,
+      "id_san_pham": 100,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 299,
+      "id_san_pham": 100,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    },
+    {
+      "id": 300,
+      "id_san_pham": 100,
+      "image_url": " https://files.catbox.moe/kfkukp.jpg",
+      "is_thumbnail": 0
+    }
+  ],
+  "nguoi_dung": [
+    {
+      "id": 1,
+      "username": " admin",
+      "email": " admin@dienmay.com",
+      "password_hash": " hashed_password_123",
+      "full_name": " Quản trị viên",
+      "dien_thoai": " 0901234567",
+      "vai_tro": " admin",
+      "trang_thai": " active",
+      "dia_chi": null,
+      "gioi_tinh": null,
+      "last_login_at": null,
+      "email_verified_at": null,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-08-27 09:06:33"
+    },
+    {
+      "id": 2,
+      "username": " khachhang",
+      "email": " khachhang@gmail.com",
+      "password_hash": " hashed_password_123",
+      "full_name": " Nguyễn Văn Khách",
+      "dien_thoai": " 0987654321",
+      "vai_tro": " customer",
+      "trang_thai": " active",
+      "dia_chi": null,
+      "gioi_tinh": null,
+      "last_login_at": null,
+      "email_verified_at": null,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-08-27 09:06:33"
+    }
+  ],
+  "san_pham": [
+    {
+      "id": 1,
+      "ten_san_pham": " Máy lạnh LG Diệt khuẩn OJ2470",
+      "slug": " sp-oj2470-1",
+      "sku": " SKU-OJ2470-1",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 2,
+      "gia": 19199646,
+      "gia_goc": 20197425,
+      "so_luong_ton_kho": 10,
+      "mo_ta_ngan": " Mẫu Máy lạnh LG Diệt khuẩn OJ2470 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 144,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/17/n1o3lQk2vszITBdQny83/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-17 12:40:05"
+    },
+    {
+      "id": 2,
+      "ten_san_pham": " Máy giặt Panasonic Diệt khuẩn MK6111",
+      "slug": " sp-mk6111-2",
+      "sku": " SKU-MK6111-2",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 3,
+      "gia": 16492339,
+      "gia_goc": 17885945,
+      "so_luong_ton_kho": 40,
+      "mo_ta_ngan": " Mẫu Máy giặt Panasonic Diệt khuẩn MK6111 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 429,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/17/tfiDSVOzGFT1JxnCL8NY/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-17 13:06:27"
+    },
+    {
+      "id": 3,
+      "ten_san_pham": " Lò vi sóng Sony Inverter GS8180",
+      "slug": " sp-gs8180-3",
+      "sku": " SKU-GS8180-3",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 4,
+      "gia": 22258422,
+      "gia_goc": 22779604,
+      "so_luong_ton_kho": 46,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Sony Inverter GS8180 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 436,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/17/b8UuByZrBeQk8ms4BX39/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-17 13:41:43"
+    },
+    {
+      "id": 4,
+      "ten_san_pham": " Nồi cơm điện Toshiba Cao cấp XO2726",
+      "slug": " sp-xo2726-4",
+      "sku": " SKU-XO2726-4",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 5,
+      "gia": 7253982,
+      "gia_goc": 8887653,
+      "so_luong_ton_kho": 23,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Toshiba Cao cấp XO2726 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 386,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/1ruFBHVAURQGuJK1wRYh/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:43:37"
+    },
+    {
+      "id": 5,
+      "ten_san_pham": " Quạt điều hòa Sharp Diệt khuẩn IN5889",
+      "slug": " sp-in5889-5",
+      "sku": " SKU-IN5889-5",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 6,
+      "gia": 6019207,
+      "gia_goc": 7007145,
+      "so_luong_ton_kho": 72,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Sharp Diệt khuẩn IN5889 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 321,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/IlyW9z1S7OYAJ3qYtil5/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:43:54"
+    },
+    {
+      "id": 6,
+      "ten_san_pham": " Tivi Aqua Thế hệ mới ZX6677",
+      "slug": " sp-zx6677-6",
+      "sku": " SKU-ZX6677-6",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 7,
+      "gia": 11890678,
+      "gia_goc": 12906254,
+      "so_luong_ton_kho": 99,
+      "mo_ta_ngan": " Mẫu Tivi Aqua Thế hệ mới ZX6677 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 53,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/GhiibFTI92g6xj8dEvDQ/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:44:07"
+    },
+    {
+      "id": 7,
+      "ten_san_pham": " Loa thanh Daikin Thế hệ mới BR2783",
+      "slug": " sp-br2783-7",
+      "sku": " SKU-BR2783-7",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 8,
+      "gia": 24110618,
+      "gia_goc": 25034620,
+      "so_luong_ton_kho": 25,
+      "mo_ta_ngan": " Mẫu Loa thanh Daikin Thế hệ mới BR2783 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 346,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/G1kFpo8EWL5h9KnFfZ5C/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:46:42"
+    },
+    {
+      "id": 8,
+      "ten_san_pham": " Tủ lạnh Electrolux Diệt khuẩn OR6200",
+      "slug": " sp-or6200-8",
+      "sku": " SKU-OR6200-8",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 9,
+      "gia": 23130795,
+      "gia_goc": 25350823,
+      "so_luong_ton_kho": 58,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Electrolux Diệt khuẩn OR6200 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 32,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/uYxyU6Ve2eFQHernB7mU/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:47:17"
+    },
+    {
+      "id": 9,
+      "ten_san_pham": " Máy lạnh Samsung Thế hệ mới IZ9321",
+      "slug": " sp-iz9321-9",
+      "sku": " SKU-IZ9321-9",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 1,
+      "gia": 16982642,
+      "gia_goc": 18449242,
+      "so_luong_ton_kho": 51,
+      "mo_ta_ngan": " Mẫu Máy lạnh Samsung Thế hệ mới IZ9321 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 459,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/9Duq9dJAL4ZZuI9RnTx5/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:47:37"
+    },
+    {
+      "id": 10,
+      "ten_san_pham": " Máy giặt LG Inverter IO7703",
+      "slug": " sp-io7703-10",
+      "sku": " SKU-IO7703-10",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 2,
+      "gia": 4450137,
+      "gia_goc": 5546539,
+      "so_luong_ton_kho": 25,
+      "mo_ta_ngan": " Mẫu Máy giặt LG Inverter IO7703 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 149,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/RBiWROqDkW760yWpQpan/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:50:19"
+    },
+    {
+      "id": 11,
+      "ten_san_pham": " Lò vi sóng Panasonic Diệt khuẩn DV7225",
+      "slug": " sp-dv7225-11",
+      "sku": " SKU-DV7225-11",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 3,
+      "gia": 2425110,
+      "gia_goc": 2959539,
+      "so_luong_ton_kho": 12,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Panasonic Diệt khuẩn DV7225 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 207,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/M2kMnvOFV2MHQX1KSF8P/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:50:39"
+    },
+    {
+      "id": 12,
+      "ten_san_pham": " Nồi cơm điện Sony Diệt khuẩn QU1230",
+      "slug": " sp-qu1230-12",
+      "sku": " SKU-QU1230-12",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 4,
+      "gia": 20353912,
+      "gia_goc": 22680329,
+      "so_luong_ton_kho": 25,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Sony Diệt khuẩn QU1230 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 43,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/dmLOJiOrUeydsMm9eTIS/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:51:48"
+    },
+    {
+      "id": 13,
+      "ten_san_pham": " Quạt điều hòa Toshiba Inverter CI3151",
+      "slug": " sp-ci3151-13",
+      "sku": " SKU-CI3151-13",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 5,
+      "gia": 7983000,
+      "gia_goc": 9650057,
+      "so_luong_ton_kho": 22,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Toshiba Inverter CI3151 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 133,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/KwE3qy1SUhRBzTpEmkg2/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:52:02"
+    },
+    {
+      "id": 14,
+      "ten_san_pham": " Tivi Sharp Thông minh AI VO4479",
+      "slug": " sp-vo4479-14",
+      "sku": " SKU-VO4479-14",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 6,
+      "gia": 6723472,
+      "gia_goc": 8957727,
+      "so_luong_ton_kho": 74,
+      "mo_ta_ngan": " Mẫu Tivi Sharp Thông minh AI VO4479 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 411,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/v8OdNlX1WgPMIpqxar0K/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 13:56:26"
+    },
+    {
+      "id": 15,
+      "ten_san_pham": " Loa thanh Aqua Inverter EK6272",
+      "slug": " sp-ek6272-15",
+      "sku": " SKU-EK6272-15",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 7,
+      "gia": 17972251,
+      "gia_goc": 19901512,
+      "so_luong_ton_kho": 54,
+      "mo_ta_ngan": " Mẫu Loa thanh Aqua Inverter EK6272 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 28,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/MtrIGUPk0QD1Q5G0wzGR/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:09:31"
+    },
+    {
+      "id": 16,
+      "ten_san_pham": " Tủ lạnh Daikin Cao cấp RF2118",
+      "slug": " sp-rf2118-16",
+      "sku": " SKU-RF2118-16",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 8,
+      "gia": 23852285,
+      "gia_goc": 25107537,
+      "so_luong_ton_kho": 13,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Daikin Cao cấp RF2118 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 83,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/XuVOVz4Et6rDQQXTiaUe/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:09:49"
+    },
+    {
+      "id": 17,
+      "ten_san_pham": " Máy lạnh Electrolux Diệt khuẩn WG6751",
+      "slug": " sp-wg6751-17",
+      "sku": " SKU-WG6751-17",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 9,
+      "gia": 13085810,
+      "gia_goc": 14571142,
+      "so_luong_ton_kho": 11,
+      "mo_ta_ngan": " Mẫu Máy lạnh Electrolux Diệt khuẩn WG6751 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 495,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/BY7wrYD5gdxGWWubXAIk/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:10:26"
+    },
+    {
+      "id": 18,
+      "ten_san_pham": " Máy giặt Samsung Inverter RB2496",
+      "slug": " sp-rb2496-18",
+      "sku": " SKU-RB2496-18",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 1,
+      "gia": 17897318,
+      "gia_goc": 20311590,
+      "so_luong_ton_kho": 74,
+      "mo_ta_ngan": " Mẫu Máy giặt Samsung Inverter RB2496 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 154,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/fmWuynJh1pxOHio1iYhT/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:10:42"
+    },
+    {
+      "id": 19,
+      "ten_san_pham": " Lò vi sóng LG Thông minh AI MX2748",
+      "slug": " sp-mx2748-19",
+      "sku": " SKU-MX2748-19",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 2,
+      "gia": 6696684,
+      "gia_goc": 8072842,
+      "so_luong_ton_kho": 62,
+      "mo_ta_ngan": " Mẫu Lò vi sóng LG Thông minh AI MX2748 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 70,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/g4uJs1JyeMQ9lKGOTjiC/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:10:57"
+    },
+    {
+      "id": 20,
+      "ten_san_pham": " Nồi cơm điện Panasonic Thế hệ mới MJ5591",
+      "slug": " sp-mj5591-20",
+      "sku": " SKU-MJ5591-20",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 3,
+      "gia": 11514733,
+      "gia_goc": 13090734,
+      "so_luong_ton_kho": 50,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Panasonic Thế hệ mới MJ5591 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 403,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/iVtmpicETwkuDJjYrG3s/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:11:11"
+    },
+    {
+      "id": 21,
+      "ten_san_pham": " Quạt điều hòa Sony Inverter HA3381",
+      "slug": " sp-ha3381-21",
+      "sku": " SKU-HA3381-21",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 4,
+      "gia": 7539801,
+      "gia_goc": 8860505,
+      "so_luong_ton_kho": 39,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Sony Inverter HA3381 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 43,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/zYodM1P61V1IhMq6HlYj/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:11:27"
+    },
+    {
+      "id": 22,
+      "ten_san_pham": " Tivi Toshiba Inverter RW2902",
+      "slug": " sp-rw2902-22",
+      "sku": " SKU-RW2902-22",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 5,
+      "gia": 13481515,
+      "gia_goc": 15705375,
+      "so_luong_ton_kho": 83,
+      "mo_ta_ngan": " Mẫu Tivi Toshiba Inverter RW2902 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 468,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/rndxhXWXmFrwKabg6HOZ/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:11:48"
+    },
+    {
+      "id": 23,
+      "ten_san_pham": " Loa thanh Sharp Cao cấp MQ7831",
+      "slug": " sp-mq7831-23",
+      "sku": " SKU-MQ7831-23",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 6,
+      "gia": 21995961,
+      "gia_goc": 22635689,
+      "so_luong_ton_kho": 76,
+      "mo_ta_ngan": " Mẫu Loa thanh Sharp Cao cấp MQ7831 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 128,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/KMBPAoXFz4XB8nPeJFs2/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:11:59"
+    },
+    {
+      "id": 24,
+      "ten_san_pham": " Tủ lạnh Aqua Diệt khuẩn FS8719",
+      "slug": " sp-fs8719-24",
+      "sku": " SKU-FS8719-24",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 7,
+      "gia": 6107862,
+      "gia_goc": 7247469,
+      "so_luong_ton_kho": 15,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Aqua Diệt khuẩn FS8719 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 296,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/fD1Ccr4gYd5EJB8c24nY/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:12:11"
+    },
+    {
+      "id": 25,
+      "ten_san_pham": " Máy lạnh Daikin Thế hệ mới SW2121",
+      "slug": " sp-sw2121-25",
+      "sku": " SKU-SW2121-25",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 8,
+      "gia": 3665487,
+      "gia_goc": 6142067,
+      "so_luong_ton_kho": 75,
+      "mo_ta_ngan": " Mẫu Máy lạnh Daikin Thế hệ mới SW2121 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 54,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/7nSP9YFpO8MXRk8ZU3Vo/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:12:23"
+    },
+    {
+      "id": 26,
+      "ten_san_pham": " Máy giặt Electrolux Thông minh AI OZ3676",
+      "slug": " sp-oz3676-26",
+      "sku": " SKU-OZ3676-26",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 9,
+      "gia": 14316703,
+      "gia_goc": 16387203,
+      "so_luong_ton_kho": 38,
+      "mo_ta_ngan": " Mẫu Máy giặt Electrolux Thông minh AI OZ3676 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 127,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/EEaSvHZwyn4l7jJ4za3V/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:14:10"
+    },
+    {
+      "id": 27,
+      "ten_san_pham": " Lò vi sóng Samsung Thông minh AI ZF2433",
+      "slug": " sp-zf2433-27",
+      "sku": " SKU-ZF2433-27",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 1,
+      "gia": 5508804,
+      "gia_goc": 6578412,
+      "so_luong_ton_kho": 96,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Samsung Thông minh AI ZF2433 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 493,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/VSp8yslKo3SyJItMsoJh/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:14:26"
+    },
+    {
+      "id": 28,
+      "ten_san_pham": " Nồi cơm điện LG Inverter BI4670",
+      "slug": " sp-bi4670-28",
+      "sku": " SKU-BI4670-28",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 2,
+      "gia": 3651129,
+      "gia_goc": 4421777,
+      "so_luong_ton_kho": 51,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện LG Inverter BI4670 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 58,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/fqRnkXL0Tv4Hn9z8liq0/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:14:40"
+    },
+    {
+      "id": 29,
+      "ten_san_pham": " Quạt điều hòa Panasonic Thế hệ mới CU6288",
+      "slug": " sp-cu6288-29",
+      "sku": " SKU-CU6288-29",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 3,
+      "gia": 16472688,
+      "gia_goc": 17739690,
+      "so_luong_ton_kho": 12,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Panasonic Thế hệ mới CU6288 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 451,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/3waq5pA6P3LizqjtQGpf/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:14:51"
+    },
+    {
+      "id": 30,
+      "ten_san_pham": " Tivi Sony Thông minh AI WV5684",
+      "slug": " sp-wv5684-30",
+      "sku": " SKU-WV5684-30",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 4,
+      "gia": 4610356,
+      "gia_goc": 5122530,
+      "so_luong_ton_kho": 72,
+      "mo_ta_ngan": " Mẫu Tivi Sony Thông minh AI WV5684 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 43,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/dYbQygPgd3SfsfUn8xUf/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:15:30"
+    },
+    {
+      "id": 31,
+      "ten_san_pham": " Loa thanh Toshiba Inverter LW9043",
+      "slug": " sp-lw9043-31",
+      "sku": " SKU-LW9043-31",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 5,
+      "gia": 22925186,
+      "gia_goc": 25160719,
+      "so_luong_ton_kho": 64,
+      "mo_ta_ngan": " Mẫu Loa thanh Toshiba Inverter LW9043 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 195,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/vf5H5cdqsm9OlgMQC08S/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:15:41"
+    },
+    {
+      "id": 32,
+      "ten_san_pham": " Tủ lạnh Sharp Diệt khuẩn YX6815",
+      "slug": " sp-yx6815-32",
+      "sku": " SKU-YX6815-32",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 6,
+      "gia": 14000132,
+      "gia_goc": 15840463,
+      "so_luong_ton_kho": 80,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Sharp Diệt khuẩn YX6815 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 115,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/tA9TCOxGE3s5f5QE3CTO/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:16:10"
+    },
+    {
+      "id": 33,
+      "ten_san_pham": " Máy lạnh Aqua Thông minh AI IJ8437",
+      "slug": " sp-ij8437-33",
+      "sku": " SKU-IJ8437-33",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 7,
+      "gia": 3772504,
+      "gia_goc": 6084753,
+      "so_luong_ton_kho": 36,
+      "mo_ta_ngan": " Mẫu Máy lạnh Aqua Thông minh AI IJ8437 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 497,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/Q1jcRgesc6oRdtdKwjOo/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:16:30"
+    },
+    {
+      "id": 34,
+      "ten_san_pham": " Máy giặt Daikin Diệt khuẩn FE3074",
+      "slug": " sp-fe3074-34",
+      "sku": " SKU-FE3074-34",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 8,
+      "gia": 16191721,
+      "gia_goc": 17479286,
+      "so_luong_ton_kho": 20,
+      "mo_ta_ngan": " Mẫu Máy giặt Daikin Diệt khuẩn FE3074 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 342,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/RehTXaBmEhAJ9KQ5hF8R/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:16:48"
+    },
+    {
+      "id": 35,
+      "ten_san_pham": " Lò vi sóng Electrolux Cao cấp YF1736",
+      "slug": " sp-yf1736-35",
+      "sku": " SKU-YF1736-35",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 9,
+      "gia": 21119389,
+      "gia_goc": 23440995,
+      "so_luong_ton_kho": 15,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Electrolux Cao cấp YF1736 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 330,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/KMaCrokNGdapVJUMeapO/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:17:04"
+    },
+    {
+      "id": 36,
+      "ten_san_pham": " Nồi cơm điện Samsung Diệt khuẩn AJ7566",
+      "slug": " sp-aj7566-36",
+      "sku": " SKU-AJ7566-36",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 1,
+      "gia": 14536287,
+      "gia_goc": 16109316,
+      "so_luong_ton_kho": 14,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Samsung Diệt khuẩn AJ7566 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 497,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/U6m6SRJRWXp9nQ6JkmFe/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:18:09"
+    },
+    {
+      "id": 37,
+      "ten_san_pham": " Quạt điều hòa LG Inverter MD2923",
+      "slug": " sp-md2923-37",
+      "sku": " SKU-MD2923-37",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 2,
+      "gia": 17446434,
+      "gia_goc": 19379918,
+      "so_luong_ton_kho": 61,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa LG Inverter MD2923 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 382,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/iOlM55S4D9qdwzKvtlhz/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:22:05"
+    },
+    {
+      "id": 38,
+      "ten_san_pham": " Tivi Panasonic Diệt khuẩn LY3966",
+      "slug": " sp-ly3966-38",
+      "sku": " SKU-LY3966-38",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 3,
+      "gia": 22033543,
+      "gia_goc": 23266407,
+      "so_luong_ton_kho": 29,
+      "mo_ta_ngan": " Mẫu Tivi Panasonic Diệt khuẩn LY3966 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 161,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/jX2JiZYspoNScK31st50/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 14:22:21"
+    },
+    {
+      "id": 39,
+      "ten_san_pham": " Loa thanh Sony Diệt khuẩn EZ4712",
+      "slug": " sp-ez4712-39",
+      "sku": " SKU-EZ4712-39",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 4,
+      "gia": 4306939,
+      "gia_goc": 5334650,
+      "so_luong_ton_kho": 11,
+      "mo_ta_ngan": " Mẫu Loa thanh Sony Diệt khuẩn EZ4712 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 223,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/m2IdrUUU9dFIbQmwBiYx/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:30:44"
+    },
+    {
+      "id": 40,
+      "ten_san_pham": " Tủ lạnh Toshiba Cao cấp IP9894",
+      "slug": " sp-ip9894-40",
+      "sku": " SKU-IP9894-40",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 5,
+      "gia": 6123040,
+      "gia_goc": 8486261,
+      "so_luong_ton_kho": 20,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Toshiba Cao cấp IP9894 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 335,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/qacunJoWXipFKDrhu0Az/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:35:05"
+    },
+    {
+      "id": 41,
+      "ten_san_pham": " Máy lạnh Sharp Thế hệ mới RP8866",
+      "slug": " sp-rp8866-41",
+      "sku": " SKU-RP8866-41",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 6,
+      "gia": 16303193,
+      "gia_goc": 17777673,
+      "so_luong_ton_kho": 61,
+      "mo_ta_ngan": " Mẫu Máy lạnh Sharp Thế hệ mới RP8866 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 121,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/1qRDhXphmgMD5whm8c7x/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:39:40"
+    },
+    {
+      "id": 42,
+      "ten_san_pham": " Máy giặt Aqua Inverter MJ3558",
+      "slug": " sp-mj3558-42",
+      "sku": " SKU-MJ3558-42",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 7,
+      "gia": 10109039,
+      "gia_goc": 12429337,
+      "so_luong_ton_kho": 54,
+      "mo_ta_ngan": " Mẫu Máy giặt Aqua Inverter MJ3558 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 97,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/WJjTPiTKZYOjOxsKCHEQ/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:42:29"
+    },
+    {
+      "id": 43,
+      "ten_san_pham": " Lò vi sóng Daikin Diệt khuẩn GA3272",
+      "slug": " sp-ga3272-43",
+      "sku": " SKU-GA3272-43",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 8,
+      "gia": 7450574,
+      "gia_goc": 8805122,
+      "so_luong_ton_kho": 48,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Daikin Diệt khuẩn GA3272 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 475,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/BuWisVCYHrSOnzPHLUKa/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:54:08"
+    },
+    {
+      "id": 44,
+      "ten_san_pham": " Nồi cơm điện Electrolux Cao cấp FM7800",
+      "slug": " sp-fm7800-44",
+      "sku": " SKU-FM7800-44",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 9,
+      "gia": 9284267,
+      "gia_goc": 10417436,
+      "so_luong_ton_kho": 66,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Electrolux Cao cấp FM7800 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 86,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/oUHc3n6hhEehpUzSOiMZ/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 15:55:31"
+    },
+    {
+      "id": 45,
+      "ten_san_pham": " Quạt điều hòa Samsung Cao cấp PH6802",
+      "slug": " sp-ph6802-45",
+      "sku": " SKU-PH6802-45",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 1,
+      "gia": 10645234,
+      "gia_goc": 13035397,
+      "so_luong_ton_kho": 63,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Samsung Cao cấp PH6802 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 487,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/9F1leY0e922zbhbPUiBv/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:04:40"
+    },
+    {
+      "id": 46,
+      "ten_san_pham": " Tivi LG Thông minh AI DL8903",
+      "slug": " sp-dl8903-46",
+      "sku": " SKU-DL8903-46",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 2,
+      "gia": 2290824,
+      "gia_goc": 3648529,
+      "so_luong_ton_kho": 19,
+      "mo_ta_ngan": " Mẫu Tivi LG Thông minh AI DL8903 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 453,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/1Z4nSYB2WrudtyHEjAnn/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:07:07"
+    },
+    {
+      "id": 47,
+      "ten_san_pham": " Loa thanh Panasonic Diệt khuẩn GY9013",
+      "slug": " sp-gy9013-47",
+      "sku": " SKU-GY9013-47",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 3,
+      "gia": 16706994,
+      "gia_goc": 18259003,
+      "so_luong_ton_kho": 74,
+      "mo_ta_ngan": " Mẫu Loa thanh Panasonic Diệt khuẩn GY9013 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 383,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/4TzqAyKNnkUQQdzOqPY1/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:11:11"
+    },
+    {
+      "id": 48,
+      "ten_san_pham": " Tủ lạnh Sony Thế hệ mới EF5941",
+      "slug": " sp-ef5941-48",
+      "sku": " SKU-EF5941-48",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 4,
+      "gia": 4022195,
+      "gia_goc": 6107403,
+      "so_luong_ton_kho": 72,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Sony Thế hệ mới EF5941 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 247,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/MZxsEONFaYxhdCD1uQdY/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:14:09"
+    },
+    {
+      "id": 49,
+      "ten_san_pham": " Máy lạnh Toshiba Inverter CE5737",
+      "slug": " sp-ce5737-49",
+      "sku": " SKU-CE5737-49",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 5,
+      "gia": 4961250,
+      "gia_goc": 5590404,
+      "so_luong_ton_kho": 94,
+      "mo_ta_ngan": " Mẫu Máy lạnh Toshiba Inverter CE5737 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 318,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/u0cmYzkFrURFX8LqZMB6/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:33:07"
+    },
+    {
+      "id": 50,
+      "ten_san_pham": " Máy giặt Sharp Diệt khuẩn RG2630",
+      "slug": " sp-rg2630-50",
+      "sku": " SKU-RG2630-50",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 6,
+      "gia": 5989933,
+      "gia_goc": 7137568,
+      "so_luong_ton_kho": 18,
+      "mo_ta_ngan": " Mẫu Máy giặt Sharp Diệt khuẩn RG2630 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 156,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/lq1cDBpH2qPpDQoECpXF/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:35:00"
+    },
+    {
+      "id": 51,
+      "ten_san_pham": " Lò vi sóng Aqua Inverter BI4702",
+      "slug": " sp-bi4702-51",
+      "sku": " SKU-BI4702-51",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 7,
+      "gia": 4154967,
+      "gia_goc": 5123276,
+      "so_luong_ton_kho": 90,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Aqua Inverter BI4702 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 30,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/KEs59DxEzmNXCNsPwE4M/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:36:10"
+    },
+    {
+      "id": 52,
+      "ten_san_pham": " Nồi cơm điện Daikin Inverter DO3623",
+      "slug": " sp-do3623-52",
+      "sku": " SKU-DO3623-52",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 8,
+      "gia": 20708461,
+      "gia_goc": 21593845,
+      "so_luong_ton_kho": 57,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Daikin Inverter DO3623 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 310,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/x2IwAjBZCnquuwXxleAz/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:37:33"
+    },
+    {
+      "id": 53,
+      "ten_san_pham": " Quạt điều hòa Electrolux Thế hệ mới CL9799",
+      "slug": " sp-cl9799-53",
+      "sku": " SKU-CL9799-53",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 9,
+      "gia": 14738077,
+      "gia_goc": 16910132,
+      "so_luong_ton_kho": 56,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Electrolux Thế hệ mới CL9799 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 434,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/c2dhTx87vACnKxbBAlQm/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:38:32"
+    },
+    {
+      "id": 54,
+      "ten_san_pham": " Tivi Samsung Inverter WA5590",
+      "slug": " sp-wa5590-54",
+      "sku": " SKU-WA5590-54",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 1,
+      "gia": 13418376,
+      "gia_goc": 15822396,
+      "so_luong_ton_kho": 34,
+      "mo_ta_ngan": " Mẫu Tivi Samsung Inverter WA5590 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 337,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/F1XY6ImJbsXLTu8wVYt9/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:40:21"
+    },
+    {
+      "id": 55,
+      "ten_san_pham": " Loa thanh LG Thế hệ mới KI4456",
+      "slug": " sp-ki4456-55",
+      "sku": " SKU-KI4456-55",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 2,
+      "gia": 24610204,
+      "gia_goc": 26636347,
+      "so_luong_ton_kho": 87,
+      "mo_ta_ngan": " Mẫu Loa thanh LG Thế hệ mới KI4456 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 305,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/ItoHA8prkJL8GgRXfvul/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:44:39"
+    },
+    {
+      "id": 56,
+      "ten_san_pham": " Tủ lạnh Panasonic Thế hệ mới UF7614",
+      "slug": " sp-uf7614-56",
+      "sku": " SKU-UF7614-56",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 3,
+      "gia": 24790866,
+      "gia_goc": 26790490,
+      "so_luong_ton_kho": 79,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Panasonic Thế hệ mới UF7614 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 416,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/2kprK5CAZKCSE9TZ08UU/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 15:46:29"
+    },
+    {
+      "id": 57,
+      "ten_san_pham": " Máy lạnh Sony Cao cấp VI2867",
+      "slug": " sp-vi2867-57",
+      "sku": " SKU-VI2867-57",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 4,
+      "gia": 2590920,
+      "gia_goc": 4103022,
+      "so_luong_ton_kho": 50,
+      "mo_ta_ngan": " Mẫu Máy lạnh Sony Cao cấp VI2867 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 189,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/twDfsk0z6vE652zGtbgZ/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:03:07"
+    },
+    {
+      "id": 58,
+      "ten_san_pham": " Máy giặt Toshiba Diệt khuẩn DR9875",
+      "slug": " sp-dr9875-58",
+      "sku": " SKU-DR9875-58",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 5,
+      "gia": 22976870,
+      "gia_goc": 24679998,
+      "so_luong_ton_kho": 34,
+      "mo_ta_ngan": " Mẫu Máy giặt Toshiba Diệt khuẩn DR9875 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 477,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/1rXb6mMULQXwDy21Q7ZK/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:04:39"
+    },
+    {
+      "id": 59,
+      "ten_san_pham": " Lò vi sóng Sharp Inverter RC4517",
+      "slug": " sp-rc4517-59",
+      "sku": " SKU-RC4517-59",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 6,
+      "gia": 17875460,
+      "gia_goc": 18932744,
+      "so_luong_ton_kho": 39,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Sharp Inverter RC4517 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 457,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/0Et26SlTdgLexc3gaOOI/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:05:55"
+    },
+    {
+      "id": 60,
+      "ten_san_pham": " Nồi cơm điện Aqua Cao cấp MS1554",
+      "slug": " sp-ms1554-60",
+      "sku": " SKU-MS1554-60",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 7,
+      "gia": 6367730,
+      "gia_goc": 8397276,
+      "so_luong_ton_kho": 32,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Aqua Cao cấp MS1554 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 59,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/Z4vv5v29JBr2pXAAYqWc/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:07:47"
+    },
+    {
+      "id": 61,
+      "ten_san_pham": " Quạt điều hòa Daikin Diệt khuẩn ZY7908",
+      "slug": " sp-zy7908-61",
+      "sku": " SKU-ZY7908-61",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 8,
+      "gia": 24809490,
+      "gia_goc": 26621320,
+      "so_luong_ton_kho": 37,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Daikin Diệt khuẩn ZY7908 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 429,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/G5rKjo0SVBzNBOjo9WsK/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:12:31"
+    },
+    {
+      "id": 62,
+      "ten_san_pham": " Tivi Electrolux Diệt khuẩn OZ2598",
+      "slug": " sp-oz2598-62",
+      "sku": " SKU-OZ2598-62",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 9,
+      "gia": 23808880,
+      "gia_goc": 24725549,
+      "so_luong_ton_kho": 27,
+      "mo_ta_ngan": " Mẫu Tivi Electrolux Diệt khuẩn OZ2598 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 104,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/5chZB9Inhaa4CosFhoDw/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-11 16:20:55"
+    },
+    {
+      "id": 63,
+      "ten_san_pham": " Loa thanh Samsung Thế hệ mới FE2350",
+      "slug": " sp-fe2350-63",
+      "sku": " SKU-FE2350-63",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 1,
+      "gia": 8389773,
+      "gia_goc": 10767423,
+      "so_luong_ton_kho": 87,
+      "mo_ta_ngan": " Mẫu Loa thanh Samsung Thế hệ mới FE2350 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 426,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/LVDSDv2pID3Lk1xKoarU/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 02:36:05"
+    },
+    {
+      "id": 64,
+      "ten_san_pham": " Tủ lạnh LG Thế hệ mới LW9270",
+      "slug": " sp-lw9270-64",
+      "sku": " SKU-LW9270-64",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 2,
+      "gia": 2676054,
+      "gia_goc": 3956323,
+      "so_luong_ton_kho": 87,
+      "mo_ta_ngan": " Mẫu Tủ lạnh LG Thế hệ mới LW9270 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 61,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/yJb3c7NffwpNh35QR7R1/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 02:35:42"
+    },
+    {
+      "id": 65,
+      "ten_san_pham": " Máy lạnh Panasonic Inverter OH7709",
+      "slug": " sp-oh7709-65",
+      "sku": " SKU-OH7709-65",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 3,
+      "gia": 21601790,
+      "gia_goc": 22151269,
+      "so_luong_ton_kho": 61,
+      "mo_ta_ngan": " Mẫu Máy lạnh Panasonic Inverter OH7709 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 50,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/kmfGmujJypjZFl7YuI8x/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 02:38:28"
+    },
+    {
+      "id": 66,
+      "ten_san_pham": " Máy giặt Sony Cao cấp VM8498",
+      "slug": " sp-vm8498-66",
+      "sku": " SKU-VM8498-66",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 4,
+      "gia": 19807145,
+      "gia_goc": 21050093,
+      "so_luong_ton_kho": 58,
+      "mo_ta_ngan": " Mẫu Máy giặt Sony Cao cấp VM8498 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 95,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/hBtrOC9hx9Ts81W4cxz8/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 02:47:16"
+    },
+    {
+      "id": 67,
+      "ten_san_pham": " Lò vi sóng Toshiba Cao cấp VH9165",
+      "slug": " sp-vh9165-67",
+      "sku": " SKU-VH9165-67",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 5,
+      "gia": 18362765,
+      "gia_goc": 20533273,
+      "so_luong_ton_kho": 13,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Toshiba Cao cấp VH9165 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 197,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/6d7D1BvHG57dSN1rVDqx/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 02:57:03"
+    },
+    {
+      "id": 68,
+      "ten_san_pham": " Nồi cơm điện Sharp Thế hệ mới DB9094",
+      "slug": " sp-db9094-68",
+      "sku": " SKU-DB9094-68",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 6,
+      "gia": 9465712,
+      "gia_goc": 11815473,
+      "so_luong_ton_kho": 68,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Sharp Thế hệ mới DB9094 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 220,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/JLitN8theXhBgAlwBfaf/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:00:22"
+    },
+    {
+      "id": 69,
+      "ten_san_pham": " Quạt điều hòa Aqua Diệt khuẩn NG7606",
+      "slug": " sp-ng7606-69",
+      "sku": " SKU-NG7606-69",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 7,
+      "gia": 22962555,
+      "gia_goc": 24172070,
+      "so_luong_ton_kho": 13,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Aqua Diệt khuẩn NG7606 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 274,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/9w1L9MXVY4J7SQrtSyZv/image.jpg",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:04:45"
+    },
+    {
+      "id": 70,
+      "ten_san_pham": " Tivi Daikin Cao cấp BH3977",
+      "slug": " sp-bh3977-70",
+      "sku": " SKU-BH3977-70",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 8,
+      "gia": 18914845,
+      "gia_goc": 20784301,
+      "so_luong_ton_kho": 29,
+      "mo_ta_ngan": " Mẫu Tivi Daikin Cao cấp BH3977 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 255,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/xT3O8zof7PXSS63EovjB/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:06:15"
+    },
+    {
+      "id": 71,
+      "ten_san_pham": " Loa thanh Electrolux Thông minh AI TK7090",
+      "slug": " sp-tk7090-71",
+      "sku": " SKU-TK7090-71",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 9,
+      "gia": 7180797,
+      "gia_goc": 7872921,
+      "so_luong_ton_kho": 82,
+      "mo_ta_ngan": " Mẫu Loa thanh Electrolux Thông minh AI TK7090 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 129,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/2FQuRVSVI7Ko409lHQkP/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:10:38"
+    },
+    {
+      "id": 72,
+      "ten_san_pham": " Tủ lạnh Samsung Inverter RD7227",
+      "slug": " sp-rd7227-72",
+      "sku": " SKU-RD7227-72",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 1,
+      "gia": 2239385,
+      "gia_goc": 4692002,
+      "so_luong_ton_kho": 86,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Samsung Inverter RD7227 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 31,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/eL8d76iGVrl7EwWtYmJS/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:24:13"
+    },
+    {
+      "id": 73,
+      "ten_san_pham": " Máy lạnh LG Cao cấp NQ5974",
+      "slug": " sp-nq5974-73",
+      "sku": " SKU-NQ5974-73",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 2,
+      "gia": 22101231,
+      "gia_goc": 24024327,
+      "so_luong_ton_kho": 94,
+      "mo_ta_ngan": " Mẫu Máy lạnh LG Cao cấp NQ5974 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 457,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/5r71hXLRTJPhYxXfUvvr/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:26:41"
+    },
+    {
+      "id": 74,
+      "ten_san_pham": " Máy giặt Panasonic Thế hệ mới ZA2386",
+      "slug": " sp-za2386-74",
+      "sku": " SKU-ZA2386-74",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 3,
+      "gia": 18912966,
+      "gia_goc": 19842274,
+      "so_luong_ton_kho": 88,
+      "mo_ta_ngan": " Mẫu Máy giặt Panasonic Thế hệ mới ZA2386 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 429,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/hM245wlWpYHMz5WOGKNi/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:29:31"
+    },
+    {
+      "id": 75,
+      "ten_san_pham": " Lò vi sóng Sony Cao cấp NY2566",
+      "slug": " sp-ny2566-75",
+      "sku": " SKU-NY2566-75",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 4,
+      "gia": 2630246,
+      "gia_goc": 4359681,
+      "so_luong_ton_kho": 99,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Sony Cao cấp NY2566 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 294,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/skqNQvL46ljtq9QwpqoP/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:39:05"
+    },
+    {
+      "id": 76,
+      "ten_san_pham": " Nồi cơm điện Toshiba Diệt khuẩn HO1337",
+      "slug": " sp-ho1337-76",
+      "sku": " SKU-HO1337-76",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 5,
+      "gia": 12550448,
+      "gia_goc": 13412544,
+      "so_luong_ton_kho": 57,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Toshiba Diệt khuẩn HO1337 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 462,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/lwMPIM7cK8M9n2IgfQju/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:46:28"
+    },
+    {
+      "id": 77,
+      "ten_san_pham": " Quạt điều hòa Sharp Cao cấp UB9153",
+      "slug": " sp-ub9153-77",
+      "sku": " SKU-UB9153-77",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 6,
+      "gia": 9900970,
+      "gia_goc": 12400833,
+      "so_luong_ton_kho": 97,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Sharp Cao cấp UB9153 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 160,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/uvOiUr7sFoCjnaT7orFW/image.png",
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-12 03:55:33"
+    },
+    {
+      "id": 78,
+      "ten_san_pham": " Tivi Aqua Inverter JS3997",
+      "slug": " sp-js3997-78",
+      "sku": " SKU-JS3997-78",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 7,
+      "gia": 15363207,
+      "gia_goc": 17675108,
+      "so_luong_ton_kho": 80,
+      "mo_ta_ngan": " Mẫu Tivi Aqua Inverter JS3997 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 359,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/vyVqrxMdZJAizQ4zLNtF/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 03:56:54"
+    },
+    {
+      "id": 79,
+      "ten_san_pham": " Loa thanh Daikin Thế hệ mới OA5125",
+      "slug": " sp-oa5125-79",
+      "sku": " SKU-OA5125-79",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 8,
+      "gia": 6177160,
+      "gia_goc": 7743151,
+      "so_luong_ton_kho": 20,
+      "mo_ta_ngan": " Mẫu Loa thanh Daikin Thế hệ mới OA5125 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 323,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/DVCKuRhUmee79PwQo226/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 03:58:18"
+    },
+    {
+      "id": 80,
+      "ten_san_pham": " Tủ lạnh Electrolux Cao cấp FL5857",
+      "slug": " sp-fl5857-80",
+      "sku": " SKU-FL5857-80",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 9,
+      "gia": 10292757,
+      "gia_goc": 11160100,
+      "so_luong_ton_kho": 85,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Electrolux Cao cấp FL5857 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 326,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/FkbR5LmW9j0ZrEPqdVac/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:01:51"
+    },
+    {
+      "id": 81,
+      "ten_san_pham": " Máy lạnh Samsung Cao cấp WF5530",
+      "slug": " sp-wf5530-81",
+      "sku": " SKU-WF5530-81",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 1,
+      "gia": 21868839,
+      "gia_goc": 23986985,
+      "so_luong_ton_kho": 50,
+      "mo_ta_ngan": " Mẫu Máy lạnh Samsung Cao cấp WF5530 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 423,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/05dkyk3E9x7PTPd55mN3/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:07:40"
+    },
+    {
+      "id": 82,
+      "ten_san_pham": " Máy giặt LG Diệt khuẩn AX5998",
+      "slug": " sp-ax5998-82",
+      "sku": " SKU-AX5998-82",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 2,
+      "gia": 2620249,
+      "gia_goc": 4057346,
+      "so_luong_ton_kho": 33,
+      "mo_ta_ngan": " Mẫu Máy giặt LG Diệt khuẩn AX5998 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 366,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/yztPjFUMAYwSt9lIh2Wf/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:09:28"
+    },
+    {
+      "id": 83,
+      "ten_san_pham": " Lò vi sóng Panasonic Thế hệ mới OY9912",
+      "slug": " sp-oy9912-83",
+      "sku": " SKU-OY9912-83",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 3,
+      "gia": 5555915,
+      "gia_goc": 7660604,
+      "so_luong_ton_kho": 59,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Panasonic Thế hệ mới OY9912 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 9,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/9VXnXFwa4JDhSr8x6m7n/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:11:10"
+    },
+    {
+      "id": 84,
+      "ten_san_pham": " Nồi cơm điện Sony Inverter LV9408",
+      "slug": " sp-lv9408-84",
+      "sku": " SKU-LV9408-84",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 4,
+      "gia": 5288798,
+      "gia_goc": 7613198,
+      "so_luong_ton_kho": 21,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Sony Inverter LV9408 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 110,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/hnbWhzD73Ngdr4b2fphR/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:16:51"
+    },
+    {
+      "id": 85,
+      "ten_san_pham": " Quạt điều hòa Toshiba Cao cấp AC4866",
+      "slug": " sp-ac4866-85",
+      "sku": " SKU-AC4866-85",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 5,
+      "gia": 21552157,
+      "gia_goc": 23975453,
+      "so_luong_ton_kho": 33,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Toshiba Cao cấp AC4866 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 125,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/9efQGkxYftUjTsLrUN9e/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:22:53"
+    },
+    {
+      "id": 86,
+      "ten_san_pham": " Tivi Sharp Inverter LB1255",
+      "slug": " sp-lb1255-86",
+      "sku": " SKU-LB1255-86",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 6,
+      "gia": 23628047,
+      "gia_goc": 25361149,
+      "so_luong_ton_kho": 33,
+      "mo_ta_ngan": " Mẫu Tivi Sharp Inverter LB1255 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 254,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/xmPd6yzuKWg93qUdY6Hk/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:45:48"
+    },
+    {
+      "id": 87,
+      "ten_san_pham": " Loa thanh Aqua Inverter IC5634",
+      "slug": " sp-ic5634-87",
+      "sku": " SKU-IC5634-87",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 7,
+      "gia": 8618772,
+      "gia_goc": 10907157,
+      "so_luong_ton_kho": 64,
+      "mo_ta_ngan": " Mẫu Loa thanh Aqua Inverter IC5634 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 477,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/jCpgIsuYoTDGv8SwBfbP/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:45:18"
+    },
+    {
+      "id": 88,
+      "ten_san_pham": " Tủ lạnh Daikin Diệt khuẩn RH4275",
+      "slug": " sp-rh4275-88",
+      "sku": " SKU-RH4275-88",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 8,
+      "gia": 24385351,
+      "gia_goc": 26434613,
+      "so_luong_ton_kho": 95,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Daikin Diệt khuẩn RH4275 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 176,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/BCmxOafd465RH7ikUCpA/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:53:16"
+    },
+    {
+      "id": 89,
+      "ten_san_pham": " Máy lạnh Electrolux Thông minh AI DJ5491",
+      "slug": " sp-dj5491-89",
+      "sku": " SKU-DJ5491-89",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 9,
+      "gia": 9858913,
+      "gia_goc": 10781493,
+      "so_luong_ton_kho": 12,
+      "mo_ta_ngan": " Mẫu Máy lạnh Electrolux Thông minh AI DJ5491 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 260,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/qRLq8qEtIj9JJbpzTcxf/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:57:08"
+    },
+    {
+      "id": 90,
+      "ten_san_pham": " Máy giặt Samsung Inverter PZ1010",
+      "slug": " sp-pz1010-90",
+      "sku": " SKU-PZ1010-90",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 1,
+      "gia": 4249070,
+      "gia_goc": 5719815,
+      "so_luong_ton_kho": 22,
+      "mo_ta_ngan": " Mẫu Máy giặt Samsung Inverter PZ1010 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 328,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/ScVjANVducLrX4LsQS6C/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 04:58:41"
+    },
+    {
+      "id": 91,
+      "ten_san_pham": " Lò vi sóng LG Diệt khuẩn HK3457",
+      "slug": " sp-hk3457-91",
+      "sku": " SKU-HK3457-91",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 2,
+      "gia": 4542479,
+      "gia_goc": 6509547,
+      "so_luong_ton_kho": 40,
+      "mo_ta_ngan": " Mẫu Lò vi sóng LG Diệt khuẩn HK3457 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 194,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/0uKQvflIlYsW0uOihPcN/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:27:42"
+    },
+    {
+      "id": 92,
+      "ten_san_pham": " Nồi cơm điện Panasonic Thông minh AI JK8111",
+      "slug": " sp-jk8111-92",
+      "sku": " SKU-JK8111-92",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 3,
+      "gia": 20059772,
+      "gia_goc": 21670840,
+      "so_luong_ton_kho": 47,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện Panasonic Thông minh AI JK8111 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 476,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/M3fwn2E15a7vz5VntkWT/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:29:23"
+    },
+    {
+      "id": 93,
+      "ten_san_pham": " Quạt điều hòa Sony Thông minh AI HE9626",
+      "slug": " sp-he9626-93",
+      "sku": " SKU-HE9626-93",
+      "id_danh_muc": 9,
+      "id_thuong_hieu": 4,
+      "gia": 8759256,
+      "gia_goc": 10446917,
+      "so_luong_ton_kho": 17,
+      "mo_ta_ngan": " Mẫu Quạt điều hòa Sony Thông minh AI HE9626 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 8,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/R43sqyP2bH9vAmbmpyAC/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:30:48"
+    },
+    {
+      "id": 94,
+      "ten_san_pham": " Tivi Toshiba Inverter OK3742",
+      "slug": " sp-ok3742-94",
+      "sku": " SKU-OK3742-94",
+      "id_danh_muc": 10,
+      "id_thuong_hieu": 5,
+      "gia": 10039136,
+      "gia_goc": 12205838,
+      "so_luong_ton_kho": 20,
+      "mo_ta_ngan": " Mẫu Tivi Toshiba Inverter OK3742 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 49,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/RwVgVOsetFQAAblav6AH/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:32:24"
+    },
+    {
+      "id": 95,
+      "ten_san_pham": " Loa thanh Sharp Cao cấp VM8540",
+      "slug": " sp-vm8540-95",
+      "sku": " SKU-VM8540-95",
+      "id_danh_muc": 11,
+      "id_thuong_hieu": 6,
+      "gia": 20308752,
+      "gia_goc": 21741877,
+      "so_luong_ton_kho": 95,
+      "mo_ta_ngan": " Mẫu Loa thanh Sharp Cao cấp VM8540 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 392,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/GP3yWnqc0MoibhQx7pkF/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:35:58"
+    },
+    {
+      "id": 96,
+      "ten_san_pham": " Tủ lạnh Aqua Thế hệ mới KF8917",
+      "slug": " sp-kf8917-96",
+      "sku": " SKU-KF8917-96",
+      "id_danh_muc": 4,
+      "id_thuong_hieu": 7,
+      "gia": 18512283,
+      "gia_goc": 20913116,
+      "so_luong_ton_kho": 63,
+      "mo_ta_ngan": " Mẫu Tủ lạnh Aqua Thế hệ mới KF8917 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 453,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/c9QsfHfJk0QYdY3rkqlW/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:37:15"
+    },
+    {
+      "id": 97,
+      "ten_san_pham": " Máy lạnh Daikin Inverter VW8033",
+      "slug": " sp-vw8033-97",
+      "sku": " SKU-VW8033-97",
+      "id_danh_muc": 5,
+      "id_thuong_hieu": 8,
+      "gia": 9551192,
+      "gia_goc": 10645559,
+      "so_luong_ton_kho": 55,
+      "mo_ta_ngan": " Mẫu Máy lạnh Daikin Inverter VW8033 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 281,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/DlONBZPgvqLGQ8OxNB3Z/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:38:21"
+    },
+    {
+      "id": 98,
+      "ten_san_pham": " Máy giặt Electrolux Thế hệ mới FC8178",
+      "slug": " sp-fc8178-98",
+      "sku": " SKU-FC8178-98",
+      "id_danh_muc": 6,
+      "id_thuong_hieu": 9,
+      "gia": 19083337,
+      "gia_goc": 20225087,
+      "so_luong_ton_kho": 43,
+      "mo_ta_ngan": " Mẫu Máy giặt Electrolux Thế hệ mới FC8178 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 230,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/MH8KEJR12NxFswm4hulK/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:39:33"
+    },
+    {
+      "id": 99,
+      "ten_san_pham": " Lò vi sóng Samsung Thông minh AI JG1866",
+      "slug": " sp-jg1866-99",
+      "sku": " SKU-JG1866-99",
+      "id_danh_muc": 7,
+      "id_thuong_hieu": 1,
+      "gia": 18945114,
+      "gia_goc": 20235090,
+      "so_luong_ton_kho": 78,
+      "mo_ta_ngan": " Mẫu Lò vi sóng Samsung Thông minh AI JG1866 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 0,
+      "so_lan_xem": 449,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/YcUoSEPpBwthiw0NSjmq/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:41:01"
+    },
+    {
+      "id": 100,
+      "ten_san_pham": " Nồi cơm điện LG Thông minh AI FG6372",
+      "slug": " sp-fg6372-100",
+      "sku": " SKU-FG6372-100",
+      "id_danh_muc": 8,
+      "id_thuong_hieu": 2,
+      "gia": 8377884,
+      "gia_goc": 10069322,
+      "so_luong_ton_kho": 23,
+      "mo_ta_ngan": " Mẫu Nồi cơm điện LG Thông minh AI FG6372 chính hãng, thiết kế sang trọng, tiết kiệm điện.",
+      "mo_ta_dai": null,
+      "bao_hanh": null,
+      "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
+      "noi_bat": 1,
+      "so_lan_xem": 145,
+      "trang_thai": 1,
+      "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/htJNCLzcZ2YLQJ8HuK5f/image.png",
+      "created_at": " 2026-08-27 09:06:34",
+      "updated_at": " 2026-09-12 18:41:41"
+    }
+  ],
+  "thuong_hieu": [
+    {
+      "id": 1,
+      "ten": " Samsung",
+      "slug": " samsung",
+      "logo_url": " https://images.samsung.com/is/image/samsung/assets/vn/about-us/brand/logo/pc/720_600_1.png?$720_N_PNG$",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:29:42"
+    },
+    {
+      "id": 2,
+      "ten": " LG",
+      "slug": " lg",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2017/03/LG-Logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:37:21"
+    },
+    {
+      "id": 3,
+      "ten": " Panasonic",
+      "slug": " panasonic",
+      "logo_url": " https://rabbitlogo.com/wp-content/uploads/2025/06/panasonic-1.jpg",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:34:25"
+    },
+    {
+      "id": 4,
+      "ten": " Sony",
+      "slug": " sony",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2021/05/Sony-logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:35:33"
+    },
+    {
+      "id": 5,
+      "ten": " Toshiba",
+      "slug": " toshiba",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2017/06/Toshiba-Logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:36:23"
+    },
+    {
+      "id": 6,
+      "ten": " Sharp",
+      "slug": " sharp",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2021/05/Sharp-logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:39:48"
+    },
+    {
+      "id": 7,
+      "ten": " Aqua",
+      "slug": " aqua",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2020/08/Daikin-Logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:41:13"
+    },
+    {
+      "id": 8,
+      "ten": " Daikin",
+      "slug": " daikin",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2020/08/Daikin-Logo.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:41:29"
+    },
+    {
+      "id": 9,
+      "ten": " Electrolux",
+      "slug": " electrolux",
+      "logo_url": " https://1000logos.net/wp-content/uploads/2021/05/Electrolux-logo-768x432.png",
+      "mo_ta": null,
+      "trang_thai": 1,
+      "thu_tu_hien_thi": 0,
+      "created_at": " 2026-08-27 09:06:33",
+      "updated_at": " 2026-09-10 07:42:08"
+    }
+  ]
+}
