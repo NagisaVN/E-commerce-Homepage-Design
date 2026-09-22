@@ -1,12 +1,11 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+// Import trực tiếp file db.json từ thư mục gốc
+import data from '../../../db.json';
 
 export async function GET() {
-    // Đường dẫn đến file db.json ở thư mục gốc
-    const filePath = path.join(process.cwd(), 'db.json');
-    const fileData = fs.readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileData);
-
-    return NextResponse.json(data);
+    try {
+        return NextResponse.json(data);
+    } catch (error) {
+        return NextResponse.json({ error: 'Không thể đọc dữ liệu' }, { status: 500 });
+    }
 }
