@@ -3,7 +3,7 @@
 const categories = [
   {
     name: 'Tủ lạnh',
-    count: '240+ models',
+    count: '240+ mẫu',
     bg: '#EFF6FF',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#1D4ED8" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -16,7 +16,7 @@ const categories = [
   },
   {
     name: 'Máy Lạnh',
-    count: '180+ models',
+    count: '180+ mẫu',
     bg: '#E0F2FE',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#0369A1" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -28,7 +28,7 @@ const categories = [
   },
   {
     name: 'Máy Giặt',
-    count: '120+ models',
+    count: '120+ mẫu',
     bg: '#EFF6FF',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#1D4ED8" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -42,7 +42,7 @@ const categories = [
   },
   {
     name: 'Lò Vi Sóng',
-    count: '95+ models',
+    count: '95+ mẫu',
     bg: '#F0F9FF',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#0284C7" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -55,7 +55,7 @@ const categories = [
   },
   {
     name: 'Máy Rửa Chén',
-    count: '60+ models',
+    count: '60+ mẫu',
     bg: '#EFF6FF',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#1D4ED8" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -69,7 +69,7 @@ const categories = [
   },
   {
     name: 'Máy Nước Nóng',
-    count: '80+ models',
+    count: '80+ mẫu',
     bg: '#FFF7ED',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#C2410C" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -84,7 +84,7 @@ const categories = [
   },
   {
     name: 'Loa Thanh',
-    count: '50+ models',
+    count: '50+ mẫu',
     bg: '#FFF7ED',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="#C2410C" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
@@ -104,11 +104,11 @@ export default function Categories() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1">Browse</p>
-            <h2 className="text-3xl font-display font-bold text-gray-900">Shop by Category</h2>
+            <p className="text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1">Khám phá</p>
+            <h2 className="text-3xl font-display font-bold text-gray-900">Danh Mục Sản Phẩm</h2>
           </div>
           <a href="#" className="text-sm text-brand font-medium hover:underline font-body hidden sm:block">
-            View all categories →
+            Xem tất cả danh mục →
           </a>
         </div>
 

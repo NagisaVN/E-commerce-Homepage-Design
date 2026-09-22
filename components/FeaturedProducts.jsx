@@ -15,9 +15,9 @@ const products = [
     discount: 39,
     rating: 4.8,
     reviews: 1284,
-    tag: 'Best Seller',
+    tag: 'Bán chạy',
     image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&h=500&fit=crop&auto=format',
-    features: ['617L capacity', 'No Frost', 'A+++ Energy'],
+    features: ['Dung tích 617L', 'Không đóng tuyết', 'Năng lượng A+++'],
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const products = [
     discount: 33,
     rating: 4.7,
     reviews: 847,
-    tag: 'Tet Deal',
+    tag: 'Ưu đãi Tết',
     image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500&h=500&fit=crop&auto=format',
     features: ['TurboWash™ 360°', 'AI DD Motor', '1400 RPM'],
   },
@@ -44,7 +44,7 @@ const products = [
     rating: 4.6,
     reviews: 523,
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop&auto=format',
-    features: ['Inverter tech', 'EcoNavi', '-15°C Heating'],
+    features: ['Công nghệ Inverter', 'EcoNavi', 'Sưởi ấm -15°C'],
   },
   {
     id: 4,
@@ -56,9 +56,9 @@ const products = [
     discount: 31,
     rating: 4.5,
     reviews: 412,
-    tag: 'AI Powered',
+    tag: 'Tích hợp AI',
     image: 'https://images.unsplash.com/photo-1556909144-f2a5ac8d1a80?w=500&h=500&fit=crop&auto=format',
-    features: ['Voice control', '32L capacity', 'Auto cook'],
+    features: ['Điều khiển giọng nói', 'Dung tích 32L', 'Nấu tự động'],
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ const products = [
   },
 ]
 
-const tabs = ['All', 'Refrigerators', 'Air Conditioners', 'Washing Machines', 'Microwaves']
+const tabs = ['Tất cả', 'Tủ lạnh', 'Máy lạnh', 'Máy giặt', 'Lò vi sóng']
 
 function StarIcon({ filled }) {
   return (
@@ -154,10 +154,10 @@ function ProductCard({ product }) {
         </div>
 
         <div className="flex items-baseline gap-2 mt-auto">
-          <span className="text-xl font-bold font-display text-gray-900">${product.price}</span>
-          <span className="text-sm text-gray-400 line-through font-body">${product.original}</span>
+          <span className="text-xl font-bold font-display text-gray-900">{product.price.toLocaleString('vi-VN')}₫</span>
+          <span className="text-sm text-gray-400 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>
           <span className="text-xs text-green-600 font-semibold font-display ml-auto">
-            Save ${product.original - product.price}
+            Tiết kiệm {(product.original - product.price).toLocaleString('vi-VN')}₫
           </span>
         </div>
 
@@ -166,7 +166,7 @@ function ProductCard({ product }) {
             href={product.id === 1 ? '/product/samsung-inverter-208l' : `/product/${product.id}`}
             className="flex-1 py-2.5 rounded-xl text-sm font-semibold font-display text-center border border-brand text-brand hover:bg-brand-pale transition-colors"
           >
-            View
+            Xem
           </Link>
           <button
             onClick={handleAdd}
@@ -174,7 +174,7 @@ function ProductCard({ product }) {
               added ? 'bg-green-500 text-white' : 'bg-brand hover:bg-brand-dark text-white'
             }`}
           >
-            {added ? '✓ Added' : 'Add to Cart'}
+            {added ? '✓ Đã thêm' : 'Thêm vào giỏ'}
           </button>
         </div>
       </div>
@@ -183,9 +183,9 @@ function ProductCard({ product }) {
 }
 
 export default function FeaturedProducts() {
-  const [activeTab, setActiveTab] = useState('All')
+  const [activeTab, setActiveTab] = useState('Tất cả')
 
-  const filtered = activeTab === 'All'
+  const filtered = activeTab === 'Tất cả'
     ? products
     : products.filter(p => p.category.startsWith(activeTab.slice(0, -1)))
 
@@ -194,11 +194,11 @@ export default function FeaturedProducts() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1">This Week</p>
-            <h2 className="text-3xl font-display font-bold text-gray-900">Featured Products</h2>
+            <p className="text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1">Tuần này</p>
+            <h2 className="text-3xl font-display font-bold text-gray-900">Sản Phẩm Nổi Bật</h2>
           </div>
           <a href="#" className="text-sm text-brand font-medium hover:underline font-body hidden sm:block">
-            View all products →
+            Xem tất cả sản phẩm →
           </a>
         </div>
 

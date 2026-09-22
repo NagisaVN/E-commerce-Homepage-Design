@@ -16,19 +16,19 @@ export default function Header() {
   const [focused, setFocused] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const { cartCount } = useCart()
-  const navItems = ['Products', 'Brands', 'Deals', 'Support']
+  const navItems = ['Sản phẩm', 'Thương hiệu', 'Khuyến mãi', 'Hỗ trợ']
 
   const SearchBox = () => (
     <div className={`flex items-center gap-2.5 rounded-xl border-2 bg-brand-pale px-3 py-2 transition-all duration-200 sm:gap-3 sm:px-4 sm:py-2.5 ${focused ? 'border-brand bg-white shadow-lg shadow-blue-100' : 'border-brand-light hover:border-brand-accent'}`}>
       <SparkIcon />
-      <input type="text" placeholder="Ask AI: Find a fridge for a family of 4 under $500..." aria-label="Search products with AI" className="min-w-0 flex-1 bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400 font-body" onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} />
-      <button className="flex-shrink-0 rounded-lg bg-brand px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark sm:px-4 font-display">Search</button>
+      <input type="text" placeholder="Hỏi AI: Tìm tủ lạnh cho gia đình 4 người dưới 10 triệu..." aria-label="Tìm kiếm sản phẩm với AI" className="min-w-0 flex-1 bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400 font-body" onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} />
+      <button className="flex-shrink-0 rounded-lg bg-brand px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark sm:px-4 font-display">Tìm kiếm</button>
     </div>
   )
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 shadow-sm backdrop-blur-sm">
-      <div className="bg-brand-dark py-1.5 text-center text-xs font-body tracking-wide text-white">Free shipping on orders over $299 &middot; 24/7 AI Support Available</div>
+      <div className="bg-brand-dark py-1.5 text-center text-xs font-body tracking-wide text-white">Miễn phí vận chuyển đơn hàng từ 299K &middot; Hỗ trợ AI 24/7</div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         <div className="flex h-16 items-center gap-3 sm:gap-5">
@@ -41,9 +41,18 @@ export default function Header() {
           <div className="mx-auto hidden max-w-2xl flex-1 md:block"><SearchBox /></div>
 
           <div className="flex flex-shrink-0 items-center gap-1 sm:gap-2">
-            <Link href="/dang-nhap" aria-label="Sign in" className="flex items-center gap-2 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Sign In</span></Link>
-            <Link href="/gio-hang" aria-label="Cart" className="relative flex items-center gap-1.5 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 01-8 0" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Cart</span>{cartCount > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">{cartCount}</span>}</Link>
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <Link href="/dang-nhap" aria-label="Đăng nhập" className="flex items-center gap-2 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Đăng nhập</span></Link>
+            <Link href="/gio-hang" aria-label="Giỏ hàng" className="relative flex items-center gap-1.5 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 01-8 0" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Giỏ hàng</span>{cartCount > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">{cartCount}</span>}</Link>
+            <button type="button" aria-label="Mở menu điều hướng" aria-expanded={menuOpen} onClick={() => setMenuOpen(open => !open)} className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand xl:hidden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">{menuOpen ? <path d="m6 6 12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}</svg></button>
+=======
+=======
+>>>>>>> parent of 3c62081 (update brand)
+            <Link href="/dangnhap" aria-label="Sign in" className="flex items-center gap-2 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Sign In</span></Link>
+            <Link href="/giohang" aria-label="Cart" className="relative flex items-center gap-1.5 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-5 w-5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 01-8 0" /></svg><span className="hidden text-sm font-medium font-body 2xl:block">Cart</span>{cartCount > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">{cartCount}</span>}</Link>
             <button type="button" aria-label="Toggle navigation menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(open => !open)} className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand xl:hidden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">{menuOpen ? <path d="m6 6 12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}</svg></button>
+>>>>>>> parent of 3c62081 (update brand)
           </div>
         </div>
 
