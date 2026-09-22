@@ -57,6 +57,7 @@ const brands = [
 
 export default function Brands() {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const [brands, setBrands] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -107,6 +108,8 @@ export default function Brands() {
     )
   }
 
+=======
+>>>>>>> parent of 3c62081 (update brand)
 =======
 >>>>>>> parent of 3c62081 (update brand)
   return (
