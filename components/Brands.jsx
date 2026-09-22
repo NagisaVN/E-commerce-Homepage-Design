@@ -52,6 +52,7 @@ export default function Brands() {
         const response = await fetch('/api/data')
         const data = await response.json()
 
+        // lệnh kèm để deploy
         const activeBrands = (data.thuong_hieu ?? [])
           .filter((b) => Number(b.trang_thai) === 1)
           .sort((a, b) => a.thu_tu_hien_thi - b.thu_tu_hien_thi)
