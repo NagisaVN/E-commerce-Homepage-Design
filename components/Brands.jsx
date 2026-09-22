@@ -56,6 +56,7 @@ const brands = [
 ]
 
 export default function Brands() {
+<<<<<<< HEAD
   const [brands, setBrands] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -106,6 +107,8 @@ export default function Brands() {
     )
   }
 
+=======
+>>>>>>> parent of 3c62081 (update brand)
   return (
     <section className="py-12 bg-brand-pale border-b border-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
