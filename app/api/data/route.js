@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 // Import trực tiếp file db.json từ thư mục gốc
-import data from '../../../db.json';
+import data from '../../db.json';
 
 export async function GET() {
     try {
