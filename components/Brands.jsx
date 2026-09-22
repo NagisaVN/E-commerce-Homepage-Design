@@ -49,10 +49,11 @@ export default function Brands() {
   useEffect(() => {
     async function fetchBrands() {
       try {
-        const response = await fetch('http://localhost:3001/thuong_hieu')
+        const response = await fetch('/api/data')
+        if (!response.ok) throw new Error('Unable to load brand data')
         const data = await response.json()
 
-        const activeBrands = data
+        const activeBrands = (data.thuong_hieu ?? [])
           .filter((b) => Number(b.trang_thai) === 1)
           .sort((a, b) => a.thu_tu_hien_thi - b.thu_tu_hien_thi)
 
