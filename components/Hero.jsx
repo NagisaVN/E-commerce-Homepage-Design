@@ -12,7 +12,9 @@ export default function Hero() {
   useEffect(() => {
     async function fetchBanners() {
       const response = await fetch('/api/data')
-      const banners = await response.json()
+      if (!response.ok) throw new Error('Unable to load banner data')
+      const data = await response.json()
+      const banners = data.banner ?? []
 
       const heroSlides = banners
         .filter((banner) => Number(banner.trang_thai) === 1)
