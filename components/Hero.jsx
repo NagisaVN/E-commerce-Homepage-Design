@@ -11,7 +11,7 @@ export default function Hero() {
 
   useEffect(() => {
     async function fetchBanners() {
-      const response = await fetch('api/data')
+      const response = await fetch('/api/data')
       const banners = await response.json()
 
       const heroSlides = banners

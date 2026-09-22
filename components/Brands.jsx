@@ -50,7 +50,6 @@ export default function Brands() {
     async function fetchBrands() {
       try {
         const response = await fetch('/api/data')
-        if (!response.ok) throw new Error('Unable to load brand data')
         const data = await response.json()
 
         const activeBrands = (data.thuong_hieu ?? [])
