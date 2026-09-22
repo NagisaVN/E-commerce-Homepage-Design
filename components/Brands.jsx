@@ -1,4 +1,8 @@
-const brands = [
+'use client'
+
+import { useEffect, useState } from 'react'
+
+const fallbackBrands = [
   {
     name: 'Samsung',
     tagline: 'SmartThings Ready',
@@ -73,6 +77,7 @@ export default function Brands() {
         setBrands(activeBrands)
       } catch (error) {
         console.error('Failed to fetch brands:', error)
+        setBrands(fallbackBrands)
       } finally {
         setLoading(false)
       }
