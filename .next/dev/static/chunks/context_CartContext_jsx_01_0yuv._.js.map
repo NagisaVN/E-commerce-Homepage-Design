@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/laragon/www/E-commerce%20Homepage%20Design/context/CartContext.jsx"],"sourcesContent":["'use client'\n\nimport { createContext, useContext, useState } from 'react'\n\nconst CartContext = createContext({ cartCount: 0, addToCart: () => {} })\n\nexport function CartProvider({ children }) {\n  const [cartCount, setCartCount] = useState(0)\n  const addToCart = () => setCartCount(c => c + 1)\n\n  return (\n    <CartContext.Provider value={{ cartCount, addToCart }}>\n      {children}\n    </CartContext.Provider>\n  )\n}\n\nexport function useCart() {\n  return useContext(CartContext)\n}\n"],"names":["CartContext","cartCount","addToCart","CartProvider","children","setCartCount","c","Provider","value","useCart"],"mappings":";;;;;;;AAEA;;;AAFA;;AAIA,MAAMA,4BAAc,IAAA,6SAAa,EAAC;IAAEC,WAAW;IAAGC,WAAW,KAAO;AAAE;AAE/D,SAASC,aAAa,EAAEC,QAAQ,EAAE;;IACvC,MAAM,CAACH,WAAWI,aAAa,GAAG,IAAA,wSAAQ,EAAC;IAC3C,MAAMH,YAAY,IAAMG,aAAaC,CAAAA,IAAKA,IAAI;IAE9C,qBACE,4TAACN,YAAYO,QAAQ;QAACC,OAAO;YAAEP;YAAWC;QAAU;kBACjDE;;;;;;AAGP;GATgBD;KAAAA;AAWT,SAASM;;IACd,OAAO,IAAA,0SAAU,EAACT;AACpB;IAFgBS"}}]
-}
