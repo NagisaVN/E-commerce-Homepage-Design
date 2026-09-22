@@ -273,13 +273,8 @@ function Header() {
                                 className: "flex flex-shrink-0 items-center gap-1 sm:gap-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-<<<<<<< HEAD
                                         href: "/dang-nhap",
                                         "aria-label": "Đăng nhập",
-=======
-                                        href: "/dangnhap",
-                                        "aria-label": "Sign in",
->>>>>>> parent of 3c62081 (update brand)
                                         className: "flex items-center gap-2 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -294,11 +289,7 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 44,
-<<<<<<< HEAD
                                                         columnNumber: 292
-=======
-                                                        columnNumber: 289
->>>>>>> parent of 3c62081 (update brand)
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                                                         cx: "12",
@@ -307,21 +298,13 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 44,
-<<<<<<< HEAD
                                                         columnNumber: 344
-=======
-                                                        columnNumber: 341
->>>>>>> parent of 3c62081 (update brand)
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 44,
-<<<<<<< HEAD
                                                 columnNumber: 195
-=======
-                                                columnNumber: 192
->>>>>>> parent of 3c62081 (update brand)
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "hidden text-sm font-medium font-body 2xl:block",
@@ -329,11 +312,7 @@ function Header() {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 44,
-<<<<<<< HEAD
                                                 columnNumber: 381
-=======
-                                                columnNumber: 378
->>>>>>> parent of 3c62081 (update brand)
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -342,13 +321,8 @@ function Header() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-<<<<<<< HEAD
                                         href: "/gio-hang",
                                         "aria-label": "Giỏ hàng",
-=======
-                                        href: "/giohang",
-                                        "aria-label": "Cart",
->>>>>>> parent of 3c62081 (update brand)
                                         className: "relative flex items-center gap-1.5 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -363,11 +337,7 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-<<<<<<< HEAD
                                                         columnNumber: 301
-=======
-                                                        columnNumber: 296
->>>>>>> parent of 3c62081 (update brand)
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                                         x1: "3",
@@ -377,32 +347,20 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-<<<<<<< HEAD
                                                         columnNumber: 360
-=======
-                                                        columnNumber: 355
->>>>>>> parent of 3c62081 (update brand)
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "M16 10a4 4 0 01-8 0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-<<<<<<< HEAD
                                                         columnNumber: 397
-=======
-                                                        columnNumber: 392
->>>>>>> parent of 3c62081 (update brand)
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-<<<<<<< HEAD
                                                 columnNumber: 204
-=======
-                                                columnNumber: 199
->>>>>>> parent of 3c62081 (update brand)
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "hidden text-sm font-medium font-body 2xl:block",
@@ -410,11 +368,7 @@ function Header() {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-<<<<<<< HEAD
                                                 columnNumber: 435
-=======
-                                                columnNumber: 430
->>>>>>> parent of 3c62081 (update brand)
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-bold text-white",
@@ -422,11 +376,7 @@ function Header() {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-<<<<<<< HEAD
                                                 columnNumber: 533
-=======
-                                                columnNumber: 524
->>>>>>> parent of 3c62081 (update brand)
                                             }, this)
                                         ]
                                     }, void 0, true, {

@@ -76,48 +76,48 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 const tips = [
     {
         id: 1,
-        category: 'Buying Guide',
-        readTime: '4 min read',
-        title: 'How to Choose the Right Fridge Size for Your Family',
-        excerpt: "Our AI analyzed 50,000 households and found that families of 4–5 need at least 500L. Here's the complete sizing formula — including pantry habits, climate, and shopping frequency.",
+        category: 'Hướng dẫn mua',
+        readTime: '4 phút đọc',
+        title: 'Cách chọn dung tích tủ lạnh phù hợp cho gia đình bạn',
+        excerpt: 'AI của chúng tôi đã phân tích 50.000 hộ gia đình và phát hiện rằng gia đình 4–5 người cần ít nhất 500L. Đây là công thức tính dung tích đầy đủ — bao gồm thói quen trữ thực phẩm, khí hậu và tần suất mua sắm.',
         image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&h=420&fit=crop&auto=format',
         tags: [
-            'Refrigerators',
-            'Family Guide',
+            'Tủ lạnh',
+            'Hướng dẫn gia đình',
             'AI Insight'
         ],
-        date: 'Sep 3, 2024',
-        author: 'CoolHome AI'
+        date: '03/09/2024',
+        author: 'TechZone AI'
     },
     {
         id: 2,
-        category: 'Energy Savings',
-        readTime: '3 min read',
-        title: 'Inverter vs. Fixed-Speed AC: The Real Cost Over 5 Years',
-        excerpt: 'We ran the numbers. An inverter AC saves an average of $218/year vs. fixed-speed. Over 5 years, that offsets up to 65% of the purchase price — even for premium models.',
+        category: 'Tiết kiệm điện',
+        readTime: '3 phút đọc',
+        title: 'Máy lạnh Inverter vs. định tốc: Chi phí thực tế sau 5 năm',
+        excerpt: 'Chúng tôi đã tính toán. Máy lạnh inverter tiết kiệm trung bình 5 triệu/năm so với định tốc. Sau 5 năm, số tiền tiết kiệm bù được tới 65% giá mua — ngay cả với dòng cao cấp.',
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=420&fit=crop&auto=format',
         tags: [
-            'Air Conditioners',
-            'Energy',
-            'Cost Analysis'
+            'Máy lạnh',
+            'Năng lượng',
+            'Phân tích chi phí'
         ],
-        date: 'Aug 28, 2024',
-        author: 'CoolHome AI'
+        date: '28/08/2024',
+        author: 'TechZone AI'
     },
     {
         id: 3,
-        category: 'Smart Home Tips',
-        readTime: '5 min read',
-        title: 'Connect All Your Appliances: SmartThings vs. ThinQ vs. Home Connect',
-        excerpt: 'Samsung, LG, and Bosch each have their own smart home ecosystem. We tested all three for 30 days to tell you which integrates best with Alexa, Google Home, and Apple HomeKit.',
+        category: 'Nhà thông minh',
+        readTime: '5 phút đọc',
+        title: 'Kết nối tất cả thiết bị: SmartThings vs. ThinQ vs. Home Connect',
+        excerpt: 'Samsung, LG và Bosch đều có hệ sinh thái nhà thông minh riêng. Chúng tôi đã thử nghiệm cả ba trong 30 ngày để cho bạn biết hệ thống nào tương thích tốt nhất với Alexa, Google Home và Apple HomeKit.',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=420&fit=crop&auto=format',
         tags: [
-            'Smart Home',
-            'Comparison',
-            'AI Review'
+            'Nhà thông minh',
+            'So sánh',
+            'Đánh giá AI'
         ],
-        date: 'Aug 20, 2024',
-        author: 'CoolHome AI'
+        date: '20/08/2024',
+        author: 'TechZone AI'
     }
 ];
 function AiChip() {
@@ -163,7 +163,7 @@ function AiChip() {
                 lineNumber: 43,
                 columnNumber: 7
             }, this),
-            "AI Generated"
+            "Tạo bởi AI"
         ]
     }, void 0, true, {
         fileName: "[project]/components/AiBlog.jsx",
@@ -184,7 +184,7 @@ function AiBlog() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1",
-                                    children: "Powered by AI"
+                                    children: "Hỗ trợ bởi AI"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AiBlog.jsx",
                                     lineNumber: 59,
@@ -192,7 +192,7 @@ function AiBlog() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-3xl font-display font-bold text-gray-900",
-                                    children: "Tips & Buying Guides"
+                                    children: "Mẹo hay & Hướng dẫn mua sắm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AiBlog.jsx",
                                     lineNumber: 60,
@@ -200,7 +200,7 @@ function AiBlog() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-500 font-body mt-2 text-sm",
-                                    children: "Expert insights generated by CoolHome AI — updated weekly"
+                                    children: "Những kiến thức chuyên sâu được tạo bởi TechZone AI — cập nhật hàng tuần"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AiBlog.jsx",
                                     lineNumber: 61,
@@ -215,7 +215,7 @@ function AiBlog() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",
                             className: "text-sm text-brand font-medium hover:underline font-body hidden sm:block",
-                            children: "View all articles →"
+                            children: "Xem tất cả bài viết →"
                         }, void 0, false, {
                             fileName: "[project]/components/AiBlog.jsx",
                             lineNumber: 63,
@@ -457,7 +457,7 @@ function AiBlog() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-xl font-display font-bold text-white mb-1",
-                                    children: "Ask our AI — get personalized buying advice"
+                                    children: "Hỏi AI của chúng tôi — nhận tư vấn mua hàng cá nhân hóa"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AiBlog.jsx",
                                     lineNumber: 135,
@@ -465,7 +465,7 @@ function AiBlog() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-blue-200 font-body text-sm",
-                                    children: "Tell us your budget, room size, and family needs. Our AI recommends the perfect appliance in seconds."
+                                    children: "Cho chúng tôi biết ngân sách, diện tích phòng và nhu cầu gia đình. AI sẽ gợi ý sản phẩm hoàn hảo trong vài giây."
                                 }, void 0, false, {
                                     fileName: "[project]/components/AiBlog.jsx",
                                     lineNumber: 138,
@@ -479,7 +479,7 @@ function AiBlog() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             className: "flex-shrink-0 bg-white text-brand-dark px-6 py-3 rounded-xl font-display font-semibold hover:bg-brand-light transition-colors active:scale-95 whitespace-nowrap",
-                            children: "✨ Try AI Advisor"
+                            children: "✨ Thử AI Tư Vấn"
                         }, void 0, false, {
                             fileName: "[project]/components/AiBlog.jsx",
                             lineNumber: 142,
@@ -666,6 +666,97 @@ const brands = [
     }
 ];
 function Brands() {
+    const [brands, setBrands] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(()=>{
+        async function fetchBrands() {
+            try {
+                const response = await fetch('http://localhost:3001/thuong_hieu');
+                const data = await response.json();
+                const activeBrands = data.filter((b)=>Number(b.trang_thai) === 1).sort((a, b)=>a.thu_tu_hien_thi - b.thu_tu_hien_thi);
+                setBrands(activeBrands);
+            } catch (error) {
+                console.error('Failed to fetch brands:', error);
+            } finally{
+                setLoading(false);
+            }
+        }
+        fetchBrands();
+    }, []);
+    if (loading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "py-12 bg-brand-pale border-b border-brand-light",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-4 sm:px-8 lg:px-12",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-6 mb-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap",
+                                children: "Thương Hiệu Hàng Đầu"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Brands.jsx",
+                                lineNumber: 88,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex-1 h-px bg-brand-light"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Brands.jsx",
+                                lineNumber: 91,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Brands.jsx",
+                        lineNumber: 87,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-3 sm:grid-cols-6 gap-3",
+                        children: Array.from({
+                            length: 6
+                        }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white rounded-2xl px-4 py-5 flex flex-col items-center gap-2 animate-pulse",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "h-7 w-20 bg-gray-200 rounded"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Brands.jsx",
+                                        lineNumber: 99,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "h-3 w-16 bg-gray-100 rounded"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Brands.jsx",
+                                        lineNumber: 100,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, i, true, {
+                                fileName: "[project]/components/Brands.jsx",
+                                lineNumber: 95,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/Brands.jsx",
+                        lineNumber: 93,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Brands.jsx",
+                lineNumber: 86,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/Brands.jsx",
+            lineNumber: 85,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-12 bg-brand-pale border-b border-brand-light",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -676,23 +767,23 @@ function Brands() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap",
-                            children: "Top Brands"
+                            children: "Thương Hiệu Hàng Đầu"
                         }, void 0, false, {
                             fileName: "[project]/components/Brands.jsx",
-                            lineNumber: 63,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex-1 h-px bg-brand-light"
                         }, void 0, false, {
                             fileName: "[project]/components/Brands.jsx",
-                            lineNumber: 66,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Brands.jsx",
-                    lineNumber: 62,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -705,7 +796,7 @@ function Brands() {
                                     children: brand.logo
                                 }, void 0, false, {
                                     fileName: "[project]/components/Brands.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 125,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -713,29 +804,29 @@ function Brands() {
                                     children: brand.tagline
                                 }, void 0, false, {
                                     fileName: "[project]/components/Brands.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 128,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, brand.name, true, {
                             fileName: "[project]/components/Brands.jsx",
-                            lineNumber: 71,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Brands.jsx",
-                    lineNumber: 69,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Brands.jsx",
-            lineNumber: 61,
+            lineNumber: 111,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Brands.jsx",
-        lineNumber: 60,
+        lineNumber: 110,
         columnNumber: 5
     }, this);
 }
