@@ -11,10 +11,10 @@ export default function Hero() {
 
   useEffect(() => {
     async function fetchBanners() {
-      const response = await fetch('/api/data')
+      const response = await fetch('api/data')
       if (!response.ok) throw new Error('Unable to load banner data')
       const data = await response.json()
-    // lệnh kèm để deploy
+      // lệnh kèm để deploy
       const banners = data.banner ?? []
 
       const heroSlides = banners
