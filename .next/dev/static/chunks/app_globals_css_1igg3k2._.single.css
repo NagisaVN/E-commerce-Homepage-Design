@@ -1673,10 +1673,6 @@
     color: var(--color-blue-300);
   }
 
-  .placeholder-gray-400::placeholder {
-    color: var(--color-gray-400);
-  }
-
   .opacity-0 {
     opacity: 0;
   }
@@ -2009,10 +2005,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .sm\:grid-cols-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     .sm\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -2099,10 +2091,6 @@
       grid-column: span 2 / span 2;
     }
 
-    .lg\:flex {
-      display: flex;
-    }
-
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -2115,16 +2103,8 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .lg\:grid-cols-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-
     .lg\:grid-cols-7 {
       grid-template-columns: repeat(7, minmax(0, 1fr));
-    }
-
-    .lg\:gap-6 {
-      gap: calc(var(--spacing) * 6);
     }
 
     .lg\:px-12 {
