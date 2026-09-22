@@ -64,25 +64,25 @@ const specs = [
 ]
 
 const descriptionHTML = `
-<h3>Stay Fresh, Stay Smart</h3>
-<p>The <strong>Samsung Inverter 208L Refrigerator</strong> brings digital precision to everyday freshness. Engineered for families who want reliable, energy-efficient cooling without compromise, this top-freezer refrigerator features Samsung's signature Digital Inverter compressor.</p>
-<h3>Key Features</h3>
+<h3>Giữ Tươi, Giữ Thông Minh</h3>
+<p><strong>Tủ lạnh Samsung Inverter 208L</strong> mang đến sự chính xác kỹ thuật số cho việc giữ tươi hàng ngày. Được thiết kế cho những gia đình muốn làm lạnh hiệu quả và tiết kiệm năng lượng, tủ lạnh nguyên tắc này sử dụng máy nén Digital Inverter đặc trưng của Samsung.</p>
+<h3>Tính Năng Nổi Bật</h3>
 <ul>
-  <li><strong>Digital Inverter Compressor</strong> — Runs quieter, lasts longer, and consumes up to 46% less energy. Backed by a 10-year warranty on the compressor.</li>
-  <li><strong>No Frost Technology</strong> — Eliminates frost build-up automatically so you never need to manually defrost.</li>
-  <li><strong>Eco-Friendly R32 Refrigerant</strong> — Lower Global Warming Potential, better for the environment.</li>
-  <li><strong>Stabilizer-Free Operation</strong> — Works safely across 100V–300V voltage range without an external stabilizer.</li>
-  <li><strong>Tempered Glass Shelves</strong> — Spill-proof shelves support up to 100 kg combined load.</li>
+  <li><strong>Máy nén Digital Inverter</strong> — Vận hành im ắng hơn, bền hơn và tiêu thụ điện ít hơn 46%. Bảo hành máy nén 10 năm.</li>
+  <li><strong>Công nghệ No Frost</strong> — Tự động loại bỏ tuyết đóng, không cần xả đá thủ công.</li>
+  <li><strong>Gas lạnh R32 thân thiện môi trường</strong> — Chỉ số GWP thấp hơn, tốt hơn cho môi trường.</li>
+  <li><strong>Hoạt động không cần ổn áp</strong> — Hoạt động an toàn trong dải điện áp 100V–300V mà không cần ổn áp ngoài.</li>
+  <li><strong>Khay kính cường lực</strong> — Khay chống tràn, chịu tải tới 100 kg.</li>
 </ul>
-<h3>What's in the Box</h3>
+<h3>Trong Hộp Có Gì</h3>
 <ul>
-  <li>1× Samsung RT20T3021S2 Refrigerator</li>
-  <li>2× Adjustable door bins</li>
-  <li>1× Vegetable crisper drawer</li>
-  <li>User manual & warranty card</li>
+  <li>1× Tủ lạnh Samsung RT20T3021S2</li>
+  <li>2× Khay cửa có thể điều chỉnh</li>
+  <li>1× Ngăn kéo rau củ</li>
+  <li>Hướng dẫn sử dụng & phiếu bảo hành</li>
 </ul>
-<h3>Warranty</h3>
-<p>1-year comprehensive warranty + <strong>10-year warranty on the Digital Inverter compressor</strong>. Free installation within 3 business days of delivery.</p>
+<h3>Bảo Hành</h3>
+<p>Bảo hành toàn diện 1 năm + <strong>bảo hành 10 năm cho máy nén Digital Inverter</strong>. Lắp đặt miễn phí trong vòng 3 ngày làm việc kể từ khi giao hàng.</p>
 `
 
 function StarRow({ filled, half }) {
@@ -134,7 +134,7 @@ function AiExplainButton({ text }) {
           <path d="M7 1.5l1 3h3l-2.4 1.8.9 2.7-2.5-1.8-2.5 1.8.9-2.7L3 4.5h3z" fill="#1D4ED8" />
           <circle cx="11" cy="2.5" r="1" fill="#60A5FA" />
         </svg>
-        AI Explain
+        AI Giải thích
       </button>
 
       {open && (
@@ -148,7 +148,7 @@ function AiExplainButton({ text }) {
               </svg>
             </div>
             <div>
-              <p className="text-xs font-bold text-brand-dark font-display mb-1.5">AI Explanation</p>
+              <p className="text-xs font-bold text-brand-dark font-display mb-1.5">Giải thích AI</p>
               <p className="text-xs text-gray-600 font-body leading-relaxed">{text}</p>
             </div>
           </div>
@@ -192,9 +192,9 @@ export default function ProductDetail() {
       <div className="border-b border-gray-100 bg-brand-pale">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3">
           <nav className="flex items-center gap-2 text-xs font-body text-gray-400">
-            <Link href="/" className="hover:text-brand transition-colors">Home</Link>
+            <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
             <span>/</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">Refrigerators</span>
+            <span className="hover:text-brand cursor-pointer transition-colors">Tủ lạnh</span>
             <span>/</span>
             <span className="hover:text-brand cursor-pointer transition-colors">Samsung</span>
             <span>/</span>
@@ -215,7 +215,7 @@ export default function ProductDetail() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute top-4 left-4 bg-brand text-white text-sm font-bold font-display px-3 py-1.5 rounded-xl shadow-lg">
-                -{product.discount}% OFF
+                -{product.discount}% GIẢM
               </div>
             </div>
 
@@ -237,9 +237,9 @@ export default function ProductDetail() {
 
             <div className="grid grid-cols-3 gap-2 mt-2">
               {[
-                { icon: '🚚', label: 'Free Delivery', sub: 'Within 3 days' },
-                { icon: '🛡️', label: '2-Year Warranty', sub: '+ 10yr compressor' },
-                { icon: '↩️', label: '30-Day Returns', sub: 'Hassle-free' },
+                { icon: '🚚', label: 'Miễn phí giao hàng', sub: 'Trong 3 ngày' },
+                { icon: '🛡️', label: 'Bảo hành 2 năm', sub: '+ 10 năm máy nén' },
+                { icon: '↩️', label: 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
               ].map(b => (
                 <div key={b.label} className="bg-brand-pale rounded-xl p-3 text-center border border-brand-light">
                   <div className="text-xl mb-1">{b.icon}</div>
@@ -266,22 +266,22 @@ export default function ProductDetail() {
               <div className="flex items-center gap-3 mt-3">
                 <StarRow filled={4} half />
                 <span className="text-sm font-bold text-amber-500 font-display">{product.rating}</span>
-                <span className="text-sm text-gray-400 font-body">({product.reviews.toLocaleString()} reviews)</span>
+                <span className="text-sm text-gray-400 font-body">({product.reviews.toLocaleString()} đánh giá)</span>
                 <span className="text-xs text-green-600 font-semibold font-display bg-green-50 px-2 py-0.5 rounded-full">
-                  ✓ In Stock
+                  ✓ Còn hàng
                 </span>
               </div>
             </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-3 py-3 border-y border-gray-100">
-              <span className="text-4xl font-display font-bold text-gray-900">${product.price}</span>
-              <span className="text-xl text-gray-300 line-through font-body">${product.original}</span>
+              <span className="text-4xl font-display font-bold text-gray-900">{product.price.toLocaleString('vi-VN')}₫</span>
+              <span className="text-xl text-gray-300 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>
               <div className="ml-auto flex flex-col items-end">
                 <span className="text-green-600 font-bold font-display text-sm">
-                  Save ${product.original - product.price}
+                  Tiết kiệm {(product.original - product.price).toLocaleString('vi-VN')}₫
                 </span>
-                <span className="text-xs text-gray-400 font-body">Incl. taxes & fees</span>
+                <span className="text-xs text-gray-400 font-body">Đã bao gồm thuế & phí</span>
               </div>
             </div>
 
@@ -296,23 +296,23 @@ export default function ProductDetail() {
                       <circle cx="13" cy="3" r="1.2" fill="#93C5FD" />
                     </svg>
                   </div>
-                  <p className="text-sm font-bold font-display text-brand-dark">✨ AI Review Summary</p>
+                  <p className="text-sm font-bold font-display text-brand-dark">✨ Tóm tắt đánh giá AI</p>
                   <span className="ml-auto text-[11px] text-brand bg-white border border-blue-200 px-2 py-0.5 rounded-full font-body">
-                    Based on {product.reviews.toLocaleString()} reviews
+                    Dựa trên {product.reviews.toLocaleString()} đánh giá
                   </span>
                 </div>
 
                 <p className="text-sm text-gray-700 font-body leading-relaxed mb-3">
-                  95% of buyers love the <strong className="text-gray-900">fast cooling feature</strong>, but some mention the{' '}
-                  <span className="text-amber-700 font-medium">side panels get slightly warm</span> during heavy use — a normal characteristic of this compressor type.
+                  95% người mua yêu thích tính năng <strong className="text-gray-900">làm lạnh nhanh</strong>, nhưng một số đề cập{' '}
+                  <span className="text-amber-700 font-medium">thành bên hơi ấm khi sử dụng nhiều</span> — đây là đặc điểm bình thường của loại máy nén này.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-3.5">
                   {[
-                    { label: '👍 Fast cooling', color: 'green' },
-                    { label: '👍 Whisper quiet', color: 'green' },
-                    { label: '👍 Energy saver', color: 'green' },
-                    { label: '⚠️ Warm side panels', color: 'amber' },
+                    { label: '👍 Làm lạnh nhanh', color: 'green' },
+                    { label: '👍 Siêu êm', color: 'green' },
+                    { label: '👍 Tiết kiệm điện', color: 'green' },
+                    { label: '⚠️ Thành bên hơi ấm', color: 'amber' },
                   ].map(tag => (
                     <div
                       key={tag.label}
@@ -329,8 +329,8 @@ export default function ProductDetail() {
 
                 <div>
                   <div className="flex items-center justify-between text-[11px] font-body text-gray-400 mb-1">
-                    <span>Overall Sentiment</span>
-                    <span className="text-green-600 font-semibold">95% Positive</span>
+                    <span>Cảm nhận chung</span>
+                    <span className="text-green-600 font-semibold">95% Tích cực</span>
                   </div>
                   <div className="h-1.5 rounded-full bg-gray-100 overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full" style={{ width: '95%' }} />
@@ -342,7 +342,7 @@ export default function ProductDetail() {
             {/* Quantity + CTA */}
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <span className="text-sm font-medium text-gray-600 font-body w-16">Quantity</span>
+                <span className="text-sm font-medium text-gray-600 font-body w-16">Số lượng</span>
                 <div className="flex items-center border border-gray-200 rounded-xl overflow-hidden">
                   <button
                     onClick={() => setQty(q => Math.max(1, q - 1))}
@@ -359,7 +359,7 @@ export default function ProductDetail() {
                   </button>
                 </div>
                 <span className="text-sm text-gray-400 font-body">
-                  × ${product.price} = <strong className="text-gray-700">${product.price * qty}</strong>
+                  × {product.price.toLocaleString('vi-VN')}₫ = <strong className="text-gray-700">{(product.price * qty).toLocaleString('vi-VN')}₫</strong>
                 </span>
               </div>
 
@@ -372,7 +372,7 @@ export default function ProductDetail() {
                       : 'bg-brand hover:bg-brand-dark text-white shadow-blue-200'
                   }`}
                 >
-                  {buyState === 'added' ? '✓ Order Placed!' : '⚡ Buy Now'}
+                  {buyState === 'added' ? '✓ Đã đặt hàng!' : '⚡ Mua ngay'}
                 </button>
                 <button
                   onClick={handleAddCart}
@@ -382,12 +382,12 @@ export default function ProductDetail() {
                       : 'bg-white border-brand text-brand hover:bg-brand-pale'
                   }`}
                 >
-                  {cartState === 'added' ? '✓ Added to Cart' : '🛒 Add to Cart'}
+                  {cartState === 'added' ? '✓ Đã thêm vào giỏ' : '🛒 Thêm vào giỏ'}
                 </button>
               </div>
 
               <p className="text-xs text-gray-400 font-body text-center">
-                Free installation · 30-day returns · Secure checkout
+                Miễn phí lắp đặt · Đổi trả 30 ngày · Thanh toán an toàn
               </p>
             </div>
           </div>
@@ -396,7 +396,7 @@ export default function ProductDetail() {
         {/* Tabs */}
         <div className="mt-14">
           <div className="flex gap-1 border-b border-gray-100 mb-8">
-            {[['specs', 'Specifications'], ['description', 'Description'], ['reviews', 'Reviews']].map(([key, label]) => (
+            {[['specs', 'Thông số kỹ thuật'], ['description', 'Mô tả'], ['reviews', 'Đánh giá']].map(([key, label]) => (
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
@@ -445,7 +445,7 @@ export default function ProductDetail() {
               <div className="bg-brand-pale rounded-2xl p-6 flex flex-col items-center text-center border border-brand-light">
                 <span className="text-6xl font-display font-bold text-gray-900">{product.rating}</span>
                 <StarRow filled={4} half />
-                <span className="text-sm text-gray-400 font-body mt-1">{product.reviews.toLocaleString()} reviews</span>
+                <span className="text-sm text-gray-400 font-body mt-1">{product.reviews.toLocaleString()} đánh giá</span>
                 <div className="w-full mt-6 flex flex-col gap-2">
                   {ratingBreakdown.map(r => (
                     <div key={r.stars} className="flex items-center gap-2 text-xs font-body">
@@ -488,7 +488,7 @@ export default function ProductDetail() {
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="font-semibold font-display text-sm text-gray-900">{r.name}</span>
-                          <span className="text-[11px] text-green-600 font-body bg-green-50 px-1.5 py-0.5 rounded-full">✓ Verified</span>
+                          <span className="text-[11px] text-green-600 font-body bg-green-50 px-1.5 py-0.5 rounded-full">✓ Đã xác minh</span>
                         </div>
                         <div className="flex items-center gap-2 mt-0.5">
                           <StarRow filled={r.stars} />

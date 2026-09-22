@@ -163,7 +163,7 @@ function Brands() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap",
-                                children: "Top Brands"
+                                children: "Thương Hiệu Hàng Đầu"
                             }, void 0, false, {
                                 fileName: "[project]/components/Brands.jsx",
                                 lineNumber: 75,
@@ -236,7 +236,7 @@ function Brands() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap",
-                            children: "Top Brands"
+                            children: "Thương Hiệu Hàng Đầu"
                         }, void 0, false, {
                             fileName: "[project]/components/Brands.jsx",
                             lineNumber: 100,
@@ -319,7 +319,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 const categories = [
     {
         name: 'Tủ lạnh',
-        count: '240+ models',
+        count: '240+ mẫu',
         bg: '#EFF6FF',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -380,7 +380,7 @@ const categories = [
     },
     {
         name: 'Máy Lạnh',
-        count: '180+ models',
+        count: '180+ mẫu',
         bg: '#E0F2FE',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -426,7 +426,7 @@ const categories = [
     },
     {
         name: 'Máy Giặt',
-        count: '120+ models',
+        count: '120+ mẫu',
         bg: '#EFF6FF',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -497,7 +497,7 @@ const categories = [
     },
     {
         name: 'Lò Vi Sóng',
-        count: '95+ models',
+        count: '95+ mẫu',
         bg: '#F0F9FF',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -561,7 +561,7 @@ const categories = [
     },
     {
         name: 'Máy Rửa Chén',
-        count: '60+ models',
+        count: '60+ mẫu',
         bg: '#EFF6FF',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -630,7 +630,7 @@ const categories = [
     },
     {
         name: 'Máy Nước Nóng',
-        count: '80+ models',
+        count: '80+ mẫu',
         bg: '#FFF7ED',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -705,7 +705,7 @@ const categories = [
     },
     {
         name: 'Loa Thanh',
-        count: '50+ models',
+        count: '50+ mẫu',
         bg: '#FFF7ED',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
             viewBox: "0 0 32 32",
@@ -790,7 +790,7 @@ function Categories() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1",
-                                    children: "Browse"
+                                    children: "Khám phá"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Categories.jsx",
                                     lineNumber: 107,
@@ -798,7 +798,7 @@ function Categories() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-3xl font-display font-bold text-gray-900",
-                                    children: "Shop by Category"
+                                    children: "Danh Mục Sản Phẩm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Categories.jsx",
                                     lineNumber: 108,
@@ -813,7 +813,7 @@ function Categories() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",
                             className: "text-sm text-brand font-medium hover:underline font-body hidden sm:block",
-                            children: "View all categories →"
+                            children: "Xem tất cả danh mục →"
                         }, void 0, false, {
                             fileName: "[project]/components/Categories.jsx",
                             lineNumber: 110,
@@ -917,12 +917,12 @@ const products = [
         discount: 39,
         rating: 4.8,
         reviews: 1284,
-        tag: 'Best Seller',
+        tag: 'Bán chạy',
         image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&h=500&fit=crop&auto=format',
         features: [
-            '617L capacity',
-            'No Frost',
-            'A+++ Energy'
+            'Dung tích 617L',
+            'Không đóng tuyết',
+            'Năng lượng A+++'
         ]
     },
     {
@@ -935,7 +935,7 @@ const products = [
         discount: 33,
         rating: 4.7,
         reviews: 847,
-        tag: 'Tet Deal',
+        tag: 'Ưu đãi Tết',
         image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500&h=500&fit=crop&auto=format',
         features: [
             'TurboWash™ 360°',
@@ -955,9 +955,9 @@ const products = [
         reviews: 523,
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop&auto=format',
         features: [
-            'Inverter tech',
+            'Công nghệ Inverter',
             'EcoNavi',
-            '-15°C Heating'
+            'Sưởi ấm -15°C'
         ]
     },
     {
@@ -970,12 +970,12 @@ const products = [
         discount: 31,
         rating: 4.5,
         reviews: 412,
-        tag: 'AI Powered',
+        tag: 'Tích hợp AI',
         image: 'https://images.unsplash.com/photo-1556909144-f2a5ac8d1a80?w=500&h=500&fit=crop&auto=format',
         features: [
-            'Voice control',
-            '32L capacity',
-            'Auto cook'
+            'Điều khiển giọng nói',
+            'Dung tích 32L',
+            'Nấu tự động'
         ]
     },
     {
@@ -1014,11 +1014,11 @@ const products = [
     }
 ];
 const tabs = [
-    'All',
-    'Refrigerators',
-    'Air Conditioners',
-    'Washing Machines',
-    'Microwaves'
+    'Tất cả',
+    'Tủ lạnh',
+    'Máy lạnh',
+    'Máy giặt',
+    'Lò vi sóng'
 ];
 function StarIcon({ filled }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1194,8 +1194,8 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-xl font-bold font-display text-gray-900",
                                 children: [
-                                    "$",
-                                    product.price
+                                    product.price.toLocaleString('vi-VN'),
+                                    "₫"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProducts.jsx",
@@ -1205,8 +1205,8 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-sm text-gray-400 line-through font-body",
                                 children: [
-                                    "$",
-                                    product.original
+                                    product.original.toLocaleString('vi-VN'),
+                                    "₫"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProducts.jsx",
@@ -1216,8 +1216,9 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-xs text-green-600 font-semibold font-display ml-auto",
                                 children: [
-                                    "Save $",
-                                    product.original - product.price
+                                    "Tiết kiệm ",
+                                    (product.original - product.price).toLocaleString('vi-VN'),
+                                    "₫"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FeaturedProducts.jsx",
@@ -1236,7 +1237,7 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: product.id === 1 ? '/product/samsung-inverter-208l' : `/product/${product.id}`,
                                 className: "flex-1 py-2.5 rounded-xl text-sm font-semibold font-display text-center border border-brand text-brand hover:bg-brand-pale transition-colors",
-                                children: "View"
+                                children: "Xem"
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProducts.jsx",
                                 lineNumber: 165,
@@ -1245,7 +1246,7 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: handleAdd,
                                 className: `flex-1 py-2.5 rounded-xl text-sm font-semibold font-display transition-all duration-200 active:scale-95 ${added ? 'bg-green-500 text-white' : 'bg-brand hover:bg-brand-dark text-white'}`,
-                                children: added ? '✓ Added' : 'Add to Cart'
+                                children: added ? '✓ Đã thêm' : 'Thêm vào giỏ'
                             }, void 0, false, {
                                 fileName: "[project]/components/FeaturedProducts.jsx",
                                 lineNumber: 171,
@@ -1271,8 +1272,8 @@ function ProductCard({ product }) {
     }, this);
 }
 function FeaturedProducts() {
-    const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('All');
-    const filtered = activeTab === 'All' ? products : products.filter((p)=>p.category.startsWith(activeTab.slice(0, -1)));
+    const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('Tất cả');
+    const filtered = activeTab === 'Tất cả' ? products : products.filter((p)=>p.category.startsWith(activeTab.slice(0, -1)));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-14 bg-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1285,7 +1286,7 @@ function FeaturedProducts() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1",
-                                    children: "This Week"
+                                    children: "Tuần này"
                                 }, void 0, false, {
                                     fileName: "[project]/components/FeaturedProducts.jsx",
                                     lineNumber: 197,
@@ -1293,7 +1294,7 @@ function FeaturedProducts() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-3xl font-display font-bold text-gray-900",
-                                    children: "Featured Products"
+                                    children: "Sản Phẩm Nổi Bật"
                                 }, void 0, false, {
                                     fileName: "[project]/components/FeaturedProducts.jsx",
                                     lineNumber: 198,
@@ -1308,7 +1309,7 @@ function FeaturedProducts() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",
                             className: "text-sm text-brand font-medium hover:underline font-body hidden sm:block",
-                            children: "View all products →"
+                            children: "Xem tất cả sản phẩm →"
                         }, void 0, false, {
                             fileName: "[project]/components/FeaturedProducts.jsx",
                             lineNumber: 200,

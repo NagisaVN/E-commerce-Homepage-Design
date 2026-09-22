@@ -17,8 +17,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'CoolHome – Smart Home Appliances',
-  description: 'AI-powered home appliance e-commerce — fridges, ACs, washing machines and more.',
+  title: 'TechZone – Điện Máy Thông Minh',
+  description: 'Cửa hàng điện máy gia dụng thông minh hỗ trợ AI — tủ lạnh, máy lạnh, máy giặt và nhiều hơn nữa.',
 }
 
 export default function RootLayout({ children }) {

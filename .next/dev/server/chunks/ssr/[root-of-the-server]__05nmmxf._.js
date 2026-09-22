@@ -78,8 +78,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$jsx_
 ;
 ;
 const metadata = {
-    title: 'CoolHome – Smart Home Appliances',
-    description: 'AI-powered home appliance e-commerce — fridges, ACs, washing machines and more.'
+    title: 'TechZone – Điện Máy Thông Minh',
+    description: 'Cửa hàng điện máy gia dụng thông minh hỗ trợ AI — tủ lạnh, máy lạnh, máy giặt và nhiều hơn nữa.'
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -140,27 +140,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 ;
 const links = {
-    Products: [
-        'Refrigerators',
-        'Air Conditioners',
-        'Washing Machines',
-        'Microwaves',
-        'Dishwashers',
-        'Water Heaters'
+    'Sản phẩm': [
+        'Tủ lạnh',
+        'Máy lạnh',
+        'Máy giặt',
+        'Lò vi sóng',
+        'Máy rửa chén',
+        'Máy nước nóng'
     ],
-    Support: [
-        'Track My Order',
-        'Installation Service',
-        'Warranty Claims',
-        'Repair Request',
-        'Contact Us'
+    'Hỗ trợ': [
+        'Theo dõi đơn hàng',
+        'Dịch vụ lắp đặt',
+        'Bảo hành',
+        'Yêu cầu sửa chữa',
+        'Liên hệ'
     ],
-    Company: [
-        'About CoolHome',
-        'AI Technology',
-        'Careers',
-        'Press',
-        'Sustainability'
+    'Công ty': [
+        'Về TechZone',
+        'Công nghệ AI',
+        'Tuyển dụng',
+        'Tin tức',
+        'Phát triển bền vững'
     ]
 };
 function Footer() {
@@ -225,7 +225,7 @@ function Footer() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xl font-bold font-display text-white",
-                                                children: "CoolHome"
+                                                children: "TechZone"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.jsx",
                                                 lineNumber: 22,
@@ -239,7 +239,7 @@ function Footer() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-blue-300 font-body text-sm leading-relaxed mb-5",
-                                        children: "Vietnam's #1 AI-powered home appliance store. Premium brands, expert advice, fast delivery."
+                                        children: "Cửa hàng điện máy gia dụng thông minh số 1 Việt Nam. Thương hiệu cao cấp, tư vấn chuyên gia, giao hàng nhanh."
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.jsx",
                                         lineNumber: 24,
@@ -250,15 +250,15 @@ function Footer() {
                                         children: [
                                             {
                                                 icon: '🚚',
-                                                text: 'Free delivery on $299+'
+                                                text: 'Miễn phí giao hàng từ 299K'
                                             },
                                             {
                                                 icon: '🛡️',
-                                                text: '2-year extended warranty'
+                                                text: 'Bảo hành mở rộng 2 năm'
                                             },
                                             {
                                                 icon: '💳',
-                                                text: '0% financing, 36 months'
+                                                text: 'Trả góp 0%, 36 tháng'
                                             }
                                         ].map((b)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-2.5 text-xs text-blue-300 font-body",
@@ -347,7 +347,7 @@ function Footer() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                             className: "font-display font-semibold text-white mb-1",
-                                            children: "Get AI deals in your inbox"
+                                            children: "Nhận ưu đãi AI qua email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Footer.jsx",
                                             lineNumber: 60,
@@ -355,7 +355,7 @@ function Footer() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-blue-300 text-sm font-body",
-                                            children: "Weekly curated deals, buying guides, and exclusive offers."
+                                            children: "Ʈu đãi hàng tuần, hướng dẫn mua sắm và khuyến mãi độc quyền."
                                         }, void 0, false, {
                                             fileName: "[project]/components/Footer.jsx",
                                             lineNumber: 61,
@@ -381,7 +381,7 @@ function Footer() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "bg-brand hover:bg-brand-mid text-white px-5 py-2.5 rounded-xl text-sm font-semibold font-display transition-colors whitespace-nowrap",
-                                            children: "Subscribe"
+                                            children: "Đăng ký"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Footer.jsx",
                                             lineNumber: 69,
@@ -417,7 +417,7 @@ function Footer() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-blue-400 text-xs font-body",
-                            children: "© 2024 CoolHome. All rights reserved."
+                            children: "© 2024 TechZone. Tất cả các quyền được bảo lưu."
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.jsx",
                             lineNumber: 79,
@@ -426,9 +426,9 @@ function Footer() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-5",
                             children: [
-                                'Privacy Policy',
-                                'Terms of Service',
-                                'Cookie Policy'
+                                'Chính sách bảo mật',
+                                'Điều khoản sử dụng',
+                                'Chính sách cookie'
                             ].map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "#",
                                     className: "text-blue-400 hover:text-white text-xs font-body transition-colors",

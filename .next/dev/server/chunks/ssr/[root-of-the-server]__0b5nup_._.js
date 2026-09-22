@@ -151,10 +151,10 @@ function Header() {
     const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const { cartCount } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$CartContext$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCart"])();
     const navItems = [
-        'Products',
-        'Brands',
-        'Deals',
-        'Support'
+        'Sản phẩm',
+        'Thương hiệu',
+        'Khuyến mãi',
+        'Hỗ trợ'
     ];
     const SearchBox = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: `flex items-center gap-2.5 rounded-xl border-2 bg-brand-pale px-3 py-2 transition-all duration-200 sm:gap-3 sm:px-4 sm:py-2.5 ${focused ? 'border-brand bg-white shadow-lg shadow-blue-100' : 'border-brand-light hover:border-brand-accent'}`,
@@ -166,8 +166,8 @@ function Header() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                     type: "text",
-                    placeholder: "Ask AI: Find a fridge for a family of 4 under $500...",
-                    "aria-label": "Search products with AI",
+                    placeholder: "Hỏi AI: Tìm tủ lạnh cho gia đình 4 người dưới 10 triệu...",
+                    "aria-label": "Tìm kiếm sản phẩm với AI",
                     className: "min-w-0 flex-1 bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400 font-body",
                     onFocus: ()=>setFocused(true),
                     onBlur: ()=>setFocused(false)
@@ -178,7 +178,7 @@ function Header() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     className: "flex-shrink-0 rounded-lg bg-brand px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark sm:px-4 font-display",
-                    children: "Search"
+                    children: "Tìm kiếm"
                 }, void 0, false, {
                     fileName: "[project]/components/Header.jsx",
                     lineNumber: 25,
@@ -195,7 +195,7 @@ function Header() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "bg-brand-dark py-1.5 text-center text-xs font-body tracking-wide text-white",
-                children: "Free shipping on orders over $299 · 24/7 AI Support Available"
+                children: "Miễn phí vận chuyển đơn hàng từ 299K · Hỗ trợ AI 24/7"
             }, void 0, false, {
                 fileName: "[project]/components/Header.jsx",
                 lineNumber: 31,
@@ -274,7 +274,7 @@ function Header() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/dang-nhap",
-                                        "aria-label": "Sign in",
+                                        "aria-label": "Đăng nhập",
                                         className: "flex items-center gap-2 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -289,7 +289,7 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 44,
-                                                        columnNumber: 290
+                                                        columnNumber: 292
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                                                         cx: "12",
@@ -298,21 +298,21 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 44,
-                                                        columnNumber: 342
+                                                        columnNumber: 344
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 44,
-                                                columnNumber: 193
+                                                columnNumber: 195
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "hidden text-sm font-medium font-body 2xl:block",
-                                                children: "Sign In"
+                                                children: "Đăng nhập"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 44,
-                                                columnNumber: 379
+                                                columnNumber: 381
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -322,7 +322,7 @@ function Header() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/gio-hang",
-                                        "aria-label": "Cart",
+                                        "aria-label": "Giỏ hàng",
                                         className: "relative flex items-center gap-1.5 rounded-lg px-2 py-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand sm:px-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -337,7 +337,7 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-                                                        columnNumber: 297
+                                                        columnNumber: 301
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                                         x1: "3",
@@ -347,28 +347,28 @@ function Header() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-                                                        columnNumber: 356
+                                                        columnNumber: 360
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "M16 10a4 4 0 01-8 0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Header.jsx",
                                                         lineNumber: 45,
-                                                        columnNumber: 393
+                                                        columnNumber: 397
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-                                                columnNumber: 200
+                                                columnNumber: 204
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "hidden text-sm font-medium font-body 2xl:block",
-                                                children: "Cart"
+                                                children: "Giỏ hàng"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-                                                columnNumber: 431
+                                                columnNumber: 435
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-bold text-white",
@@ -376,7 +376,7 @@ function Header() {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 45,
-                                                columnNumber: 525
+                                                columnNumber: 533
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -386,7 +386,7 @@ function Header() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
-                                        "aria-label": "Toggle navigation menu",
+                                        "aria-label": "Mở menu điều hướng",
                                         "aria-expanded": menuOpen,
                                         onClick: ()=>setMenuOpen((open)=>!open),
                                         className: "rounded-lg p-2 text-gray-600 transition-colors hover:bg-brand-light hover:text-brand xl:hidden",
@@ -402,18 +402,18 @@ function Header() {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 46,
-                                                columnNumber: 372
+                                                columnNumber: 368
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                 d: "M4 7h16M4 12h16M4 17h16"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.jsx",
                                                 lineNumber: 46,
-                                                columnNumber: 408
+                                                columnNumber: 404
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/Header.jsx",
                                             lineNumber: 46,
-                                            columnNumber: 246
+                                            columnNumber: 242
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.jsx",

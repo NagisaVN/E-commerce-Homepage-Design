@@ -116,25 +116,25 @@ const specs = [
     }
 ];
 const descriptionHTML = `
-<h3>Stay Fresh, Stay Smart</h3>
-<p>The <strong>Samsung Inverter 208L Refrigerator</strong> brings digital precision to everyday freshness. Engineered for families who want reliable, energy-efficient cooling without compromise, this top-freezer refrigerator features Samsung's signature Digital Inverter compressor.</p>
-<h3>Key Features</h3>
+<h3>Giữ Tươi, Giữ Thông Minh</h3>
+<p><strong>Tủ lạnh Samsung Inverter 208L</strong> mang đến sự chính xác kỹ thuật số cho việc giữ tươi hàng ngày. Được thiết kế cho những gia đình muốn làm lạnh hiệu quả và tiết kiệm năng lượng, tủ lạnh nguyên tắc này sử dụng máy nén Digital Inverter đặc trưng của Samsung.</p>
+<h3>Tính Năng Nổi Bật</h3>
 <ul>
-  <li><strong>Digital Inverter Compressor</strong> — Runs quieter, lasts longer, and consumes up to 46% less energy. Backed by a 10-year warranty on the compressor.</li>
-  <li><strong>No Frost Technology</strong> — Eliminates frost build-up automatically so you never need to manually defrost.</li>
-  <li><strong>Eco-Friendly R32 Refrigerant</strong> — Lower Global Warming Potential, better for the environment.</li>
-  <li><strong>Stabilizer-Free Operation</strong> — Works safely across 100V–300V voltage range without an external stabilizer.</li>
-  <li><strong>Tempered Glass Shelves</strong> — Spill-proof shelves support up to 100 kg combined load.</li>
+  <li><strong>Máy nén Digital Inverter</strong> — Vận hành im ắng hơn, bền hơn và tiêu thụ điện ít hơn 46%. Bảo hành máy nén 10 năm.</li>
+  <li><strong>Công nghệ No Frost</strong> — Tự động loại bỏ tuyết đóng, không cần xả đá thủ công.</li>
+  <li><strong>Gas lạnh R32 thân thiện môi trường</strong> — Chỉ số GWP thấp hơn, tốt hơn cho môi trường.</li>
+  <li><strong>Hoạt động không cần ổn áp</strong> — Hoạt động an toàn trong dải điện áp 100V–300V mà không cần ổn áp ngoài.</li>
+  <li><strong>Khay kính cường lực</strong> — Khay chống tràn, chịu tải tới 100 kg.</li>
 </ul>
-<h3>What's in the Box</h3>
+<h3>Trong Hộp Có Gì</h3>
 <ul>
-  <li>1× Samsung RT20T3021S2 Refrigerator</li>
-  <li>2× Adjustable door bins</li>
-  <li>1× Vegetable crisper drawer</li>
-  <li>User manual & warranty card</li>
+  <li>1× Tủ lạnh Samsung RT20T3021S2</li>
+  <li>2× Khay cửa có thể điều chỉnh</li>
+  <li>1× Ngăn kéo rau củ</li>
+  <li>Hướng dẫn sử dụng & phiếu bảo hành</li>
 </ul>
-<h3>Warranty</h3>
-<p>1-year comprehensive warranty + <strong>10-year warranty on the Digital Inverter compressor</strong>. Free installation within 3 business days of delivery.</p>
+<h3>Bảo Hành</h3>
+<p>Bảo hành toàn diện 1 năm + <strong>bảo hành 10 năm cho máy nén Digital Inverter</strong>. Lắp đặt miễn phí trong vòng 3 ngày làm việc kể từ khi giao hàng.</p>
 `;
 function StarRow({ filled, half }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -270,7 +270,7 @@ function AiExplainButton({ text }) {
                         lineNumber: 133,
                         columnNumber: 9
                     }, this),
-                    "AI Explain"
+                    "AI Giải thích"
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ProductDetail.jsx",
@@ -330,7 +330,7 @@ function AiExplainButton({ text }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xs font-bold text-brand-dark font-display mb-1.5",
-                                        children: "AI Explanation"
+                                        children: "Giải thích AI"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ProductDetail.jsx",
                                         lineNumber: 151,
@@ -422,7 +422,7 @@ function ProductDetail() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
                                 className: "hover:text-brand transition-colors",
-                                children: "Home"
+                                children: "Trang chủ"
                             }, void 0, false, {
                                 fileName: "[project]/components/ProductDetail.jsx",
                                 lineNumber: 195,
@@ -437,7 +437,7 @@ function ProductDetail() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "hover:text-brand cursor-pointer transition-colors",
-                                children: "Refrigerators"
+                                children: "Tủ lạnh"
                             }, void 0, false, {
                                 fileName: "[project]/components/ProductDetail.jsx",
                                 lineNumber: 197,
@@ -515,7 +515,7 @@ function ProductDetail() {
                                                 children: [
                                                     "-",
                                                     product.discount,
-                                                    "% OFF"
+                                                    "% GIẢM"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/ProductDetail.jsx",
@@ -557,18 +557,18 @@ function ProductDetail() {
                                         children: [
                                             {
                                                 icon: '🚚',
-                                                label: 'Free Delivery',
-                                                sub: 'Within 3 days'
+                                                label: 'Miễn phí giao hàng',
+                                                sub: 'Trong 3 ngày'
                                             },
                                             {
                                                 icon: '🛡️',
-                                                label: '2-Year Warranty',
-                                                sub: '+ 10yr compressor'
+                                                label: 'Bảo hành 2 năm',
+                                                sub: '+ 10 năm máy nén'
                                             },
                                             {
                                                 icon: '↩️',
-                                                label: '30-Day Returns',
-                                                sub: 'Hassle-free'
+                                                label: 'Đổi trả 30 ngày',
+                                                sub: 'Dễ dàng'
                                             }
                                         ].map((b)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "bg-brand-pale rounded-xl p-3 text-center border border-brand-light",
@@ -676,7 +676,7 @@ function ProductDetail() {
                                                         children: [
                                                             "(",
                                                             product.reviews.toLocaleString(),
-                                                            " reviews)"
+                                                            " đánh giá)"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
@@ -685,7 +685,7 @@ function ProductDetail() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-xs text-green-600 font-semibold font-display bg-green-50 px-2 py-0.5 rounded-full",
-                                                        children: "✓ In Stock"
+                                                        children: "✓ Còn hàng"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                         lineNumber: 270,
@@ -709,8 +709,8 @@ function ProductDetail() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-4xl font-display font-bold text-gray-900",
                                                 children: [
-                                                    "$",
-                                                    product.price
+                                                    product.price.toLocaleString('vi-VN'),
+                                                    "₫"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/ProductDetail.jsx",
@@ -720,8 +720,8 @@ function ProductDetail() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xl text-gray-300 line-through font-body",
                                                 children: [
-                                                    "$",
-                                                    product.original
+                                                    product.original.toLocaleString('vi-VN'),
+                                                    "₫"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/ProductDetail.jsx",
@@ -734,8 +734,9 @@ function ProductDetail() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-green-600 font-bold font-display text-sm",
                                                         children: [
-                                                            "Save $",
-                                                            product.original - product.price
+                                                            "Tiết kiệm ",
+                                                            (product.original - product.price).toLocaleString('vi-VN'),
+                                                            "₫"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
@@ -744,7 +745,7 @@ function ProductDetail() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-xs text-gray-400 font-body",
-                                                        children: "Incl. taxes & fees"
+                                                        children: "Đã bao gồm thuế & phí"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                         lineNumber: 284,
@@ -816,7 +817,7 @@ function ProductDetail() {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "text-sm font-bold font-display text-brand-dark",
-                                                                children: "✨ AI Review Summary"
+                                                                children: "✨ Tóm tắt đánh giá AI"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/ProductDetail.jsx",
                                                                 lineNumber: 299,
@@ -825,9 +826,9 @@ function ProductDetail() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "ml-auto text-[11px] text-brand bg-white border border-blue-200 px-2 py-0.5 rounded-full font-body",
                                                                 children: [
-                                                                    "Based on ",
+                                                                    "Dựa trên ",
                                                                     product.reviews.toLocaleString(),
-                                                                    " reviews"
+                                                                    " đánh giá"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/ProductDetail.jsx",
@@ -843,26 +844,26 @@ function ProductDetail() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-sm text-gray-700 font-body leading-relaxed mb-3",
                                                         children: [
-                                                            "95% of buyers love the ",
+                                                            "95% người mua yêu thích tính năng ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                                 className: "text-gray-900",
-                                                                children: "fast cooling feature"
+                                                                children: "làm lạnh nhanh"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/ProductDetail.jsx",
                                                                 lineNumber: 306,
-                                                                columnNumber: 42
+                                                                columnNumber: 53
                                                             }, this),
-                                                            ", but some mention the",
+                                                            ", nhưng một số đề cập",
                                                             ' ',
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-amber-700 font-medium",
-                                                                children: "side panels get slightly warm"
+                                                                children: "thành bên hơi ấm khi sử dụng nhiều"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/ProductDetail.jsx",
                                                                 lineNumber: 307,
                                                                 columnNumber: 19
                                                             }, this),
-                                                            " during heavy use — a normal characteristic of this compressor type."
+                                                            " — đây là đặc điểm bình thường của loại máy nén này."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
@@ -873,19 +874,19 @@ function ProductDetail() {
                                                         className: "flex flex-wrap gap-2 mb-3.5",
                                                         children: [
                                                             {
-                                                                label: '👍 Fast cooling',
+                                                                label: '👍 Làm lạnh nhanh',
                                                                 color: 'green'
                                                             },
                                                             {
-                                                                label: '👍 Whisper quiet',
+                                                                label: '👍 Siêu êm',
                                                                 color: 'green'
                                                             },
                                                             {
-                                                                label: '👍 Energy saver',
+                                                                label: '👍 Tiết kiệm điện',
                                                                 color: 'green'
                                                             },
                                                             {
-                                                                label: '⚠️ Warm side panels',
+                                                                label: '⚠️ Thành bên hơi ấm',
                                                                 color: 'amber'
                                                             }
                                                         ].map((tag)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -907,7 +908,7 @@ function ProductDetail() {
                                                                 className: "flex items-center justify-between text-[11px] font-body text-gray-400 mb-1",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Overall Sentiment"
+                                                                        children: "Cảm nhận chung"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                                         lineNumber: 332,
@@ -915,7 +916,7 @@ function ProductDetail() {
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-green-600 font-semibold",
-                                                                        children: "95% Positive"
+                                                                        children: "95% Tích cực"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                                         lineNumber: 333,
@@ -970,7 +971,7 @@ function ProductDetail() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-sm font-medium text-gray-600 font-body w-16",
-                                                        children: "Quantity"
+                                                        children: "Số lượng"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                         lineNumber: 345,
@@ -1014,19 +1015,19 @@ function ProductDetail() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-sm text-gray-400 font-body",
                                                         children: [
-                                                            "× $",
-                                                            product.price,
-                                                            " = ",
+                                                            "× ",
+                                                            product.price.toLocaleString('vi-VN'),
+                                                            "₫ = ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                                 className: "text-gray-700",
                                                                 children: [
-                                                                    "$",
-                                                                    product.price * qty
+                                                                    (product.price * qty).toLocaleString('vi-VN'),
+                                                                    "₫"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/ProductDetail.jsx",
                                                                 lineNumber: 362,
-                                                                columnNumber: 40
+                                                                columnNumber: 64
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
@@ -1046,7 +1047,7 @@ function ProductDetail() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: handleBuyNow,
                                                         className: `flex-1 py-3.5 rounded-xl font-display font-bold text-sm transition-all duration-200 active:scale-95 shadow-lg ${buyState === 'added' ? 'bg-green-500 text-white shadow-green-200' : 'bg-brand hover:bg-brand-dark text-white shadow-blue-200'}`,
-                                                        children: buyState === 'added' ? '✓ Order Placed!' : '⚡ Buy Now'
+                                                        children: buyState === 'added' ? '✓ Đã đặt hàng!' : '⚡ Mua ngay'
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                         lineNumber: 367,
@@ -1055,7 +1056,7 @@ function ProductDetail() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: handleAddCart,
                                                         className: `flex-1 py-3.5 rounded-xl font-display font-semibold text-sm border-2 transition-all duration-200 active:scale-95 ${cartState === 'added' ? 'bg-green-50 border-green-400 text-green-600' : 'bg-white border-brand text-brand hover:bg-brand-pale'}`,
-                                                        children: cartState === 'added' ? '✓ Added to Cart' : '🛒 Add to Cart'
+                                                        children: cartState === 'added' ? '✓ Đã thêm vào giỏ' : '🛒 Thêm vào giỏ'
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProductDetail.jsx",
                                                         lineNumber: 377,
@@ -1069,7 +1070,7 @@ function ProductDetail() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-xs text-gray-400 font-body text-center",
-                                                children: "Free installation · 30-day returns · Secure checkout"
+                                                children: "Miễn phí lắp đặt · Đổi trả 30 ngày · Thanh toán an toàn"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProductDetail.jsx",
                                                 lineNumber: 389,
@@ -1101,15 +1102,15 @@ function ProductDetail() {
                                 children: [
                                     [
                                         'specs',
-                                        'Specifications'
+                                        'Thông số kỹ thuật'
                                     ],
                                     [
                                         'description',
-                                        'Description'
+                                        'Mô tả'
                                     ],
                                     [
                                         'reviews',
-                                        'Reviews'
+                                        'Đánh giá'
                                     ]
                                 ].map(([key, label])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveTab(key),
@@ -1222,7 +1223,7 @@ function ProductDetail() {
                                                 className: "text-sm text-gray-400 font-body mt-1",
                                                 children: [
                                                     product.reviews.toLocaleString(),
-                                                    " reviews"
+                                                    " đánh giá"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/ProductDetail.jsx",
@@ -1334,7 +1335,7 @@ function ProductDetail() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$5_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-[11px] text-green-600 font-body bg-green-50 px-1.5 py-0.5 rounded-full",
-                                                                            children: "✓ Verified"
+                                                                            children: "✓ Đã xác minh"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/ProductDetail.jsx",
                                                                             lineNumber: 491,

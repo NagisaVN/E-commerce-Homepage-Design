@@ -73,7 +73,7 @@ export default function Brands() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="flex items-center gap-6 mb-8">
             <p className="text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap">
-              Top Brands
+              Thương Hiệu Hàng Đầu
             </p>
             <div className="flex-1 h-px bg-brand-light" />
           </div>
@@ -98,7 +98,7 @@ export default function Brands() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="flex items-center gap-6 mb-8">
           <p className="text-sm font-semibold font-display text-gray-400 uppercase tracking-widest whitespace-nowrap">
-            Top Brands
+            Thương Hiệu Hàng Đầu
           </p>
           <div className="flex-1 h-px bg-brand-light" />
         </div>
