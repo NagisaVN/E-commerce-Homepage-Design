@@ -51,12 +51,19 @@ export default async function ProductPage({ params }) {
   }
 
   const { product, chiTiet, thuongHieu } = result
+  
+  // Đọc dữ liệu để lấy hinh_anh_san_pham
+  const data = (await import('../../../db.json')).default
+  const hinhAnh = data.hinh_anh_san_pham?.filter(
+    (ha) => ha.id_san_pham === product.id
+  ) || []
 
   return (
     <ProductDetail
       product={product}
       chiTiet={chiTiet}
       thuongHieu={thuongHieu}
+      hinhAnh={hinhAnh}
     />
   )
 }

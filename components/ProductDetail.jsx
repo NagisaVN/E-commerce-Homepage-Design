@@ -129,7 +129,7 @@ function BrandLogo({ name }) {
 }
 
 // ── Main component ─────────────────────────────────────────
-export default function ProductDetail({ product, chiTiet, thuongHieu }) {
+export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh }) {
   const { addToCart } = useCart()
   const [activeImage, setActiveImage] = useState(0)
   const [qty, setQty] = useState(1)
@@ -156,8 +156,16 @@ export default function ProductDetail({ product, chiTiet, thuongHieu }) {
   // Số lượng đánh giá (dùng views như proxy)
   const reviewCount = Math.max(Math.floor(productViews * 6.2), 100)
 
-  // Sử dụng hình chính + fallback gallery
-  const images = [productImage, ...defaultImages.slice(1)]
+  // Sử dụng hình chính + hình phụ từ hinhAnh (nếu có), hoặc fallback gallery
+  const productImages = [productImage]
+  if (hinhAnh && hinhAnh.length > 0) {
+    hinhAnh.forEach(ha => {
+      if (ha.image_url) productImages.push(ha.image_url.trim())
+    })
+  } else {
+    productImages.push(...defaultImages.slice(1))
+  }
+  const images = productImages
 
   // ── Map specs từ chiTiet ─────────────────────────────────
   const specs = chiTiet?.thong_so_ky_thuat
