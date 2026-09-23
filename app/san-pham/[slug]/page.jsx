@@ -22,7 +22,11 @@ async function getProductData(slug) {
     (th) => th.id === product.id_thuong_hieu
   ) || null
 
-  return { product, chiTiet, thuongHieu }
+  const danhMuc = data.danh_muc_san_pham?.find(
+    (dm) => dm.id === product.id_danh_muc
+  ) || null
+
+  return { product, chiTiet, thuongHieu, danhMuc }
 }
 
 export async function generateMetadata({ params }) {
@@ -50,7 +54,7 @@ export default async function ProductPage({ params }) {
     notFound()
   }
 
-  const { product, chiTiet, thuongHieu } = result
+  const { product, chiTiet, thuongHieu, danhMuc } = result
   
   // Đọc dữ liệu để lấy hinh_anh_san_pham
   const data = (await import('../../../db.json')).default
@@ -64,6 +68,7 @@ export default async function ProductPage({ params }) {
       chiTiet={chiTiet}
       thuongHieu={thuongHieu}
       hinhAnh={hinhAnh}
+      danhMuc={danhMuc}
     />
   )
 }

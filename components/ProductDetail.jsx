@@ -129,7 +129,7 @@ function BrandLogo({ name }) {
 }
 
 // ── Main component ─────────────────────────────────────────
-export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh }) {
+export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, danhMuc }) {
   const { addToCart } = useCart()
   const [activeImage, setActiveImage] = useState(0)
   const [qty, setQty] = useState(1)
@@ -147,6 +147,7 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh })
   const productStock = product?.so_luong_ton_kho || 0
   const productImage = product?.hinh_chinh?.trim() || defaultImages[0]
   const brandName = thuongHieu?.ten?.trim() || 'TechZone'
+  const categoryName = danhMuc?.ten?.trim() || 'Danh mục'
 
   // Tính % giảm giá
   const discount = productOriginal > 0
@@ -229,7 +230,17 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh })
           <nav className="flex items-center gap-2 text-xs font-body text-gray-400">
             <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
             <span>/</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">{brandName}</span>
+            {danhMuc?.slug ? (
+              <Link href={`/danh-muc-san-pham/${danhMuc.slug.trim()}`} className="hover:text-brand transition-colors">{categoryName}</Link>
+            ) : (
+              <span className="hover:text-brand cursor-pointer transition-colors">{categoryName}</span>
+            )}
+            <span>/</span>
+            {thuongHieu?.slug ? (
+              <Link href={`/thuong-hieu/${thuongHieu.slug.trim()}`} className="hover:text-brand transition-colors">{brandName}</Link>
+            ) : (
+              <span className="hover:text-brand cursor-pointer transition-colors">{brandName}</span>
+            )}
             <span>/</span>
             <span className="text-gray-600 font-medium truncate max-w-[200px]">{productName}</span>
           </nav>
