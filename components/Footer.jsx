@@ -58,7 +58,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
             <div>
               <h4 className="font-display font-semibold text-white mb-1">Nhận ưu đãi AI qua email</h4>
-              <p className="text-blue-300 text-sm font-body">Ʈu đãi hàng tuần, hướng dẫn mua sắm và khuyến mãi độc quyền.</p>
+              <p className="text-blue-300 text-sm font-body">Ưu đãi hàng tuần, hướng dẫn mua sắm và khuyến mãi độc quyền.</p>
             </div>
             <div className="flex gap-2 w-full sm:w-auto">
               <input

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-
+import Link from 'next/link'
 const categoryTheme = {
   'tu-lanh': { bg: '#EFF6FF', color: '#1D4ED8' },
   'may-lanh': { bg: '#E0F2FE', color: '#0369A1' },
@@ -67,12 +67,12 @@ export default function Categories() {
           {categories.map(category => {
             const theme = categoryTheme[category.slug] ?? { bg: '#F3F4F6', color: '#4B5563' }
             return (
-              <button key={category.id} className="group flex cursor-pointer flex-col items-center gap-3.5">
+              <Link key={category.id} href={`/danh-muc-san-pham/${category.slug}`} className="group flex cursor-pointer flex-col items-center gap-3.5">
                 <div className="flex h-[72px] w-[72px] items-center justify-center rounded-full transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-[0_12px_28px_rgba(37,99,235,0.24)] sm:h-20 sm:w-20" style={{ backgroundColor: theme.bg }}>
                   <CategoryIcon slug={category.slug} color={theme.color} />
                 </div>
                 <div className="text-center"><p className="text-sm font-semibold leading-tight text-gray-800 transition-colors group-hover:text-brand font-display">{category.name}</p><p className="mt-0.5 text-xs text-gray-400 font-body">{category.productCount} mẫu</p></div>
-              </button>
+              </Link>
             )
           })}
         </div>

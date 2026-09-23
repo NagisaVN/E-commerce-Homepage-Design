@@ -204,13 +204,13 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh })
 
   // ── Handlers ─────────────────────────────────────────────
   const handleBuyNow = () => {
-    addToCart()
+    addToCart(product, qty)
     setBuyState('added')
     setTimeout(() => setBuyState('idle'), 2000)
   }
 
   const handleAddCart = () => {
-    addToCart()
+    addToCart(product, qty)
     setCartState('added')
     setTimeout(() => setCartState('idle'), 2000)
   }

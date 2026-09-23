@@ -16,7 +16,12 @@ export default function Header() {
   const [focused, setFocused] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const { cartCount } = useCart()
-  const navItems = ['Sản phẩm', 'Thương hiệu', 'Khuyến mãi', 'Hỗ trợ']
+  const navItems = [
+    { name: 'Sản phẩm', href: '/san-pham' },
+    { name: 'Thương hiệu', href: '/thuong-hieu' },
+    { name: 'Khuyến mãi', href: '/khuyen-mai' },
+    { name: 'Hỗ trợ', href: '/ho-tro' }
+  ]
 
   const SearchBox = () => (
     <div className={`flex items-center gap-2.5 rounded-xl border-2 bg-brand-pale px-3 py-2 transition-all duration-200 sm:gap-3 sm:px-4 sm:py-2.5 ${focused ? 'border-brand bg-white shadow-lg shadow-blue-100' : 'border-brand-light hover:border-brand-accent'}`}>
@@ -35,7 +40,7 @@ export default function Header() {
           <Link href="/" className="group flex flex-shrink-0 items-center gap-2.5"><LogoIcon /><span className="text-xl font-bold tracking-tight text-brand-dark font-display">Tech<span className="text-brand">Zone</span></span></Link>
 
           <nav className="ml-2 hidden items-center gap-5 xl:flex" aria-label="Primary navigation">
-            {navItems.map(item => <Link key={item} href="#" className="text-sm font-medium text-gray-600 transition-colors hover:text-brand font-body">{item}</Link>)}
+            {navItems.map(item => <Link key={item.name} href={item.href} className="text-sm font-medium text-gray-600 transition-colors hover:text-brand font-body">{item.name}</Link>)}
           </nav>
 
           <div className="mx-auto hidden max-w-2xl flex-1 md:block"><SearchBox /></div>
@@ -49,7 +54,7 @@ export default function Header() {
         </div>
 
         <div className="pb-3 md:hidden"><SearchBox /></div>
-        {menuOpen && <nav className="border-t border-gray-100 py-2 xl:hidden" aria-label="Mobile navigation">{navItems.map(item => <Link key={item} href="#" onClick={() => setMenuOpen(false)} className="block rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-brand-light hover:text-brand font-body">{item}</Link>)}</nav>}
+        {menuOpen && <nav className="border-t border-gray-100 py-2 xl:hidden" aria-label="Mobile navigation">{navItems.map(item => <Link key={item.name} href={item.href} onClick={() => setMenuOpen(false)} className="block rounded-lg px-3 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-brand-light hover:text-brand font-body">{item.name}</Link>)}</nav>}
       </div>
     </header>
   )

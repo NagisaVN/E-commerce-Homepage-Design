@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-
+import Link from 'next/link'
 // SVG config per brand name — maps brand name → SVG rendering props
 const brandSvgConfig = {
   Samsung: { viewBox: '0 0 120 40', x: 4, y: 30, fontWeight: 700, fontSize: 28, fill: '#1428A0', displayName: 'Samsung' },
@@ -106,8 +106,9 @@ export default function Brands() {
 
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
           {brands.map((brand) => (
-            <button
+            <Link
               key={brand.id}
+              href={`/thuong-hieu/${brand.slug?.trim()}`}
               className="group bg-white rounded-2xl px-4 py-5 flex flex-col items-center gap-2 border border-transparent hover:border-brand-light hover:shadow-lg hover:shadow-blue-50 transition-all duration-200"
             >
               <div className="h-8 flex items-center justify-center opacity-75 group-hover:opacity-100 transition-opacity">
@@ -116,7 +117,7 @@ export default function Brands() {
               <span className="text-xs text-gray-400 font-body group-hover:text-brand transition-colors">
                 {brand.ten.trim()}
               </span>
-            </button>
+            </Link>
           ))}
         </div>
       </div>
