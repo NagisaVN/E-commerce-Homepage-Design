@@ -96,19 +96,2569 @@
   "chi_tiet_don_hang": [
     {
       "id": 1,
-      "id_don_hang": 1,
-      "id_san_pham": 1,
-      "so_luong": 1,
-      "gia": 15000000,
-      "created_at": " 2026-09-18 02:30:57"
+      "slug": "iphone-15-pro-max",
+      "order_id": "ORD-2026-001",
+      "product_name": "iPhone 15 Pro Max 256GB",
+      "price": 29990000,
+      "quantity": 1,
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&auto=format&fit=crop&q=80",
+      "color": "Titan Tự nhiên",
+      "size": "256GB",
+      "total_price": 29990000,
+      "status": "Đang giao hàng",
+      "customer_info": {
+        "name": "Nguyễn Văn A",
+        "phone": "0901234567",
+        "address": "123 Đường Lê Lợi, Quận 1, TP.HCM"
+      }
     },
     {
       "id": 2,
-      "id_don_hang": 2,
+      "slug": "macbook-pro-m3-14",
+      "order_id": "ORD-2026-002",
+      "product_name": "MacBook Pro 14 inch M3 2026",
+      "price": 39990000,
+      "quantity": 2,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=80",
+      "color": "Silver",
+      "size": "512GB",
+      "total_price": 79980000,
+      "status": "Đã hoàn thành",
+      "customer_info": {
+        "name": "Trần Thị B",
+        "phone": "0987654321",
+        "address": "456 Đường Trần Hưng Đạo, Quận 5, TP.HCM"
+      }
+    }
+  ],
+  "chi_tiet_san_pham": [
+    {
+      "id": 1,
+      "id_san_pham": 1,
+      "slug": "sp-oj2470-1",
+      "mo_ta_chi_tiet": "Máy lạnh LG Diệt khuẩn OJ2470 thế hệ mới nổi bật với công nghệ Dual Inverter giúp làm lạnh cực nhanh và duy trì nhiệt độ ổn định, tiết kiệm điện năng lên đến 70%. Hệ thống lọc bụi mịn PM 2.5 và công nghệ Plasmaster Ionizer+ giúp tiêu diệt 99.9% vi khuẩn, nấm mốc và các tác nhân gây dị ứng, bảo vệ sức khỏe hệ hô hấp cho cả gia đình. Thiết kế màu trắng sang trọng, đường nét tinh tế, màn hình LED ẩn hiển thị nhiệt độ tiện lợi. Chế độ Sleep Mode tự động điều chỉnh nhiệt độ về đêm, mang đến giấc ngủ sâu và êm ái. Dàn lạnh vận hành siêu êm chỉ 21dB, phù hợp phòng ngủ và phòng trẻ em.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều (chỉ làm lạnh)",
+        "Công suất làm lạnh": "1.5 HP - 12.000 BTU",
+        "Công nghệ Inverter": "Dual Inverter",
+        "Phạm vi hiệu quả": "Từ 15 - 20 m²",
+        "Độ ồn dàn lạnh": "21 dB / Dàn nóng: 48 dB",
+        "Loại Gas": "R-32 (thân thiện môi trường)",
+        "Kích thước dàn lạnh": "837 × 308 × 189 mm",
+        "Khối lượng dàn lạnh": "9.2 kg",
+        "Tiêu thụ điện trung bình": "0.92 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng, máy nén bảo hành 10 năm",
+        "Giao hàng và lắp đặt miễn phí trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp 0% qua thẻ tín dụng (6-12 tháng)"
+      ]
+    },
+    {
+      "id": 2,
       "id_san_pham": 2,
-      "so_luong": 2,
-      "gia": 2500000,
-      "created_at": " 2026-09-18 02:30:57"
+      "slug": "sp-mk6111-2",
+      "mo_ta_chi_tiet": "Máy giặt Panasonic Diệt khuẩn MK6111 là giải pháp giặt giũ hoàn hảo với công nghệ giặt nước nóng StainMaster+ đánh bay các vết bẩn cứng đầu và vi khuẩn bám trên sợi vải. Hệ thống ActiveFoam tạo bọt siêu mịn thấm sâu vào từng sợi vải, mang lại hiệu quả làm sạch vượt trội ngay cả với lượng bột giặt ít. Động cơ TD Inverter vận hành êm ái, bền bỉ và tối ưu hóa lượng nước, điện tiêu thụ. Lồng giặt Sazanami bằng thép không gỉ thiết kế dạng sóng giúp bảo vệ từng sợi vải, giảm thiểu xoắn rối và hư tổn quần áo cao cấp. Tích hợp chế độ Auto Tub Care tự động vệ sinh lồng giặt sau mỗi chu trình.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "TD Inverter (truyền động gián tiếp)",
+        "Công nghệ giặt": "ActiveFoam, StainMaster+, Sazanami",
+        "Tốc độ vắt tối đa": "700 vòng/phút",
+        "Mức nước sử dụng": "120 lít/chu trình",
+        "Kích thước": "1043 × 600 × 672 mm (Cao × Ngang × Sâu)",
+        "Khối lượng máy": "38 kg",
+        "Số chương trình giặt": "10 chương trình",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ Inverter 12 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng tận nơi miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 3,
+      "id_san_pham": 3,
+      "slug": "sp-gs8180-3",
+      "mo_ta_chi_tiet": "Lò vi sóng Sony Inverter GS8180 mang đến trải nghiệm nấu nướng thông minh và tiện lợi với công nghệ biến tần Inverter kiểm soát nhiệt độ chính xác, giúp thức ăn chín đều từ trong ra ngoài mà không bị khô hay mất chất dinh dưỡng. Dung tích 25 lít rộng rãi, phù hợp cho mọi gia đình từ 3-6 thành viên. Bảng điều khiển cảm ứng trực quan kết hợp màn hình LED sắc nét giúp dễ dàng lựa chọn 12 chế độ nấu tự động. Thiết kế khoang lò tráng men chống dính cao cấp, dễ dàng lau chùi sau mỗi lần sử dụng. Tích hợp chức năng rã đông Turbo Defrost tự động tính toán thời gian theo trọng lượng thực phẩm.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng có nướng",
+        "Dung tích": "25 lít",
+        "Công suất vi sóng": "1000W",
+        "Công suất nướng": "1200W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng có màn hình LED",
+        "Chất liệu khoang lò": "Thép tráng men chống dính",
+        "Số chế độ nấu tự động": "12 chế độ",
+        "Kích thước": "290 × 475 × 395 mm (Cao × Ngang × Sâu)",
+        "Khối lượng": "14.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm sách hướng dẫn 50 công thức nấu"
+      ]
+    },
+    {
+      "id": 4,
+      "id_san_pham": 4,
+      "slug": "sp-xo2726-4",
+      "mo_ta_chi_tiet": "Nồi cơm điện Toshiba Cao cấp XO2726 được thiết kế dành riêng cho thị trường Việt Nam, tối ưu hóa cho gạo dẻo truyền thống. Công nghệ nấu 3D đa chiều phân bổ nhiệt đều từ đáy, thành và nắp nồi, giúp cơm chín đều, dẻo bóng từng hạt. Lòng nồi dày 5 lớp phủ Titan chống dính cao cấp, bền bỉ theo thời gian và an toàn cho sức khỏe. Van xả hơi thông minh giúp giữ trọn hương vị tự nhiên của gạo. Tích hợp 8 chế độ nấu đa dạng: cơm trắng, cơm lứt, cháo, súp, hầm, hấp, bánh và giữ ấm. Màn hình LCD lớn dễ đọc kèm hẹn giờ lên đến 24 tiếng.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử cao tần",
+        "Dung tích": "1.8 lít (nấu tối đa 10 chén)",
+        "Công suất": "900W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "8 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "265 × 380 × 295 mm",
+        "Khối lượng": "4.8 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 5,
+      "id_san_pham": 5,
+      "slug": "sp-in5889-5",
+      "mo_ta_chi_tiet": "Quạt điều hòa Sharp Diệt khuẩn IN5889 là giải pháp làm mát tiết kiệm năng lượng lý tưởng cho mùa hè. Tích hợp công nghệ Plasmacluster Ion độc quyền của Sharp, phát tán ion dương và ion âm diệt khuẩn, khử mùi và lọc bụi mịn hiệu quả. Bình chứa nước lớn 10 lít kết hợp tấm làm mát Honeycomb giúp giảm nhiệt độ phòng từ 5-8°C so với quạt thường. Motor DC Inverter vận hành cực êm, tiêu thụ điện chỉ bằng 1/10 so với máy lạnh. Thiết kế 4 bánh xe xoay 360° di chuyển linh hoạt giữa các phòng. Điều khiển từ xa tiện lợi kèm hẹn giờ tắt tự động.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa (Air Cooler)",
+        "Công nghệ": "Plasmacluster Ion diệt khuẩn",
+        "Dung tích bình nước": "10 lít",
+        "Tấm làm mát": "Honeycomb (tổ ong)",
+        "Lưu lượng gió": "850 m³/h",
+        "Số tốc độ gió": "3 tốc độ + chế độ tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "15 - 25 m²",
+        "Kích thước": "460 × 360 × 860 mm",
+        "Khối lượng": "9.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 7 ngày đầu",
+        "Tặng kèm 2 đá khô làm mát"
+      ]
+    },
+    {
+      "id": 6,
+      "id_san_pham": 6,
+      "slug": "sp-zx6677-6",
+      "mo_ta_chi_tiet": "Tivi Aqua Thế hệ mới ZX6677 mang đến trải nghiệm giải trí đỉnh cao với màn hình 4K UHD 55 inch cho hình ảnh sắc nét gấp 4 lần Full HD. Công nghệ HDR10+ tái hiện dải màu rộng với độ tương phản cao, mang lại hình ảnh chân thực như đời thật. Hệ thống âm thanh Dolby Audio tích hợp loa 20W cho âm thanh sống động, rõ ràng. Chạy trên nền tảng Android TV 13 với kho ứng dụng phong phú: Netflix, YouTube, Spotify và hàng ngàn ứng dụng khác. Tích hợp Chromecast Built-in và Bluetooth 5.0 kết nối đa thiết bị. Thiết kế viền siêu mỏng Bezel-less sang trọng, phù hợp mọi không gian nội thất.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Smart TV Android 13",
+        "Kích thước màn hình": "55 inch (139 cm)",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "HDR10+, Micro Dimming",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 20W (2 × 10W)",
+        "Kết nối": "3× HDMI, 2× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Android TV 13",
+        "Kích thước (không chân)": "1232 × 718 × 80 mm",
+        "Khối lượng": "12.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 7,
+      "id_san_pham": 7,
+      "slug": "sp-br2783-7",
+      "mo_ta_chi_tiet": "Loa thanh Daikin Thế hệ mới BR2783 nâng tầm trải nghiệm âm thanh gia đình với công suất tổng 320W và hệ thống 2.1 kênh tích hợp subwoofer không dây. Công nghệ Dolby Atmos mang đến âm thanh vòm 3D chân thực, tạo cảm giác như đang ngồi trong rạp phim. Kết nối đa dạng: HDMI eARC, Optical, Bluetooth 5.3, USB, cho phép phát nhạc từ mọi nguồn. Chế độ Night Mode tự động giảm bass và tăng rõ thoại, lý tưởng cho việc xem phim đêm khuya. Thiết kế thanh lịch với lưới kim loại và mặt trên cảm ứng, dễ dàng gắn tường hoặc đặt trên kệ TV.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 2.1 kênh + Subwoofer không dây",
+        "Công suất tổng": "320W",
+        "Công nghệ âm thanh": "Dolby Atmos, DTS Virtual:X",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.3, USB, AUX",
+        "Tần số đáp ứng": "35Hz - 20kHz",
+        "Kích thước loa thanh": "980 × 58 × 105 mm",
+        "Kích thước subwoofer": "180 × 310 × 390 mm",
+        "Khối lượng tổng": "7.8 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Malaysia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm dây cáp HDMI 2.1 cao cấp"
+      ]
+    },
+    {
+      "id": 8,
+      "id_san_pham": 8,
+      "slug": "sp-or6200-8",
+      "mo_ta_chi_tiet": "Tủ lạnh Electrolux Diệt khuẩn OR6200 với dung tích 318 lít, lý tưởng cho gia đình 3-5 thành viên. Công nghệ NutriFresh Inverter giữ nhiệt độ ổn định ±0.5°C, bảo quản thực phẩm tươi ngon lâu hơn gấp 7 ngày so với tủ lạnh thường. Hệ thống TasteGuard diệt khuẩn bằng than hoạt tính, khử mùi hiệu quả 99.8%, ngăn ngừa lây nhiễm mùi giữa các ngăn. Ngăn đông mềm TasteSeal -2°C giữ thịt cá tươi ngon không cần rã đông, tiết kiệm thời gian nấu nướng. Thiết kế cửa phẳng Flat Door sang trọng với mặt kính cường lực chống bám vân tay. Công nghệ Inverter tiết kiệm đến 50% điện năng.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "318 lít (Ngăn lạnh: 225L / Ngăn đông: 93L)",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Tiêu thụ điện": "Khoảng 1.06 kWh/ngày",
+        "Kích thước": "1710 × 580 × 665 mm",
+        "Khối lượng": "62 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 9,
+      "id_san_pham": 9,
+      "slug": "sp-iz9321-9",
+      "mo_ta_chi_tiet": "Máy lạnh Samsung Thế hệ mới IZ9321 với công nghệ WindFree™ độc quyền phân tán 23,000 lỗ gió siêu nhỏ, làm mát nhẹ nhàng không gió lùa trực tiếp vào người, lý tưởng cho phòng ngủ và phòng trẻ nhỏ. Máy nén Digital Inverter 8 cực hoạt động ở 8 mức tốc độ khác nhau, tiết kiệm đến 73% điện năng và giảm tiếng ồn xuống chỉ 16dB. Tích hợp bộ lọc HD Filter bắt giữ bụi mịn PM 2.5, phấn hoa và vi khuẩn, cho không khí trong lành. Kết nối SmartThings điều khiển qua điện thoại mọi lúc mọi nơi. Chế độ AI Auto giúp máy tự học thói quen sử dụng và điều chỉnh nhiệt độ phù hợp theo thời gian.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều Inverter",
+        "Công suất làm lạnh": "2.0 HP - 18.000 BTU",
+        "Công nghệ": "WindFree™ Cooling, AI Auto",
+        "Công nghệ Inverter": "Digital Inverter 8 cực",
+        "Phạm vi hiệu quả": "Từ 20 - 30 m²",
+        "Độ ồn dàn lạnh": "16 dB (chế độ WindFree)",
+        "Loại Gas": "R-32",
+        "Kết nối thông minh": "Wi-Fi (SmartThings App)",
+        "Kích thước dàn lạnh": "1055 × 299 × 215 mm",
+        "Khối lượng dàn lạnh": "11.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày tận nhà",
+        "Trả góp 0% qua thẻ tín dụng hoặc công ty tài chính"
+      ]
+    },
+    {
+      "id": 10,
+      "id_san_pham": 10,
+      "slug": "sp-io7703-10",
+      "mo_ta_chi_tiet": "Máy giặt LG Inverter IO7703 thế hệ mới với công nghệ giặt hơi nước TurboSteam™ diệt 99.9% vi khuẩn, mạt bụi và các tác nhân gây dị ứng mà không cần sử dụng hóa chất. Động cơ Direct Drive Inverter không dùng dây curoa, truyền động trực tiếp giúp giảm rung lắc, tiết kiệm điện và vận hành cực êm. Lồng giặt thép không gỉ dung tích 9kg phù hợp gia đình 4-6 người. Công nghệ 6 Motion DD mô phỏng 6 chuyển động giặt tay truyền thống, bảo vệ tối đa chất liệu vải cao cấp. Tích hợp cảm biến AI DD tự động nhận diện khối lượng và chất liệu vải để điều chỉnh chương trình giặt phù hợp. Tiết kiệm nước với công nghệ Turbowash360 giặt sạch chỉ trong 39 phút.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trước - Lồng ngang",
+        "Khối lượng giặt": "9 kg",
+        "Động cơ": "Direct Drive Inverter (truyền động trực tiếp)",
+        "Công nghệ giặt": "6 Motion DD, TurboSteam, AI DD",
+        "Tốc độ vắt tối đa": "1200 vòng/phút",
+        "Số chương trình giặt": "14 chương trình",
+        "Khả năng giặt nhanh": "TurboWash360 - 39 phút",
+        "Kích thước": "850 × 600 × 560 mm (Cao × Ngang × Sâu)",
+        "Khối lượng máy": "65 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ Direct Drive 12 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% không cần trả trước"
+      ]
+    },
+    {
+      "id": 11,
+      "id_san_pham": 11,
+      "slug": "sp-dv7225-11",
+      "mo_ta_chi_tiet": "Lò vi sóng Panasonic Diệt khuẩn DV7225 với công suất vi sóng mạnh mẽ, hâm nóng và nấu chín nhanh chóng. Công nghệ Inverter tiết kiệm đến 30% điện năng so với lò vi sóng thường. Khoang lò rộng rãi chứa được đĩa quay lớn 31.5cm. Tích hợp 12 thực đơn nấu tự động phù hợp với khẩu vị Việt Nam. Chế độ giữ ấm thông minh duy trì nhiệt độ món ăn mà không làm khô. Thiết kế mặt gương sang trọng, phù hợp mọi không gian bếp.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng inverter",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "1000W",
+        "Công suất nướng": "1400W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng kính phẳng",
+        "Chất liệu khoang lò": "Thép không gỉ",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "310 × 500 × 410 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 12,
+      "id_san_pham": 12,
+      "slug": "sp-qu1230-12",
+      "mo_ta_chi_tiet": "Nồi cơm điện Sony Diệt khuẩn QU1230 được thiết kế dành riêng cho thị trường Việt Nam, tối ưu hóa cho các loại gạo dẻo truyền thống. Công nghệ nấu đa chiều phân bổ nhiệt đều từ đáy, thành và nắp nồi, giúp cơm chín đều, dẻo bóng từng hạt. Lòng nồi dày nhiều lớp phủ chống dính cao cấp, bền bỉ theo thời gian và an toàn cho sức khỏe. Van xả hơi thông minh giúp giữ trọn hương vị tự nhiên của gạo. Tích hợp nhiều chế độ nấu đa dạng bao gồm cơm trắng, cơm lứt, cháo, súp, hầm và hấp.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử",
+        "Dung tích": "1.5 lít",
+        "Công suất": "750W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "255 × 350 × 280 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 13,
+      "id_san_pham": 13,
+      "slug": "sp-ci3151-13",
+      "mo_ta_chi_tiet": "Quạt điều hòa Toshiba Inverter CI3151 sở hữu thiết kế hiện đại với bảng điều khiển cảm ứng LED sang trọng. Hệ thống phun sương siêu mịn kết hợp quạt gió tạo hiệu ứng làm mát tự nhiên, dễ chịu và không gây khô da. Bình nước dung tích lớn cho thời gian sử dụng liên tục lên đến 10 giờ. Tích hợp 4 chế độ gió: Mạnh, Trung bình, Nhẹ và Tự nhiên phù hợp mọi nhu cầu. Lưới lọc bụi có thể tháo rửa dễ dàng. Chân đế chắc chắn với bánh xe di động thuận tiện.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa hơi nước",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Cooling Pad công nghệ Nhật",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "4 tốc độ + chế độ ngủ",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "460 × 360 × 860 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 14,
+      "id_san_pham": 14,
+      "slug": "sp-vo4479-14",
+      "mo_ta_chi_tiet": "Tivi Sharp Thông minh AI VO4479 là dòng TV thông minh AI với khả năng nhận diện nội dung và tự động điều chỉnh hình ảnh, âm thanh phù hợp. Màn hình QLED hiển thị trên 1 tỷ màu sắc trung thực và sống động. Công nghệ Quantum Dot cho màu sắc chính xác 100% dải màu DCI-P3. Tích hợp trợ lý ảo Google Assistant và Alexa điều khiển bằng giọng nói. Tính năng Multi View hiển thị đồng thời 2 nội dung trên 1 màn hình. AirPlay 2 và Screen Mirroring dễ dàng chiếu nội dung từ điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 24W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 88 mm",
+        "Khối lượng": "14.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 15,
+      "id_san_pham": 15,
+      "slug": "sp-ek6272-15",
+      "mo_ta_chi_tiet": "Loa thanh Aqua Inverter EK6272 nâng tầm trải nghiệm âm thanh gia đình với hệ thống kênh tích hợp subwoofer. Công nghệ âm thanh vòm tạo cảm giác chân thực như đang ngồi trong rạp phim. Kết nối đa dạng: HDMI eARC, Optical, Bluetooth, USB cho phép phát nhạc từ mọi nguồn. Chế độ Night Mode tự động giảm bass và tăng rõ thoại, lý tưởng cho việc xem phim đêm khuya. Thiết kế thanh lịch với lưới kim loại cao cấp, dễ dàng gắn tường hoặc đặt trên kệ TV.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.3, USB, AUX",
+        "Tần số đáp ứng": "30Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 55 × 100 mm",
+        "Khối lượng tổng": "5.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 16,
+      "id_san_pham": 16,
+      "slug": "sp-rf2118-16",
+      "mo_ta_chi_tiet": "Tủ lạnh Daikin Cao cấp RF2118 trang bị hệ thống làm lạnh đa chiều Multi Air Flow, phân phối khí lạnh đều đến từng ngóc ngách trong tủ. Máy nén Linear Inverter vận hành cực êm, tiết kiệm điện và bền bỉ với bảo hành 10 năm. Công nghệ DoorCooling+ làm lạnh khu vực cửa tủ nhanh hơn 32%, lý tưởng cho đồ uống. Ngăn rau quả FreshBalancer điều chỉnh độ ẩm tối ưu, giữ rau quả tươi xanh hơn. Tích hợp khay đá xoay có thể lấy đá dễ dàng. Thiết kế Slim với bề ngang chỉ 595mm tiết kiệm không gian.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "290 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 580 × 650 mm",
+        "Khối lượng": "57 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 17,
+      "id_san_pham": 17,
+      "slug": "sp-wg6751-17",
+      "mo_ta_chi_tiet": "Máy lạnh Electrolux Diệt khuẩn WG6751 nổi bật với khả năng làm lạnh cực nhanh nhờ công nghệ Powerful Cooling kết hợp quạt kép. Máy nén Inverter hoạt động ổn định, bền bỉ với tuổi thọ lên đến 15 năm. Tích hợp cảm biến nhiệt độ thông minh, tự động điều chỉnh công suất theo môi trường và số người trong phòng. Gas R-32 thân thiện với môi trường, chỉ số GWP thấp. Thiết kế sang trọng với mặt nạ cong 3D độc đáo và màn hình hiển thị ẩn tinh tế.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều Inverter",
+        "Công suất làm lạnh": "2 HP - 15000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "21 dB / Dàn nóng: 48 dB",
+        "Loại Gas": "R-32",
+        "Kích thước dàn lạnh": "900 × 310 × 195 mm",
+        "Khối lượng dàn lạnh": "10.1 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 12 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp qua công ty tài chính"
+      ]
+    },
+    {
+      "id": 18,
+      "id_san_pham": 18,
+      "slug": "sp-rb2496-18",
+      "mo_ta_chi_tiet": "Máy giặt Samsung Inverter RB2496 được trang bị động cơ Inverter truyền động trực tiếp, vận hành cực êm và tiết kiệm điện năng. Công nghệ giặt hơi nước Steam Wash diệt 99.9% vi khuẩn và tác nhân gây dị ứng trên quần áo mà không cần sử dụng hóa chất. Lồng giặt thép không gỉ với thiết kế sóng nước giảm xoắn rối, bảo vệ sợi vải. Tích hợp nhiều chương trình giặt thông minh cho từng loại vải. Hệ thống tự cân bằng chống rung lắc, hoạt động ổn định ngay cả ở tốc độ vắt cao.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "TD Inverter (truyền động gián tiếp)",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "700 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "950 × 560 × 600 mm",
+        "Khối lượng máy": "56 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 10 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 19,
+      "id_san_pham": 19,
+      "slug": "sp-mx2748-19",
+      "mo_ta_chi_tiet": "Lò vi sóng LG Thông minh AI MX2748 mang đến trải nghiệm nấu nướng hiện đại với nhiều chế độ nấu tự động được lập trình sẵn cho các món ăn phổ biến. Công nghệ phân phối sóng đều 3D giúp thức ăn nóng đồng đều mà không cần xoay đĩa. Thiết kế khoang lò bằng gốm kháng khuẩn BioLon, dễ vệ sinh và an toàn cho sức khỏe. Chức năng Steam Cook nấu bằng hơi nước giữ nguyên vitamin và chất dinh dưỡng. Chế độ bảo vệ trẻ em khóa an toàn tự động.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng đa năng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "900W",
+        "Công suất nướng": "1200W",
+        "Công nghệ Inverter": "Có - Tiết kiệm 30% điện",
+        "Bảng điều khiển": "Nút bấm điện tử",
+        "Chất liệu khoang lò": "Gốm kháng khuẩn BioLon",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "295 × 480 × 395 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 20,
+      "id_san_pham": 20,
+      "slug": "sp-mj5591-20",
+      "mo_ta_chi_tiet": "Nồi cơm điện Panasonic Thế hệ mới MJ5591 cao cấp với công nghệ áp suất Pressure Cooking giúp cơm chín nhanh hơn và dẻo hơn, đặc biệt phù hợp với gạo cứng và gạo lứt. Lòng nồi phủ Ceramic chống dính 5 lớp, không chứa PFOA, an toàn tuyệt đối cho sức khỏe. Bảng điều khiển LCD lớn với giao diện tiếng Việt trực quan, dễ sử dụng cho mọi thành viên gia đình. Hẹn giờ nấu tự động lên đến 24 tiếng. Thiết kế vỏ ngoài thép không gỉ sang trọng, chống bám vân tay.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử áp suất",
+        "Dung tích": "2.1 lít",
+        "Công suất": "1050W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "285 × 390 × 310 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 21,
+      "id_san_pham": 21,
+      "slug": "sp-ha3381-21",
+      "mo_ta_chi_tiet": "Quạt điều hòa Sony Inverter HA3381 là giải pháp làm mát tiết kiệm năng lượng lý tưởng cho mùa hè nóng bức. Bình chứa nước lớn kết hợp tấm làm mát Honeycomb giúp giảm nhiệt độ phòng đáng kể so với quạt thường. Motor DC Inverter vận hành cực êm, tiêu thụ điện rất thấp so với máy lạnh. Tích hợp công nghệ lọc không khí và diệt khuẩn, mang đến làn gió mát trong lành. Thiết kế 4 bánh xe xoay 360° di chuyển linh hoạt. Điều khiển từ xa tiện lợi kèm hẹn giờ tắt tự động lên đến 12 tiếng.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa (Air Cooler)",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Honeycomb (tổ ong)",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + chế độ tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "440 × 340 × 820 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 22,
+      "id_san_pham": 22,
+      "slug": "sp-rw2902-22",
+      "mo_ta_chi_tiet": "Tivi Toshiba Inverter RW2902 sở hữu tấm nền VA cho góc nhìn rộng 178° và độ tương phản cao, hình ảnh rõ nét từ mọi vị trí ngồi. Công nghệ UHD Dimming chia màn hình thành nhiều vùng, tối ưu độ sáng và độ tương phản từng vùng riêng biệt. Bộ xử lý hình ảnh Crystal Processor 4K nâng cấp mọi nội dung lên gần chuẩn 4K. Hệ thống âm thanh Dolby Digital Plus 2.0 kênh. Remote thông minh tích hợp mic điều khiển giọng nói tiếng Việt. Cổng kết nối đa dạng đáp ứng mọi nhu cầu.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "Full HD (1920 × 1080)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 20W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 83 mm",
+        "Khối lượng": "11.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 23,
+      "id_san_pham": 23,
+      "slug": "sp-mq7831-23",
+      "mo_ta_chi_tiet": "Loa thanh Sharp Cao cấp MQ7831 sở hữu thiết kế mỏng gọn chỉ 55mm, hòa hợp hoàn hảo với mọi TV phẳng hiện đại. Tích hợp subwoofer không dây cho bass sâu mạnh mẽ mà không cần dây kết nối rườm rà. Công nghệ ClearVoice tăng cường giọng thoại, nghe rõ từng câu hội thoại ngay cả trong các cảnh phim có nhiều hiệu ứng. Hỗ trợ HDMI eARC cho âm thanh không nén từ TV. Chế độ Game Mode giảm độ trễ âm thanh xuống dưới 20ms, hoàn hảo cho gaming.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.2, Wi-Fi",
+        "Tần số đáp ứng": "40Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 65 × 120 mm",
+        "Khối lượng tổng": "9.1 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 24,
+      "id_san_pham": 24,
+      "slug": "sp-fs8719-24",
+      "mo_ta_chi_tiet": "Tủ lạnh Aqua Diệt khuẩn FS8719 với dung tích lớn, lý tưởng cho gia đình đông thành viên. Công nghệ Inverter tiên tiến giữ nhiệt độ ổn định, bảo quản thực phẩm tươi ngon lâu hơn gấp 7 ngày so với tủ lạnh thường. Hệ thống diệt khuẩn tiên tiến khử mùi hiệu quả 99.8%, ngăn ngừa lây nhiễm mùi giữa các ngăn. Ngăn đông mềm giữ thịt cá tươi ngon không cần rã đông, tiết kiệm thời gian nấu nướng. Thiết kế cửa phẳng sang trọng với mặt kính cường lực chống bám vân tay. Tiết kiệm đến 50% điện năng.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "410 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 560 × 630 mm",
+        "Khối lượng": "72 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 25,
+      "id_san_pham": 25,
+      "slug": "sp-sw2121-25",
+      "mo_ta_chi_tiet": "Máy lạnh Daikin Thế hệ mới SW2121 được trang bị máy nén Inverter thế hệ mới, tự động điều chỉnh công suất theo nhu cầu thực tế, tiết kiệm đến 70% điện năng. Công nghệ làm lạnh 3D Airflow phân phối gió đều khắp phòng, không gây cảm giác gió lùa trực tiếp. Bộ lọc kháng khuẩn Ag+ kết hợp ion âm giúp không khí luôn trong lành và sạch khuẩn. Chế độ Sleep Mode thông minh tự động điều chỉnh nhiệt độ theo từng giai đoạn giấc ngủ. Điều khiển từ xa bằng smartphone qua ứng dụng chuyên dụng, tiện lợi mọi lúc mọi nơi.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "2 chiều (làm lạnh/sưởi ấm)",
+        "Công suất làm lạnh": "1.5 HP - 12000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "19 dB / Dàn nóng: 46 dB",
+        "Loại Gas": "R-410A",
+        "Kích thước dàn lạnh": "800 × 300 × 195 mm",
+        "Khối lượng dàn lạnh": "8.5 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Trả góp 0% không cần trả trước"
+      ]
+    },
+    {
+      "id": 26,
+      "id_san_pham": 26,
+      "slug": "sp-oz3676-26",
+      "mo_ta_chi_tiet": "Máy giặt Electrolux Thông minh AI OZ3676 là dòng máy giặt cao cấp với công nghệ giặt nước nóng StainMaster+ đánh bay các vết bẩn cứng đầu từ cà phê, dầu mỡ đến máu khô. Hệ thống ActiveFoam tạo bọt siêu mịn, tăng hiệu quả làm sạch gấp 40 lần. Lồng giặt dạng sóng Sazanami bảo vệ quần áo khỏi nhăn nhúm và hư tổn. Chế độ giặt nhanh 15 phút tiện lợi cho những lúc cần gấp. Bảng điều khiển cảm ứng kính hiện đại kết hợp màn hình LED rõ nét.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Smart Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "1100 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1050 × 560 × 660 mm",
+        "Khối lượng máy": "42 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 14 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 27,
+      "id_san_pham": 27,
+      "slug": "sp-zf2433-27",
+      "mo_ta_chi_tiet": "Lò vi sóng Samsung Thông minh AI ZF2433 tích hợp công nghệ biến tần Inverter kiểm soát nhiệt độ chính xác, giúp thức ăn chín đều từ trong ra ngoài mà không bị khô. Dung tích lớn phù hợp cho gia đình đông người. Bảng điều khiển cảm ứng trực quan kết hợp màn hình LED sắc nét giúp dễ dàng chọn chế độ nấu. Khoang lò tráng men chống dính, dễ lau chùi. Tích hợp chức năng rã đông Turbo Defrost tự động tính toán thời gian theo trọng lượng thực phẩm. Hệ thống nướng đối lưu cho lớp vỏ giòn đẹp mắt.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng có nướng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "800W",
+        "Công suất nướng": "1000W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng có màn hình LED",
+        "Chất liệu khoang lò": "Thép tráng men chống dính",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "280 × 460 × 380 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 28,
+      "id_san_pham": 28,
+      "slug": "sp-bi4670-28",
+      "mo_ta_chi_tiet": "Nồi cơm điện LG Inverter BI4670 sử dụng công nghệ gia nhiệt IH (Induction Heating) đốt nóng trực tiếp lòng nồi, tạo ra nhiệt độ cao và đều hơn so với nồi thường, cơm chín mềm dẻo tự nhiên. Lòng nồi bằng hợp kim nhôm đúc nguyên khối với 7 lớp phủ chống dính Diamond bền bỉ. Cảm biến nhiệt chính xác theo dõi và điều chỉnh nhiệt độ theo từng giai đoạn nấu. Chức năng giữ ấm 24 tiếng mà cơm không bị khô hay vàng. Thiết kế nắp rời có thể tháo rửa tiện lợi.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện cao tần IH",
+        "Dung tích": "1.8 lít",
+        "Công suất": "900W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "270 × 370 × 295 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 29,
+      "id_san_pham": 29,
+      "slug": "sp-cu6288-29",
+      "mo_ta_chi_tiet": "Quạt điều hòa Panasonic Thế hệ mới CU6288 trang bị công nghệ Ion âm phát tán 8 triệu ion/cm³, diệt khuẩn, khử mùi và lọc bụi mịn hiệu quả. Tấm làm mát công nghệ tổ ong Cooling Pad hấp thụ nước tối đa, làm giảm nhiệt độ gió thổi ra đến 8°C. Motor đồng nguyên chất bền bỉ, tuổi thọ cao, vận hành êm ái dưới 40dB. Bình nước có thể tháo rời, dễ dàng vệ sinh và bổ sung nước. Chế độ hẹn giờ linh hoạt từ 1-12 tiếng. Tấm chắn gió dao động tự động rộng 120°.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa công nghiệp mini",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "CoolMax Fiber",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + gió tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "480 × 380 × 900 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 30,
+      "id_san_pham": 30,
+      "slug": "sp-wv5684-30",
+      "mo_ta_chi_tiet": "Tivi Sony Thông minh AI WV5684 mang đến trải nghiệm giải trí đỉnh cao với màn hình 4K UHD cho hình ảnh sắc nét gấp 4 lần Full HD. Công nghệ HDR10+ tái hiện dải màu rộng với độ tương phản cao, mang lại hình ảnh chân thực. Hệ thống âm thanh Dolby Audio tích hợp loa công suất lớn cho âm thanh sống động, rõ ràng. Chạy trên nền tảng Smart TV với kho ứng dụng phong phú. Thiết kế viền siêu mỏng Bezel-less sang trọng, phù hợp mọi không gian nội thất. Tích hợp Bluetooth và Chromecast.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 16W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 78 mm",
+        "Khối lượng": "8.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 31,
+      "id_san_pham": 31,
+      "slug": "sp-lw9043-31",
+      "mo_ta_chi_tiet": "Loa thanh Toshiba Inverter LW9043 mang đến chất âm Hi-Res Audio vượt trội với drivers từ tính cải tiến cho dải tần rộng và chi tiết. Tổng công suất lớn lấp đầy không gian phòng khách. Công nghệ Adaptive Sound tự động nhận diện nội dung đang phát và điều chỉnh equalizer phù hợp: nhấn bass cho phim hành động, tăng vocal cho tin tức. Kết nối Bluetooth phiên bản mới cho streaming không dây ổn định, không trễ. Điều khiển bằng remote hoặc ứng dụng trên điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI ARC, Optical, Bluetooth 5.0, USB",
+        "Tần số đáp ứng": "35Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 60 × 110 mm",
+        "Khối lượng tổng": "6.7 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 32,
+      "id_san_pham": 32,
+      "slug": "sp-yx6815-32",
+      "mo_ta_chi_tiet": "Tủ lạnh Sharp Diệt khuẩn YX6815 với công nghệ Twin Cooling Plus sử dụng 2 dàn lạnh độc lập cho ngăn lạnh và ngăn đông, ngăn ngừa mùi lẫn giữa hai ngăn và duy trì độ ẩm tối ưu. Bộ lọc khử mùi than hoạt tính DeodorantFilter loại bỏ 99% vi khuẩn gây mùi. Công nghệ Power Freeze đông nhanh thực phẩm, khóa chặt vitamin và chất dinh dưỡng. Ngăn chuyển đổi linh hoạt 5 trong 1 từ đông sang lạnh tùy nhu cầu. Màn hình điều khiển LED ngoài cửa tiện lợi, không cần mở tủ.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "330 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 600 × 670 mm",
+        "Khối lượng": "62 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 33,
+      "id_san_pham": 33,
+      "slug": "sp-ij8437-33",
+      "mo_ta_chi_tiet": "Máy lạnh Aqua Thông minh AI IJ8437 sở hữu công nghệ Inverter tiên tiến, giúp tiết kiệm điện năng lên đến 65% so với máy lạnh thường. Hệ thống lọc khí đa tầng kết hợp công nghệ diệt khuẩn giúp loại bỏ 99% vi khuẩn, nấm mốc và bụi mịn PM 2.5, bảo vệ sức khỏe hệ hô hấp cho cả gia đình. Chế độ làm lạnh nhanh Turbo giúp hạ nhiệt phòng chỉ trong 3 phút. Thiết kế dàn lạnh mỏng gọn, phù hợp với mọi không gian nội thất. Vận hành siêu êm với độ ồn chỉ 20dB ở chế độ ngủ, đảm bảo giấc ngủ sâu và thoải mái.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều (chỉ làm lạnh)",
+        "Công suất làm lạnh": "1 HP - 9000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "22 dB / Dàn nóng: 49 dB",
+        "Loại Gas": "R-32 (thân thiện môi trường)",
+        "Kích thước dàn lạnh": "950 × 290 × 195 mm",
+        "Khối lượng dàn lạnh": "10.9 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 8 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp 0% qua thẻ tín dụng (6-12 tháng)"
+      ]
+    },
+    {
+      "id": 34,
+      "id_san_pham": 34,
+      "slug": "sp-fe3074-34",
+      "mo_ta_chi_tiet": "Máy giặt Daikin Diệt khuẩn FE3074 sở hữu công nghệ giặt bong bóng Bubble Wash thẩm thấu sâu vào sợi vải, loại bỏ vết bẩn cứng đầu ngay cả ở nhiệt độ nước lạnh. Động cơ Inverter bền bỉ, hoạt động êm ái với tuổi thọ lên đến 20 năm. Chức năng tự vệ sinh lồng giặt bằng nước nóng ngăn ngừa nấm mốc và mùi hôi. Cảm biến AI tự động nhận diện khối lượng quần áo và chất liệu vải để điều chỉnh mức nước và chương trình giặt tối ưu. Thiết kế cửa kính cường lực sang trọng.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trước - Lồng ngang",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Direct Drive Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "900 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1000 × 560 × 630 mm",
+        "Khối lượng máy": "63 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 12 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 35,
+      "id_san_pham": 35,
+      "slug": "sp-yf1736-35",
+      "mo_ta_chi_tiet": "Lò vi sóng Electrolux Cao cấp YF1736 với công suất vi sóng mạnh mẽ, hâm nóng và nấu chín nhanh chóng. Công nghệ Inverter tiết kiệm đến 30% điện năng so với lò vi sóng thường. Khoang lò rộng rãi chứa được đĩa quay lớn 31.5cm. Tích hợp 12 thực đơn nấu tự động phù hợp với khẩu vị Việt Nam. Chế độ giữ ấm thông minh duy trì nhiệt độ món ăn mà không làm khô. Thiết kế mặt gương sang trọng, phù hợp mọi không gian bếp.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng inverter",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "1000W",
+        "Công suất nướng": "1400W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng kính phẳng",
+        "Chất liệu khoang lò": "Thép không gỉ",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "310 × 500 × 410 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 36,
+      "id_san_pham": 36,
+      "slug": "sp-aj7566-36",
+      "mo_ta_chi_tiet": "Nồi cơm điện Samsung Diệt khuẩn AJ7566 được thiết kế dành riêng cho thị trường Việt Nam, tối ưu hóa cho các loại gạo dẻo truyền thống. Công nghệ nấu đa chiều phân bổ nhiệt đều từ đáy, thành và nắp nồi, giúp cơm chín đều, dẻo bóng từng hạt. Lòng nồi dày nhiều lớp phủ chống dính cao cấp, bền bỉ theo thời gian và an toàn cho sức khỏe. Van xả hơi thông minh giúp giữ trọn hương vị tự nhiên của gạo. Tích hợp nhiều chế độ nấu đa dạng bao gồm cơm trắng, cơm lứt, cháo, súp, hầm và hấp.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử",
+        "Dung tích": "1.5 lít",
+        "Công suất": "750W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "255 × 350 × 280 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 37,
+      "id_san_pham": 37,
+      "slug": "sp-md2923-37",
+      "mo_ta_chi_tiet": "Quạt điều hòa LG Inverter MD2923 sở hữu thiết kế hiện đại với bảng điều khiển cảm ứng LED sang trọng. Hệ thống phun sương siêu mịn kết hợp quạt gió tạo hiệu ứng làm mát tự nhiên, dễ chịu và không gây khô da. Bình nước dung tích lớn cho thời gian sử dụng liên tục lên đến 10 giờ. Tích hợp 4 chế độ gió: Mạnh, Trung bình, Nhẹ và Tự nhiên phù hợp mọi nhu cầu. Lưới lọc bụi có thể tháo rửa dễ dàng. Chân đế chắc chắn với bánh xe di động thuận tiện.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa hơi nước",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Cooling Pad công nghệ Nhật",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "4 tốc độ + chế độ ngủ",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "460 × 360 × 860 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 38,
+      "id_san_pham": 38,
+      "slug": "sp-ly3966-38",
+      "mo_ta_chi_tiet": "Tivi Panasonic Diệt khuẩn LY3966 là dòng TV thông minh AI với khả năng nhận diện nội dung và tự động điều chỉnh hình ảnh, âm thanh phù hợp. Màn hình QLED hiển thị trên 1 tỷ màu sắc trung thực và sống động. Công nghệ Quantum Dot cho màu sắc chính xác 100% dải màu DCI-P3. Tích hợp trợ lý ảo Google Assistant và Alexa điều khiển bằng giọng nói. Tính năng Multi View hiển thị đồng thời 2 nội dung trên 1 màn hình. AirPlay 2 và Screen Mirroring dễ dàng chiếu nội dung từ điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 24W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 88 mm",
+        "Khối lượng": "13 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 39,
+      "id_san_pham": 39,
+      "slug": "sp-ez4712-39",
+      "mo_ta_chi_tiet": "Loa thanh Sony Diệt khuẩn EZ4712 nâng tầm trải nghiệm âm thanh gia đình với hệ thống kênh tích hợp subwoofer. Công nghệ âm thanh vòm tạo cảm giác chân thực như đang ngồi trong rạp phim. Kết nối đa dạng: HDMI eARC, Optical, Bluetooth, USB cho phép phát nhạc từ mọi nguồn. Chế độ Night Mode tự động giảm bass và tăng rõ thoại, lý tưởng cho việc xem phim đêm khuya. Thiết kế thanh lịch với lưới kim loại cao cấp, dễ dàng gắn tường hoặc đặt trên kệ TV.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.3, USB, AUX",
+        "Tần số đáp ứng": "30Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 55 × 100 mm",
+        "Khối lượng tổng": "10.3 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 40,
+      "id_san_pham": 40,
+      "slug": "sp-ip9894-40",
+      "mo_ta_chi_tiet": "Tủ lạnh Toshiba Cao cấp IP9894 trang bị hệ thống làm lạnh đa chiều Multi Air Flow, phân phối khí lạnh đều đến từng ngóc ngách trong tủ. Máy nén Linear Inverter vận hành cực êm, tiết kiệm điện và bền bỉ với bảo hành 10 năm. Công nghệ DoorCooling+ làm lạnh khu vực cửa tủ nhanh hơn 32%, lý tưởng cho đồ uống. Ngăn rau quả FreshBalancer điều chỉnh độ ẩm tối ưu, giữ rau quả tươi xanh hơn. Tích hợp khay đá xoay có thể lấy đá dễ dàng. Thiết kế Slim với bề ngang chỉ 595mm tiết kiệm không gian.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "250 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 580 × 650 mm",
+        "Khối lượng": "52 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 41,
+      "id_san_pham": 41,
+      "slug": "sp-rp8866-41",
+      "mo_ta_chi_tiet": "Máy lạnh Sharp Thế hệ mới RP8866 nổi bật với khả năng làm lạnh cực nhanh nhờ công nghệ Powerful Cooling kết hợp quạt kép. Máy nén Inverter hoạt động ổn định, bền bỉ với tuổi thọ lên đến 15 năm. Tích hợp cảm biến nhiệt độ thông minh, tự động điều chỉnh công suất theo môi trường và số người trong phòng. Gas R-32 thân thiện với môi trường, chỉ số GWP thấp. Thiết kế sang trọng với mặt nạ cong 3D độc đáo và màn hình hiển thị ẩn tinh tế.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều Inverter",
+        "Công suất làm lạnh": "2 HP - 15000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "20 dB / Dàn nóng: 47 dB",
+        "Loại Gas": "R-32",
+        "Kích thước dàn lạnh": "850 × 310 × 195 mm",
+        "Khối lượng dàn lạnh": "9.3 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 12 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp qua công ty tài chính"
+      ]
+    },
+    {
+      "id": 42,
+      "id_san_pham": 42,
+      "slug": "sp-mj3558-42",
+      "mo_ta_chi_tiet": "Máy giặt Aqua Inverter MJ3558 được trang bị động cơ Inverter truyền động trực tiếp, vận hành cực êm và tiết kiệm điện năng. Công nghệ giặt hơi nước Steam Wash diệt 99.9% vi khuẩn và tác nhân gây dị ứng trên quần áo mà không cần sử dụng hóa chất. Lồng giặt thép không gỉ với thiết kế sóng nước giảm xoắn rối, bảo vệ sợi vải. Tích hợp nhiều chương trình giặt thông minh cho từng loại vải. Hệ thống tự cân bằng chống rung lắc, hoạt động ổn định ngay cả ở tốc độ vắt cao.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "TD Inverter (truyền động gián tiếp)",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "700 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "950 × 560 × 600 mm",
+        "Khối lượng máy": "49 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 10 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 43,
+      "id_san_pham": 43,
+      "slug": "sp-ga3272-43",
+      "mo_ta_chi_tiet": "Lò vi sóng Daikin Diệt khuẩn GA3272 mang đến trải nghiệm nấu nướng hiện đại với nhiều chế độ nấu tự động được lập trình sẵn cho các món ăn phổ biến. Công nghệ phân phối sóng đều 3D giúp thức ăn nóng đồng đều mà không cần xoay đĩa. Thiết kế khoang lò bằng gốm kháng khuẩn BioLon, dễ vệ sinh và an toàn cho sức khỏe. Chức năng Steam Cook nấu bằng hơi nước giữ nguyên vitamin và chất dinh dưỡng. Chế độ bảo vệ trẻ em khóa an toàn tự động.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng đa năng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "900W",
+        "Công suất nướng": "1200W",
+        "Công nghệ Inverter": "Có - Tiết kiệm 30% điện",
+        "Bảng điều khiển": "Nút bấm điện tử",
+        "Chất liệu khoang lò": "Gốm kháng khuẩn BioLon",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "295 × 480 × 395 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 44,
+      "id_san_pham": 44,
+      "slug": "sp-fm7800-44",
+      "mo_ta_chi_tiet": "Nồi cơm điện Electrolux Cao cấp FM7800 cao cấp với công nghệ áp suất Pressure Cooking giúp cơm chín nhanh hơn và dẻo hơn, đặc biệt phù hợp với gạo cứng và gạo lứt. Lòng nồi phủ Ceramic chống dính 5 lớp, không chứa PFOA, an toàn tuyệt đối cho sức khỏe. Bảng điều khiển LCD lớn với giao diện tiếng Việt trực quan, dễ sử dụng cho mọi thành viên gia đình. Hẹn giờ nấu tự động lên đến 24 tiếng. Thiết kế vỏ ngoài thép không gỉ sang trọng, chống bám vân tay.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử áp suất",
+        "Dung tích": "2.1 lít",
+        "Công suất": "1050W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "285 × 390 × 310 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 45,
+      "id_san_pham": 45,
+      "slug": "sp-ph6802-45",
+      "mo_ta_chi_tiet": "Quạt điều hòa Samsung Cao cấp PH6802 là giải pháp làm mát tiết kiệm năng lượng lý tưởng cho mùa hè nóng bức. Bình chứa nước lớn kết hợp tấm làm mát Honeycomb giúp giảm nhiệt độ phòng đáng kể so với quạt thường. Motor DC Inverter vận hành cực êm, tiêu thụ điện rất thấp so với máy lạnh. Tích hợp công nghệ lọc không khí và diệt khuẩn, mang đến làn gió mát trong lành. Thiết kế 4 bánh xe xoay 360° di chuyển linh hoạt. Điều khiển từ xa tiện lợi kèm hẹn giờ tắt tự động lên đến 12 tiếng.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa (Air Cooler)",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Honeycomb (tổ ong)",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + chế độ tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "440 × 340 × 820 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 46,
+      "id_san_pham": 46,
+      "slug": "sp-dl8903-46",
+      "mo_ta_chi_tiet": "Tivi LG Thông minh AI DL8903 sở hữu tấm nền VA cho góc nhìn rộng 178° và độ tương phản cao, hình ảnh rõ nét từ mọi vị trí ngồi. Công nghệ UHD Dimming chia màn hình thành nhiều vùng, tối ưu độ sáng và độ tương phản từng vùng riêng biệt. Bộ xử lý hình ảnh Crystal Processor 4K nâng cấp mọi nội dung lên gần chuẩn 4K. Hệ thống âm thanh Dolby Digital Plus 2.0 kênh. Remote thông minh tích hợp mic điều khiển giọng nói tiếng Việt. Cổng kết nối đa dạng đáp ứng mọi nhu cầu.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "Full HD (1920 × 1080)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 20W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 83 mm",
+        "Khối lượng": "10 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 47,
+      "id_san_pham": 47,
+      "slug": "sp-gy9013-47",
+      "mo_ta_chi_tiet": "Loa thanh Panasonic Diệt khuẩn GY9013 sở hữu thiết kế mỏng gọn chỉ 55mm, hòa hợp hoàn hảo với mọi TV phẳng hiện đại. Tích hợp subwoofer không dây cho bass sâu mạnh mẽ mà không cần dây kết nối rườm rà. Công nghệ ClearVoice tăng cường giọng thoại, nghe rõ từng câu hội thoại ngay cả trong các cảnh phim có nhiều hiệu ứng. Hỗ trợ HDMI eARC cho âm thanh không nén từ TV. Chế độ Game Mode giảm độ trễ âm thanh xuống dưới 20ms, hoàn hảo cho gaming.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.2, Wi-Fi",
+        "Tần số đáp ứng": "40Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 65 × 120 mm",
+        "Khối lượng tổng": "7.9 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 48,
+      "id_san_pham": 48,
+      "slug": "sp-ef5941-48",
+      "mo_ta_chi_tiet": "Tủ lạnh Sony Thế hệ mới EF5941 với dung tích lớn, lý tưởng cho gia đình đông thành viên. Công nghệ Inverter tiên tiến giữ nhiệt độ ổn định, bảo quản thực phẩm tươi ngon lâu hơn gấp 7 ngày so với tủ lạnh thường. Hệ thống diệt khuẩn tiên tiến khử mùi hiệu quả 99.8%, ngăn ngừa lây nhiễm mùi giữa các ngăn. Ngăn đông mềm giữ thịt cá tươi ngon không cần rã đông, tiết kiệm thời gian nấu nướng. Thiết kế cửa phẳng sang trọng với mặt kính cường lực chống bám vân tay. Tiết kiệm đến 50% điện năng.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "370 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 560 × 630 mm",
+        "Khối lượng": "67 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 49,
+      "id_san_pham": 49,
+      "slug": "sp-ce5737-49",
+      "mo_ta_chi_tiet": "Máy lạnh Toshiba Inverter CE5737 được trang bị máy nén Inverter thế hệ mới, tự động điều chỉnh công suất theo nhu cầu thực tế, tiết kiệm đến 70% điện năng. Công nghệ làm lạnh 3D Airflow phân phối gió đều khắp phòng, không gây cảm giác gió lùa trực tiếp. Bộ lọc kháng khuẩn Ag+ kết hợp ion âm giúp không khí luôn trong lành và sạch khuẩn. Chế độ Sleep Mode thông minh tự động điều chỉnh nhiệt độ theo từng giai đoạn giấc ngủ. Điều khiển từ xa bằng smartphone qua ứng dụng chuyên dụng, tiện lợi mọi lúc mọi nơi.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "2 chiều (làm lạnh/sưởi ấm)",
+        "Công suất làm lạnh": "1.5 HP - 12000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "23 dB / Dàn nóng: 50 dB",
+        "Loại Gas": "R-410A",
+        "Kích thước dàn lạnh": "1000 × 300 × 195 mm",
+        "Khối lượng dàn lạnh": "11.7 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Trả góp 0% không cần trả trước"
+      ]
+    },
+    {
+      "id": 50,
+      "id_san_pham": 50,
+      "slug": "sp-rg2630-50",
+      "mo_ta_chi_tiet": "Máy giặt Sharp Diệt khuẩn RG2630 là dòng máy giặt cao cấp với công nghệ giặt nước nóng StainMaster+ đánh bay các vết bẩn cứng đầu từ cà phê, dầu mỡ đến máu khô. Hệ thống ActiveFoam tạo bọt siêu mịn, tăng hiệu quả làm sạch gấp 40 lần. Lồng giặt dạng sóng Sazanami bảo vệ quần áo khỏi nhăn nhúm và hư tổn. Chế độ giặt nhanh 15 phút tiện lợi cho những lúc cần gấp. Bảng điều khiển cảm ứng kính hiện đại kết hợp màn hình LED rõ nét.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Smart Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "1100 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1050 × 560 × 660 mm",
+        "Khối lượng máy": "35 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 14 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 51,
+      "id_san_pham": 51,
+      "slug": "sp-bi4702-51",
+      "mo_ta_chi_tiet": "Lò vi sóng Aqua Inverter BI4702 tích hợp công nghệ biến tần Inverter kiểm soát nhiệt độ chính xác, giúp thức ăn chín đều từ trong ra ngoài mà không bị khô. Dung tích lớn phù hợp cho gia đình đông người. Bảng điều khiển cảm ứng trực quan kết hợp màn hình LED sắc nét giúp dễ dàng chọn chế độ nấu. Khoang lò tráng men chống dính, dễ lau chùi. Tích hợp chức năng rã đông Turbo Defrost tự động tính toán thời gian theo trọng lượng thực phẩm. Hệ thống nướng đối lưu cho lớp vỏ giòn đẹp mắt.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng có nướng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "800W",
+        "Công suất nướng": "1000W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng có màn hình LED",
+        "Chất liệu khoang lò": "Thép tráng men chống dính",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "280 × 460 × 380 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 52,
+      "id_san_pham": 52,
+      "slug": "sp-do3623-52",
+      "mo_ta_chi_tiet": "Nồi cơm điện Daikin Inverter DO3623 sử dụng công nghệ gia nhiệt IH (Induction Heating) đốt nóng trực tiếp lòng nồi, tạo ra nhiệt độ cao và đều hơn so với nồi thường, cơm chín mềm dẻo tự nhiên. Lòng nồi bằng hợp kim nhôm đúc nguyên khối với 7 lớp phủ chống dính Diamond bền bỉ. Cảm biến nhiệt chính xác theo dõi và điều chỉnh nhiệt độ theo từng giai đoạn nấu. Chức năng giữ ấm 24 tiếng mà cơm không bị khô hay vàng. Thiết kế nắp rời có thể tháo rửa tiện lợi.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện cao tần IH",
+        "Dung tích": "1.8 lít",
+        "Công suất": "900W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "270 × 370 × 295 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 53,
+      "id_san_pham": 53,
+      "slug": "sp-cl9799-53",
+      "mo_ta_chi_tiet": "Quạt điều hòa Electrolux Thế hệ mới CL9799 trang bị công nghệ Ion âm phát tán 8 triệu ion/cm³, diệt khuẩn, khử mùi và lọc bụi mịn hiệu quả. Tấm làm mát công nghệ tổ ong Cooling Pad hấp thụ nước tối đa, làm giảm nhiệt độ gió thổi ra đến 8°C. Motor đồng nguyên chất bền bỉ, tuổi thọ cao, vận hành êm ái dưới 40dB. Bình nước có thể tháo rời, dễ dàng vệ sinh và bổ sung nước. Chế độ hẹn giờ linh hoạt từ 1-12 tiếng. Tấm chắn gió dao động tự động rộng 120°.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa công nghiệp mini",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "CoolMax Fiber",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + gió tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "480 × 380 × 900 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 54,
+      "id_san_pham": 54,
+      "slug": "sp-wa5590-54",
+      "mo_ta_chi_tiet": "Tivi Samsung Inverter WA5590 mang đến trải nghiệm giải trí đỉnh cao với màn hình 4K UHD cho hình ảnh sắc nét gấp 4 lần Full HD. Công nghệ HDR10+ tái hiện dải màu rộng với độ tương phản cao, mang lại hình ảnh chân thực. Hệ thống âm thanh Dolby Audio tích hợp loa công suất lớn cho âm thanh sống động, rõ ràng. Chạy trên nền tảng Smart TV với kho ứng dụng phong phú. Thiết kế viền siêu mỏng Bezel-less sang trọng, phù hợp mọi không gian nội thất. Tích hợp Bluetooth và Chromecast.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 16W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 78 mm",
+        "Khối lượng": "14.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 55,
+      "id_san_pham": 55,
+      "slug": "sp-ki4456-55",
+      "mo_ta_chi_tiet": "Loa thanh LG Thế hệ mới KI4456 mang đến chất âm Hi-Res Audio vượt trội với drivers từ tính cải tiến cho dải tần rộng và chi tiết. Tổng công suất lớn lấp đầy không gian phòng khách. Công nghệ Adaptive Sound tự động nhận diện nội dung đang phát và điều chỉnh equalizer phù hợp: nhấn bass cho phim hành động, tăng vocal cho tin tức. Kết nối Bluetooth phiên bản mới cho streaming không dây ổn định, không trễ. Điều khiển bằng remote hoặc ứng dụng trên điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI ARC, Optical, Bluetooth 5.0, USB",
+        "Tần số đáp ứng": "35Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 60 × 110 mm",
+        "Khối lượng tổng": "5.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 56,
+      "id_san_pham": 56,
+      "slug": "sp-uf7614-56",
+      "mo_ta_chi_tiet": "Tủ lạnh Panasonic Thế hệ mới UF7614 với công nghệ Twin Cooling Plus sử dụng 2 dàn lạnh độc lập cho ngăn lạnh và ngăn đông, ngăn ngừa mùi lẫn giữa hai ngăn và duy trì độ ẩm tối ưu. Bộ lọc khử mùi than hoạt tính DeodorantFilter loại bỏ 99% vi khuẩn gây mùi. Công nghệ Power Freeze đông nhanh thực phẩm, khóa chặt vitamin và chất dinh dưỡng. Ngăn chuyển đổi linh hoạt 5 trong 1 từ đông sang lạnh tùy nhu cầu. Màn hình điều khiển LED ngoài cửa tiện lợi, không cần mở tủ.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "290 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 600 × 670 mm",
+        "Khối lượng": "57 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 57,
+      "id_san_pham": 57,
+      "slug": "sp-vi2867-57",
+      "mo_ta_chi_tiet": "Máy lạnh Sony Cao cấp VI2867 sở hữu công nghệ Inverter tiên tiến, giúp tiết kiệm điện năng lên đến 65% so với máy lạnh thường. Hệ thống lọc khí đa tầng kết hợp công nghệ diệt khuẩn giúp loại bỏ 99% vi khuẩn, nấm mốc và bụi mịn PM 2.5, bảo vệ sức khỏe hệ hô hấp cho cả gia đình. Chế độ làm lạnh nhanh Turbo giúp hạ nhiệt phòng chỉ trong 3 phút. Thiết kế dàn lạnh mỏng gọn, phù hợp với mọi không gian nội thất. Vận hành siêu êm với độ ồn chỉ 20dB ở chế độ ngủ, đảm bảo giấc ngủ sâu và thoải mái.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều (chỉ làm lạnh)",
+        "Công suất làm lạnh": "1 HP - 9000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "21 dB / Dàn nóng: 48 dB",
+        "Loại Gas": "R-32 (thân thiện môi trường)",
+        "Kích thước dàn lạnh": "900 × 290 × 195 mm",
+        "Khối lượng dàn lạnh": "10.1 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 8 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp 0% qua thẻ tín dụng (6-12 tháng)"
+      ]
+    },
+    {
+      "id": 58,
+      "id_san_pham": 58,
+      "slug": "sp-dr9875-58",
+      "mo_ta_chi_tiet": "Máy giặt Toshiba Diệt khuẩn DR9875 sở hữu công nghệ giặt bong bóng Bubble Wash thẩm thấu sâu vào sợi vải, loại bỏ vết bẩn cứng đầu ngay cả ở nhiệt độ nước lạnh. Động cơ Inverter bền bỉ, hoạt động êm ái với tuổi thọ lên đến 20 năm. Chức năng tự vệ sinh lồng giặt bằng nước nóng ngăn ngừa nấm mốc và mùi hôi. Cảm biến AI tự động nhận diện khối lượng quần áo và chất liệu vải để điều chỉnh mức nước và chương trình giặt tối ưu. Thiết kế cửa kính cường lực sang trọng.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trước - Lồng ngang",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Direct Drive Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "900 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1000 × 560 × 630 mm",
+        "Khối lượng máy": "56 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 12 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 59,
+      "id_san_pham": 59,
+      "slug": "sp-rc4517-59",
+      "mo_ta_chi_tiet": "Lò vi sóng Sharp Inverter RC4517 với công suất vi sóng mạnh mẽ, hâm nóng và nấu chín nhanh chóng. Công nghệ Inverter tiết kiệm đến 30% điện năng so với lò vi sóng thường. Khoang lò rộng rãi chứa được đĩa quay lớn 31.5cm. Tích hợp 12 thực đơn nấu tự động phù hợp với khẩu vị Việt Nam. Chế độ giữ ấm thông minh duy trì nhiệt độ món ăn mà không làm khô. Thiết kế mặt gương sang trọng, phù hợp mọi không gian bếp.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng inverter",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "1000W",
+        "Công suất nướng": "1400W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng kính phẳng",
+        "Chất liệu khoang lò": "Thép không gỉ",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "310 × 500 × 410 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 60,
+      "id_san_pham": 60,
+      "slug": "sp-ms1554-60",
+      "mo_ta_chi_tiet": "Nồi cơm điện Aqua Cao cấp MS1554 được thiết kế dành riêng cho thị trường Việt Nam, tối ưu hóa cho các loại gạo dẻo truyền thống. Công nghệ nấu đa chiều phân bổ nhiệt đều từ đáy, thành và nắp nồi, giúp cơm chín đều, dẻo bóng từng hạt. Lòng nồi dày nhiều lớp phủ chống dính cao cấp, bền bỉ theo thời gian và an toàn cho sức khỏe. Van xả hơi thông minh giúp giữ trọn hương vị tự nhiên của gạo. Tích hợp nhiều chế độ nấu đa dạng bao gồm cơm trắng, cơm lứt, cháo, súp, hầm và hấp.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử",
+        "Dung tích": "1.5 lít",
+        "Công suất": "750W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "255 × 350 × 280 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 61,
+      "id_san_pham": 61,
+      "slug": "sp-zy7908-61",
+      "mo_ta_chi_tiet": "Quạt điều hòa Daikin Diệt khuẩn ZY7908 sở hữu thiết kế hiện đại với bảng điều khiển cảm ứng LED sang trọng. Hệ thống phun sương siêu mịn kết hợp quạt gió tạo hiệu ứng làm mát tự nhiên, dễ chịu và không gây khô da. Bình nước dung tích lớn cho thời gian sử dụng liên tục lên đến 10 giờ. Tích hợp 4 chế độ gió: Mạnh, Trung bình, Nhẹ và Tự nhiên phù hợp mọi nhu cầu. Lưới lọc bụi có thể tháo rửa dễ dàng. Chân đế chắc chắn với bánh xe di động thuận tiện.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa hơi nước",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Cooling Pad công nghệ Nhật",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "4 tốc độ + chế độ ngủ",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "460 × 360 × 860 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 62,
+      "id_san_pham": 62,
+      "slug": "sp-oz2598-62",
+      "mo_ta_chi_tiet": "Tivi Electrolux Diệt khuẩn OZ2598 là dòng TV thông minh AI với khả năng nhận diện nội dung và tự động điều chỉnh hình ảnh, âm thanh phù hợp. Màn hình QLED hiển thị trên 1 tỷ màu sắc trung thực và sống động. Công nghệ Quantum Dot cho màu sắc chính xác 100% dải màu DCI-P3. Tích hợp trợ lý ảo Google Assistant và Alexa điều khiển bằng giọng nói. Tính năng Multi View hiển thị đồng thời 2 nội dung trên 1 màn hình. AirPlay 2 và Screen Mirroring dễ dàng chiếu nội dung từ điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 24W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 88 mm",
+        "Khối lượng": "11.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 63,
+      "id_san_pham": 63,
+      "slug": "sp-fe2350-63",
+      "mo_ta_chi_tiet": "Loa thanh Samsung Thế hệ mới FE2350 nâng tầm trải nghiệm âm thanh gia đình với hệ thống kênh tích hợp subwoofer. Công nghệ âm thanh vòm tạo cảm giác chân thực như đang ngồi trong rạp phim. Kết nối đa dạng: HDMI eARC, Optical, Bluetooth, USB cho phép phát nhạc từ mọi nguồn. Chế độ Night Mode tự động giảm bass và tăng rõ thoại, lý tưởng cho việc xem phim đêm khuya. Thiết kế thanh lịch với lưới kim loại cao cấp, dễ dàng gắn tường hoặc đặt trên kệ TV.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.3, USB, AUX",
+        "Tần số đáp ứng": "30Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 55 × 100 mm",
+        "Khối lượng tổng": "9.1 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 64,
+      "id_san_pham": 64,
+      "slug": "sp-lw9270-64",
+      "mo_ta_chi_tiet": "Tủ lạnh LG Thế hệ mới LW9270 trang bị hệ thống làm lạnh đa chiều Multi Air Flow, phân phối khí lạnh đều đến từng ngóc ngách trong tủ. Máy nén Linear Inverter vận hành cực êm, tiết kiệm điện và bền bỉ với bảo hành 10 năm. Công nghệ DoorCooling+ làm lạnh khu vực cửa tủ nhanh hơn 32%, lý tưởng cho đồ uống. Ngăn rau quả FreshBalancer điều chỉnh độ ẩm tối ưu, giữ rau quả tươi xanh hơn. Tích hợp khay đá xoay có thể lấy đá dễ dàng. Thiết kế Slim với bề ngang chỉ 595mm tiết kiệm không gian.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "410 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 580 × 650 mm",
+        "Khối lượng": "72 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 65,
+      "id_san_pham": 65,
+      "slug": "sp-oh7709-65",
+      "mo_ta_chi_tiet": "Máy lạnh Panasonic Inverter OH7709 nổi bật với khả năng làm lạnh cực nhanh nhờ công nghệ Powerful Cooling kết hợp quạt kép. Máy nén Inverter hoạt động ổn định, bền bỉ với tuổi thọ lên đến 15 năm. Tích hợp cảm biến nhiệt độ thông minh, tự động điều chỉnh công suất theo môi trường và số người trong phòng. Gas R-32 thân thiện với môi trường, chỉ số GWP thấp. Thiết kế sang trọng với mặt nạ cong 3D độc đáo và màn hình hiển thị ẩn tinh tế.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều Inverter",
+        "Công suất làm lạnh": "2 HP - 15000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "19 dB / Dàn nóng: 46 dB",
+        "Loại Gas": "R-32",
+        "Kích thước dàn lạnh": "800 × 310 × 195 mm",
+        "Khối lượng dàn lạnh": "8.5 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 12 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp qua công ty tài chính"
+      ]
+    },
+    {
+      "id": 66,
+      "id_san_pham": 66,
+      "slug": "sp-vm8498-66",
+      "mo_ta_chi_tiet": "Máy giặt Sony Cao cấp VM8498 được trang bị động cơ Inverter truyền động trực tiếp, vận hành cực êm và tiết kiệm điện năng. Công nghệ giặt hơi nước Steam Wash diệt 99.9% vi khuẩn và tác nhân gây dị ứng trên quần áo mà không cần sử dụng hóa chất. Lồng giặt thép không gỉ với thiết kế sóng nước giảm xoắn rối, bảo vệ sợi vải. Tích hợp nhiều chương trình giặt thông minh cho từng loại vải. Hệ thống tự cân bằng chống rung lắc, hoạt động ổn định ngay cả ở tốc độ vắt cao.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "TD Inverter (truyền động gián tiếp)",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "700 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "950 × 560 × 600 mm",
+        "Khối lượng máy": "42 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 10 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 67,
+      "id_san_pham": 67,
+      "slug": "sp-vh9165-67",
+      "mo_ta_chi_tiet": "Lò vi sóng Toshiba Cao cấp VH9165 mang đến trải nghiệm nấu nướng hiện đại với nhiều chế độ nấu tự động được lập trình sẵn cho các món ăn phổ biến. Công nghệ phân phối sóng đều 3D giúp thức ăn nóng đồng đều mà không cần xoay đĩa. Thiết kế khoang lò bằng gốm kháng khuẩn BioLon, dễ vệ sinh và an toàn cho sức khỏe. Chức năng Steam Cook nấu bằng hơi nước giữ nguyên vitamin và chất dinh dưỡng. Chế độ bảo vệ trẻ em khóa an toàn tự động.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng đa năng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "900W",
+        "Công suất nướng": "1200W",
+        "Công nghệ Inverter": "Có - Tiết kiệm 30% điện",
+        "Bảng điều khiển": "Nút bấm điện tử",
+        "Chất liệu khoang lò": "Gốm kháng khuẩn BioLon",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "295 × 480 × 395 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 68,
+      "id_san_pham": 68,
+      "slug": "sp-db9094-68",
+      "mo_ta_chi_tiet": "Nồi cơm điện Sharp Thế hệ mới DB9094 cao cấp với công nghệ áp suất Pressure Cooking giúp cơm chín nhanh hơn và dẻo hơn, đặc biệt phù hợp với gạo cứng và gạo lứt. Lòng nồi phủ Ceramic chống dính 5 lớp, không chứa PFOA, an toàn tuyệt đối cho sức khỏe. Bảng điều khiển LCD lớn với giao diện tiếng Việt trực quan, dễ sử dụng cho mọi thành viên gia đình. Hẹn giờ nấu tự động lên đến 24 tiếng. Thiết kế vỏ ngoài thép không gỉ sang trọng, chống bám vân tay.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử áp suất",
+        "Dung tích": "2.1 lít",
+        "Công suất": "1050W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "285 × 390 × 310 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 69,
+      "id_san_pham": 69,
+      "slug": "sp-ng7606-69",
+      "mo_ta_chi_tiet": "Quạt điều hòa Aqua Diệt khuẩn NG7606 là giải pháp làm mát tiết kiệm năng lượng lý tưởng cho mùa hè nóng bức. Bình chứa nước lớn kết hợp tấm làm mát Honeycomb giúp giảm nhiệt độ phòng đáng kể so với quạt thường. Motor DC Inverter vận hành cực êm, tiêu thụ điện rất thấp so với máy lạnh. Tích hợp công nghệ lọc không khí và diệt khuẩn, mang đến làn gió mát trong lành. Thiết kế 4 bánh xe xoay 360° di chuyển linh hoạt. Điều khiển từ xa tiện lợi kèm hẹn giờ tắt tự động lên đến 12 tiếng.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa (Air Cooler)",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Honeycomb (tổ ong)",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + chế độ tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "440 × 340 × 820 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 70,
+      "id_san_pham": 70,
+      "slug": "sp-bh3977-70",
+      "mo_ta_chi_tiet": "Tivi Daikin Cao cấp BH3977 sở hữu tấm nền VA cho góc nhìn rộng 178° và độ tương phản cao, hình ảnh rõ nét từ mọi vị trí ngồi. Công nghệ UHD Dimming chia màn hình thành nhiều vùng, tối ưu độ sáng và độ tương phản từng vùng riêng biệt. Bộ xử lý hình ảnh Crystal Processor 4K nâng cấp mọi nội dung lên gần chuẩn 4K. Hệ thống âm thanh Dolby Digital Plus 2.0 kênh. Remote thông minh tích hợp mic điều khiển giọng nói tiếng Việt. Cổng kết nối đa dạng đáp ứng mọi nhu cầu.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "Full HD (1920 × 1080)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 20W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 83 mm",
+        "Khối lượng": "8.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 71,
+      "id_san_pham": 71,
+      "slug": "sp-tk7090-71",
+      "mo_ta_chi_tiet": "Loa thanh Electrolux Thông minh AI TK7090 sở hữu thiết kế mỏng gọn chỉ 55mm, hòa hợp hoàn hảo với mọi TV phẳng hiện đại. Tích hợp subwoofer không dây cho bass sâu mạnh mẽ mà không cần dây kết nối rườm rà. Công nghệ ClearVoice tăng cường giọng thoại, nghe rõ từng câu hội thoại ngay cả trong các cảnh phim có nhiều hiệu ứng. Hỗ trợ HDMI eARC cho âm thanh không nén từ TV. Chế độ Game Mode giảm độ trễ âm thanh xuống dưới 20ms, hoàn hảo cho gaming.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.2, Wi-Fi",
+        "Tần số đáp ứng": "40Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 65 × 120 mm",
+        "Khối lượng tổng": "6.7 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 72,
+      "id_san_pham": 72,
+      "slug": "sp-rd7227-72",
+      "mo_ta_chi_tiet": "Tủ lạnh Samsung Inverter RD7227 với dung tích lớn, lý tưởng cho gia đình đông thành viên. Công nghệ Inverter tiên tiến giữ nhiệt độ ổn định, bảo quản thực phẩm tươi ngon lâu hơn gấp 7 ngày so với tủ lạnh thường. Hệ thống diệt khuẩn tiên tiến khử mùi hiệu quả 99.8%, ngăn ngừa lây nhiễm mùi giữa các ngăn. Ngăn đông mềm giữ thịt cá tươi ngon không cần rã đông, tiết kiệm thời gian nấu nướng. Thiết kế cửa phẳng sang trọng với mặt kính cường lực chống bám vân tay. Tiết kiệm đến 50% điện năng.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "330 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 560 × 630 mm",
+        "Khối lượng": "62 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 73,
+      "id_san_pham": 73,
+      "slug": "sp-nq5974-73",
+      "mo_ta_chi_tiet": "Máy lạnh LG Cao cấp NQ5974 được trang bị máy nén Inverter thế hệ mới, tự động điều chỉnh công suất theo nhu cầu thực tế, tiết kiệm đến 70% điện năng. Công nghệ làm lạnh 3D Airflow phân phối gió đều khắp phòng, không gây cảm giác gió lùa trực tiếp. Bộ lọc kháng khuẩn Ag+ kết hợp ion âm giúp không khí luôn trong lành và sạch khuẩn. Chế độ Sleep Mode thông minh tự động điều chỉnh nhiệt độ theo từng giai đoạn giấc ngủ. Điều khiển từ xa bằng smartphone qua ứng dụng chuyên dụng, tiện lợi mọi lúc mọi nơi.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "2 chiều (làm lạnh/sưởi ấm)",
+        "Công suất làm lạnh": "1.5 HP - 12000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "22 dB / Dàn nóng: 49 dB",
+        "Loại Gas": "R-410A",
+        "Kích thước dàn lạnh": "950 × 300 × 195 mm",
+        "Khối lượng dàn lạnh": "10.9 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Trả góp 0% không cần trả trước"
+      ]
+    },
+    {
+      "id": 74,
+      "id_san_pham": 74,
+      "slug": "sp-za2386-74",
+      "mo_ta_chi_tiet": "Máy giặt Panasonic Thế hệ mới ZA2386 là dòng máy giặt cao cấp với công nghệ giặt nước nóng StainMaster+ đánh bay các vết bẩn cứng đầu từ cà phê, dầu mỡ đến máu khô. Hệ thống ActiveFoam tạo bọt siêu mịn, tăng hiệu quả làm sạch gấp 40 lần. Lồng giặt dạng sóng Sazanami bảo vệ quần áo khỏi nhăn nhúm và hư tổn. Chế độ giặt nhanh 15 phút tiện lợi cho những lúc cần gấp. Bảng điều khiển cảm ứng kính hiện đại kết hợp màn hình LED rõ nét.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Smart Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "1100 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1050 × 560 × 660 mm",
+        "Khối lượng máy": "63 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 14 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 75,
+      "id_san_pham": 75,
+      "slug": "sp-ny2566-75",
+      "mo_ta_chi_tiet": "Lò vi sóng Sony Cao cấp NY2566 tích hợp công nghệ biến tần Inverter kiểm soát nhiệt độ chính xác, giúp thức ăn chín đều từ trong ra ngoài mà không bị khô. Dung tích lớn phù hợp cho gia đình đông người. Bảng điều khiển cảm ứng trực quan kết hợp màn hình LED sắc nét giúp dễ dàng chọn chế độ nấu. Khoang lò tráng men chống dính, dễ lau chùi. Tích hợp chức năng rã đông Turbo Defrost tự động tính toán thời gian theo trọng lượng thực phẩm. Hệ thống nướng đối lưu cho lớp vỏ giòn đẹp mắt.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng có nướng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "800W",
+        "Công suất nướng": "1000W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng có màn hình LED",
+        "Chất liệu khoang lò": "Thép tráng men chống dính",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "280 × 460 × 380 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 76,
+      "id_san_pham": 76,
+      "slug": "sp-ho1337-76",
+      "mo_ta_chi_tiet": "Nồi cơm điện Toshiba Diệt khuẩn HO1337 sử dụng công nghệ gia nhiệt IH (Induction Heating) đốt nóng trực tiếp lòng nồi, tạo ra nhiệt độ cao và đều hơn so với nồi thường, cơm chín mềm dẻo tự nhiên. Lòng nồi bằng hợp kim nhôm đúc nguyên khối với 7 lớp phủ chống dính Diamond bền bỉ. Cảm biến nhiệt chính xác theo dõi và điều chỉnh nhiệt độ theo từng giai đoạn nấu. Chức năng giữ ấm 24 tiếng mà cơm không bị khô hay vàng. Thiết kế nắp rời có thể tháo rửa tiện lợi.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện cao tần IH",
+        "Dung tích": "1.8 lít",
+        "Công suất": "900W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "270 × 370 × 295 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 77,
+      "id_san_pham": 77,
+      "slug": "sp-ub9153-77",
+      "mo_ta_chi_tiet": "Quạt điều hòa Sharp Cao cấp UB9153 trang bị công nghệ Ion âm phát tán 8 triệu ion/cm³, diệt khuẩn, khử mùi và lọc bụi mịn hiệu quả. Tấm làm mát công nghệ tổ ong Cooling Pad hấp thụ nước tối đa, làm giảm nhiệt độ gió thổi ra đến 8°C. Motor đồng nguyên chất bền bỉ, tuổi thọ cao, vận hành êm ái dưới 40dB. Bình nước có thể tháo rời, dễ dàng vệ sinh và bổ sung nước. Chế độ hẹn giờ linh hoạt từ 1-12 tiếng. Tấm chắn gió dao động tự động rộng 120°.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa công nghiệp mini",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "CoolMax Fiber",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + gió tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "480 × 380 × 900 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 78,
+      "id_san_pham": 78,
+      "slug": "sp-js3997-78",
+      "mo_ta_chi_tiet": "Tivi Aqua Inverter JS3997 mang đến trải nghiệm giải trí đỉnh cao với màn hình 4K UHD cho hình ảnh sắc nét gấp 4 lần Full HD. Công nghệ HDR10+ tái hiện dải màu rộng với độ tương phản cao, mang lại hình ảnh chân thực. Hệ thống âm thanh Dolby Audio tích hợp loa công suất lớn cho âm thanh sống động, rõ ràng. Chạy trên nền tảng Smart TV với kho ứng dụng phong phú. Thiết kế viền siêu mỏng Bezel-less sang trọng, phù hợp mọi không gian nội thất. Tích hợp Bluetooth và Chromecast.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 16W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 78 mm",
+        "Khối lượng": "13 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 79,
+      "id_san_pham": 79,
+      "slug": "sp-oa5125-79",
+      "mo_ta_chi_tiet": "Loa thanh Daikin Thế hệ mới OA5125 mang đến chất âm Hi-Res Audio vượt trội với drivers từ tính cải tiến cho dải tần rộng và chi tiết. Tổng công suất lớn lấp đầy không gian phòng khách. Công nghệ Adaptive Sound tự động nhận diện nội dung đang phát và điều chỉnh equalizer phù hợp: nhấn bass cho phim hành động, tăng vocal cho tin tức. Kết nối Bluetooth phiên bản mới cho streaming không dây ổn định, không trễ. Điều khiển bằng remote hoặc ứng dụng trên điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI ARC, Optical, Bluetooth 5.0, USB",
+        "Tần số đáp ứng": "35Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 60 × 110 mm",
+        "Khối lượng tổng": "10.3 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 80,
+      "id_san_pham": 80,
+      "slug": "sp-fl5857-80",
+      "mo_ta_chi_tiet": "Tủ lạnh Electrolux Cao cấp FL5857 với công nghệ Twin Cooling Plus sử dụng 2 dàn lạnh độc lập cho ngăn lạnh và ngăn đông, ngăn ngừa mùi lẫn giữa hai ngăn và duy trì độ ẩm tối ưu. Bộ lọc khử mùi than hoạt tính DeodorantFilter loại bỏ 99% vi khuẩn gây mùi. Công nghệ Power Freeze đông nhanh thực phẩm, khóa chặt vitamin và chất dinh dưỡng. Ngăn chuyển đổi linh hoạt 5 trong 1 từ đông sang lạnh tùy nhu cầu. Màn hình điều khiển LED ngoài cửa tiện lợi, không cần mở tủ.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "250 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 600 × 670 mm",
+        "Khối lượng": "52 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 81,
+      "id_san_pham": 81,
+      "slug": "sp-wf5530-81",
+      "mo_ta_chi_tiet": "Máy lạnh Samsung Cao cấp WF5530 sở hữu công nghệ Inverter tiên tiến, giúp tiết kiệm điện năng lên đến 65% so với máy lạnh thường. Hệ thống lọc khí đa tầng kết hợp công nghệ diệt khuẩn giúp loại bỏ 99% vi khuẩn, nấm mốc và bụi mịn PM 2.5, bảo vệ sức khỏe hệ hô hấp cho cả gia đình. Chế độ làm lạnh nhanh Turbo giúp hạ nhiệt phòng chỉ trong 3 phút. Thiết kế dàn lạnh mỏng gọn, phù hợp với mọi không gian nội thất. Vận hành siêu êm với độ ồn chỉ 20dB ở chế độ ngủ, đảm bảo giấc ngủ sâu và thoải mái.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều (chỉ làm lạnh)",
+        "Công suất làm lạnh": "1 HP - 9000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "20 dB / Dàn nóng: 47 dB",
+        "Loại Gas": "R-32 (thân thiện môi trường)",
+        "Kích thước dàn lạnh": "850 × 290 × 195 mm",
+        "Khối lượng dàn lạnh": "9.3 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 8 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp 0% qua thẻ tín dụng (6-12 tháng)"
+      ]
+    },
+    {
+      "id": 82,
+      "id_san_pham": 82,
+      "slug": "sp-ax5998-82",
+      "mo_ta_chi_tiet": "Máy giặt LG Diệt khuẩn AX5998 sở hữu công nghệ giặt bong bóng Bubble Wash thẩm thấu sâu vào sợi vải, loại bỏ vết bẩn cứng đầu ngay cả ở nhiệt độ nước lạnh. Động cơ Inverter bền bỉ, hoạt động êm ái với tuổi thọ lên đến 20 năm. Chức năng tự vệ sinh lồng giặt bằng nước nóng ngăn ngừa nấm mốc và mùi hôi. Cảm biến AI tự động nhận diện khối lượng quần áo và chất liệu vải để điều chỉnh mức nước và chương trình giặt tối ưu. Thiết kế cửa kính cường lực sang trọng.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trước - Lồng ngang",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Direct Drive Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "900 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1000 × 560 × 630 mm",
+        "Khối lượng máy": "49 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 12 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 83,
+      "id_san_pham": 83,
+      "slug": "sp-oy9912-83",
+      "mo_ta_chi_tiet": "Lò vi sóng Panasonic Thế hệ mới OY9912 với công suất vi sóng mạnh mẽ, hâm nóng và nấu chín nhanh chóng. Công nghệ Inverter tiết kiệm đến 30% điện năng so với lò vi sóng thường. Khoang lò rộng rãi chứa được đĩa quay lớn 31.5cm. Tích hợp 12 thực đơn nấu tự động phù hợp với khẩu vị Việt Nam. Chế độ giữ ấm thông minh duy trì nhiệt độ món ăn mà không làm khô. Thiết kế mặt gương sang trọng, phù hợp mọi không gian bếp.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng inverter",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "1000W",
+        "Công suất nướng": "1400W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng kính phẳng",
+        "Chất liệu khoang lò": "Thép không gỉ",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "310 × 500 × 410 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 84,
+      "id_san_pham": 84,
+      "slug": "sp-lv9408-84",
+      "mo_ta_chi_tiet": "Nồi cơm điện Sony Inverter LV9408 được thiết kế dành riêng cho thị trường Việt Nam, tối ưu hóa cho các loại gạo dẻo truyền thống. Công nghệ nấu đa chiều phân bổ nhiệt đều từ đáy, thành và nắp nồi, giúp cơm chín đều, dẻo bóng từng hạt. Lòng nồi dày nhiều lớp phủ chống dính cao cấp, bền bỉ theo thời gian và an toàn cho sức khỏe. Van xả hơi thông minh giúp giữ trọn hương vị tự nhiên của gạo. Tích hợp nhiều chế độ nấu đa dạng bao gồm cơm trắng, cơm lứt, cháo, súp, hầm và hấp.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử",
+        "Dung tích": "1.5 lít",
+        "Công suất": "750W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "255 × 350 × 280 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 85,
+      "id_san_pham": 85,
+      "slug": "sp-ac4866-85",
+      "mo_ta_chi_tiet": "Quạt điều hòa Toshiba Cao cấp AC4866 sở hữu thiết kế hiện đại với bảng điều khiển cảm ứng LED sang trọng. Hệ thống phun sương siêu mịn kết hợp quạt gió tạo hiệu ứng làm mát tự nhiên, dễ chịu và không gây khô da. Bình nước dung tích lớn cho thời gian sử dụng liên tục lên đến 10 giờ. Tích hợp 4 chế độ gió: Mạnh, Trung bình, Nhẹ và Tự nhiên phù hợp mọi nhu cầu. Lưới lọc bụi có thể tháo rửa dễ dàng. Chân đế chắc chắn với bánh xe di động thuận tiện.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa hơi nước",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Cooling Pad công nghệ Nhật",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "4 tốc độ + chế độ ngủ",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "460 × 360 × 860 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 86,
+      "id_san_pham": 86,
+      "slug": "sp-lb1255-86",
+      "mo_ta_chi_tiet": "Tivi Sharp Inverter LB1255 là dòng TV thông minh AI với khả năng nhận diện nội dung và tự động điều chỉnh hình ảnh, âm thanh phù hợp. Màn hình QLED hiển thị trên 1 tỷ màu sắc trung thực và sống động. Công nghệ Quantum Dot cho màu sắc chính xác 100% dải màu DCI-P3. Tích hợp trợ lý ảo Google Assistant và Alexa điều khiển bằng giọng nói. Tính năng Multi View hiển thị đồng thời 2 nội dung trên 1 màn hình. AirPlay 2 và Screen Mirroring dễ dàng chiếu nội dung từ điện thoại.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "4K UHD (3840 × 2160)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 24W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 88 mm",
+        "Khối lượng": "10 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 87,
+      "id_san_pham": 87,
+      "slug": "sp-ic5634-87",
+      "mo_ta_chi_tiet": "Loa thanh Aqua Inverter IC5634 nâng tầm trải nghiệm âm thanh gia đình với hệ thống kênh tích hợp subwoofer. Công nghệ âm thanh vòm tạo cảm giác chân thực như đang ngồi trong rạp phim. Kết nối đa dạng: HDMI eARC, Optical, Bluetooth, USB cho phép phát nhạc từ mọi nguồn. Chế độ Night Mode tự động giảm bass và tăng rõ thoại, lý tưởng cho việc xem phim đêm khuya. Thiết kế thanh lịch với lưới kim loại cao cấp, dễ dàng gắn tường hoặc đặt trên kệ TV.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.3, USB, AUX",
+        "Tần số đáp ứng": "30Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 55 × 100 mm",
+        "Khối lượng tổng": "7.9 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 88,
+      "id_san_pham": 88,
+      "slug": "sp-rh4275-88",
+      "mo_ta_chi_tiet": "Tủ lạnh Daikin Diệt khuẩn RH4275 trang bị hệ thống làm lạnh đa chiều Multi Air Flow, phân phối khí lạnh đều đến từng ngóc ngách trong tủ. Máy nén Linear Inverter vận hành cực êm, tiết kiệm điện và bền bỉ với bảo hành 10 năm. Công nghệ DoorCooling+ làm lạnh khu vực cửa tủ nhanh hơn 32%, lý tưởng cho đồ uống. Ngăn rau quả FreshBalancer điều chỉnh độ ẩm tối ưu, giữ rau quả tươi xanh hơn. Tích hợp khay đá xoay có thể lấy đá dễ dàng. Thiết kế Slim với bề ngang chỉ 595mm tiết kiệm không gian.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "370 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 580 × 650 mm",
+        "Khối lượng": "67 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 89,
+      "id_san_pham": 89,
+      "slug": "sp-dj5491-89",
+      "mo_ta_chi_tiet": "Máy lạnh Electrolux Thông minh AI DJ5491 nổi bật với khả năng làm lạnh cực nhanh nhờ công nghệ Powerful Cooling kết hợp quạt kép. Máy nén Inverter hoạt động ổn định, bền bỉ với tuổi thọ lên đến 15 năm. Tích hợp cảm biến nhiệt độ thông minh, tự động điều chỉnh công suất theo môi trường và số người trong phòng. Gas R-32 thân thiện với môi trường, chỉ số GWP thấp. Thiết kế sang trọng với mặt nạ cong 3D độc đáo và màn hình hiển thị ẩn tinh tế.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "1 chiều Inverter",
+        "Công suất làm lạnh": "2 HP - 15000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "23 dB / Dàn nóng: 50 dB",
+        "Loại Gas": "R-32",
+        "Kích thước dàn lạnh": "1000 × 310 × 195 mm",
+        "Khối lượng dàn lạnh": "11.7 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 12 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Hỗ trợ trả góp qua công ty tài chính"
+      ]
+    },
+    {
+      "id": 90,
+      "id_san_pham": 90,
+      "slug": "sp-pz1010-90",
+      "mo_ta_chi_tiet": "Máy giặt Samsung Inverter PZ1010 được trang bị động cơ Inverter truyền động trực tiếp, vận hành cực êm và tiết kiệm điện năng. Công nghệ giặt hơi nước Steam Wash diệt 99.9% vi khuẩn và tác nhân gây dị ứng trên quần áo mà không cần sử dụng hóa chất. Lồng giặt thép không gỉ với thiết kế sóng nước giảm xoắn rối, bảo vệ sợi vải. Tích hợp nhiều chương trình giặt thông minh cho từng loại vải. Hệ thống tự cân bằng chống rung lắc, hoạt động ổn định ngay cả ở tốc độ vắt cao.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "TD Inverter (truyền động gián tiếp)",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "700 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "950 × 560 × 600 mm",
+        "Khối lượng máy": "35 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 10 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 91,
+      "id_san_pham": 91,
+      "slug": "sp-hk3457-91",
+      "mo_ta_chi_tiet": "Lò vi sóng LG Diệt khuẩn HK3457 mang đến trải nghiệm nấu nướng hiện đại với nhiều chế độ nấu tự động được lập trình sẵn cho các món ăn phổ biến. Công nghệ phân phối sóng đều 3D giúp thức ăn nóng đồng đều mà không cần xoay đĩa. Thiết kế khoang lò bằng gốm kháng khuẩn BioLon, dễ vệ sinh và an toàn cho sức khỏe. Chức năng Steam Cook nấu bằng hơi nước giữ nguyên vitamin và chất dinh dưỡng. Chế độ bảo vệ trẻ em khóa an toàn tự động.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng đa năng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "900W",
+        "Công suất nướng": "1200W",
+        "Công nghệ Inverter": "Có - Tiết kiệm 30% điện",
+        "Bảng điều khiển": "Nút bấm điện tử",
+        "Chất liệu khoang lò": "Gốm kháng khuẩn BioLon",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "295 × 480 × 395 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 92,
+      "id_san_pham": 92,
+      "slug": "sp-jk8111-92",
+      "mo_ta_chi_tiet": "Nồi cơm điện Panasonic Thông minh AI JK8111 cao cấp với công nghệ áp suất Pressure Cooking giúp cơm chín nhanh hơn và dẻo hơn, đặc biệt phù hợp với gạo cứng và gạo lứt. Lòng nồi phủ Ceramic chống dính 5 lớp, không chứa PFOA, an toàn tuyệt đối cho sức khỏe. Bảng điều khiển LCD lớn với giao diện tiếng Việt trực quan, dễ sử dụng cho mọi thành viên gia đình. Hẹn giờ nấu tự động lên đến 24 tiếng. Thiết kế vỏ ngoài thép không gỉ sang trọng, chống bám vân tay.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện tử áp suất",
+        "Dung tích": "2.1 lít",
+        "Công suất": "1050W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "285 × 390 × 310 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
+    },
+    {
+      "id": 93,
+      "id_san_pham": 93,
+      "slug": "sp-he9626-93",
+      "mo_ta_chi_tiet": "Quạt điều hòa Sony Thông minh AI HE9626 là giải pháp làm mát tiết kiệm năng lượng lý tưởng cho mùa hè nóng bức. Bình chứa nước lớn kết hợp tấm làm mát Honeycomb giúp giảm nhiệt độ phòng đáng kể so với quạt thường. Motor DC Inverter vận hành cực êm, tiêu thụ điện rất thấp so với máy lạnh. Tích hợp công nghệ lọc không khí và diệt khuẩn, mang đến làn gió mát trong lành. Thiết kế 4 bánh xe xoay 360° di chuyển linh hoạt. Điều khiển từ xa tiện lợi kèm hẹn giờ tắt tự động lên đến 12 tiếng.",
+      "thong_so_ky_thuat": {
+        "Loại quạt": "Quạt điều hòa (Air Cooler)",
+        "Công nghệ": "Ion âm lọc không khí",
+        "Dung tích bình nước": "8 lít",
+        "Tấm làm mát": "Honeycomb (tổ ong)",
+        "Lưu lượng gió": "750 m³/h",
+        "Số tốc độ gió": "3 tốc độ + chế độ tự nhiên",
+        "Công suất": "100W",
+        "Phạm vi hiệu quả": "17 - 25 m²",
+        "Kích thước": "440 × 340 × 820 mm",
+        "Khối lượng": "9 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 18 tháng",
+        "Giao hàng miễn phí nội thành",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm bộ lọc dự phòng"
+      ]
+    },
+    {
+      "id": 94,
+      "id_san_pham": 94,
+      "slug": "sp-ok3742-94",
+      "mo_ta_chi_tiet": "Tivi Toshiba Inverter OK3742 sở hữu tấm nền VA cho góc nhìn rộng 178° và độ tương phản cao, hình ảnh rõ nét từ mọi vị trí ngồi. Công nghệ UHD Dimming chia màn hình thành nhiều vùng, tối ưu độ sáng và độ tương phản từng vùng riêng biệt. Bộ xử lý hình ảnh Crystal Processor 4K nâng cấp mọi nội dung lên gần chuẩn 4K. Hệ thống âm thanh Dolby Digital Plus 2.0 kênh. Remote thông minh tích hợp mic điều khiển giọng nói tiếng Việt. Cổng kết nối đa dạng đáp ứng mọi nhu cầu.",
+      "thong_so_ky_thuat": {
+        "Loại tivi": "Google TV",
+        "Kích thước màn hình": "53 inch",
+        "Độ phân giải": "Full HD (1920 × 1080)",
+        "Công nghệ hình ảnh": "Dolby Vision IQ, MEMC",
+        "Tần số quét": "60Hz",
+        "Âm thanh": "Dolby Audio, 20W",
+        "Kết nối": "2× HDMI, 1× USB, Wi-Fi 5, Bluetooth 5.0",
+        "Hệ điều hành": "Google TV",
+        "Kích thước (không chân)": "1140 × 670 × 83 mm",
+        "Khối lượng": "14.5 kg",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Trung Quốc"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 24 tháng tại nhà",
+        "Giao hàng và lắp đặt treo tường miễn phí",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% qua thẻ tín dụng (12 tháng)"
+      ]
+    },
+    {
+      "id": 95,
+      "id_san_pham": 95,
+      "slug": "sp-vm8540-95",
+      "mo_ta_chi_tiet": "Loa thanh Sharp Cao cấp VM8540 sở hữu thiết kế mỏng gọn chỉ 55mm, hòa hợp hoàn hảo với mọi TV phẳng hiện đại. Tích hợp subwoofer không dây cho bass sâu mạnh mẽ mà không cần dây kết nối rườm rà. Công nghệ ClearVoice tăng cường giọng thoại, nghe rõ từng câu hội thoại ngay cả trong các cảnh phim có nhiều hiệu ứng. Hỗ trợ HDMI eARC cho âm thanh không nén từ TV. Chế độ Game Mode giảm độ trễ âm thanh xuống dưới 20ms, hoàn hảo cho gaming.",
+      "thong_so_ky_thuat": {
+        "Loại loa": "Soundbar 5.1 kênh + Sub không dây",
+        "Công suất tổng": "380W",
+        "Công nghệ âm thanh": "DTS:X, Dolby Digital Plus",
+        "Kết nối": "HDMI eARC, Optical, Bluetooth 5.2, Wi-Fi",
+        "Tần số đáp ứng": "40Hz - 20kHz",
+        "Kích thước loa thanh": "1030 × 65 × 120 mm",
+        "Khối lượng tổng": "5.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Tặng kèm dây cáp Optical"
+      ]
+    },
+    {
+      "id": 96,
+      "id_san_pham": 96,
+      "slug": "sp-kf8917-96",
+      "mo_ta_chi_tiet": "Tủ lạnh Aqua Thế hệ mới KF8917 với dung tích lớn, lý tưởng cho gia đình đông thành viên. Công nghệ Inverter tiên tiến giữ nhiệt độ ổn định, bảo quản thực phẩm tươi ngon lâu hơn gấp 7 ngày so với tủ lạnh thường. Hệ thống diệt khuẩn tiên tiến khử mùi hiệu quả 99.8%, ngăn ngừa lây nhiễm mùi giữa các ngăn. Ngăn đông mềm giữ thịt cá tươi ngon không cần rã đông, tiết kiệm thời gian nấu nướng. Thiết kế cửa phẳng sang trọng với mặt kính cường lực chống bám vân tay. Tiết kiệm đến 50% điện năng.",
+      "thong_so_ky_thuat": {
+        "Loại tủ": "Tủ lạnh 2 cửa ngăn đá trên",
+        "Dung tích tổng": "290 lít",
+        "Công nghệ Inverter": "NutriFresh Inverter",
+        "Công nghệ diệt khuẩn": "TasteGuard (than hoạt tính)",
+        "Hệ thống làm lạnh": "No Frost - Quạt kép Twin Fan",
+        "Ngăn đông mềm": "TasteSeal -2°C",
+        "Tiêu thụ điện": "Khoảng 0.9 kWh/ngày",
+        "Kích thước": "1600 × 560 × 630 mm",
+        "Khối lượng": "57 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí tận nhà",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Hỗ trợ trả góp 0% (6-18 tháng)"
+      ]
+    },
+    {
+      "id": 97,
+      "id_san_pham": 97,
+      "slug": "sp-vw8033-97",
+      "mo_ta_chi_tiet": "Máy lạnh Daikin Inverter VW8033 được trang bị máy nén Inverter thế hệ mới, tự động điều chỉnh công suất theo nhu cầu thực tế, tiết kiệm đến 70% điện năng. Công nghệ làm lạnh 3D Airflow phân phối gió đều khắp phòng, không gây cảm giác gió lùa trực tiếp. Bộ lọc kháng khuẩn Ag+ kết hợp ion âm giúp không khí luôn trong lành và sạch khuẩn. Chế độ Sleep Mode thông minh tự động điều chỉnh nhiệt độ theo từng giai đoạn giấc ngủ. Điều khiển từ xa bằng smartphone qua ứng dụng chuyên dụng, tiện lợi mọi lúc mọi nơi.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "2 chiều (làm lạnh/sưởi ấm)",
+        "Công suất làm lạnh": "1.5 HP - 12000 BTU",
+        "Công nghệ Inverter": "Digital Inverter",
+        "Phạm vi hiệu quả": "Từ 17 - 25 m²",
+        "Độ ồn dàn lạnh": "21 dB / Dàn nóng: 48 dB",
+        "Loại Gas": "R-410A",
+        "Kích thước dàn lạnh": "900 × 300 × 195 mm",
+        "Khối lượng dàn lạnh": "10.1 kg",
+        "Tiêu thụ điện trung bình": "0.9500000000000001 kWh/h",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành máy nén 10 năm, toàn máy 24 tháng",
+        "Giao hàng và lắp đặt miễn phí trong 24h",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu tận nhà",
+        "Trả góp 0% không cần trả trước"
+      ]
+    },
+    {
+      "id": 98,
+      "id_san_pham": 98,
+      "slug": "sp-fc8178-98",
+      "mo_ta_chi_tiet": "Máy giặt Electrolux Thế hệ mới FC8178 là dòng máy giặt cao cấp với công nghệ giặt nước nóng StainMaster+ đánh bay các vết bẩn cứng đầu từ cà phê, dầu mỡ đến máu khô. Hệ thống ActiveFoam tạo bọt siêu mịn, tăng hiệu quả làm sạch gấp 40 lần. Lồng giặt dạng sóng Sazanami bảo vệ quần áo khỏi nhăn nhúm và hư tổn. Chế độ giặt nhanh 15 phút tiện lợi cho những lúc cần gấp. Bảng điều khiển cảm ứng kính hiện đại kết hợp màn hình LED rõ nét.",
+      "thong_so_ky_thuat": {
+        "Loại máy": "Cửa trên - Lồng đứng",
+        "Khối lượng giặt": "10 kg",
+        "Động cơ": "Smart Inverter",
+        "Công nghệ giặt": "Bubble Wash, EcoBubble",
+        "Tốc độ vắt tối đa": "1100 vòng/phút",
+        "Mức nước sử dụng": "130 lít/chu trình",
+        "Kích thước": "1050 × 560 × 660 mm",
+        "Khối lượng máy": "56 kg",
+        "Số chương trình giặt": "12 chương trình",
+        "Năm ra mắt": "2024",
+        "Nơi sản xuất": "Indonesia"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành động cơ 14 năm",
+        "Bảo hành toàn máy 24 tháng chính hãng",
+        "Giao hàng và lắp đặt miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 30 ngày đầu",
+        "Trả góp 0% thủ tục nhanh gọn qua thẻ"
+      ]
+    },
+    {
+      "id": 99,
+      "id_san_pham": 99,
+      "slug": "sp-jg1866-99",
+      "mo_ta_chi_tiet": "Lò vi sóng Samsung Thông minh AI JG1866 tích hợp công nghệ biến tần Inverter kiểm soát nhiệt độ chính xác, giúp thức ăn chín đều từ trong ra ngoài mà không bị khô. Dung tích lớn phù hợp cho gia đình đông người. Bảng điều khiển cảm ứng trực quan kết hợp màn hình LED sắc nét giúp dễ dàng chọn chế độ nấu. Khoang lò tráng men chống dính, dễ lau chùi. Tích hợp chức năng rã đông Turbo Defrost tự động tính toán thời gian theo trọng lượng thực phẩm. Hệ thống nướng đối lưu cho lớp vỏ giòn đẹp mắt.",
+      "thong_so_ky_thuat": {
+        "Loại lò": "Lò vi sóng có nướng",
+        "Dung tích": "29 lít",
+        "Công suất vi sóng": "800W",
+        "Công suất nướng": "1000W",
+        "Công nghệ Inverter": "Có",
+        "Bảng điều khiển": "Cảm ứng có màn hình LED",
+        "Chất liệu khoang lò": "Thép tráng men chống dính",
+        "Số chế độ nấu tự động": "14 chế độ",
+        "Kích thước": "280 × 460 × 380 mm",
+        "Khối lượng": "16.5 kg",
+        "Năm ra mắt": "2025",
+        "Nơi sản xuất": "Việt Nam"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng nhanh trong 2h nội thành",
+        "Lỗi 1 đổi 1 trong 30 ngày (nếu lỗi kỹ thuật)",
+        "Tặng kèm bộ dụng cụ nấu chuyên dụng"
+      ]
+    },
+    {
+      "id": 100,
+      "id_san_pham": 100,
+      "slug": "sp-fg6372-100",
+      "mo_ta_chi_tiet": "Nồi cơm điện LG Thông minh AI FG6372 sử dụng công nghệ gia nhiệt IH (Induction Heating) đốt nóng trực tiếp lòng nồi, tạo ra nhiệt độ cao và đều hơn so với nồi thường, cơm chín mềm dẻo tự nhiên. Lòng nồi bằng hợp kim nhôm đúc nguyên khối với 7 lớp phủ chống dính Diamond bền bỉ. Cảm biến nhiệt chính xác theo dõi và điều chỉnh nhiệt độ theo từng giai đoạn nấu. Chức năng giữ ấm 24 tiếng mà cơm không bị khô hay vàng. Thiết kế nắp rời có thể tháo rửa tiện lợi.",
+      "thong_so_ky_thuat": {
+        "Loại nồi": "Nồi cơm điện cao tần IH",
+        "Dung tích": "1.8 lít",
+        "Công suất": "900W",
+        "Lòng nồi": "5 lớp phủ Titan chống dính",
+        "Công nghệ nấu": "3D đa chiều",
+        "Số chế độ nấu": "6 chế độ",
+        "Chức năng hẹn giờ": "Có (lên đến 24 tiếng)",
+        "Kích thước": "270 × 370 × 295 mm",
+        "Khối lượng": "3.8 kg",
+        "Năm ra mắt": "2023",
+        "Nơi sản xuất": "Thái Lan"
+      },
+      "chinh_sach_ban_hang": [
+        "Bảo hành chính hãng 12 tháng",
+        "Giao hàng miễn phí toàn quốc",
+        "Lỗi 1 đổi 1 trong 15 ngày đầu",
+        "Tặng kèm xửng hấp inox cao cấp"
+      ]
     }
   ],
   "danh_muc_bai_viet": [
@@ -2340,7 +4890,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 149,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/RBiWROqDkW760yWpQpan/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -2362,7 +4912,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 207,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/M2kMnvOFV2MHQX1KSF8P/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -2670,7 +5220,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 54,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/7nSP9YFpO8MXRk8ZU3Vo/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -2736,7 +5286,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 58,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/fqRnkXL0Tv4Hn9z8liq0/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -2824,7 +5374,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 115,
-      "rating": 4.0,
+      "rating": 4,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/tA9TCOxGE3s5f5QE3CTO/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -3000,7 +5550,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 335,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/10/qacunJoWXipFKDrhu0Az/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3154,7 +5704,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 383,
-      "rating": 4.0,
+      "rating": 4,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/4TzqAyKNnkUQQdzOqPY1/image.jpg",
       "created_at": " 2026-08-27 09:06:33",
@@ -3242,7 +5792,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 30,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/KEs59DxEzmNXCNsPwE4M/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3374,7 +5924,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 189,
-      "rating": 4.0,
+      "rating": 4,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/twDfsk0z6vE652zGtbgZ/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3462,7 +6012,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 429,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/11/G5rKjo0SVBzNBOjo9WsK/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3682,7 +6232,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 129,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/2FQuRVSVI7Ko409lHQkP/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3704,7 +6254,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 31,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/eL8d76iGVrl7EwWtYmJS/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3726,7 +6276,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 457,
-      "rating": 4.0,
+      "rating": 4,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/5r71hXLRTJPhYxXfUvvr/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3792,7 +6342,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 462,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/lwMPIM7cK8M9n2IgfQju/image.png",
       "created_at": " 2026-08-27 09:06:33",
@@ -3924,7 +6474,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 1,
       "so_lan_xem": 366,
-      "rating": 4.0,
+      "rating": 4,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/yztPjFUMAYwSt9lIh2Wf/image.png",
       "created_at": " 2026-08-27 09:06:34",
@@ -4100,7 +6650,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 328,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/ScVjANVducLrX4LsQS6C/image.png",
       "created_at": " 2026-08-27 09:06:34",
@@ -4122,7 +6672,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 194,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/0uKQvflIlYsW0uOihPcN/image.png",
       "created_at": " 2026-08-27 09:06:34",
@@ -4210,7 +6760,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 392,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/GP3yWnqc0MoibhQx7pkF/image.png",
       "created_at": " 2026-08-27 09:06:34",
@@ -4232,7 +6782,7 @@
       "thong_so": " {\"Giao hàng\": \"Miễn phí lắp đặt\", \"Bảo hành\": \"24 tháng\", \"Đổi trả\": \"1 đổi 1 trong 30 ngày\"}",
       "noi_bat": 0,
       "so_lan_xem": 453,
-      "rating": 5.0,
+      "rating": 5,
       "trang_thai": 1,
       "hinh_chinh": " https://plain-apac-prod-public.komododecks.com/202609/12/c9QsfHfJk0QYdY3rkqlW/image.png",
       "created_at": " 2026-08-27 09:06:34",

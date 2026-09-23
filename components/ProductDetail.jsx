@@ -4,18 +4,8 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { useCart } from '../context/CartContext'
 
-const product = {
-  name: 'Samsung Inverter 208L Refrigerator',
-  sku: 'SAM-RT20T3021S2',
-  price: 299,
-  original: 449,
-  discount: 33,
-  rating: 4.6,
-  reviews: 2847,
-  brand: 'Samsung',
-}
-
-const images = [
+// ── Fallback defaults (dùng khi không có chiTiet) ──────────
+const defaultImages = [
   'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=900&h=900&fit=crop&auto=format',
   'https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=300&h=300&fit=crop&auto=format',
   'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=300&h=300&fit=crop&auto=format',
@@ -23,7 +13,7 @@ const images = [
   'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=300&fit=crop&auto=format',
 ]
 
-const ratingBreakdown = [
+const defaultRatingBreakdown = [
   { stars: 5, pct: 68 },
   { stars: 4, pct: 21 },
   { stars: 3, pct: 7 },
@@ -31,60 +21,31 @@ const ratingBreakdown = [
   { stars: 1, pct: 2 },
 ]
 
-const specs = [
-  { attr: 'Capacity', value: '208 Liters' },
+const defaultReviews = [
   {
-    attr: 'Technology',
-    value: 'Digital Inverter',
-    explain:
-      'Digital Inverter adjusts compressor speed continuously based on cooling demand — saving up to 46% more energy than fixed-speed compressors and running significantly quieter (no on/off cycling noise).',
+    name: 'Nguyen Thi Lan',
+    date: 'Aug 12, 2024',
+    stars: 5,
+    title: 'Sản phẩm rất tốt!',
+    body: 'Mua trong đợt khuyến mãi và rất hài lòng. Sản phẩm hoạt động mượt mà, chất lượng vượt mong đợi. Giao hàng nhanh, lắp đặt miễn phí.',
   },
-  { attr: 'Compressor Type', value: 'Variable Speed' },
   {
-    attr: 'Refrigerant Gas',
-    value: 'R32',
-    explain:
-      "R32 is a next-generation eco-refrigerant with a Global Warming Potential (GWP) of 675 — about 2.5× lower than the older R410A. It's more energy-efficient and easier to recover at end-of-life.",
+    name: 'Tran Minh Duc',
+    date: 'Jul 29, 2024',
+    stars: 4,
+    title: 'Đáng tiền, chất lượng ổn',
+    body: 'Sản phẩm chắc chắn với giá hợp lý. Chất lượng build tốt, dùng ổn định. Dịch vụ hậu mãi cũng rất tận tâm.',
   },
-  { attr: 'Energy Consumption', value: '115 kWh / year' },
-  { attr: 'Energy Star Rating', value: '5-Star (A++)' },
-  { attr: 'Noise Level', value: '38 dB (A)' },
-  { attr: 'Defrost System', value: 'No Frost — Full Fan Cooled' },
-  { attr: 'Number of Doors', value: '2 Doors (Top Freezer)' },
-  { attr: 'Color / Finish', value: 'Elegant Inox (Silver Steel)' },
-  { attr: 'Dimensions (H × W × D)', value: '1375 × 545 × 600 mm' },
-  { attr: 'Net Weight', value: '48 kg' },
   {
-    attr: 'Stabilizer Free Operation',
-    value: '100V – 300V',
-    explain:
-      'This fridge operates safely without an external voltage stabilizer across a wide voltage range (100–300V), protecting the compressor during power fluctuations common in many regions.',
+    name: 'Le Phuong Anh',
+    date: 'Jul 5, 2024',
+    stars: 5,
+    title: 'Rất phù hợp cho gia đình',
+    body: 'Dùng được 2 tháng rồi, rất hài lòng. Tiết kiệm điện thật sự so với sản phẩm cũ. Vận hành êm ái, thiết kế đẹp.',
   },
-  { attr: 'Shelf Material', value: 'Tempered Glass (Spill-Proof)' },
 ]
 
-const descriptionHTML = `
-<h3>Giữ Tươi, Giữ Thông Minh</h3>
-<p><strong>Tủ lạnh Samsung Inverter 208L</strong> mang đến sự chính xác kỹ thuật số cho việc giữ tươi hàng ngày. Được thiết kế cho những gia đình muốn làm lạnh hiệu quả và tiết kiệm năng lượng, tủ lạnh nguyên tắc này sử dụng máy nén Digital Inverter đặc trưng của Samsung.</p>
-<h3>Tính Năng Nổi Bật</h3>
-<ul>
-  <li><strong>Máy nén Digital Inverter</strong> — Vận hành im ắng hơn, bền hơn và tiêu thụ điện ít hơn 46%. Bảo hành máy nén 10 năm.</li>
-  <li><strong>Công nghệ No Frost</strong> — Tự động loại bỏ tuyết đóng, không cần xả đá thủ công.</li>
-  <li><strong>Gas lạnh R32 thân thiện môi trường</strong> — Chỉ số GWP thấp hơn, tốt hơn cho môi trường.</li>
-  <li><strong>Hoạt động không cần ổn áp</strong> — Hoạt động an toàn trong dải điện áp 100V–300V mà không cần ổn áp ngoài.</li>
-  <li><strong>Khay kính cường lực</strong> — Khay chống tràn, chịu tải tới 100 kg.</li>
-</ul>
-<h3>Trong Hộp Có Gì</h3>
-<ul>
-  <li>1× Tủ lạnh Samsung RT20T3021S2</li>
-  <li>2× Khay cửa có thể điều chỉnh</li>
-  <li>1× Ngăn kéo rau củ</li>
-  <li>Hướng dẫn sử dụng & phiếu bảo hành</li>
-</ul>
-<h3>Bảo Hành</h3>
-<p>Bảo hành toàn diện 1 năm + <strong>bảo hành 10 năm cho máy nén Digital Inverter</strong>. Lắp đặt miễn phí trong vòng 3 ngày làm việc kể từ khi giao hàng.</p>
-`
-
+// ── Helper components ──────────────────────────────────────
 function StarRow({ filled, half }) {
   return (
     <div className="flex items-center gap-0.5">
@@ -158,15 +119,17 @@ function AiExplainButton({ text }) {
   )
 }
 
-function SamsungLogo() {
+function BrandLogo({ name }) {
+  const brandName = name?.trim() || 'TechZone'
   return (
     <svg viewBox="0 0 110 30" className="h-6 w-auto">
-      <text x="2" y="24" fontFamily="Outfit, sans-serif" fontWeight="700" fontSize="24" fill="#1428A0">Samsung</text>
+      <text x="2" y="24" fontFamily="Outfit, sans-serif" fontWeight="700" fontSize="24" fill="#1428A0">{brandName}</text>
     </svg>
   )
 }
 
-export default function ProductDetail() {
+// ── Main component ─────────────────────────────────────────
+export default function ProductDetail({ product, chiTiet, thuongHieu }) {
   const { addToCart } = useCart()
   const [activeImage, setActiveImage] = useState(0)
   const [qty, setQty] = useState(1)
@@ -174,6 +137,64 @@ export default function ProductDetail() {
   const [cartState, setCartState] = useState('idle')
   const [activeTab, setActiveTab] = useState('specs')
 
+  // ── Derived data from props ──────────────────────────────
+  const productName = product?.ten_san_pham?.trim() || 'Sản phẩm'
+  const productSku = product?.sku?.trim() || 'N/A'
+  const productPrice = product?.gia || 0
+  const productOriginal = product?.gia_goc || 0
+  const productRating = product?.rating || 4.5
+  const productViews = product?.so_lan_xem || 0
+  const productStock = product?.so_luong_ton_kho || 0
+  const productImage = product?.hinh_chinh?.trim() || defaultImages[0]
+  const brandName = thuongHieu?.ten?.trim() || 'TechZone'
+
+  // Tính % giảm giá
+  const discount = productOriginal > 0
+    ? Math.round((1 - productPrice / productOriginal) * 100)
+    : 0
+
+  // Số lượng đánh giá (dùng views như proxy)
+  const reviewCount = Math.max(Math.floor(productViews * 6.2), 100)
+
+  // Sử dụng hình chính + fallback gallery
+  const images = [productImage, ...defaultImages.slice(1)]
+
+  // ── Map specs từ chiTiet ─────────────────────────────────
+  const specs = chiTiet?.thong_so_ky_thuat
+    ? Object.entries(chiTiet.thong_so_ky_thuat).map(([attr, value]) => ({
+        attr,
+        value,
+      }))
+    : [
+        { attr: 'Tên sản phẩm', value: productName },
+        { attr: 'SKU', value: productSku },
+        { attr: 'Đánh giá', value: `${productRating} / 5 sao` },
+        { attr: 'Tình trạng', value: productStock > 0 ? `Còn ${productStock} sản phẩm` : 'Hết hàng' },
+      ]
+
+  // ── Description HTML ─────────────────────────────────────
+  const descriptionHTML = chiTiet?.mo_ta_chi_tiet
+    ? `<h3>Mô tả chi tiết</h3><p>${chiTiet.mo_ta_chi_tiet}</p>${
+        chiTiet.chinh_sach_ban_hang
+          ? `<h3>Chính sách bán hàng</h3><ul>${chiTiet.chinh_sach_ban_hang.map(cs => `<li>${cs}</li>`).join('')}</ul>`
+          : ''
+      }`
+    : `<h3>Thông tin sản phẩm</h3><p>${product?.mo_ta_ngan?.trim() || 'Thông tin chi tiết đang được cập nhật.'}</p>`
+
+  // ── Policy badges ────────────────────────────────────────
+  const policyBadges = chiTiet?.chinh_sach_ban_hang
+    ? [
+        { icon: '🚚', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('giao'))?.replace(/^.{0,}?(Giao)/i, 'Giao') || 'Miễn phí giao hàng', sub: 'Tận nơi' },
+        { icon: '🛡️', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('bảo hành'))?.split(',')[0] || 'Bảo hành chính hãng', sub: 'Chính hãng' },
+        { icon: '↩️', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('đổi'))?.split('(')[0]?.trim() || 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
+      ]
+    : [
+        { icon: '🚚', label: 'Miễn phí giao hàng', sub: 'Trong 3 ngày' },
+        { icon: '🛡️', label: 'Bảo hành 2 năm', sub: '+ 10 năm máy nén' },
+        { icon: '↩️', label: 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
+      ]
+
+  // ── Handlers ─────────────────────────────────────────────
   const handleBuyNow = () => {
     addToCart()
     setBuyState('added')
@@ -186,6 +207,12 @@ export default function ProductDetail() {
     setTimeout(() => setCartState('idle'), 2000)
   }
 
+  // ── Rating breakdown (tính từ rating) ────────────────────
+  const ratingBreakdown = defaultRatingBreakdown
+
+  // ── AI review tags ───────────────────────────────────────
+  const positiveRate = Math.min(98, Math.max(75, Math.round(productRating * 20)))
+
   return (
     <div className="bg-white min-h-screen">
       {/* Breadcrumb */}
@@ -194,11 +221,9 @@ export default function ProductDetail() {
           <nav className="flex items-center gap-2 text-xs font-body text-gray-400">
             <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
             <span>/</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">Tủ lạnh</span>
+            <span className="hover:text-brand cursor-pointer transition-colors">{brandName}</span>
             <span>/</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">Samsung</span>
-            <span>/</span>
-            <span className="text-gray-600 font-medium truncate max-w-[200px]">{product.name}</span>
+            <span className="text-gray-600 font-medium truncate max-w-[200px]">{productName}</span>
           </nav>
         </div>
       </div>
@@ -211,12 +236,14 @@ export default function ProductDetail() {
             <div className="relative aspect-square bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 group">
               <img
                 src={images[activeImage]}
-                alt={product.name}
+                alt={productName}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute top-4 left-4 bg-brand text-white text-sm font-bold font-display px-3 py-1.5 rounded-xl shadow-lg">
-                -{product.discount}% GIẢM
-              </div>
+              {discount > 0 && (
+                <div className="absolute top-4 left-4 bg-brand text-white text-sm font-bold font-display px-3 py-1.5 rounded-xl shadow-lg">
+                  -{discount}% GIẢM
+                </div>
+              )}
             </div>
 
             <div className="grid grid-cols-5 gap-2.5">
@@ -236,11 +263,7 @@ export default function ProductDetail() {
             </div>
 
             <div className="grid grid-cols-3 gap-2 mt-2">
-              {[
-                { icon: '🚚', label: 'Miễn phí giao hàng', sub: 'Trong 3 ngày' },
-                { icon: '🛡️', label: 'Bảo hành 2 năm', sub: '+ 10 năm máy nén' },
-                { icon: '↩️', label: 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
-              ].map(b => (
+              {policyBadges.map(b => (
                 <div key={b.label} className="bg-brand-pale rounded-xl p-3 text-center border border-brand-light">
                   <div className="text-xl mb-1">{b.icon}</div>
                   <p className="text-xs font-semibold font-display text-gray-800">{b.label}</p>
@@ -253,36 +276,44 @@ export default function ProductDetail() {
           {/* Right: Product info */}
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between">
-              <SamsungLogo />
+              <BrandLogo name={thuongHieu?.ten} />
               <span className="text-xs text-gray-400 font-body bg-gray-50 px-2.5 py-1 rounded-lg">
-                SKU: {product.sku}
+                SKU: {productSku}
               </span>
             </div>
 
             <div>
               <h1 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 leading-tight">
-                {product.name}
+                {productName}
               </h1>
               <div className="flex items-center gap-3 mt-3">
-                <StarRow filled={4} half />
-                <span className="text-sm font-bold text-amber-500 font-display">{product.rating}</span>
-                <span className="text-sm text-gray-400 font-body">({product.reviews.toLocaleString()} đánh giá)</span>
-                <span className="text-xs text-green-600 font-semibold font-display bg-green-50 px-2 py-0.5 rounded-full">
-                  ✓ Còn hàng
+                <StarRow filled={Math.floor(productRating)} half={productRating % 1 >= 0.3} />
+                <span className="text-sm font-bold text-amber-500 font-display">{productRating}</span>
+                <span className="text-sm text-gray-400 font-body">({reviewCount.toLocaleString()} đánh giá)</span>
+                <span className={`text-xs font-semibold font-display px-2 py-0.5 rounded-full ${
+                  productStock > 0
+                    ? 'text-green-600 bg-green-50'
+                    : 'text-red-600 bg-red-50'
+                }`}>
+                  {productStock > 0 ? '✓ Còn hàng' : '✗ Hết hàng'}
                 </span>
               </div>
             </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-3 py-3 border-y border-gray-100">
-              <span className="text-4xl font-display font-bold text-gray-900">{product.price.toLocaleString('vi-VN')}₫</span>
-              <span className="text-xl text-gray-300 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>
-              <div className="ml-auto flex flex-col items-end">
-                <span className="text-green-600 font-bold font-display text-sm">
-                  Tiết kiệm {(product.original - product.price).toLocaleString('vi-VN')}₫
-                </span>
-                <span className="text-xs text-gray-400 font-body">Đã bao gồm thuế & phí</span>
-              </div>
+              <span className="text-4xl font-display font-bold text-gray-900">{productPrice.toLocaleString('vi-VN')}₫</span>
+              {productOriginal > productPrice && (
+                <span className="text-xl text-gray-300 line-through font-body">{productOriginal.toLocaleString('vi-VN')}₫</span>
+              )}
+              {discount > 0 && (
+                <div className="ml-auto flex flex-col items-end">
+                  <span className="text-green-600 font-bold font-display text-sm">
+                    Tiết kiệm {(productOriginal - productPrice).toLocaleString('vi-VN')}₫
+                  </span>
+                  <span className="text-xs text-gray-400 font-body">Đã bao gồm thuế & phí</span>
+                </div>
+              )}
             </div>
 
             {/* AI Review Summary */}
@@ -298,21 +329,21 @@ export default function ProductDetail() {
                   </div>
                   <p className="text-sm font-bold font-display text-brand-dark">✨ Tóm tắt đánh giá AI</p>
                   <span className="ml-auto text-[11px] text-brand bg-white border border-blue-200 px-2 py-0.5 rounded-full font-body">
-                    Dựa trên {product.reviews.toLocaleString()} đánh giá
+                    Dựa trên {reviewCount.toLocaleString()} đánh giá
                   </span>
                 </div>
 
                 <p className="text-sm text-gray-700 font-body leading-relaxed mb-3">
-                  95% người mua yêu thích tính năng <strong className="text-gray-900">làm lạnh nhanh</strong>, nhưng một số đề cập{' '}
-                  <span className="text-amber-700 font-medium">thành bên hơi ấm khi sử dụng nhiều</span> — đây là đặc điểm bình thường của loại máy nén này.
+                  {positiveRate}% người mua yêu thích sản phẩm <strong className="text-gray-900">{productName}</strong>.{' '}
+                  Điểm đánh giá trung bình <span className="text-amber-700 font-medium">{productRating}/5 sao</span> — chất lượng được khẳng định qua hàng ngàn đánh giá thực tế.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-3.5">
                   {[
-                    { label: '👍 Làm lạnh nhanh', color: 'green' },
-                    { label: '👍 Siêu êm', color: 'green' },
+                    { label: '👍 Chất lượng tốt', color: 'green' },
                     { label: '👍 Tiết kiệm điện', color: 'green' },
-                    { label: '⚠️ Thành bên hơi ấm', color: 'amber' },
+                    { label: '👍 Dịch vụ tốt', color: 'green' },
+                    { label: '⚠️ Cần so sánh giá', color: 'amber' },
                   ].map(tag => (
                     <div
                       key={tag.label}
@@ -330,10 +361,10 @@ export default function ProductDetail() {
                 <div>
                   <div className="flex items-center justify-between text-[11px] font-body text-gray-400 mb-1">
                     <span>Cảm nhận chung</span>
-                    <span className="text-green-600 font-semibold">95% Tích cực</span>
+                    <span className="text-green-600 font-semibold">{positiveRate}% Tích cực</span>
                   </div>
                   <div className="h-1.5 rounded-full bg-gray-100 overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full" style={{ width: '95%' }} />
+                    <div className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full" style={{ width: `${positiveRate}%` }} />
                   </div>
                 </div>
               </div>
@@ -359,7 +390,7 @@ export default function ProductDetail() {
                   </button>
                 </div>
                 <span className="text-sm text-gray-400 font-body">
-                  × {product.price.toLocaleString('vi-VN')}₫ = <strong className="text-gray-700">{(product.price * qty).toLocaleString('vi-VN')}₫</strong>
+                  × {productPrice.toLocaleString('vi-VN')}₫ = <strong className="text-gray-700">{(productPrice * qty).toLocaleString('vi-VN')}₫</strong>
                 </span>
               </div>
 
@@ -443,9 +474,9 @@ export default function ProductDetail() {
           {activeTab === 'reviews' && (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-brand-pale rounded-2xl p-6 flex flex-col items-center text-center border border-brand-light">
-                <span className="text-6xl font-display font-bold text-gray-900">{product.rating}</span>
-                <StarRow filled={4} half />
-                <span className="text-sm text-gray-400 font-body mt-1">{product.reviews.toLocaleString()} đánh giá</span>
+                <span className="text-6xl font-display font-bold text-gray-900">{productRating}</span>
+                <StarRow filled={Math.floor(productRating)} half={productRating % 1 >= 0.3} />
+                <span className="text-sm text-gray-400 font-body mt-1">{reviewCount.toLocaleString()} đánh giá</span>
                 <div className="w-full mt-6 flex flex-col gap-2">
                   {ratingBreakdown.map(r => (
                     <div key={r.stars} className="flex items-center gap-2 text-xs font-body">
@@ -460,29 +491,7 @@ export default function ProductDetail() {
               </div>
 
               <div className="lg:col-span-2 flex flex-col gap-4">
-                {[
-                  {
-                    name: 'Nguyen Thi Lan',
-                    date: 'Aug 12, 2024',
-                    stars: 5,
-                    title: 'Cools down incredibly fast!',
-                    body: 'Bought this during the Tết sale and absolutely love it. The fridge reached 4°C within 45 minutes of first turning it on. Very quiet — can barely hear it running.',
-                  },
-                  {
-                    name: 'Tran Minh Duc',
-                    date: 'Jul 29, 2024',
-                    stars: 4,
-                    title: 'Great value, minor nitpick',
-                    body: 'Solid fridge for the price. Build quality feels premium. The only thing is the right side panel gets warm to the touch — nothing alarming, just noticeable.',
-                  },
-                  {
-                    name: 'Le Phuong Anh',
-                    date: 'Jul 5, 2024',
-                    stars: 5,
-                    title: 'Perfect for our family of 3',
-                    body: '208L is just right for our household. The no-frost feature means I never have to deal with ice build-up. My previous fridge was much louder — this one is whisper-quiet even at night.',
-                  },
-                ].map(r => (
+                {defaultReviews.map(r => (
                   <div key={r.name} className="bg-white border border-gray-100 rounded-2xl p-4 hover:border-brand-light transition-colors">
                     <div className="flex items-start justify-between mb-2">
                       <div>
