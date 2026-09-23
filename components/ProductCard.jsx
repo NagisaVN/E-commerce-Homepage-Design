@@ -43,7 +43,7 @@ export default function ProductCard({ product }) {
         <div className="flex items-center gap-1.5"><div className="flex gap-0.5">{[1, 2, 3, 4, 5].map(i => <StarIcon key={i} filled={i <= Math.floor(product.rating)} />)}</div><span className="text-xs font-semibold text-amber-500">{product.rating}</span><span className="text-xs text-gray-400 font-body">({product.reviews.toLocaleString('vi-VN')})</span></div>
         <div className="mt-auto flex items-baseline gap-2"><span className="text-xl font-bold text-gray-900 font-display">{product.price.toLocaleString('vi-VN')}₫</span>{product.original > product.price && <span className="text-sm text-gray-400 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>}</div>
         <div className="flex gap-2">
-          <Link href={`/product/${product.slug || product.id}`} className="flex-1 rounded-xl border border-brand py-2.5 text-center text-sm font-semibold text-brand transition-colors hover:bg-brand-pale font-display">Xem</Link>
+          <Link href={`/san-pham/${product.slug || product.id}`} className="flex-1 rounded-xl border border-brand py-2.5 text-center text-sm font-semibold text-brand transition-colors hover:bg-brand-pale font-display">Xem</Link>
           <button onClick={handleAdd} className={`flex-1 rounded-xl py-2.5 text-sm font-semibold text-white transition-all active:scale-95 font-display ${added ? 'bg-green-500' : 'bg-brand hover:bg-brand-dark'}`}>{added ? '✓ Đã thêm' : 'Thêm vào giỏ'}</button>
         </div>
       </div>
