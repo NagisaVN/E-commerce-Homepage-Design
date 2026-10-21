@@ -55,14 +55,14 @@ export default function CartPage() {
             <div className="lg:col-span-2 space-y-4">
               {cartItems.map((item) => (
                 <div key={item.id} className="bg-white p-4 sm:p-5 rounded-2xl border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-4 sm:gap-6">
-                  <div className="w-full sm:w-32 aspect-square rounded-xl overflow-hidden bg-gray-50 flex-shrink-0 border border-gray-100">
+                  <Link href={`/san-pham/${item.slug?.trim()}`} className="w-full sm:w-32 aspect-square rounded-xl overflow-hidden bg-gray-50 flex-shrink-0 border border-gray-100 block hover:opacity-90 transition-opacity">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-                  </div>
+                  </Link>
                   
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex justify-between items-start gap-4">
-                        <Link href={`/product/${item.slug}`} className="text-base font-bold text-gray-900 font-display hover:text-brand transition-colors line-clamp-2">
+                        <Link href={`/san-pham/${item.slug?.trim()}`} className="text-base font-bold text-gray-900 font-display hover:text-brand transition-colors line-clamp-2">
                           {item.name}
                         </Link>
                         <button 

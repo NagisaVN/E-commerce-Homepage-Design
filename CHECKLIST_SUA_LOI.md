@@ -6,7 +6,7 @@
 
 ## 🔴 GIAI ĐOẠN 1: BẮT BUỘC PHẢI SỬA (LỖI GÂY CRASH / 404 / BẢO MẬT)
 
-### [ ] Mục 1: Sửa lỗi đường dẫn sản phẩm trong Giỏ hàng
+### [x] Mục 1: Sửa lỗi đường dẫn sản phẩm trong Giỏ hàng (Đã sửa xong)
 - **File:** `app/gio-hang/page.jsx` (dòng 65)
 - **Vấn đề:** Đường link đang trỏ tới `/product/...` thay vì `/san-pham/...`, đồng thời chưa trim slug khiến URL có thể dính khoảng trắng `%20`.
 - **Code hiện tại (Before):**
