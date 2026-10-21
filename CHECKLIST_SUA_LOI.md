@@ -522,10 +522,16 @@
   3. [`components/AiSearchModal.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/AiSearchModal.jsx): Giao diện Modal tìm kiếm AI với hiệu ứng AI Thinking, thẻ gợi ý Prompt thông minh, thẻ tư vấn AI và danh sách sản phẩm khớp tiêu chí.
   4. [`app/tim-kiem-ai/page.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/app/tim-kiem-ai/page.jsx): Trang tìm kiếm AI chuyên biệt hỗ trợ URL query `?q=...` thân thiện với SEO.
   5. [`components/Header.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/Header.jsx): Tích hợp nút "✨ Hỏi AI" và mở Modal tìm kiếm AI tức thì.
-- **Cách cấu hình mở rộng (Optional):**
-  Thêm vào `.env.local` nếu muốn kết nối trực tiếp với Google Gemini 2.5 Flash:
-  ```env
-  GEMINI_API_KEY=your_gemini_api_key_here
-  ```
-  *(Nếu không có key, hệ thống NLP Engine nội bộ vẫn hoạt động mượt mà và cực kỳ thông minh với 100% dữ liệu điện máy).*
+
+---
+
+### [x] Mục 16: Hoàn thiện Trang Tin tức & Cẩm nang Mua sắm AI (AiBlog) - ĐÃ HOÀN THÀNH
+- **Các file đã xây dựng:**
+  1. [`lib/blog-data.js`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/lib/blog-data.js): Kho dữ liệu bài viết chuẩn mực, phân loại theo chủ đề (*Hướng dẫn mua, Tiết kiệm điện, Nhà thông minh, Đánh giá công nghệ, Khuyến mãi*), tích hợp các ý tóm tắt nhanh AI (AI Takeaways) và liên kết ID sản phẩm trong `db.json`.
+  2. [`app/tin-tuc/page.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/app/tin-tuc/page.jsx): Trang danh sách Tin tức AI với banner Hero, bộ lọc chủ đề, bài viết tiêu điểm (Featured Card), danh sách bài viết chuẩn SEO.
+  3. [`app/tin-tuc/[slug]/page.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/app/tin-tuc/%5Bslug%5D/page.jsx): Trang đọc bài viết chi tiết, có khối **Tóm tắt cốt lõi trong 10 giây (AI Takeaways)**, nội dung bài viết chuyên sâu và khối **Sản phẩm AI khuyên dùng** liên kết trực tiếp giỏ hàng. Tạo sẵn HTML tĩnh với `generateStaticParams()`.
+  4. [`app/ai-blog/page.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/app/ai-blog/page.jsx): Route alias tự động chuyển hướng `/ai-blog` về `/tin-tuc`.
+  5. [`components/AiBlog.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/AiBlog.jsx): Đã gắn link điều hướng cho toàn bộ 3 thẻ bài viết trên trang chủ và nút "Xem tất cả bài viết →".
+  6. [`components/Header.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/Header.jsx) & [`components/Footer.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/Footer.jsx): Đã tích hợp mục "Tin tức AI" vào menu điều hướng và footer.
+
 

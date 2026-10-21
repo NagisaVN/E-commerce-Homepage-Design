@@ -59,24 +59,12 @@ function HeaderSearchBox({ value, onChange, onSubmit, onOpenModal }) {
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
       />
-
-      <div className="flex items-center gap-1.5">
-        <button
-          type="button"
-          onClick={() => onOpenModal(value)}
-          className="hidden sm:inline-flex items-center gap-1 bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-800 text-[11px] font-bold font-display px-2 py-1 rounded-lg transition-colors"
-          title="Mở AI Assistant"
-        >
-          <span>✨ Hỏi AI</span>
-        </button>
-
-        <button
-          type="submit"
-          className="flex-shrink-0 rounded-lg bg-brand px-3 py-1.5 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-brand-dark sm:px-4 font-display shadow-xs active:scale-95"
-        >
-          Tìm kiếm
-        </button>
-      </div>
+      <button
+        type="submit"
+        className="flex-shrink-0 rounded-lg bg-brand px-3 py-1.5 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-brand-dark sm:px-4 font-display shadow-xs active:scale-95"
+      >
+        Tìm kiếm
+      </button>
     </form>
   )
 }
@@ -93,6 +81,7 @@ export default function Header() {
     { name: 'Sản phẩm', href: '/san-pham' },
     { name: 'Thương hiệu', href: '/thuong-hieu' },
     { name: 'Khuyến mãi', href: '/khuyen-mai' },
+    { name: 'Tin tức AI', href: '/tin-tuc' },
     { name: 'Hỗ trợ', href: '/ho-tro' },
   ]
 

@@ -44,9 +44,19 @@ export default function Footer() {
               <ul className="flex flex-col gap-2.5">
                 {items.map(item => (
                   <li key={item}>
-                    <a href="#" className="text-sm text-blue-300 hover:text-white font-body transition-colors">
-                      {item}
-                    </a>
+                    {item === 'Tin tức' ? (
+                      <Link href="/tin-tuc" className="text-sm text-blue-300 hover:text-white font-body transition-colors">
+                        {item}
+                      </Link>
+                    ) : item === 'Công nghệ AI' ? (
+                      <Link href="/tim-kiem-ai" className="text-sm text-blue-300 hover:text-white font-body transition-colors">
+                        {item}
+                      </Link>
+                    ) : (
+                      <a href="#" className="text-sm text-blue-300 hover:text-white font-body transition-colors">
+                        {item}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

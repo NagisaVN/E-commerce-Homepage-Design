@@ -3,6 +3,7 @@ import Link from 'next/link'
 const tips = [
   {
     id: 1,
+    slug: 'cach-chon-dung-tich-tu-lanh-phu-hop',
     category: 'Hướng dẫn mua',
     readTime: '4 phút đọc',
     title: 'Cách chọn dung tích tủ lạnh phù hợp cho gia đình bạn',
@@ -15,6 +16,7 @@ const tips = [
   },
   {
     id: 2,
+    slug: 'may-lanh-inverter-vs-dinh-toc-chi-phi-5-nam',
     category: 'Tiết kiệm điện',
     readTime: '3 phút đọc',
     title: 'Máy lạnh Inverter vs. định tốc: Chi phí thực tế sau 5 năm',
@@ -27,6 +29,7 @@ const tips = [
   },
   {
     id: 3,
+    slug: 'smartthings-vs-thinq-vs-home-connect',
     category: 'Nhà thông minh',
     readTime: '5 phút đọc',
     title: 'Kết nối tất cả thiết bị: SmartThings vs. ThinQ vs. Home Connect',
@@ -62,18 +65,19 @@ export default function AiBlog() {
             <h2 className="text-3xl font-display font-bold text-gray-900">Mẹo hay & Hướng dẫn mua sắm</h2>
             <p className="text-gray-500 font-body mt-2 text-sm">Những kiến thức chuyên sâu được tạo bởi TechZone AI — cập nhật hàng tuần</p>
           </div>
-          <a href="#" className="text-sm text-brand font-medium hover:underline font-body hidden sm:block">
-            Xem tất cả bài viết →
-          </a>
+          <Link href="/tin-tuc" className="text-sm text-brand font-semibold hover:underline font-display hidden sm:inline-flex items-center gap-1">
+            <span>Xem tất cả bài viết</span>
+            <span>→</span>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {tips.map((tip) => (
             <article
               key={tip.id}
-              className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-light hover:shadow-xl hover:shadow-blue-50 transition-all duration-300 flex flex-col"
+              className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-brand-light hover:shadow-xl hover:shadow-blue-50 transition-all duration-300 flex flex-col"
             >
-              <div className="relative overflow-hidden bg-brand-light aspect-[16/9]">
+              <Link href={`/tin-tuc/${tip.slug}`} className="block relative overflow-hidden bg-brand-light aspect-[16/9]">
                 <img
                   src={tip.image}
                   alt={tip.title}
@@ -81,11 +85,11 @@ export default function AiBlog() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute top-3 left-3">
-                  <span className="text-xs font-semibold font-display bg-white/95 backdrop-blur-sm text-brand px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-semibold font-display bg-white/95 backdrop-blur-sm text-brand px-2.5 py-1 rounded-lg">
                     {tip.category}
                   </span>
                 </div>
-              </div>
+              </Link>
 
               <div className="flex flex-col flex-1 p-5 gap-3">
                 <div className="flex items-center gap-2">
@@ -93,9 +97,11 @@ export default function AiBlog() {
                   <span className="text-xs text-gray-400 font-body">{tip.readTime}</span>
                 </div>
 
-                <h3 className="text-base font-bold font-display text-gray-900 leading-snug group-hover:text-brand transition-colors">
-                  {tip.title}
-                </h3>
+                <Link href={`/tin-tuc/${tip.slug}`}>
+                  <h3 className="text-base font-bold font-display text-gray-900 leading-snug group-hover:text-brand transition-colors line-clamp-2">
+                    {tip.title}
+                  </h3>
+                </Link>
 
                 <p className="text-sm text-gray-500 font-body leading-relaxed flex-1 line-clamp-3">
                   {tip.excerpt}
@@ -104,7 +110,7 @@ export default function AiBlog() {
                 <div className="flex flex-wrap gap-1.5">
                   {tip.tags.map(tag => (
                     <span key={tag} className="text-xs bg-brand-pale text-brand-dark px-2 py-0.5 rounded-full font-body">
-                      {tag}
+                      #{tag}
                     </span>
                   ))}
                 </div>
@@ -118,14 +124,16 @@ export default function AiBlog() {
                     </div>
                     <span className="text-xs text-gray-500 font-body">{tip.author}</span>
                   </div>
-                  <span className="text-xs text-gray-400 font-body">{tip.date}</span>
+                  <Link href={`/tin-tuc/${tip.slug}`} className="text-xs font-semibold font-display text-brand hover:underline">
+                    Đọc tiếp →
+                  </Link>
                 </div>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="mt-10 bg-gradient-to-r from-brand-dark to-brand rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+        <div className="mt-10 bg-gradient-to-r from-brand-dark to-brand rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
           <div className="flex-shrink-0 w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center">
             <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none">
               <path d="M16 4l2 7h7l-5.7 4.1 2.2 6.9L16 18.2l-5.5 3.8 2.2-6.9L7 11h7z" fill="#FCD34D" />
