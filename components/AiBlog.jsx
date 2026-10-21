@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const tips = [
   {
     id: 1,
@@ -139,9 +141,12 @@ export default function AiBlog() {
               Cho chúng tôi biết ngân sách, diện tích phòng và nhu cầu gia đình. AI sẽ gợi ý sản phẩm hoàn hảo trong vài giây.
             </p>
           </div>
-          <button className="flex-shrink-0 bg-white text-brand-dark px-6 py-3 rounded-xl font-display font-semibold hover:bg-brand-light transition-colors active:scale-95 whitespace-nowrap">
+          <Link
+            href="/tim-kiem-ai"
+            className="flex-shrink-0 bg-white text-brand-dark px-6 py-3 rounded-xl font-display font-semibold hover:bg-brand-light transition-colors active:scale-95 whitespace-nowrap"
+          >
             ✨ Thử AI Tư Vấn
-          </button>
+          </Link>
         </div>
       </div>
     </section>

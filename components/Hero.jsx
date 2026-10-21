@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-
-
+import Link from 'next/link'
 
 export default function Hero() {
   const [slides, setSlides] = useState([])
@@ -11,7 +10,7 @@ export default function Hero() {
 
   useEffect(() => {
     async function fetchBanners() {
-      const response = await fetch('api/data')
+      const response = await fetch('/api/data')
       if (!response.ok) throw new Error('Unable to load banner data')
       const data = await response.json()
       // lệnh kèm để deploy
@@ -88,9 +87,12 @@ export default function Hero() {
             {slide.sub}
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <button className="bg-white text-brand-dark px-7 py-3 rounded-xl font-display font-semibold hover:bg-brand-light active:scale-95 transition-all shadow-lg">
+            <Link
+              href={slide.ctaHref || '/tim-kiem-ai'}
+              className="bg-white text-brand-dark px-7 py-3 rounded-xl font-display font-semibold hover:bg-brand-light active:scale-95 transition-all shadow-lg inline-block"
+            >
               {slide.cta} →
-            </button>
+            </Link>
             <span className="text-blue-200 text-sm font-body">{slide.ctaNote}</span>
           </div>
         </div>
