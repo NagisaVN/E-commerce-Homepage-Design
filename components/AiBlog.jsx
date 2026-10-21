@@ -1,46 +1,5 @@
 import Link from 'next/link'
-
-const tips = [
-  {
-    id: 1,
-    slug: 'cach-chon-dung-tich-tu-lanh-phu-hop',
-    category: 'Hướng dẫn mua',
-    readTime: '4 phút đọc',
-    title: 'Cách chọn dung tích tủ lạnh phù hợp cho gia đình bạn',
-    excerpt:
-      'AI của chúng tôi đã phân tích 50.000 hộ gia đình và phát hiện rằng gia đình 4–5 người cần ít nhất 500L. Đây là công thức tính dung tích đầy đủ — bao gồm thói quen trữ thực phẩm, khí hậu và tần suất mua sắm.',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&h=420&fit=crop&auto=format',
-    tags: ['Tủ lạnh', 'Hướng dẫn gia đình', 'AI Insight'],
-    date: '03/09/2024',
-    author: 'TechZone AI',
-  },
-  {
-    id: 2,
-    slug: 'may-lanh-inverter-vs-dinh-toc-chi-phi-5-nam',
-    category: 'Tiết kiệm điện',
-    readTime: '3 phút đọc',
-    title: 'Máy lạnh Inverter vs. định tốc: Chi phí thực tế sau 5 năm',
-    excerpt:
-      'Chúng tôi đã tính toán. Máy lạnh inverter tiết kiệm trung bình 5 triệu/năm so với định tốc. Sau 5 năm, số tiền tiết kiệm bù được tới 65% giá mua — ngay cả với dòng cao cấp.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=420&fit=crop&auto=format',
-    tags: ['Máy lạnh', 'Năng lượng', 'Phân tích chi phí'],
-    date: '28/08/2024',
-    author: 'TechZone AI',
-  },
-  {
-    id: 3,
-    slug: 'smartthings-vs-thinq-vs-home-connect',
-    category: 'Nhà thông minh',
-    readTime: '5 phút đọc',
-    title: 'Kết nối tất cả thiết bị: SmartThings vs. ThinQ vs. Home Connect',
-    excerpt:
-      'Samsung, LG và Bosch đều có hệ sinh thái nhà thông minh riêng. Chúng tôi đã thử nghiệm cả ba trong 30 ngày để cho bạn biết hệ thống nào tương thích tốt nhất với Alexa, Google Home và Apple HomeKit.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=420&fit=crop&auto=format',
-    tags: ['Nhà thông minh', 'So sánh', 'Đánh giá AI'],
-    date: '20/08/2024',
-    author: 'TechZone AI',
-  },
-]
+import { getDailyHomeArticles, getDailyTip } from '../lib/blog-data'
 
 function AiChip() {
   return (
@@ -56,21 +15,47 @@ function AiChip() {
 }
 
 export default function AiBlog() {
+  const tips = getDailyHomeArticles()
+  const dailyTip = getDailyTip()
+
   return (
     <section className="py-16 bg-brand-pale border-t border-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="flex items-end justify-between mb-10">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <p className="text-brand text-sm font-semibold font-display uppercase tracking-widest mb-1">Hỗ trợ bởi AI</p>
-            <h2 className="text-3xl font-display font-bold text-gray-900">Mẹo hay & Hướng dẫn mua sắm</h2>
-            <p className="text-gray-500 font-body mt-2 text-sm">Những kiến thức chuyên sâu được tạo bởi TechZone AI — cập nhật hàng tuần</p>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-brand text-xs font-semibold font-display mb-2.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Tự động cập nhật mỗi ngày &middot; Hỗ trợ bởi TechZone AI</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-display font-bold text-gray-900">Mẹo hay & Cẩm nang Mua sắm</h2>
+            <p className="text-gray-500 font-body mt-1.5 text-xs sm:text-sm">
+              Những bài phân tích chuyên sâu được luân chuyển và làm mới tự động mỗi 00:00 hàng ngày
+            </p>
           </div>
-          <Link href="/tin-tuc" className="text-sm text-brand font-semibold hover:underline font-display hidden sm:inline-flex items-center gap-1">
+          <Link href="/tin-tuc" className="text-sm text-brand font-semibold hover:underline font-display inline-flex items-center gap-1 flex-shrink-0">
             <span>Xem tất cả bài viết</span>
             <span>→</span>
           </Link>
         </div>
 
+        {/* Banner Mẹo AI Hôm Nay */}
+        {dailyTip && (
+          <div className="mb-8 p-4 sm:p-5 bg-white/95 border border-blue-100 rounded-2xl flex items-start sm:items-center gap-3.5 shadow-xs">
+            <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-lg">
+              💡
+            </div>
+            <div className="flex-1 text-xs sm:text-sm text-gray-700 font-body leading-relaxed">
+              <strong className="font-semibold text-brand-dark">Lời khuyên AI hôm nay: </strong>
+              <span>{dailyTip.replace(/^💡\s*Mẹo AI hôm nay:\s*/, '')}</span>
+            </div>
+            <span className="hidden md:inline-flex text-[11px] font-semibold text-brand font-display bg-brand-pale px-2.5 py-1 rounded-lg border border-blue-100 flex-shrink-0">
+              Đổi mới mỗi 00:00
+            </span>
+          </div>
+        )}
+
+        {/* Grid 3 bài viết xoay vòng mỗi ngày */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {tips.map((tip) => (
             <article
@@ -122,7 +107,9 @@ export default function AiBlog() {
                         <path d="M8 1.5l1 3h3l-2.4 1.8.9 3-2.5-1.8-2.5 1.8.9-3L3 4.5h3z" />
                       </svg>
                     </div>
-                    <span className="text-xs text-gray-500 font-body">{tip.author}</span>
+                    <span className="text-xs text-gray-500 font-body">
+                      {tip.author} &middot; <span className="text-brand font-medium">{tip.date}</span>
+                    </span>
                   </div>
                   <Link href={`/tin-tuc/${tip.slug}`} className="text-xs font-semibold font-display text-brand hover:underline">
                     Đọc tiếp →
@@ -133,6 +120,7 @@ export default function AiBlog() {
           ))}
         </div>
 
+        {/* CTA Tư Vấn AI */}
         <div className="mt-10 bg-gradient-to-r from-brand-dark to-brand rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
           <div className="flex-shrink-0 w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center">
             <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none">

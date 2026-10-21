@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { getAllArticles, blogCategories } from '../../lib/blog-data'
+import { getAllArticles, blogCategories, getDailyFeaturedArticle, getDailyTip } from '../../lib/blog-data'
+
+export const revalidate = 3600 // Tự động làm mới trang định kỳ (ISR) để nhận bài viết mới mỗi ngày
 
 export const metadata = {
   title: 'Tin tức, Mẹo hay & Hướng dẫn Mua sắm AI – TechZone',
@@ -24,11 +26,13 @@ export default async function BlogIndexPage({ searchParams }) {
   const selectedCat = resolvedParams?.category || 'Tất cả'
 
   const allArticles = getAllArticles()
+  const dailyTip = getDailyTip()
+  const featured = getDailyFeaturedArticle() // TỰ ĐỘNG THAY ĐỔI MỖI NGÀY!
+
   const filtered = selectedCat === 'Tất cả'
     ? allArticles
     : allArticles.filter(a => a.category.toLowerCase() === selectedCat.toLowerCase())
 
-  const featured = allArticles.find(a => a.isFeatured) || allArticles[0]
   const regularArticles = filtered.filter(a => selectedCat !== 'Tất cả' || a.id !== featured.id)
 
   return (
@@ -67,6 +71,22 @@ export default async function BlogIndexPage({ searchParams }) {
           </div>
         </div>
 
+        {/* Banner Mẹo AI Hôm Nay */}
+        {dailyTip && (
+          <div className="mb-8 p-4 sm:p-5 bg-white border border-blue-100 rounded-2xl flex items-start sm:items-center gap-3.5 shadow-xs">
+            <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-lg">
+              💡
+            </div>
+            <div className="flex-1 text-xs sm:text-sm text-gray-700 font-body leading-relaxed">
+              <strong className="font-semibold text-brand-dark">Lời khuyên AI hôm nay: </strong>
+              <span>{dailyTip.replace(/^💡\s*Mẹo AI hôm nay:\s*/, '')}</span>
+            </div>
+            <span className="hidden sm:inline-flex text-[11px] font-semibold text-brand font-display bg-brand-pale px-2.5 py-1 rounded-lg border border-blue-100 flex-shrink-0">
+              Đổi mới mỗi 00:00
+            </span>
+          </div>
+        )}
+
         {/* Thanh lọc Category Tabs */}
         <div className="mb-8 flex gap-2 overflow-x-auto pb-2 no-scrollbar">
           {blogCategories.map((cat) => {
@@ -92,7 +112,10 @@ export default async function BlogIndexPage({ searchParams }) {
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-xs font-bold font-display uppercase tracking-widest text-brand bg-blue-50 px-2.5 py-1 rounded-lg">
-                🔥 Bài viết Tiêu điểm AI
+                🔥 Bài viết Tiêu điểm AI — Tự động đổi mới mỗi ngày
+              </span>
+              <span className="text-xs text-gray-400 font-body hidden sm:inline">
+                ({featured.date})
               </span>
             </div>
 
