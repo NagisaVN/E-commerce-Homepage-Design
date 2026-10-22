@@ -72,3 +72,14 @@ export default async function ProductPage({ params }) {
     />
   )
 }
+
+// Tạo sẵn HTML tĩnh cho các sản phẩm lúc build -> 0ms latency trên Vercel
+export async function generateStaticParams() {
+  const data = (await import('../../../db.json')).default
+  return (data.san_pham ?? [])
+    .filter((sp) => Boolean(sp.slug?.trim()))
+    .map((sp) => ({
+      slug: sp.slug.trim(),
+    }))
+}
+

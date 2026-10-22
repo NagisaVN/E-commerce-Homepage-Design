@@ -447,71 +447,28 @@
 
 ## 🟢 GIAI ĐOẠN 3: TÍNH NĂNG MỞ RỘNG (HOÀN THIỆN DỰ ÁN)
 
-### [ ] Mục 11: Tạo trang 404 tùy biến (`app/not-found.jsx`)
-- **Tạo file mới:** `app/not-found.jsx`
-- **Nội dung mẫu:**
-  ```jsx
-  import Link from 'next/link'
-
-  export default function NotFound() {
-    return (
-      <div className="min-h-[70vh] bg-white flex items-center justify-center px-4 py-16">
-        <div className="max-w-md w-full text-center">
-          <div className="w-24 h-24 bg-blue-50 text-brand rounded-3xl flex items-center justify-center mx-auto mb-6 text-4xl font-bold font-display">
-            404
-          </div>
-          <h1 className="text-2xl font-bold text-gray-900 font-display mb-2">
-            Không tìm thấy trang
-          </h1>
-          <p className="text-gray-500 font-body text-sm mb-8">
-            Trang hoặc sản phẩm bạn đang tìm kiếm không tồn tại hoặc đã được chuyển sang địa chỉ khác.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/"
-              className="bg-brand text-white font-semibold font-display px-6 py-2.5 rounded-xl hover:bg-brand-dark transition-colors"
-            >
-              Về trang chủ
-            </Link>
-            <Link
-              href="/san-pham"
-              className="border border-gray-200 text-gray-700 font-semibold font-display px-6 py-2.5 rounded-xl hover:bg-gray-50 transition-colors"
-            >
-              Xem tất cả sản phẩm
-            </Link>
-          </div>
-        </div>
-      </div>
-    )
-  }
-  ```
+### [x] Mục 11: Tạo trang 404 tùy biến (`app/not-found.jsx`) - ĐÃ HOÀN THÀNH
+- **Đã tạo file:** `app/not-found.jsx`
+- **Tính năng:** Giao diện 404 chuẩn UX/UI TechZone, hiển thị nút quay lại Trang chủ và Trang tất cả sản phẩm, hỗ trợ SEO metadata.
 
 ---
 
-### [ ] Mục 12: Thêm `generateStaticParams` cho trang sản phẩm để tối ưu Vercel
-- **File:** `app/san-pham/[slug]/page.jsx`
-- **Thêm hàm sau vào cuối file:**
-  ```javascript
-  // Tạo sẵn HTML tĩnh cho 100 sản phẩm lúc build -> 0ms latency trên Vercel
-  export async function generateStaticParams() {
-    const data = (await import('../../../db.json')).default
-    return (data.san_pham ?? []).map((sp) => ({
-      slug: sp.slug?.trim(),
-    }))
-  }
-  ```
+### [x] Mục 12: Thêm `generateStaticParams` cho trang sản phẩm để tối ưu Vercel - ĐÃ HOÀN THÀNH
+- **File:** `app/san-pham/[slug]/page.jsx` & `app/danh-muc-san-pham/[slug]/page.jsx`
+- **Tính năng:** Đã tích hợp `generateStaticParams()` tạo sẵn HTML tĩnh (SSG) cho toàn bộ 100 sản phẩm và tất cả danh mục lúc build, đạt tốc độ phản hồi 0ms trên Vercel.
 
 ---
 
-### [ ] Mục 13: Tạo trang danh sách tất cả danh mục (`app/danh-muc-san-pham/page.jsx`)
-- **Tạo file mới:** `app/danh-muc-san-pham/page.jsx`
-- **Mục đích:** Khắc phục link `href="#"` tại dòng 63 của `components/Categories.jsx`, cho phép người dùng click "Xem tất cả danh mục" mà không bị 404.
+### [x] Mục 13: Tạo trang danh sách tất cả danh mục (`app/danh-muc-san-pham/page.jsx`) - ĐÃ HOÀN THÀNH
+- **Đã tạo file:** `app/danh-muc-san-pham/page.jsx`
+- **Tính năng:** Hiển thị toàn bộ hệ thống ngành hàng với icon SVG chuyên biệt, tổng số sản phẩm, danh sách sản phẩm nổi bật của từng ngành hàng, cam kết chính hãng và link điều hướng.
+- **Cập nhật:** Đã sửa link "Xem tất cả danh mục →" tại dòng 63 của `components/Categories.jsx` từ `href="#"` sang `href="/danh-muc-san-pham"`.
 
 ---
 
-### [ ] Mục 14: Thêm Loading State (`app/loading.jsx`)
-- **Tạo file mới:** `app/loading.jsx`
-- **Mục đích:** Hiển thị skeleton loading khi Next.js chuyển trang giữa các route, giúp giao diện không bị giật hoặc đơ.
+### [x] Mục 14: Thêm Loading State (`app/loading.jsx`) - ĐÃ HOÀN THÀNH
+- **Đã tạo file:** `app/loading.jsx`
+- **Tính năng:** Skeleton loading mượt mà với hiệu ứng shimmer `animate-pulse` cho breadcrumb, banner và lưới 8 thẻ sản phẩm, giúp chuyển route không bị giật lag.
 
 ---
 

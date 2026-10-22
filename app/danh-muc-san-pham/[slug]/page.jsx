@@ -119,3 +119,13 @@ export default async function CategoryPage({ params }) {
     </div>
   )
 }
+
+export async function generateStaticParams() {
+  const data = (await import('../../../db.json')).default
+  return (data.danh_muc_san_pham ?? [])
+    .filter((dm) => Boolean(dm.slug?.trim()))
+    .map((dm) => ({
+      slug: dm.slug.trim(),
+    }))
+}
+

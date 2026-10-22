@@ -60,7 +60,7 @@ export default function Categories() {
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         <div className="mb-10 flex items-end justify-between">
           <div><p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">Khám phá</p><h2 className="text-3xl font-bold text-gray-900 font-display">Danh Mục Sản Phẩm</h2></div>
-          <a href="#" className="hidden text-sm font-medium text-brand hover:underline font-body sm:block">Xem tất cả danh mục →</a>
+          <Link href="/danh-muc-san-pham" className="hidden text-sm font-medium text-brand hover:underline font-body sm:block">Xem tất cả danh mục →</Link>
         </div>
 
         <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4 lg:grid-cols-7">
