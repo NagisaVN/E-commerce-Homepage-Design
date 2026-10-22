@@ -24,7 +24,7 @@
 
 ---
 
-### [ ] Mục 2: Khắc phục nguy cơ Crash Server do `sp.slug.trim()` và giải mã URL
+### [x] Mục 2: Khắc phục nguy cơ Crash Server do `sp.slug.trim()` và giải mã URL (Đã sửa xong)
 - **File:** `app/san-pham/[slug]/page.jsx`
 - **Vấn đề:** 
   1. `sp.slug.trim()` sẽ throw `TypeError` nếu có sản phẩm không có slug hoặc slug là `null`.
@@ -111,7 +111,7 @@
 
 ---
 
-### [ ] Mục 3: Xử lý an toàn slug tại các Dynamic Routes còn lại
+### [x] Mục 3: Xử lý an toàn slug tại các Dynamic Routes còn lại (Đã sửa xong)
 - **File 1:** `app/danh-muc-san-pham/[slug]/page.jsx`
   - Đảm bảo so khớp an toàn:
     ```javascript
@@ -131,7 +131,7 @@
 
 ---
 
-### [ ] Mục 4: Xóa bỏ lộ lọt dữ liệu tại API `/api/data`
+### [x] Mục 4: Xóa bỏ lộ lọt dữ liệu tại API `/api/data` (Đã sửa xong)
 - **File:** `app/api/data/route.js`
 - **Vấn đề:** Trả về toàn bộ `db.json` bao gồm bảng `nguoi_dung` và `don_hang`.
 - **Code sửa lại (After):**
@@ -173,7 +173,7 @@
 
 ---
 
-### [ ] Mục 5: Sửa link 404 trong trang Khuyến mãi
+### [x] Mục 5: Sửa link 404 trong trang Khuyến mãi (Đã sửa xong)
 - **File:** `app/khuyen-mai/page.jsx` (dòng 65)
 - **Vấn đề:** Link `href={`/khuyen-mai/${promo.slug?.trim()}`}` nhưng chưa có page chi tiết.
 - **Giải pháp:**
@@ -182,7 +182,7 @@
 
 ---
 
-### [ ] Mục 6: Xử lý xung đột Lockfile khi deploy Git lên Vercel
+### [x] Mục 6: Xử lý xung đột Lockfile khi deploy Git lên Vercel (Đã sửa xong)
 - **Thao tác:**
   - Nếu dự án chuẩn hóa dùng **`npm`**:
     Chạy lệnh trong terminal:
@@ -198,7 +198,7 @@
 
 ## 🟡 GIAI ĐOẠN 2: TỐI ƯU HIỆU NĂNG, UI/UX & CLEAN CODE
 
-### [ ] Mục 7: Sửa lỗi Anti-pattern Component lồng nhau trong `Header.jsx`
+### [x] Mục 7: Sửa lỗi Anti-pattern Component lồng nhau trong `Header.jsx` (Đã sửa xong)
 - **File:** `components/Header.jsx`
 - **Vấn đề:** Khai báo `const SearchBox = () => (...)` bên trong `Header()` làm unmount input mỗi khi re-render.
 - **Code sửa lại:**
@@ -388,7 +388,7 @@
 
 ---
 
-### [ ] Mục 8: Cấu hình `next.config.mjs` cho External Images
+### [x] Mục 8: Cấu hình `next.config.mjs` cho External Images (Đã sửa xong)
 - **File:** `next.config.mjs`
 - **Code sửa lại:**
   ```javascript
@@ -413,7 +413,7 @@
 
 ---
 
-### [ ] Mục 9: Tinh chỉnh Grid thương hiệu trong `Brands.jsx`
+### [x] Mục 9: Tinh chỉnh Grid thương hiệu trong `Brands.jsx` (Đã sửa xong)
 - **File:** `components/Brands.jsx` (dòng 107)
 - **Vấn đề:** `grid-cols-3 sm:grid-cols-6` với 9 thương hiệu bị khuyết 3 ô lệch hàng 2.
 - **Code sửa lại:**
@@ -423,7 +423,7 @@
 
 ---
 
-### [ ] Mục 10: Tăng cường Fallback trong `ProductDetail.jsx`
+### [x] Mục 10: Tăng cường Fallback trong `ProductDetail.jsx` (Đã sửa xong)
 - **File:** `components/ProductDetail.jsx`
 - **Code sửa lại an toàn:**
   ```javascript

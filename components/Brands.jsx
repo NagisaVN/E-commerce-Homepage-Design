@@ -104,7 +104,7 @@ export default function Brands() {
           <div className="flex-1 h-px bg-brand-light" />
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3">
           {brands.map((brand) => (
             <Link
               key={brand.id}

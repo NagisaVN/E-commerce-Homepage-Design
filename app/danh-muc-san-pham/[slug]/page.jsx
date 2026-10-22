@@ -2,12 +2,15 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import ProductCard from '../../../components/ProductCard'
 
-async function getCategoryData(slug) {
+async function getCategoryData(rawSlug) {
+  if (!rawSlug) return null
+  const cleanSlug = decodeURIComponent(rawSlug).trim()
+
   const data = (await import('../../../db.json')).default
 
-  // Tìm danh mục
+  // Tìm danh mục an toàn
   const category = data.danh_muc_san_pham?.find(
-    (dm) => dm.slug.trim() === slug
+    (dm) => dm.slug?.trim() === cleanSlug
   )
 
   if (!category) return null
@@ -17,8 +20,8 @@ async function getCategoryData(slug) {
     (sp) => Number(sp.id_danh_muc) === Number(category.id)
   ) || []
 
-  const brandById = new Map((data.thuong_hieu ?? []).map(brand => [Number(brand.id), brand.ten.trim()]))
-  const categoryById = new Map((data.danh_muc_san_pham ?? []).map(cat => [Number(cat.id), cat.ten.trim()]))
+  const brandById = new Map((data.thuong_hieu ?? []).map(brand => [Number(brand.id), brand.ten?.trim() || '']))
+  const categoryById = new Map((data.danh_muc_san_pham ?? []).map(cat => [Number(cat.id), cat.ten?.trim() || '']))
 
   // Chuẩn hóa dữ liệu sản phẩm cho ProductCard
   const formattedProducts = products.map(product => {
@@ -38,7 +41,7 @@ async function getCategoryData(slug) {
     return {
       id: product.id,
       slug: product.slug?.trim(),
-      name: product.ten_san_pham.trim(),
+      name: product.ten_san_pham?.trim() || '',
       brand: brandById.get(Number(product.id_thuong_hieu)) ?? 'Thương hiệu',
       category: categoryById.get(Number(product.id_danh_muc)) ?? 'Sản phẩm',
       price,
@@ -61,11 +64,11 @@ export async function generateMetadata({ params }) {
   const result = await getCategoryData(rawSlug)
 
   if (!result) {
-    return { title: 'Không tìm thấy danh mục' }
+    return { title: 'Không tìm thấy danh mục – TechZone' }
   }
 
   return {
-    title: `${result.category.ten.trim()} – TechZone`,
+    title: `${result.category.ten?.trim()} – TechZone`,
   }
 }
 

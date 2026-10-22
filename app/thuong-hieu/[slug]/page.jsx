@@ -2,12 +2,15 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import ProductCard from '../../../components/ProductCard'
 
-async function getBrandData(slug) {
+async function getBrandData(rawSlug) {
+  if (!rawSlug) return null
+  const cleanSlug = decodeURIComponent(rawSlug).trim()
+
   const data = (await import('../../../db.json')).default
 
-  // Tìm thương hiệu
+  // Tìm thương hiệu an toàn
   const brand = data.thuong_hieu?.find(
-    (th) => th.slug.trim() === slug
+    (th) => th.slug?.trim() === cleanSlug
   )
 
   if (!brand) return null
@@ -17,8 +20,8 @@ async function getBrandData(slug) {
     (sp) => Number(sp.id_thuong_hieu) === Number(brand.id)
   ) || []
 
-  const brandById = new Map((data.thuong_hieu ?? []).map(b => [Number(b.id), b.ten.trim()]))
-  const categoryById = new Map((data.danh_muc_san_pham ?? []).map(cat => [Number(cat.id), cat.ten.trim()]))
+  const brandById = new Map((data.thuong_hieu ?? []).map(b => [Number(b.id), b.ten?.trim() || '']))
+  const categoryById = new Map((data.danh_muc_san_pham ?? []).map(cat => [Number(cat.id), cat.ten?.trim() || '']))
 
   // Chuẩn hóa dữ liệu sản phẩm cho ProductCard
   const formattedProducts = products.map(product => {
@@ -38,7 +41,7 @@ async function getBrandData(slug) {
     return {
       id: product.id,
       slug: product.slug?.trim(),
-      name: product.ten_san_pham.trim(),
+      name: product.ten_san_pham?.trim() || '',
       brand: brandById.get(Number(product.id_thuong_hieu)) ?? 'Thương hiệu',
       category: categoryById.get(Number(product.id_danh_muc)) ?? 'Sản phẩm',
       price,
@@ -61,11 +64,11 @@ export async function generateMetadata({ params }) {
   const result = await getBrandData(rawSlug)
 
   if (!result) {
-    return { title: 'Không tìm thấy thương hiệu' }
+    return { title: 'Không tìm thấy thương hiệu – TechZone' }
   }
 
   return {
-    title: `${result.brand.ten.trim()} – TechZone`,
+    title: `${result.brand.ten?.trim()} – TechZone`,
   }
 }
 

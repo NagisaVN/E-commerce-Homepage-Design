@@ -171,37 +171,39 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
   // ── Map specs từ chiTiet ─────────────────────────────────
   const specs = chiTiet?.thong_so_ky_thuat
     ? Object.entries(chiTiet.thong_so_ky_thuat).map(([attr, value]) => ({
-        attr,
-        value,
-      }))
+      attr,
+      value,
+    }))
     : [
-        { attr: 'Tên sản phẩm', value: productName },
-        { attr: 'SKU', value: productSku },
-        { attr: 'Đánh giá', value: `${productRating} / 5 sao` },
-        { attr: 'Tình trạng', value: productStock > 0 ? `Còn ${productStock} sản phẩm` : 'Hết hàng' },
-      ]
+      { attr: 'Tên sản phẩm', value: productName },
+      { attr: 'SKU', value: productSku },
+      { attr: 'Đánh giá', value: `${productRating} / 5 sao` },
+      { attr: 'Tình trạng', value: productStock > 0 ? `Còn ${productStock} sản phẩm` : 'Hết hàng' },
+    ]
+
+  // ── Policies & Fallbacks ──────────────────────────────────
+  const policies = Array.isArray(chiTiet?.chinh_sach_ban_hang) ? chiTiet.chinh_sach_ban_hang : []
 
   // ── Description HTML ─────────────────────────────────────
   const descriptionHTML = chiTiet?.mo_ta_chi_tiet
-    ? `<h3>Mô tả chi tiết</h3><p>${chiTiet.mo_ta_chi_tiet}</p>${
-        chiTiet.chinh_sach_ban_hang
-          ? `<h3>Chính sách bán hàng</h3><ul>${chiTiet.chinh_sach_ban_hang.map(cs => `<li>${cs}</li>`).join('')}</ul>`
-          : ''
-      }`
+    ? `<h3>Mô tả chi tiết</h3><p>${chiTiet.mo_ta_chi_tiet}</p>${policies.length > 0
+      ? `<h3>Chính sách bán hàng</h3><ul>${policies.map(cs => `<li>${cs}</li>`).join('')}</ul>`
+      : ''
+    }`
     : `<h3>Thông tin sản phẩm</h3><p>${product?.mo_ta_ngan?.trim() || 'Thông tin chi tiết đang được cập nhật.'}</p>`
 
   // ── Policy badges ────────────────────────────────────────
-  const policyBadges = chiTiet?.chinh_sach_ban_hang
+  const policyBadges = policies.length > 0
     ? [
-        { icon: '🚚', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('giao'))?.replace(/^.{0,}?(Giao)/i, 'Giao') || 'Miễn phí giao hàng', sub: 'Tận nơi' },
-        { icon: '🛡️', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('bảo hành'))?.split(',')[0] || 'Bảo hành chính hãng', sub: 'Chính hãng' },
-        { icon: '↩️', label: chiTiet.chinh_sach_ban_hang.find(c => c.toLowerCase().includes('đổi'))?.split('(')[0]?.trim() || 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
-      ]
+      { icon: '🚚', label: policies.find(c => c.toLowerCase().includes('giao'))?.replace(/^.{0,}?(Giao)/i, 'Giao') || 'Miễn phí giao hàng', sub: 'Tận nơi' },
+      { icon: '🛡️', label: policies.find(c => c.toLowerCase().includes('bảo hành'))?.split(',')[0] || 'Bảo hành chính hãng', sub: 'Chính hãng' },
+      { icon: '↩️', label: policies.find(c => c.toLowerCase().includes('đổi'))?.split('(')[0]?.trim() || 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
+    ]
     : [
-        { icon: '🚚', label: 'Miễn phí giao hàng', sub: 'Trong 3 ngày' },
-        { icon: '🛡️', label: 'Bảo hành 2 năm', sub: '+ 10 năm máy nén' },
-        { icon: '↩️', label: 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
-      ]
+      { icon: '🚚', label: 'Miễn phí giao hàng', sub: 'Trong 3 ngày' },
+      { icon: '🛡️', label: 'Bảo hành 2 năm', sub: '+ 10 năm máy nén' },
+      { icon: '↩️', label: 'Đổi trả 30 ngày', sub: 'Dễ dàng' },
+    ]
 
   // ── Handlers ─────────────────────────────────────────────
   const handleBuyNow = () => {
@@ -233,7 +235,7 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
             {danhMuc?.slug ? (
               <Link href={`/danh-muc-san-pham/${danhMuc.slug.trim()}`} className="hover:text-brand transition-colors">{categoryName}</Link>
             ) : (
-              <span className="hover:text-brand cursor-pointer transition-colors">{categoryName}</span>
+              <span className="hover:text-brand cursor-po inter transition-colors">{categoryName}</span>
             )}
             <span>/</span>
             {thuongHieu?.slug ? (
@@ -270,11 +272,10 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <button
                   key={i}
                   onClick={() => setActiveImage(i)}
-                  className={`aspect-square rounded-xl overflow-hidden border-2 transition-all duration-200 ${
-                    activeImage === i
+                  className={`aspect-square rounded-xl overflow-hidden border-2 transition-all duration-200 ${activeImage === i
                       ? 'border-brand shadow-md shadow-blue-100 scale-95'
                       : 'border-gray-100 hover:border-brand-accent hover:scale-95'
-                  }`}
+                    }`}
                 >
                   <img src={src} alt="" className="w-full h-full object-cover" />
                 </button>
@@ -309,11 +310,10 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <StarRow filled={Math.floor(productRating)} half={productRating % 1 >= 0.3} />
                 <span className="text-sm font-bold text-amber-500 font-display">{productRating}</span>
                 <span className="text-sm text-gray-400 font-body">({reviewCount.toLocaleString()} đánh giá)</span>
-                <span className={`text-xs font-semibold font-display px-2 py-0.5 rounded-full ${
-                  productStock > 0
+                <span className={`text-xs font-semibold font-display px-2 py-0.5 rounded-full ${productStock > 0
                     ? 'text-green-600 bg-green-50'
                     : 'text-red-600 bg-red-50'
-                }`}>
+                  }`}>
                   {productStock > 0 ? '✓ Còn hàng' : '✗ Hết hàng'}
                 </span>
               </div>
@@ -366,11 +366,10 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                   ].map(tag => (
                     <div
                       key={tag.label}
-                      className={`flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full font-body ${
-                        tag.color === 'green'
+                      className={`flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full font-body ${tag.color === 'green'
                           ? 'bg-green-50 border border-green-200 text-green-700'
                           : 'bg-amber-50 border border-amber-200 text-amber-700'
-                      }`}
+                        }`}
                     >
                       {tag.label}
                     </div>
@@ -416,21 +415,19 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
               <div className="flex gap-3">
                 <button
                   onClick={handleBuyNow}
-                  className={`flex-1 py-3.5 rounded-xl font-display font-bold text-sm transition-all duration-200 active:scale-95 shadow-lg ${
-                    buyState === 'added'
+                  className={`flex-1 py-3.5 rounded-xl font-display font-bold text-sm transition-all duration-200 active:scale-95 shadow-lg ${buyState === 'added'
                       ? 'bg-green-500 text-white shadow-green-200'
                       : 'bg-brand hover:bg-brand-dark text-white shadow-blue-200'
-                  }`}
+                    }`}
                 >
                   {buyState === 'added' ? '✓ Đã đặt hàng!' : '⚡ Mua ngay'}
                 </button>
                 <button
                   onClick={handleAddCart}
-                  className={`flex-1 py-3.5 rounded-xl font-display font-semibold text-sm border-2 transition-all duration-200 active:scale-95 ${
-                    cartState === 'added'
+                  className={`flex-1 py-3.5 rounded-xl font-display font-semibold text-sm border-2 transition-all duration-200 active:scale-95 ${cartState === 'added'
                       ? 'bg-green-50 border-green-400 text-green-600'
                       : 'bg-white border-brand text-brand hover:bg-brand-pale'
-                  }`}
+                    }`}
                 >
                   {cartState === 'added' ? '✓ Đã thêm vào giỏ' : '🛒 Thêm vào giỏ'}
                 </button>
@@ -450,11 +447,10 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
-                className={`px-5 py-2.5 text-sm font-semibold font-display transition-all ${
-                  activeTab === key
+                className={`px-5 py-2.5 text-sm font-semibold font-display transition-all ${activeTab === key
                     ? 'text-brand border-b-2 border-brand -mb-px'
                     : 'text-gray-400 hover:text-gray-700'
-                }`}
+                  }`}
               >
                 {label}
               </button>
