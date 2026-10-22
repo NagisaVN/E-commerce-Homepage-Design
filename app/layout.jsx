@@ -1,8 +1,7 @@
 import { Outfit, Inter } from 'next/font/google'
 import './globals.css'
 import { CartProvider } from '../context/CartContext'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import LayoutShell from '../components/LayoutShell'
 
 const outfit = Outfit({
   subsets: ['latin', 'latin-ext'],
@@ -26,9 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="vi" className={`${outfit.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-white">
         <CartProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <LayoutShell>{children}</LayoutShell>
         </CartProvider>
       </body>
     </html>
