@@ -46,6 +46,17 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isOpen, onClose])
 
+  // Khóa cuộn trang nền khi mở modal để loại bỏ thanh cuộn ngoài cùng
+  useEffect(() => {
+    if (isOpen) {
+      const originalOverflow = document.body.style.overflow
+      document.body.style.overflow = 'hidden'
+      return () => {
+        document.body.style.overflow = originalOverflow
+      }
+    }
+  }, [isOpen])
+
   const executeSearch = async (searchQuery) => {
     if (!searchQuery || !searchQuery.trim()) return
     setLoading(true)
@@ -89,14 +100,14 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center p-3 sm:p-6 overflow-y-auto bg-black/60 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm animate-fade-in">
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-blue-100 overflow-hidden my-auto sm:my-8 transition-all"
+        className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-blue-100 overflow-hidden flex flex-col max-h-[88vh] transition-all"
       >
         {/* Header với hiệu ứng AI Gradient */}
-        <div className="bg-gradient-to-r from-brand-dark via-brand to-indigo-700 p-5 sm:p-6 text-white relative overflow-hidden">
+        <div className="bg-gradient-to-r from-brand-dark via-brand to-indigo-700 p-5 sm:p-6 text-white relative overflow-hidden flex-shrink-0">
           <div className="absolute -top-12 -right-12 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none" />
           
           <div className="flex items-center justify-between mb-4">
@@ -162,15 +173,22 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
             </div>
           </form>
 
-          {/* Gợi ý câu hỏi nhanh (Prompt Pills) */}
-          <div className="mt-3.5 flex items-center gap-2 overflow-x-auto pb-1 text-xs no-scrollbar">
-            <span className="text-blue-200 whitespace-nowrap font-medium text-[11px]">Gợi ý:</span>
+          {/* Gợi ý câu hỏi nhanh (Prompt Pills) - Hỗ trợ lăn chuột ngang và ẩn thanh cuộn thô */}
+          <div
+            onWheel={(e) => {
+              if (e.deltaY !== 0) {
+                e.currentTarget.scrollLeft += e.deltaY
+              }
+            }}
+            className="mt-3.5 flex items-center gap-2 overflow-x-auto pb-0.5 text-xs no-scrollbar scroll-smooth"
+          >
+            <span className="text-blue-200 whitespace-nowrap font-medium text-[11px] flex-shrink-0">Gợi ý:</span>
             {SAMPLE_PROMPTS.map((p, idx) => (
               <button
                 key={idx}
                 type="button"
                 onClick={() => handlePromptClick(p.query)}
-                className="whitespace-nowrap px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition-all text-xs flex items-center gap-1"
+                className="whitespace-nowrap px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition-all text-xs flex items-center gap-1 flex-shrink-0"
               >
                 <span>{p.icon}</span>
                 <span>{p.label}</span>
@@ -179,8 +197,8 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
           </div>
         </div>
 
-        {/* Nội dung kết quả tìm kiếm */}
-        <div className="p-5 sm:p-6 max-h-[62vh] overflow-y-auto">
+        {/* Nội dung kết quả tìm kiếm - Duy nhất một thanh cuộn thanh mảnh bên trong modal */}
+        <div className="p-5 sm:p-6 flex-1 overflow-y-auto">
           {loading && (
             <div className="py-12 flex flex-col items-center justify-center gap-4 text-center">
               <div className="relative">
@@ -365,7 +383,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
         </div>
 
         {/* Footer của Modal */}
-        <div className="bg-gray-50 border-t border-gray-100 px-6 py-3 flex items-center justify-between text-xs text-gray-500 font-body">
+        <div className="bg-gray-50 border-t border-gray-100 px-6 py-3 flex items-center justify-between text-xs text-gray-500 font-body flex-shrink-0">
           <div className="flex items-center gap-3">
             <span>Bấm <kbd className="px-1.5 py-0.5 bg-white border border-gray-200 rounded font-mono text-[11px]">ESC</kbd> để đóng</span>
             <span>&middot;</span>

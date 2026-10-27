@@ -55,27 +55,69 @@ export default function Categories() {
     fetchCategories()
   }, [])
 
-  return (
-    <section className="border-b border-gray-100 bg-white py-14">
-      <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-        <div className="mb-10 flex items-end justify-between">
-          <div><p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">Khám phá</p><h2 className="text-3xl font-bold text-gray-900 font-display">Danh Mục Sản Phẩm</h2></div>
-          <Link href="/danh-muc-san-pham" className="hidden text-sm font-medium text-brand hover:underline font-body sm:block">Xem tất cả danh mục →</Link>
-        </div>
+  const repeatCount = categories.length > 0 ? Math.max(2, Math.ceil(16 / categories.length)) : 0
+  const halfList = Array.from({ length: repeatCount }).flatMap(() => categories)
+  const displayCategories = [...halfList, ...halfList]
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4 lg:grid-cols-7">
-          {categories.map(category => {
-            const theme = categoryTheme[category.slug] ?? { bg: '#F3F4F6', color: '#4B5563' }
-            return (
-              <Link key={category.id} href={`/danh-muc-san-pham/${category.slug}`} className="group flex cursor-pointer flex-col items-center gap-3.5">
-                <div className="flex h-[72px] w-[72px] items-center justify-center rounded-full transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-[0_12px_28px_rgba(37,99,235,0.24)] sm:h-20 sm:w-20" style={{ backgroundColor: theme.bg }}>
-                  <CategoryIcon slug={category.slug} color={theme.color} />
-                </div>
-                <div className="text-center"><p className="text-sm font-semibold leading-tight text-gray-800 transition-colors group-hover:text-brand font-display">{category.name}</p><p className="mt-0.5 text-xs text-gray-400 font-body">{category.productCount} mẫu</p></div>
-              </Link>
-            )
-          })}
+  return (
+    <section className="border-b border-gray-100 bg-white py-14 overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">Khám phá</p>
+            <h2 className="text-3xl font-bold text-gray-900 font-display">Danh Mục Sản Phẩm</h2>
+          </div>
+          <Link href="/danh-muc-san-pham" className="text-sm font-medium text-brand hover:underline font-body">
+            Xem tất cả danh mục →
+          </Link>
         </div>
+      </div>
+
+      {/* Dải danh mục chạy tự động 1 hàng ngang */}
+      <div className="relative w-full overflow-hidden py-2">
+        {/* Hiệu ứng làm mờ nhẹ 2 bên mép */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-r from-white to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-l from-white to-transparent" />
+
+        {categories.length === 0 ? (
+          <div className="flex gap-6 sm:gap-8 overflow-hidden py-3 px-4 justify-center">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="flex w-28 sm:w-32 shrink-0 flex-col items-center gap-3.5 animate-pulse">
+                <div className="h-[72px] w-[72px] sm:h-20 sm:w-20 rounded-full bg-gray-100" />
+                <div className="h-4 w-16 rounded bg-gray-100" />
+                <div className="h-3 w-10 rounded bg-gray-50" />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex w-max animate-marquee gap-6 sm:gap-8 py-3">
+            {displayCategories.map((category, index) => {
+              const theme = categoryTheme[category.slug] ?? { bg: '#F3F4F6', color: '#4B5563' }
+              return (
+                <Link
+                  key={`${category.id}-${index}`}
+                  href={`/danh-muc-san-pham/${category.slug}`}
+                  className="group flex w-28 sm:w-32 shrink-0 cursor-pointer flex-col items-center gap-3.5 select-none"
+                >
+                  <div
+                    className="flex h-[72px] w-[72px] sm:h-20 sm:w-20 items-center justify-center rounded-full transition-all duration-300 group-hover:-translate-y-1.5 group-hover:scale-110 group-hover:shadow-[0_12px_28px_rgba(37,99,235,0.24)]"
+                    style={{ backgroundColor: theme.bg }}
+                  >
+                    <CategoryIcon slug={category.slug} color={theme.color} />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-semibold leading-tight text-gray-800 transition-colors group-hover:text-brand font-display whitespace-nowrap">
+                      {category.name}
+                    </p>
+                    <p className="mt-0.5 text-xs text-gray-400 font-body">
+                      {category.productCount} mẫu
+                    </p>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        )}
       </div>
     </section>
   )

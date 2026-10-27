@@ -87,12 +87,18 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-blue-400 text-xs font-body">© 2024 TechZone. Tất cả các quyền được bảo lưu.</p>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 flex-wrap">
             {['Chính sách bảo mật', 'Điều khoản sử dụng', 'Chính sách cookie'].map(link => (
               <a key={link} href="#" className="text-blue-400 hover:text-white text-xs font-body transition-colors">
                 {link}
               </a>
             ))}
+            <Link
+              href="/dang-nhap?redirect=/admin"
+              className="text-blue-300 hover:text-amber-300 text-xs font-body transition-colors flex items-center gap-1"
+            >
+              <span>🛡️ Cổng Quản Trị</span>
+            </Link>
           </div>
         </div>
       </div>

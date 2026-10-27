@@ -112,3 +112,4 @@ export function ToastProvider({ children }) {
 }
 
 export const useToast = () => useContext(ToastContext)
+export const useAdminToast = useToast

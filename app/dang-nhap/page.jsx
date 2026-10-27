@@ -1,26 +1,97 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useAuth } from '../../context/AuthContext'
 
-export default function LoginPage() {
+function LoginForm() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const redirectUrl = searchParams.get('redirect')
+
+  const { user, isAdmin, login, quickLoginAsAdmin, quickLoginAsCustomer, logout } = useAuth()
+
+  // Tabs: 'customer' | 'admin'
+  const [activeRole, setActiveRole] = useState(redirectUrl?.startsWith('/admin') ? 'admin' : 'customer')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const router = useRouter()
+  const [isLoading, setIsLoading] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
+
+  useEffect(() => {
+    // Nếu có redirect=/admin, tự động chuyển tab sang admin
+    if (redirectUrl?.startsWith('/admin')) {
+      setActiveRole('admin')
+      setEmail('admin@techzone.vn')
+      setPassword('admin123')
+    }
+  }, [redirectUrl])
+
+  const handleRoleChange = (role) => {
+    setActiveRole(role)
+    setErrorMessage('')
+    setSuccessMessage('')
+    if (role === 'admin') {
+      setEmail('admin@techzone.vn')
+      setPassword('admin123')
+    } else {
+      setEmail('')
+      setPassword('')
+    }
+  }
 
   const handleLogin = (e) => {
     e.preventDefault()
-    // For now, just simulate a login and redirect to home
-    console.log('Login attempt with', { email, password })
-    router.push('/')
+    setErrorMessage('')
+    setIsLoading(true)
+
+    try {
+      const res = login(email, password, activeRole)
+      if (res.success) {
+        setSuccessMessage(
+          res.role === 'admin'
+            ? 'Đăng nhập Quản trị viên thành công! Đang chuyển hướng đến Admin Dashboard...'
+            : 'Đăng nhập thành công! Đang chuyển hướng...'
+        )
+        setTimeout(() => {
+          if (res.role === 'admin') {
+            router.push(redirectUrl || '/admin')
+          } else {
+            router.push(redirectUrl || '/')
+          }
+        }, 800)
+      }
+    } catch (err) {
+      setErrorMessage('Đã xảy ra lỗi khi đăng nhập. Vui lòng thử lại.')
+      setIsLoading(false)
+    }
+  }
+
+  const handleQuickAdmin = () => {
+    setIsLoading(true)
+    quickLoginAsAdmin()
+    setSuccessMessage('Đăng nhập thành công với quyền Admin! Đang vào trang quản trị...')
+    setTimeout(() => {
+      router.push(redirectUrl || '/admin')
+    }, 700)
+  }
+
+  const handleQuickCustomer = () => {
+    setIsLoading(true)
+    quickLoginAsCustomer()
+    setSuccessMessage('Đăng nhập thành công! Đang vào trang mua sắm...')
+    setTimeout(() => {
+      router.push('/')
+    }, 700)
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-body">
+    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-10 sm:px-6 lg:px-8 font-body">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <Link href="/" className="flex justify-center items-center gap-2 mb-6">
-          <div className="h-10 w-10 bg-brand rounded-xl flex items-center justify-center">
+        <Link href="/" className="flex justify-center items-center gap-2 mb-4">
+          <div className="h-10 w-10 bg-brand rounded-xl flex items-center justify-center shadow-md shadow-blue-600/20">
             <svg viewBox="0 0 32 32" fill="none" className="h-6 w-6">
               <path d="M8 22V13l8-6 8 6v9H8z" stroke="white" strokeWidth="2" strokeLinejoin="round" />
               <rect x="13" y="16" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" />
@@ -30,27 +101,140 @@ export default function LoginPage() {
             Tech<span className="text-brand">Zone</span>
           </span>
         </Link>
-        <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900 font-display">
-          Đăng nhập vào tài khoản
+
+        <h2 className="text-center text-2xl sm:text-3xl font-extrabold text-gray-900 font-display">
+          {activeRole === 'admin' ? 'Đăng nhập Quản Trị Viên' : 'Đăng nhập vào tài khoản'}
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Hoặc{' '}
-          <Link href="/dang-ky" className="font-medium text-brand hover:text-brand-dark transition-colors">
-            đăng ký tài khoản mới miễn phí
-          </Link>
+          {activeRole === 'admin' ? (
+            <span className="text-amber-600 font-medium">Hệ thống quản lý TechZone Admin Dashboard</span>
+          ) : (
+            <>
+              Chưa có tài khoản?{' '}
+              <Link href="/dang-ky" className="font-medium text-brand hover:text-brand-dark transition-colors">
+                Đăng ký tài khoản mới miễn phí
+              </Link>
+            </>
+          )}
         </p>
+
+        {/* Thông báo nếu vừa bị redirect từ trang Admin */}
+        {redirectUrl?.startsWith('/admin') && (
+          <div className="mt-4 mx-4 sm:mx-0 p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-800 text-xs flex items-center gap-2 shadow-xs">
+            <svg className="w-5 h-5 flex-shrink-0 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <span>Vui lòng đăng nhập bằng tài khoản <strong>Quản trị viên</strong> để tiếp tục vào trang Quản trị.</span>
+          </div>
+        )}
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow-xl shadow-blue-900/5 sm:rounded-2xl sm:px-10 border border-gray-100">
-          <form className="space-y-6" onSubmit={handleLogin}>
+      <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
+        {/* Nếu đã đăng nhập trước đó */}
+        {user && (
+          <div className="mb-4 bg-white p-4 rounded-2xl border border-blue-100 shadow-md flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">
+                {user.avatar || 'U'}
+              </div>
+              <div className="text-xs">
+                <p className="font-semibold text-gray-900">{user.name}</p>
+                <p className="text-gray-500">{user.email}</p>
+                <span className={`inline-block mt-0.5 px-2 py-0.5 text-[10px] font-bold rounded-full ${
+                  user.role === 'admin' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'
+                }`}>
+                  {user.role === 'admin' ? 'Quyền Quản trị viên' : 'Khách hàng'}
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-1.5">
+              {user.role === 'admin' ? (
+                <Link
+                  href="/admin"
+                  className="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold shadow-xs transition-colors"
+                >
+                  Vào Admin
+                </Link>
+              ) : (
+                <Link
+                  href="/"
+                  className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg text-xs font-semibold transition-colors"
+                >
+                  Về Shop
+                </Link>
+              )}
+              <button
+                onClick={logout}
+                className="px-2.5 py-1.5 text-xs text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                title="Đăng xuất"
+              >
+                Thoát
+              </button>
+            </div>
+          </div>
+        )}
+
+        <div className="bg-white py-7 px-4 shadow-xl shadow-blue-900/5 sm:rounded-2xl sm:px-10 border border-gray-100">
+          {/* Role Tabs */}
+          <div className="grid grid-cols-2 gap-1.5 p-1 bg-gray-100 rounded-xl mb-6">
+            <button
+              type="button"
+              onClick={() => handleRoleChange('customer')}
+              className={`py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center justify-center gap-1.5 ${
+                activeRole === 'customer'
+                  ? 'bg-white text-gray-900 shadow-sm'
+                  : 'text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>Khách hàng</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleRoleChange('admin')}
+              className={`py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center justify-center gap-1.5 ${
+                activeRole === 'admin'
+                  ? 'bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md shadow-blue-600/20'
+                  : 'text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span>Quản trị viên (Admin)</span>
+            </button>
+          </div>
+
+          {/* Alert thông báo */}
+          {errorMessage && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs rounded-xl flex items-center gap-2">
+              <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span>{errorMessage}</span>
+            </div>
+          )}
+
+          {successMessage && (
+            <div className="mb-4 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-xl flex items-center gap-2">
+              <svg className="w-4 h-4 flex-shrink-0 text-emerald-600 animate-spin" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              <span>{successMessage}</span>
+            </div>
+          )}
+
+          <form className="space-y-4" onSubmit={handleLogin}>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Địa chỉ Email
+              <label htmlFor="email" className="block text-xs font-semibold text-gray-700">
+                {activeRole === 'admin' ? 'Tài khoản Email Quản trị' : 'Địa chỉ Email'}
               </label>
               <div className="mt-1 relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
@@ -63,19 +247,19 @@ export default function LoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="appearance-none block w-full pl-10 px-3 py-2.5 border border-gray-200 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand focus:border-brand sm:text-sm transition-colors"
-                  placeholder="you@example.com"
+                  className="appearance-none block w-full pl-10 px-3 py-2.5 border border-gray-200 rounded-xl shadow-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand sm:text-sm transition-colors"
+                  placeholder={activeRole === 'admin' ? 'admin@techzone.vn' : 'you@example.com'}
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="password" className="block text-xs font-semibold text-gray-700">
                 Mật khẩu
               </label>
               <div className="mt-1 relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -87,60 +271,107 @@ export default function LoginPage() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="appearance-none block w-full pl-10 px-3 py-2.5 border border-gray-200 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand focus:border-brand sm:text-sm transition-colors"
+                  className="appearance-none block w-full pl-10 px-3 py-2.5 border border-gray-200 rounded-xl shadow-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand sm:text-sm transition-colors"
                   placeholder="••••••••"
                 />
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between text-xs">
               <div className="flex items-center">
                 <input
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
+                  defaultChecked
                   className="h-4 w-4 text-brand focus:ring-brand border-gray-300 rounded cursor-pointer"
                 />
-                <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900 cursor-pointer">
-                  Ghi nhớ đăng nhập
+                <label htmlFor="remember-me" className="ml-2 block text-gray-700 cursor-pointer">
+                  Ghi nhớ phiên đăng nhập
                 </label>
               </div>
 
-              <div className="text-sm">
-                <a href="#" className="font-medium text-brand hover:text-brand-dark transition-colors">
-                  Quên mật khẩu?
-                </a>
-              </div>
+              {activeRole !== 'admin' && (
+                <div>
+                  <a href="#" className="font-medium text-brand hover:text-brand-dark transition-colors">
+                    Quên mật khẩu?
+                  </a>
+                </div>
+              )}
             </div>
 
             <div>
               <button
                 type="submit"
-                className="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-xl shadow-sm text-sm font-bold text-white bg-brand hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand transition-all active:scale-[0.98] font-display"
+                disabled={isLoading}
+                className={`w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white transition-all active:scale-[0.98] font-display ${
+                  activeRole === 'admin'
+                    ? 'bg-gradient-to-r from-blue-700 to-indigo-600 hover:from-blue-800 hover:to-indigo-700 shadow-blue-500/20'
+                    : 'bg-brand hover:bg-brand-dark shadow-blue-500/20'
+                } ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                Đăng nhập
+                {isLoading ? (
+                  <span className="flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Đang xử lý...
+                  </span>
+                ) : (
+                  <span>
+                    {activeRole === 'admin' ? 'Đăng nhập vào Hệ Thống Admin ➔' : 'Đăng nhập'}
+                  </span>
+                )}
               </button>
             </div>
           </form>
 
-          <div className="mt-6">
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-200" />
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">Hoặc tiếp tục với</span>
-              </div>
-            </div>
+          {/* Khối Đăng Nhập Nhanh Trải Nghiệm Demo */}
+          <div className="mt-6 pt-5 border-t border-gray-100">
+            <p className="text-center text-xs font-semibold text-gray-500 mb-3 tracking-wide">
+              ⚡ ĐĂNG NHẬP NHANH 1-CHẠM (DEMO)
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={handleQuickAdmin}
+                className="flex items-center justify-center gap-2 px-3 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-blue-900 border border-blue-200/80 rounded-xl text-xs font-bold transition-all active:scale-95"
+              >
+                <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                <span>Vào vai Admin</span>
+              </button>
 
-            <div className="mt-6 grid grid-cols-2 gap-3">
-              <div>
-                <a
-                  href="#"
-                  className="w-full inline-flex justify-center py-2.5 px-4 border border-gray-200 rounded-xl shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
+              <button
+                type="button"
+                onClick={handleQuickCustomer}
+                className="flex items-center justify-center gap-2 px-3 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 rounded-xl text-xs font-medium transition-all active:scale-95"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Vào vai Khách Hàng</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Social login for customers */}
+          {activeRole === 'customer' && (
+            <div className="mt-6">
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-200" />
+                </div>
+                <div className="relative flex justify-center text-xs">
+                  <span className="px-2 bg-white text-gray-500">Hoặc tiếp tục với</span>
+                </div>
+              </div>
+
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={handleQuickCustomer}
+                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors"
                 >
-                  <span className="sr-only">Đăng nhập với Google</span>
-                  <svg className="h-5 w-5" viewBox="0 0 24 24">
+                  <svg className="h-4 w-4" viewBox="0 0 24 24">
                     <path
                       d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
                       fill="#4285F4"
@@ -158,16 +389,15 @@ export default function LoginPage() {
                       fill="#EA4335"
                     />
                   </svg>
-                </a>
-              </div>
+                  <span>Google</span>
+                </button>
 
-              <div>
-                <a
-                  href="#"
-                  className="w-full inline-flex justify-center py-2.5 px-4 border border-gray-200 rounded-xl shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
+                <button
+                  type="button"
+                  onClick={handleQuickCustomer}
+                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors"
                 >
-                  <span className="sr-only">Đăng nhập với Facebook</span>
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
@@ -175,12 +405,27 @@ export default function LoginPage() {
                       color="#1877F2"
                     />
                   </svg>
-                </a>
+                  <span>Facebook</span>
+                </button>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
+  )
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="w-8 h-8 border-4 border-brand border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      }
+    >
+      <LoginForm />
+    </Suspense>
   )
 }

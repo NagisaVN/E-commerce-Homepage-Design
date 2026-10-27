@@ -35,3 +35,67 @@ body {
 .animate-fade-slide {
   animation: fadeSlide 0.5s ease forwards;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================================
+   TỐI ƯU HÓA THANH CUỘN (SCROLLBAR OPTIMIZATION)
+   - Thanh cuộn siêu mảnh, thanh lịch, bo tròn hiện đại
+   - Ẩn hoàn toàn thanh cuộn ở các khối gợi ý & tabs ngang
+   ============================================================ */
+
+/* Thanh cuộn chung cho toàn bộ website */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Firefox scrollbar mỏng */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.4) transparent;
+}
+
+/* Class tiện ích ẩn hoàn toàn thanh cuộn nhưng vẫn vuốt/cuộn được */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important; /* IE, Edge cũ */
+  scrollbar-width: none !important;    /* Firefox, Chrome mới */
+}

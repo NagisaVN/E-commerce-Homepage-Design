@@ -1,10 +1,12 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { AdminSidebarProvider, useAdminSidebar } from './_components/AdminSidebarContext'
 import AdminSidebar from './_components/AdminSidebar'
 import AdminHeader from './_components/AdminHeader'
 import { ToastProvider } from './_components/AdminToast'
+import { useAuth } from '../../context/AuthContext'
 
 function AdminLayoutContent({ children }) {
   const { isExpanded } = useAdminSidebar()
@@ -37,11 +39,85 @@ function AdminLayoutContent({ children }) {
   )
 }
 
+function AdminAuthGuard({ children }) {
+  const { user, isAdmin, isInitialized, quickLoginAsAdmin } = useAuth()
+
+  // Khi đang nạp dữ liệu session
+  if (!isInitialized) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Đang kiểm tra quyền truy cập Admin...</p>
+        </div>
+      </div>
+    )
+  }
+
+  // Nếu chưa đăng nhập quyền Admin
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-4 font-body">
+        <div className="w-full max-w-md bg-white/10 dark:bg-gray-900/80 backdrop-blur-xl border border-white/20 dark:border-gray-800 rounded-3xl p-6 sm:p-8 text-center text-white shadow-2xl">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-tr from-amber-500 to-red-500 flex items-center justify-center shadow-lg shadow-red-500/30">
+            <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+
+          <h2 className="text-2xl font-bold tracking-tight mb-2 font-display">
+            Yêu Cầu Quyền Quản Trị
+          </h2>
+          <p className="text-sm text-gray-300 mb-6 leading-relaxed">
+            Khu vực này chỉ dành riêng cho Ban Quản trị hệ thống TechZone. Vui lòng đăng nhập bằng tài khoản Admin để truy cập toàn bộ tính năng quản lý.
+          </p>
+
+          {user && (
+            <div className="mb-6 p-3 bg-white/10 rounded-xl text-xs text-amber-300 border border-amber-400/30">
+              Bạn đang đăng nhập dưới tài khoản: <strong>{user.email}</strong> (Chưa có quyền Quản trị viên).
+            </div>
+          )}
+
+          <div className="space-y-3">
+            <Link
+              href="/dang-nhap?redirect=/admin"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 active:scale-[0.98]"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+              <span>Đến trang Đăng nhập Admin</span>
+            </Link>
+
+            <button
+              onClick={() => quickLoginAsAdmin()}
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-blue-200 border border-white/20 font-medium text-xs transition-colors"
+            >
+              <span>⚡ Mở nhanh quyền Admin Demo (1-Click)</span>
+            </button>
+
+            <Link
+              href="/"
+              className="block pt-2 text-xs text-gray-400 hover:text-white transition-colors"
+            >
+              ← Quay lại Cửa hàng TechZone
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  return children
+}
+
 export default function AdminLayout({ children }) {
   return (
     <ToastProvider>
       <AdminSidebarProvider>
-        <AdminLayoutContent>{children}</AdminLayoutContent>
+        <AdminAuthGuard>
+          <AdminLayoutContent>{children}</AdminLayoutContent>
+        </AdminAuthGuard>
       </AdminSidebarProvider>
     </ToastProvider>
   )

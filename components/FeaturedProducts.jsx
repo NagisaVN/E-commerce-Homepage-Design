@@ -60,7 +60,7 @@ export default function FeaturedProducts() {
     <section className="bg-white py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         <div className="mb-8 flex items-end justify-between"><div><p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">Tuần này</p><h2 className="text-3xl font-bold text-gray-900 font-display">Sản Phẩm Nổi Bật</h2></div><a href="#" className="hidden text-sm font-medium text-brand hover:underline font-body sm:block">Xem tất cả sản phẩm →</a></div>
-        <div className="mb-8 flex gap-2 overflow-x-auto pb-1">{tabs.map(tab => <button key={tab} onClick={() => setActiveTab(tab)} className={`flex-shrink-0 rounded-xl px-4 py-2 text-sm font-medium transition-all font-display ${activeTab === tab ? 'bg-brand text-white shadow-lg shadow-blue-200' : 'bg-brand-pale text-gray-600 hover:bg-brand-light hover:text-brand'}`}>{tab}</button>)}</div>
+        <div className="mb-8 flex gap-2 overflow-x-auto pb-1 no-scrollbar">{tabs.map(tab => <button key={tab} onClick={() => setActiveTab(tab)} className={`flex-shrink-0 rounded-xl px-4 py-2 text-sm font-medium transition-all font-display ${activeTab === tab ? 'bg-brand text-white shadow-lg shadow-blue-200' : 'bg-brand-pale text-gray-600 hover:bg-brand-light hover:text-brand'}`}>{tab}</button>)}</div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">{filtered.map(product => <ProductCard key={product.id} product={product} />)}</div>
       </div>
     </section>

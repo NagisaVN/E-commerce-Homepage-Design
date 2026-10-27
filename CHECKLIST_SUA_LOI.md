@@ -491,4 +491,15 @@
   5. [`components/AiBlog.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/AiBlog.jsx): Đã gắn link điều hướng cho toàn bộ 3 thẻ bài viết trên trang chủ và nút "Xem tất cả bài viết →".
   6. [`components/Header.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/Header.jsx) & [`components/Footer.jsx`](file:///d:/laragon/www/E-commerce%20Homepage%20Design/components/Footer.jsx): Đã tích hợp mục "Tin tức AI" vào menu điều hướng và footer.
 
+---
+
+### [x] Mục 17: Sửa lỗi vỡ giao diện / xuống hàng chữ ở thanh Navbar (`components/Header.jsx`) - ĐÃ HOÀN THÀNH
+- **Vấn đề phát hiện:**
+  - Trên các độ phân giải màn hình máy tính (khoảng 1024px – 1366px), thanh tìm kiếm và container flex co bóp làm thanh navigation `<nav>` bị nén lại.
+  - Do các thẻ `<Link>` và `<nav>` thiếu `whitespace-nowrap` và `flex-shrink-0`, các chữ trong menu bị bẻ đôi thành 2 dòng (ví dụ: "Sản" / "phẩm", "Thương" / "hiệu", "Khuyến" / "mãi", "Tin tức" / "AI", "Hỗ" / "trợ").
+- **Giải pháp xử lý:**
+  1. Thêm `flex-shrink-0` vào `<nav>` và `whitespace-nowrap` cho từng `<Link>` trong thanh menu chính.
+  2. Tối ưu khoảng cách: chuyển container padding từ `lg:px-12` sang `lg:px-8`, điều chỉnh gap giữa các mục menu `gap-3.5 xl:gap-5` để vừa vặn hoàn hảo trên tất cả các kích thước màn hình.
+  3. Thêm `min-w-0` và giới hạn bề rộng hợp lý cho khung tìm kiếm `HeaderSearchBox`, rút gọn placeholder AI và thêm `whitespace-nowrap` cho nút "Tìm kiếm" cùng các nhãn "Đăng nhập", "Giỏ hàng".
+
 
