@@ -30,7 +30,7 @@
   "banner": [
     {
       "id": 1,
-      "url": " /images/banners/banner-tet-thiet-bi-thong-minh.jpg",
+      "url": "https://iili.io/n8BWyDx.jpg",
       "link": " /khuyen-mai",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 1,
@@ -48,7 +48,7 @@
     },
     {
       "id": 2,
-      "url": " /images/banners/banner-may-lanh-inverter.jpg",
+      "url": "https://iili.io/n8BXufI.jpg",
       "link": " /danh-muc-san-pham/may-lanh",
       "vi_tri": "Home-Mid",
       "thu_tu_hien_thi": 2,
@@ -58,7 +58,7 @@
     },
     {
       "id": 3,
-      "url": " /images/banners/banner-may-lanh-inverter.jpg",
+      "url": "https://iili.io/n8BXufI.jpg",
       "link": " /danh-muc-san-pham/may-lanh",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 2,
@@ -76,7 +76,7 @@
     },
     {
       "id": 4,
-      "url": " /images/banners/banner-tu-lanh-ai.jpg",
+      "url": "https://iili.io/n8BXcbf.jpg",
       "link": " /danh-muc-san-pham/tu-lanh",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 3,
