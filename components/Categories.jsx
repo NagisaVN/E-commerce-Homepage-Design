@@ -60,14 +60,14 @@ export default function Categories() {
   const displayCategories = [...halfList, ...halfList]
 
   return (
-    <section className="border-b border-gray-100 bg-white py-14 overflow-hidden">
+    <section className="border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 py-14 overflow-hidden transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">Khám phá</p>
-            <h2 className="text-3xl font-bold text-gray-900 font-display">Danh Mục Sản Phẩm</h2>
+            <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand dark:text-blue-400 font-display">Khám phá</p>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white font-display">Danh Mục Sản Phẩm</h2>
           </div>
-          <Link href="/danh-muc-san-pham" className="text-sm font-medium text-brand hover:underline font-body">
+          <Link href="/danh-muc-san-pham" className="text-sm font-medium text-brand dark:text-blue-400 hover:underline font-body">
             Xem tất cả danh mục →
           </Link>
         </div>
@@ -76,16 +76,16 @@ export default function Categories() {
       {/* Dải danh mục chạy tự động 1 hàng ngang */}
       <div className="relative w-full overflow-hidden py-2">
         {/* Hiệu ứng làm mờ nhẹ 2 bên mép */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-r from-white to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-l from-white to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-r from-white dark:from-gray-950 to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-12 sm:w-28 bg-gradient-to-l from-white dark:from-gray-950 to-transparent" />
 
         {categories.length === 0 ? (
           <div className="flex gap-6 sm:gap-8 overflow-hidden py-3 px-4 justify-center">
             {Array.from({ length: 8 }).map((_, i) => (
               <div key={i} className="flex w-28 sm:w-32 shrink-0 flex-col items-center gap-3.5 animate-pulse">
-                <div className="h-[72px] w-[72px] sm:h-20 sm:w-20 rounded-full bg-gray-100" />
-                <div className="h-4 w-16 rounded bg-gray-100" />
-                <div className="h-3 w-10 rounded bg-gray-50" />
+                <div className="h-[72px] w-[72px] sm:h-20 sm:w-20 rounded-full bg-gray-100 dark:bg-gray-800" />
+                <div className="h-4 w-16 rounded bg-gray-100 dark:bg-gray-800" />
+                <div className="h-3 w-10 rounded bg-gray-50 dark:bg-gray-850" />
               </div>
             ))}
           </div>
@@ -106,7 +106,7 @@ export default function Categories() {
                     <CategoryIcon slug={category.slug} color={theme.color} />
                   </div>
                   <div className="text-center">
-                    <p className="text-sm font-semibold leading-tight text-gray-800 transition-colors group-hover:text-brand font-display whitespace-nowrap">
+                    <p className="text-sm font-semibold leading-tight text-gray-800 dark:text-gray-200 transition-colors group-hover:text-brand dark:group-hover:text-blue-400 font-display whitespace-nowrap">
                       {category.name}
                     </p>
                     <p className="mt-0.5 text-xs text-gray-400 font-body">

@@ -23,7 +23,16 @@ export default function AdminHeader() {
       setIsDark(isDarkMode)
       if (isDarkMode) {
         document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
       }
+
+      // Lắng nghe thay đổi class trên thẻ html để đồng bộ state
+      const observer = new MutationObserver(() => {
+        setIsDark(document.documentElement.classList.contains('dark'))
+      })
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      return () => observer.disconnect()
     }
   }, [])
 
@@ -46,7 +55,8 @@ export default function AdminHeader() {
         {/* Mobile menu button */}
         <button
           onClick={toggleMobileSidebar}
-          className="p-2 rounded-xl text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 lg:hidden"
+          type="button"
+          className="p-2 rounded-xl text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 lg:hidden cursor-pointer"
           title="Mở menu"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,12 +67,19 @@ export default function AdminHeader() {
         {/* Desktop sidebar toggle icon */}
         <button
           onClick={toggleSidebar}
-          className="hidden lg:flex p-2 rounded-xl text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 transition-colors"
-          title={isExpanded ? 'Thu nhỏ menu' : 'Mở rộng menu'}
+          type="button"
+          className="hidden lg:flex items-center justify-center p-2 rounded-xl text-gray-500 hover:text-blue-600 hover:bg-blue-50/80 dark:text-gray-400 dark:hover:text-blue-400 dark:hover:bg-gray-800/80 transition-all border border-transparent hover:border-blue-200/50 dark:hover:border-gray-700 cursor-pointer group"
+          title={isExpanded ? 'Thu gọn sidebar (Ctrl+B)' : 'Mở rộng sidebar (Ctrl+B)'}
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h10M4 18h16" />
-          </svg>
+          {isExpanded ? (
+            <svg className="w-5 h-5 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+            </svg>
+          )}
         </button>
 
         {/* Global Search box */}
@@ -97,7 +114,8 @@ export default function AdminHeader() {
         {/* Dark / Light Mode Toggle */}
         <button
           onClick={toggleDarkMode}
-          className="p-2 rounded-xl text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-yellow-400 dark:hover:bg-gray-800 transition-colors"
+          type="button"
+          className="p-2 rounded-xl text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-yellow-400 dark:hover:bg-gray-800 transition-colors cursor-pointer"
           title={isDark ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
         >
           {isDark ? (

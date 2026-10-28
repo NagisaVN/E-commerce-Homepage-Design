@@ -19,21 +19,21 @@ export default function AiBlog() {
   const dailyTip = getDailyTip()
 
   return (
-    <section className="py-16 bg-brand-pale border-t border-brand-light">
+    <section className="py-16 bg-brand-pale dark:bg-gray-900/60 border-t border-brand-light dark:border-gray-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-brand text-xs font-semibold font-display mb-2.5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 dark:bg-blue-950/70 border border-blue-200 dark:border-blue-800 text-brand dark:text-blue-400 text-xs font-semibold font-display mb-2.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span>Tự động cập nhật mỗi ngày &middot; Hỗ trợ bởi TechZone AI</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-display font-bold text-gray-900">Mẹo hay & Cẩm nang Mua sắm</h2>
-            <p className="text-gray-500 font-body mt-1.5 text-xs sm:text-sm">
+            <h2 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 dark:text-white">Mẹo hay & Cẩm nang Mua sắm</h2>
+            <p className="text-gray-500 dark:text-gray-400 font-body mt-1.5 text-xs sm:text-sm">
               Những bài phân tích chuyên sâu được luân chuyển và làm mới tự động mỗi 00:00 hàng ngày
             </p>
           </div>
-          <Link href="/tin-tuc" className="text-sm text-brand font-semibold hover:underline font-display inline-flex items-center gap-1 flex-shrink-0">
+          <Link href="/tin-tuc" className="text-sm text-brand dark:text-blue-400 font-semibold hover:underline font-display inline-flex items-center gap-1 flex-shrink-0">
             <span>Xem tất cả bài viết</span>
             <span>→</span>
           </Link>
@@ -41,15 +41,15 @@ export default function AiBlog() {
 
         {/* Banner Mẹo AI Hôm Nay */}
         {dailyTip && (
-          <div className="mb-8 p-4 sm:p-5 bg-white/95 border border-blue-100 rounded-2xl flex items-start sm:items-center gap-3.5 shadow-xs">
-            <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-lg">
+          <div className="mb-8 p-4 sm:p-5 bg-white/95 dark:bg-gray-800/95 border border-blue-100 dark:border-gray-700 rounded-2xl flex items-start sm:items-center gap-3.5 shadow-xs">
+            <div className="w-9 h-9 rounded-xl bg-amber-100 dark:bg-amber-950/70 text-amber-700 dark:text-amber-400 flex items-center justify-center flex-shrink-0 text-lg">
               💡
             </div>
-            <div className="flex-1 text-xs sm:text-sm text-gray-700 font-body leading-relaxed">
-              <strong className="font-semibold text-brand-dark">Lời khuyên AI hôm nay: </strong>
+            <div className="flex-1 text-xs sm:text-sm text-gray-700 dark:text-gray-300 font-body leading-relaxed">
+              <strong className="font-semibold text-brand-dark dark:text-blue-400">Lời khuyên AI hôm nay: </strong>
               <span>{dailyTip.replace(/^💡\s*Mẹo AI hôm nay:\s*/, '')}</span>
             </div>
-            <span className="hidden md:inline-flex text-[11px] font-semibold text-brand font-display bg-brand-pale px-2.5 py-1 rounded-lg border border-blue-100 flex-shrink-0">
+            <span className="hidden md:inline-flex text-[11px] font-semibold text-brand dark:text-blue-400 font-display bg-brand-pale dark:bg-gray-750 px-2.5 py-1 rounded-lg border border-blue-100 dark:border-gray-700 flex-shrink-0">
               Đổi mới mỗi 00:00
             </span>
           </div>
@@ -60,17 +60,17 @@ export default function AiBlog() {
           {tips.map((tip) => (
             <article
               key={tip.id}
-              className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-brand-light hover:shadow-xl hover:shadow-blue-50 transition-all duration-300 flex flex-col"
+              className="group bg-white dark:bg-gray-800 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700/60 hover:border-brand-light dark:hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-50 dark:hover:shadow-none transition-all duration-300 flex flex-col"
             >
-              <Link href={`/tin-tuc/${tip.slug}`} className="block relative overflow-hidden bg-brand-light aspect-[16/9]">
+              <Link href={`/tin-tuc/${tip.slug}`} className="block relative overflow-hidden bg-brand-light dark:bg-gray-900 aspect-[16/9]">
                 <img
                   src={tip.image}
                   alt={tip.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div className="absolute top-3 left-3">
-                  <span className="text-xs font-semibold font-display bg-white/95 backdrop-blur-sm text-brand px-2.5 py-1 rounded-lg">
+                  <span className="text-xs font-semibold font-display bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm text-brand dark:text-blue-400 px-2.5 py-1 rounded-lg shadow-xs">
                     {tip.category}
                   </span>
                 </div>
@@ -79,39 +79,39 @@ export default function AiBlog() {
               <div className="flex flex-col flex-1 p-5 gap-3">
                 <div className="flex items-center gap-2">
                   <AiChip />
-                  <span className="text-xs text-gray-400 font-body">{tip.readTime}</span>
+                  <span className="text-xs text-gray-400 dark:text-gray-500 font-body">{tip.readTime}</span>
                 </div>
 
                 <Link href={`/tin-tuc/${tip.slug}`}>
-                  <h3 className="text-base font-bold font-display text-gray-900 leading-snug group-hover:text-brand transition-colors line-clamp-2">
+                  <h3 className="text-base font-bold font-display text-gray-900 dark:text-white leading-snug group-hover:text-brand dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                     {tip.title}
                   </h3>
                 </Link>
 
-                <p className="text-sm text-gray-500 font-body leading-relaxed flex-1 line-clamp-3">
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-body leading-relaxed flex-1 line-clamp-3">
                   {tip.excerpt}
                 </p>
 
                 <div className="flex flex-wrap gap-1.5">
                   {tip.tags.map(tag => (
-                    <span key={tag} className="text-xs bg-brand-pale text-brand-dark px-2 py-0.5 rounded-full font-body">
+                    <span key={tag} className="text-xs bg-brand-pale dark:bg-gray-700/60 text-brand-dark dark:text-blue-300 px-2 py-0.5 rounded-full font-body">
                       #{tag}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-700/60">
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-brand rounded-full flex items-center justify-center">
                       <svg viewBox="0 0 16 16" className="w-3.5 h-3.5" fill="white">
                         <path d="M8 1.5l1 3h3l-2.4 1.8.9 3-2.5-1.8-2.5 1.8.9-3L3 4.5h3z" />
                       </svg>
                     </div>
-                    <span className="text-xs text-gray-500 font-body">
-                      {tip.author} &middot; <span className="text-brand font-medium">{tip.date}</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400 font-body">
+                      {tip.author} &middot; <span className="text-brand dark:text-blue-400 font-medium">{tip.date}</span>
                     </span>
                   </div>
-                  <Link href={`/tin-tuc/${tip.slug}`} className="text-xs font-semibold font-display text-brand hover:underline">
+                  <Link href={`/tin-tuc/${tip.slug}`} className="text-xs font-semibold font-display text-brand dark:text-blue-400 hover:underline">
                     Đọc tiếp →
                   </Link>
                 </div>

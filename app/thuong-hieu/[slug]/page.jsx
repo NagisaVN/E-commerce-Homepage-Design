@@ -85,20 +85,20 @@ export default async function BrandPage({ params }) {
   const { brand, products } = result
 
   return (
-    <div className="bg-white min-h-screen py-14">
+    <div className="bg-white dark:bg-gray-950 min-h-screen py-14 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         <div className="mb-6 flex flex-col gap-2">
-          <nav className="flex items-center gap-2 text-xs font-body text-gray-400">
-            <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
+          <nav className="flex items-center gap-2 text-xs font-body text-gray-400 dark:text-gray-500">
+            <Link href="/" className="hover:text-brand dark:hover:text-blue-400 transition-colors">Trang chủ</Link>
             <span>/</span>
-            <span className="text-gray-600 font-medium">Thương hiệu {brand.ten}</span>
+            <span className="text-gray-600 dark:text-gray-300 font-medium">Thương hiệu {brand.ten}</span>
           </nav>
           <div className="flex items-center gap-4 mt-2">
-            <h1 className="text-3xl font-bold text-gray-900 font-display">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white font-display">
               {brand.ten}
             </h1>
           </div>
-          <p className="text-sm text-gray-500 font-body">
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-body">
             Hiển thị {products.length} sản phẩm
           </p>
         </div>
@@ -111,8 +111,8 @@ export default async function BrandPage({ params }) {
           </div>
         ) : (
           <div className="py-20 text-center">
-            <p className="text-gray-500 font-body">Hiện chưa có sản phẩm nào thuộc thương hiệu này.</p>
-            <Link href="/" className="mt-4 inline-block text-brand hover:underline font-body font-medium">
+            <p className="text-gray-500 dark:text-gray-400 font-body">Hiện chưa có sản phẩm nào thuộc thương hiệu này.</p>
+            <Link href="/" className="mt-4 inline-block text-brand dark:text-blue-400 hover:underline font-body font-medium">
               Quay lại trang chủ
             </Link>
           </div>

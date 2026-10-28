@@ -78,7 +78,7 @@ export default async function ArticleDetailPage({ params }) {
     })
 
   return (
-    <div className="bg-white min-h-screen py-10 sm:py-14 font-body">
+    <div className="bg-white dark:bg-gray-950 min-h-screen py-10 sm:py-14 font-body">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="mb-6 flex items-center gap-2 text-xs text-gray-400">
@@ -86,7 +86,7 @@ export default async function ArticleDetailPage({ params }) {
           <span>/</span>
           <Link href="/tin-tuc" className="hover:text-brand transition-colors">Tin tức AI</Link>
           <span>/</span>
-          <span className="text-gray-600 font-medium truncate max-w-[200px] sm:max-w-xs">{article.title}</span>
+          <span className="text-gray-600 dark:text-gray-300 font-medium truncate max-w-[200px] sm:max-w-xs">{article.title}</span>
         </nav>
 
         {/* Header bài viết */}
@@ -103,21 +103,21 @@ export default async function ArticleDetailPage({ params }) {
             </span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-gray-900 leading-tight mb-4">
+          <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-gray-900 dark:text-white leading-tight mb-4">
             {article.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 font-body leading-relaxed mb-6">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 font-body leading-relaxed mb-6">
             {article.excerpt}
           </p>
 
-          <div className="flex items-center justify-between py-3 border-y border-gray-100 text-xs text-gray-500">
+          <div className="flex items-center justify-between py-3 border-y border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center font-bold text-xs">
                 AI
               </div>
               <div>
-                <p className="font-semibold text-gray-800 font-display">{article.author}</p>
+                <p className="font-semibold text-gray-800 dark:text-gray-200 font-display">{article.author}</p>
                 <p className="text-[11px] text-gray-400">Đã kiểm chứng thông số kỹ thuật</p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default async function ArticleDetailPage({ params }) {
         </header>
 
         {/* Ảnh đại diện bài viết */}
-        <div className="mb-10 aspect-[16/9] rounded-3xl overflow-hidden bg-gray-100 border border-gray-100 shadow-md">
+        <div className="mb-10 aspect-[16/9] rounded-3xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800 shadow-md">
           <img
             src={article.image}
             alt={article.title}
@@ -144,12 +144,12 @@ export default async function ArticleDetailPage({ params }) {
 
         {/* Box Tóm tắt nhanh bởi AI (AI Key Takeaways) */}
         {article.aiTakeaways && article.aiTakeaways.length > 0 && (
-          <div className="mb-10 bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 rounded-3xl p-6 sm:p-7 border border-blue-200 shadow-xs">
-            <div className="flex items-center gap-2 mb-3 text-brand-dark font-display font-bold text-base">
+          <div className="mb-10 bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 dark:from-gray-900 dark:via-blue-950/40 dark:to-gray-900 rounded-3xl p-6 sm:p-7 border border-blue-200 dark:border-blue-900/50 shadow-xs">
+            <div className="flex items-center gap-2 mb-3 text-brand-dark dark:text-blue-300 font-display font-bold text-base">
               <span className="text-xl">⚡</span>
               <h3>Tóm tắt cốt lõi trong 10 giây (AI Takeaways)</h3>
             </div>
-            <ul className="space-y-2.5 text-sm text-gray-700 font-body">
+            <ul className="space-y-2.5 text-sm text-gray-700 dark:text-gray-300 font-body">
               {article.aiTakeaways.map((point, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
                   <span className="text-brand font-bold text-base mt-[-2px]">✓</span>
@@ -162,25 +162,25 @@ export default async function ArticleDetailPage({ params }) {
 
         {/* Nội dung chi tiết bài viết */}
         <div
-          className="prose prose-lg max-w-none text-gray-700 font-body leading-relaxed mb-14
-            [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:text-xl [&_h2]:sm:text-2xl [&_h2]:mt-10 [&_h2]:mb-4
-            [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-gray-800 [&_h3]:text-lg [&_h3]:mt-6 [&_h3]:mb-3
+          className="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 font-body leading-relaxed mb-14
+            [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-gray-900 dark:[&_h2]:text-white [&_h2]:text-xl [&_h2]:sm:text-2xl [&_h2]:mt-10 [&_h2]:mb-4
+            [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-gray-800 dark:[&_h3]:text-gray-200 [&_h3]:text-lg [&_h3]:mt-6 [&_h3]:mb-3
             [&_p]:mb-4 [&_p]:text-sm [&_p]:sm:text-base [&_p]:leading-relaxed
             [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2 [&_ul]:mb-6
             [&_li]:text-sm [&_li]:sm:text-base
-            [&_strong]:text-gray-900 [&_strong]:font-semibold"
+            [&_strong]:text-gray-900 dark:[&_strong]:text-white [&_strong]:font-semibold"
           dangerouslySetInnerHTML={{ __html: article.contentHtml }}
         />
 
         {/* Khối Sản phẩm được AI khuyên dùng theo bài viết */}
         {relatedProducts.length > 0 && (
-          <div className="my-14 p-6 sm:p-8 bg-gray-50 rounded-3xl border border-gray-200">
+          <div className="my-14 p-6 sm:p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800">
             <div className="flex items-center justify-between mb-6">
               <div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold text-brand uppercase tracking-wider font-display mb-1">
                   <span>✨ AI Recommendation</span>
                 </div>
-                <h3 className="text-xl font-bold font-display text-gray-900">
+                <h3 className="text-xl font-bold font-display text-gray-900 dark:text-white">
                   Thiết bị tối ưu được AI khuyên dùng trong bài viết
                 </h3>
               </div>
@@ -195,11 +195,11 @@ export default async function ArticleDetailPage({ params }) {
         )}
 
         {/* Thẻ Tags & Chia sẻ */}
-        <div className="pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4 mb-14">
+        <div className="pt-6 border-t border-gray-100 dark:border-gray-800 flex flex-wrap items-center justify-between gap-4 mb-14">
           <div className="flex flex-wrap items-center gap-1.5">
             <span className="text-xs text-gray-400 font-medium mr-1">Chủ đề:</span>
             {article.tags.map((t) => (
-              <span key={t} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full font-body">
+              <span key={t} className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full font-body">
                 #{t}
               </span>
             ))}
@@ -215,8 +215,8 @@ export default async function ArticleDetailPage({ params }) {
 
         {/* Bài viết liên quan */}
         {relatedArticles.length > 0 && (
-          <div className="pt-10 border-t border-gray-100">
-            <h3 className="text-xl font-bold font-display text-gray-900 mb-6">
+          <div className="pt-10 border-t border-gray-100 dark:border-gray-800">
+            <h3 className="text-xl font-bold font-display text-gray-900 dark:text-white mb-6">
               Bài viết cùng chủ đề bạn có thể quan tâm
             </h3>
 
@@ -225,9 +225,9 @@ export default async function ArticleDetailPage({ params }) {
                 <Link
                   key={rel.id}
                   href={`/tin-tuc/${rel.slug}`}
-                  className="group flex flex-col gap-2.5 bg-gray-50 p-4 rounded-2xl hover:bg-brand-pale border border-transparent hover:border-brand-light transition-all"
+                  className="group flex flex-col gap-2.5 bg-gray-50 dark:bg-gray-900 p-4 rounded-2xl hover:bg-brand-pale dark:hover:bg-gray-800 border border-transparent dark:border-gray-800 hover:border-brand-light transition-all"
                 >
-                  <div className="aspect-[16/9] rounded-xl overflow-hidden bg-gray-200">
+                  <div className="aspect-[16/9] rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800">
                     <img
                       src={rel.image}
                       alt={rel.title}
@@ -237,7 +237,7 @@ export default async function ArticleDetailPage({ params }) {
                   <span className="text-[11px] font-semibold text-brand font-display">
                     {rel.category} &middot; {rel.readTime}
                   </span>
-                  <h4 className="font-display font-bold text-sm text-gray-900 group-hover:text-brand transition-colors line-clamp-2">
+                  <h4 className="font-display font-bold text-sm text-gray-900 dark:text-white group-hover:text-brand transition-colors line-clamp-2">
                     {rel.title}
                   </h4>
                 </Link>
@@ -249,3 +249,4 @@ export default async function ArticleDetailPage({ params }) {
     </div>
   )
 }
+

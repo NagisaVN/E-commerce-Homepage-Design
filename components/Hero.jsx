@@ -3,29 +3,79 @@
 import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 
+const FALLBACK_BANNERS = [
+  {
+    id: 1,
+    image: 'https://iili.io/n8BWyDx.jpg',
+    backupUrl: 'https://files.catbox.moe/jxc9gk.jpg',
+    ctaHref: '/khuyen-mai',
+    badge: '🎉 Khuyến Mãi Tết',
+    headline: 'Đón Tết Cùng\nThiết Bị Thông Minh',
+    sub: 'Giảm đến 40% cho tủ lạnh cao cấp, máy lạnh & hơn thế nữa — Ưu đãi có hạn',
+    cta: 'Mua Sắm Ngay',
+    ctaNote: 'Miễn phí vận chuyển mọi đơn hàng',
+    badgeColor: '#FCD34D',
+    badgeText: '#92400E',
+    overlay: 'linear-gradient(100deg, rgba(15,23,92,0.93) 0%, rgba(29,78,216,0.72) 55%, rgba(29,78,216,0.1) 100%)',
+  },
+  {
+    id: 3,
+    image: 'https://iili.io/n8BXufI.jpg',
+    backupUrl: 'https://files.catbox.moe/mjlcod.jpg',
+    ctaHref: '/danh-muc-san-pham/may-lanh',
+    badge: '☀️ Ưu Đãi Mùa Hè',
+    headline: 'Máy Lạnh Inverter\nTiết Kiệm Tối Đa',
+    sub: 'Máy lạnh Inverter đạt chuẩn tiết kiệm điện — giảm hóa đơn điện năng lên đến 60%',
+    cta: 'Xem Các Mẫu',
+    ctaNote: 'Trả góp 24 tháng, lãi suất 0%',
+    badgeColor: '#6EE7B7',
+    badgeText: '#064E3B',
+    overlay: 'linear-gradient(100deg, rgba(7,36,78,0.93) 0%, rgba(37,99,235,0.72) 55%, rgba(37,99,235,0.1) 100%)',
+  },
+  {
+    id: 4,
+    image: 'https://iili.io/n8BXcbf.jpg',
+    backupUrl: 'https://files.catbox.moe/qk9pdg.jpg',
+    ctaHref: '/danh-muc-san-pham/tu-lanh',
+    badge: '🤖 Sản Phẩm Mới 2024',
+    headline: 'Tủ Lạnh Thông Minh\nTích Hợp AI Đã Ra Mắt',
+    sub: 'Điều khiển bằng giọng nói, cảm biến độ tươi và tự động đặt hàng tạp hóa — tương lai của sự tươi mới',
+    cta: 'Khám Phá Ngay',
+    ctaNote: 'Bao gồm 2 năm bảo hành mở rộng',
+    badgeColor: '#C4B5FD',
+    badgeText: '#4C1D95',
+    overlay: 'linear-gradient(100deg, rgba(30,26,89,0.95) 0%, rgba(67,56,202,0.75) 55%, rgba(67,56,202,0.1) 100%)',
+  },
+]
+
 export default function Hero() {
-  const [slides, setSlides] = useState([])
+  const [slides, setSlides] = useState(FALLBACK_BANNERS)
   const [current, setCurrent] = useState(0)
   const [animating, setAnimating] = useState(false)
 
   useEffect(() => {
     async function fetchBanners() {
-      const response = await fetch('/api/data')
-      if (!response.ok) throw new Error('Unable to load banner data')
-      const data = await response.json()
-      // lệnh kèm để deploy
-      const banners = data.banner ?? []
+      try {
+        const response = await fetch('/api/data')
+        if (!response.ok) throw new Error('Unable to load banner data')
+        const data = await response.json()
+        const banners = data.banner ?? []
 
-      const heroSlides = banners
-        .filter((banner) => Number(banner.trang_thai) === 1)
-        .sort((a, b) => a.thu_tu_hien_thi - b.thu_tu_hien_thi)
-        .map((banner) => ({
-          ...banner,
-          image: banner.url.trim(),
-          ctaHref: banner.link.trim(),
-        }))
+        const heroSlides = banners
+          .filter((banner) => Number(banner.trang_thai) === 1)
+          .sort((a, b) => a.thu_tu_hien_thi - b.thu_tu_hien_thi)
+          .map((banner) => ({
+            ...banner,
+            image: banner.url ? banner.url.trim() : '',
+            ctaHref: banner.link ? banner.link.trim() : '/khuyen-mai',
+          }))
 
-      setSlides(heroSlides)
+        if (heroSlides.length > 0) {
+          setSlides(heroSlides)
+        }
+      } catch (err) {
+        console.warn('Lỗi tải banner từ API, sử dụng danh sách banner mặc định:', err)
+      }
     }
 
     fetchBanners()
@@ -64,9 +114,14 @@ export default function Hero() {
         >
           <img
             src={s.image}
-            alt=""
+            alt={s.headline ? s.headline.replace('\n', ' ') : 'Banner khuyến mãi'}
             className="w-full h-full object-cover"
             loading={i === 0 ? 'eager' : 'lazy'}
+            onError={(e) => {
+              if (s.backupUrl && e.currentTarget.src !== s.backupUrl) {
+                e.currentTarget.src = s.backupUrl
+              }
+            }}
           />
           <div className="absolute inset-0" style={{ background: s.overlay }} />
         </div>

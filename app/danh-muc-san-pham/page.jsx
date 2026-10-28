@@ -60,31 +60,31 @@ export default async function CategoriesPage() {
   const { categories, totalProducts } = await getCategoriesData()
 
   return (
-    <div className="bg-gray-50/50 min-h-screen py-10 sm:py-14">
+    <div className="bg-gray-50/50 dark:bg-gray-950 min-h-screen py-10 sm:py-14 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         {/* Breadcrumb */}
-        <nav className="mb-6 flex items-center gap-2 text-xs font-body text-gray-400">
-          <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
+        <nav className="mb-6 flex items-center gap-2 text-xs font-body text-gray-400 dark:text-gray-500">
+          <Link href="/" className="hover:text-brand dark:hover:text-blue-400 transition-colors">Trang chủ</Link>
           <span>/</span>
-          <span className="text-gray-600 font-medium">Danh mục sản phẩm</span>
+          <span className="text-gray-600 dark:text-gray-300 font-medium">Danh mục sản phẩm</span>
         </nav>
 
         {/* Header */}
-        <div className="mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-gray-200/80 pb-8">
+        <div className="mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-gray-200/80 dark:border-gray-800 pb-8">
           <div>
-            <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand font-display">
+            <p className="mb-1 text-sm font-semibold uppercase tracking-widest text-brand dark:text-blue-400 font-display">
               Hệ thống ngành hàng
             </p>
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 font-display tracking-tight">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white font-display tracking-tight">
               Tất Cả Danh Mục Sản Phẩm
             </h1>
-            <p className="mt-2 text-sm text-gray-500 font-body max-w-2xl leading-relaxed">
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 font-body max-w-2xl leading-relaxed">
               Khám phá hơn {totalProducts} thiết bị điện lạnh, điện gia dụng và âm thanh thông minh chính hãng 100% với ưu đãi hấp dẫn và chính sách bảo hành chu đáo.
             </p>
           </div>
           <Link
             href="/san-pham"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:text-brand-dark transition-colors font-display self-start md:self-auto"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand dark:text-blue-400 hover:text-brand-dark transition-colors font-display self-start md:self-auto"
           >
             Xem toàn bộ sản phẩm →
           </Link>
@@ -97,7 +97,7 @@ export default async function CategoriesPage() {
             return (
               <div
                 key={category.id}
-                className="group relative flex flex-col justify-between rounded-2xl bg-white p-6 border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/20"
+                className="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-900 p-6 border border-gray-100 dark:border-gray-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/20 dark:hover:border-blue-500/30"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -112,21 +112,21 @@ export default async function CategoriesPage() {
                     </span>
                   </div>
 
-                  <h2 className="text-lg font-bold text-gray-900 group-hover:text-brand transition-colors font-display">
+                  <h2 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-brand dark:group-hover:text-blue-400 transition-colors font-display">
                     {category.name}
                   </h2>
-                  <p className="mt-1 text-xs text-gray-400 font-body">
+                  <p className="mt-1 text-xs text-gray-400 dark:text-gray-400 font-body">
                     {category.countText} sẵn sàng giao ngay
                   </p>
 
                   {/* Sample items */}
                   {category.featuredProducts.length > 0 && (
-                    <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-1.5">
-                      <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider font-display">
+                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 flex flex-col gap-1.5">
+                      <span className="text-[11px] font-semibold text-gray-400 dark:text-gray-400 uppercase tracking-wider font-display">
                         Sản phẩm tiêu biểu:
                       </span>
                       {category.featuredProducts.map((p, idx) => (
-                        <span key={idx} className="text-xs text-gray-600 line-clamp-1 hover:text-brand font-body">
+                        <span key={idx} className="text-xs text-gray-600 dark:text-gray-300 line-clamp-1 hover:text-brand dark:hover:text-blue-400 font-body">
                           • {p.name}
                         </span>
                       ))}
@@ -137,7 +137,7 @@ export default async function CategoriesPage() {
                 <div className="mt-6 pt-3">
                   <Link
                     href={`/danh-muc-san-pham/${category.slug}`}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-50 py-2.5 text-xs font-semibold text-gray-700 font-display transition-all group-hover:bg-brand group-hover:text-white"
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gray-50 dark:bg-gray-800 py-2.5 text-xs font-semibold text-gray-700 dark:text-gray-200 font-display transition-all group-hover:bg-brand group-hover:text-white"
                   >
                     <span>Khám phá danh mục</span>
                     <span className="transition-transform group-hover:translate-x-0.5">→</span>
@@ -149,33 +149,33 @@ export default async function CategoriesPage() {
         </div>
 
         {/* Trust Badges */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 bg-white p-6 rounded-2xl border border-gray-100">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-100 dark:border-gray-800">
           <div className="flex items-center gap-3">
             <span className="text-2xl">✨</span>
             <div>
-              <p className="text-xs font-bold text-gray-900 font-display">100% Chính Hãng</p>
-              <p className="text-[11px] text-gray-500 font-body">Cam kết xuất xứ rõ ràng</p>
+              <p className="text-xs font-bold text-gray-900 dark:text-white font-display">100% Chính Hãng</p>
+              <p className="text-[11px] text-gray-500 dark:text-gray-400 font-body">Cam kết xuất xứ rõ ràng</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-2xl">🚚</span>
             <div>
-              <p className="text-xs font-bold text-gray-900 font-display">Giao Siêu Tốc</p>
-              <p className="text-[11px] text-gray-500 font-body">Miễn phí nội thành toàn quốc</p>
+              <p className="text-xs font-bold text-gray-900 dark:text-white font-display">Giao Siêu Tốc</p>
+              <p className="text-[11px] text-gray-500 dark:text-gray-400 font-body">Miễn phí nội thành toàn quốc</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-2xl">🛡️</span>
             <div>
-              <p className="text-xs font-bold text-gray-900 font-display">Bảo Hành Chính Hãng</p>
-              <p className="text-[11px] text-gray-500 font-body">Hỗ trợ kích hoạt tận nhà</p>
+              <p className="text-xs font-bold text-gray-900 dark:text-white font-display">Bảo Hành Chính Hãng</p>
+              <p className="text-[11px] text-gray-500 dark:text-gray-400 font-body">Hỗ trợ kích hoạt tận nhà</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-2xl">🔄</span>
             <div>
-              <p className="text-xs font-bold text-gray-900 font-display">Đổi Trả 30 Ngày</p>
-              <p className="text-[11px] text-gray-500 font-body">Lỗi 1 đổi 1 nhanh chóng</p>
+              <p className="text-xs font-bold text-gray-900 dark:text-white font-display">Đổi Trả 30 Ngày</p>
+              <p className="text-[11px] text-gray-500 dark:text-gray-400 font-body">Lỗi 1 đổi 1 nhanh chóng</p>
             </div>
           </div>
         </div>

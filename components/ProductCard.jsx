@@ -29,22 +29,22 @@ export default function ProductCard({ product }) {
   }
 
   return (
-    <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white transition-all duration-300 hover:border-brand-light hover:shadow-2xl hover:shadow-blue-50">
-      <div className="relative aspect-square overflow-hidden bg-gray-50">
+    <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition-all duration-300 hover:border-brand-light dark:hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-50 dark:hover:shadow-none">
+      <div className="relative aspect-square overflow-hidden bg-gray-50 dark:bg-gray-800">
         <img src={product.image} alt={product.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
         {product.discount > 0 && <div className="absolute left-3 top-3 rounded-lg bg-brand px-2.5 py-1 text-xs font-bold text-white font-display">-{product.discount}%</div>}
-        {product.tag && <div className="absolute right-3 top-3 rounded-lg border border-brand-light bg-white/95 px-2.5 py-1 text-xs font-semibold text-brand backdrop-blur-sm font-display">{product.tag}</div>}
-        <div className="absolute bottom-3 left-3 rounded-full bg-black/40 px-2.5 py-1 text-xs text-white backdrop-blur-sm font-body">{product.category}</div>
+        {product.tag && <div className="absolute right-3 top-3 rounded-lg border border-brand-light dark:border-gray-700 bg-white/95 dark:bg-gray-800/95 px-2.5 py-1 text-xs font-semibold text-brand dark:text-blue-400 backdrop-blur-sm font-display">{product.tag}</div>}
+        <div className="absolute bottom-3 left-3 rounded-full bg-black/50 px-2.5 py-1 text-xs text-white backdrop-blur-sm font-body">{product.category}</div>
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-4">
-        <div><p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand font-display">{product.brand}</p><h3 className="line-clamp-2 text-sm font-semibold leading-snug text-gray-900 font-display">{product.name}</h3></div>
-        <div className="flex flex-wrap gap-1.5">{product.features.map(feature => <span key={feature} className="rounded-full bg-brand-pale px-2 py-0.5 text-xs text-brand-dark font-body">{feature}</span>)}</div>
-        <div className="flex items-center gap-1.5"><div className="flex gap-0.5">{[1, 2, 3, 4, 5].map(i => <StarIcon key={i} filled={i <= Math.floor(product.rating)} />)}</div><span className="text-xs font-semibold text-amber-500">{product.rating}</span><span className="text-xs text-gray-400 font-body">({product.reviews.toLocaleString('vi-VN')})</span></div>
-        <div className="mt-auto flex items-baseline gap-2"><span className="text-xl font-bold text-gray-900 font-display">{product.price.toLocaleString('vi-VN')}₫</span>{product.original > product.price && <span className="text-sm text-gray-400 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>}</div>
+        <div><p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand dark:text-blue-400 font-display">{product.brand}</p><h3 className="line-clamp-2 text-sm font-semibold leading-snug text-gray-900 dark:text-white font-display">{product.name}</h3></div>
+        <div className="flex flex-wrap gap-1.5">{product.features.map(feature => <span key={feature} className="rounded-full bg-brand-pale dark:bg-gray-800 px-2 py-0.5 text-xs text-brand-dark dark:text-blue-300 font-body">{feature}</span>)}</div>
+        <div className="flex items-center gap-1.5"><div className="flex gap-0.5">{[1, 2, 3, 4, 5].map(i => <StarIcon key={i} filled={i <= Math.floor(product.rating)} />)}</div><span className="text-xs font-semibold text-amber-500">{product.rating}</span><span className="text-xs text-gray-400 dark:text-gray-500 font-body">({product.reviews.toLocaleString('vi-VN')})</span></div>
+        <div className="mt-auto flex items-baseline gap-2"><span className="text-xl font-bold text-gray-900 dark:text-white font-display">{product.price.toLocaleString('vi-VN')}₫</span>{product.original > product.price && <span className="text-sm text-gray-400 dark:text-gray-500 line-through font-body">{product.original.toLocaleString('vi-VN')}₫</span>}</div>
         <div className="flex gap-2">
-          <Link href={`/san-pham/${product.slug || product.id}`} className="flex-1 rounded-xl border border-brand py-2.5 text-center text-sm font-semibold text-brand transition-colors hover:bg-brand-pale font-display">Xem</Link>
-          <button onClick={handleAdd} className={`flex-1 rounded-xl py-2.5 text-sm font-semibold text-white transition-all active:scale-95 font-display ${added ? 'bg-green-500' : 'bg-brand hover:bg-brand-dark'}`}>{added ? '✓ Đã thêm' : 'Thêm vào giỏ'}</button>
+          <Link href={`/san-pham/${product.slug || product.id}`} className="flex-1 rounded-xl border border-brand dark:border-blue-500 py-2.5 text-center text-sm font-semibold text-brand dark:text-blue-400 transition-colors hover:bg-brand-pale dark:hover:bg-gray-800 font-display">Xem</Link>
+          <button onClick={handleAdd} className={`flex-1 rounded-xl py-2.5 text-sm font-semibold text-white transition-all active:scale-95 font-display cursor-pointer ${added ? 'bg-green-500' : 'bg-brand hover:bg-brand-dark'}`}>{added ? '✓ Đã thêm' : 'Thêm vào giỏ'}</button>
         </div>
       </div>
     </div>

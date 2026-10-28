@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'plain-apac-prod-public.komododecks.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'iili.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'files.catbox.moe',
+      },
     ],
   },
 }
