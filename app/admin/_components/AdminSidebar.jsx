@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useAdminSidebar } from './AdminSidebarContext'
+import { useAuth } from '../../../context/AuthContext'
 
 export default function AdminSidebar() {
   const pathname = usePathname()
@@ -209,38 +210,50 @@ export default function AdminSidebar() {
           ))}
         </div>
 
-        {/* Footer: Thông tin Quản Trị Viên (Độc lập hoàn toàn, không có nút thu gọn đè lên) */}
-        <div className="p-3 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex-shrink-0">
-          {isExpanded ? (
-            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200/60 dark:border-gray-700/60 shadow-xs">
-              <div className="relative flex-shrink-0">
-                <div className="w-9 h-9 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-bold flex items-center justify-center text-xs shadow-xs">
-                  AD
-                </div>
-                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
-              </div>
-              <div className="min-w-0 flex-1 overflow-hidden">
-                <p className="text-xs font-bold text-gray-800 dark:text-white truncate">Quản Trị Viên</p>
-                <p className="text-[11px] text-gray-400 truncate">admin@techzone.vn</p>
-              </div>
-            </div>
-          ) : (
-            /* Khi thu gọn: Hiển thị avatar Quản trị viên AD căn giữa gọn gàng, có tooltip */
-            <div className="flex justify-center py-1">
-              <div className="relative group cursor-pointer" title="Quản Trị Viên (admin@techzone.vn)">
-                <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-bold flex items-center justify-center text-xs shadow-xs hover:ring-2 hover:ring-blue-500 transition-all">
-                  AD
-                </div>
-                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
+        {/* Footer: Thông tin Tài Khoản Đang Đăng Nhập (Động theo role Admin / Staff) */}
+        {(() => {
+          const isAdmin = user?.role === 'admin'
+          const displayName = user?.name || (isAdmin ? 'Quản Trị Viên' : 'Nhân Viên Vận Hành')
+          const displayEmail = user?.email || (isAdmin ? 'admin@techzone.vn' : 'nhanvien@techzone.vn')
+          const roleLabel = isAdmin ? 'Super Admin' : 'Nhân Viên Vận Hành'
+          const avatarInitials = isAdmin ? 'AD' : 'NV'
+          const bgBadge = isAdmin ? 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300' : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
 
-                {/* Tooltip khi hover trong trạng thái thu gọn */}
-                <div className="absolute left-full ml-3 bottom-0 px-2.5 py-1.5 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 shadow-xl">
-                  Quản Trị Viên (admin@techzone.vn)
+          return (
+            <div className="p-3 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex-shrink-0">
+              {isExpanded ? (
+                <div className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200/60 dark:border-gray-700/60 shadow-xs">
+                  <div className="relative flex-shrink-0">
+                    <div className={`w-9 h-9 rounded-full ${bgBadge} font-bold flex items-center justify-center text-xs shadow-xs`}>
+                      {avatarInitials}
+                    </div>
+                    <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
+                  </div>
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <div className="flex items-center gap-1.5">
+                      <p className="text-xs font-bold text-gray-800 dark:text-white truncate">{displayName}</p>
+                    </div>
+                    <p className="text-[10px] text-blue-600 dark:text-blue-400 font-semibold truncate">{roleLabel}</p>
+                    <p className="text-[10px] text-gray-400 truncate">{displayEmail}</p>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="flex justify-center py-1">
+                  <div className="relative group cursor-pointer" title={`${displayName} (${roleLabel} - ${displayEmail})`}>
+                    <div className={`w-10 h-10 rounded-full ${bgBadge} font-bold flex items-center justify-center text-xs shadow-xs hover:ring-2 hover:ring-blue-500 transition-all`}>
+                      {avatarInitials}
+                    </div>
+                    <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
+
+                    <div className="absolute left-full ml-3 bottom-0 px-2.5 py-1.5 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 shadow-xl">
+                      {displayName} ({roleLabel})
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-        </div>
+          )
+        })()}
       </aside>
 
       {/* Backdrop for mobile */}
