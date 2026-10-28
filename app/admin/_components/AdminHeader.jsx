@@ -164,9 +164,11 @@ export default function AdminHeader() {
             </div>
             <div className="hidden md:flex flex-col text-left">
               <span className="text-xs font-bold text-gray-800 dark:text-gray-200 leading-tight">
-                {user?.name || 'Admin TechZone'}
+                {user?.name || 'TechZone User'}
               </span>
-              <span className="text-[10px] text-gray-400">Super Admin</span>
+              <span className="text-[10px] text-gray-400">
+                {user?.role === 'admin' ? 'Super Admin' : user?.role === 'staff' ? 'Nhân viên Vận hành' : 'Khách hàng'}
+              </span>
             </div>
             <svg className="w-4 h-4 text-gray-400 hidden md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

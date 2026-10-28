@@ -40,7 +40,7 @@ function AdminLayoutContent({ children }) {
 }
 
 function AdminAuthGuard({ children }) {
-  const { user, isAdmin, isInitialized, quickLoginAsAdmin } = useAuth()
+  const { user, isAdmin, isStaff, isManager, isInitialized, quickLoginAsAdmin, quickLoginAsStaff } = useAuth()
 
   // Khi đang nạp dữ liệu session
   if (!isInitialized) {
@@ -48,14 +48,14 @@ function AdminAuthGuard({ children }) {
       <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
         <div className="flex flex-col items-center gap-3">
           <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Đang kiểm tra quyền truy cập Admin...</p>
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Đang kiểm tra quyền truy cập Quản trị...</p>
         </div>
       </div>
     )
   }
 
-  // Nếu chưa đăng nhập quyền Admin
-  if (!isAdmin) {
+  // Nếu chưa đăng nhập quyền Admin hoặc Nhân viên (Staff)
+  if (!isManager) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-4 font-body">
         <div className="w-full max-w-md bg-white/10 dark:bg-gray-900/80 backdrop-blur-xl border border-white/20 dark:border-gray-800 rounded-3xl p-6 sm:p-8 text-center text-white shadow-2xl">
@@ -69,12 +69,12 @@ function AdminAuthGuard({ children }) {
             Yêu Cầu Quyền Quản Trị
           </h2>
           <p className="text-sm text-gray-300 mb-6 leading-relaxed">
-            Khu vực này chỉ dành riêng cho Ban Quản trị hệ thống TechZone. Vui lòng đăng nhập bằng tài khoản Admin để truy cập toàn bộ tính năng quản lý.
+            Khu vực này chỉ dành riêng cho Ban Quản trị và Nhân viên vận hành TechZone. Vui lòng đăng nhập để truy cập các tính năng quản lý.
           </p>
 
           {user && (
             <div className="mb-6 p-3 bg-white/10 rounded-xl text-xs text-amber-300 border border-amber-400/30">
-              Bạn đang đăng nhập dưới tài khoản: <strong>{user.email}</strong> (Chưa có quyền Quản trị viên).
+              Bạn đang đăng nhập dưới tài khoản: <strong>{user.email}</strong> (Chưa có quyền Quản trị hoặc Nhân viên).
             </div>
           )}
 
@@ -86,15 +86,23 @@ function AdminAuthGuard({ children }) {
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
               </svg>
-              <span>Đến trang Đăng nhập Admin</span>
+              <span>Đến trang Đăng nhập</span>
             </Link>
 
-            <button
-              onClick={() => quickLoginAsAdmin()}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-blue-200 border border-white/20 font-medium text-xs transition-colors"
-            >
-              <span>⚡ Mở nhanh quyền Admin Demo (1-Click)</span>
-            </button>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => quickLoginAsAdmin()}
+                className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-blue-500/20 hover:bg-blue-500/30 text-blue-200 border border-blue-400/30 font-medium text-xs transition-colors cursor-pointer"
+              >
+                <span>⚡ Vào vai Admin</span>
+              </button>
+              <button
+                onClick={() => quickLoginAsStaff()}
+                className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 font-medium text-xs transition-colors cursor-pointer"
+              >
+                <span>💼 Vào vai Nhân viên</span>
+              </button>
+            </div>
 
             <Link
               href="/"

@@ -5,10 +5,13 @@ import { createContext, useContext, useState, useEffect } from 'react'
 const AuthContext = createContext({
   user: null,
   isAdmin: false,
+  isStaff: false,
+  isManager: false,
   isInitialized: false,
-  login: () => {},
+  login: async () => {},
   logout: () => {},
   quickLoginAsAdmin: () => {},
+  quickLoginAsStaff: () => {},
   quickLoginAsCustomer: () => {},
 })
 
@@ -39,22 +42,50 @@ export function AuthProvider({ children }) {
     }
   }
 
-  const login = (email, password, explicitRole = null) => {
+  const login = async (email, password, explicitRole = null) => {
     const cleanEmail = (email || '').trim().toLowerCase()
-    
-    // Kiểm tra xem là tài khoản Admin hay Khách hàng
-    const isAdminAccount =
-      explicitRole === 'admin' ||
-      cleanEmail.includes('admin') ||
-      cleanEmail === 'admin@techzone.vn' ||
-      password === 'admin123'
+
+    try {
+      // Thử gọi backend API trước
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: cleanEmail, password, role: explicitRole }),
+      })
+
+      const data = await res.json()
+
+      if (res.ok && data.success && data.user) {
+        saveUserSession(data.user)
+        return { success: true, role: data.user.role, user: data.user }
+      }
+
+      // Nếu API trả về lỗi nhưng có explicitRole (fallback demo nhanh)
+      if (!data.success && !explicitRole) {
+        return { success: false, message: data.message || 'Email hoặc mật khẩu không chính xác.' }
+      }
+    } catch (apiError) {
+      console.warn('API /api/auth/login lỗi, chuyển sang fallback auth:', apiError)
+    }
+
+    // Fallback xác thực trực tiếp tại client (đảm bảo demo không bao giờ chết)
+    let determinedRole = explicitRole || 'customer'
+    let fullName = cleanEmail ? cleanEmail.split('@')[0] : 'Người dùng'
+
+    if (explicitRole === 'admin' || cleanEmail.includes('admin') || password === 'admin123') {
+      determinedRole = 'admin'
+      fullName = 'Quản trị viên Hệ thống'
+    } else if (explicitRole === 'staff' || cleanEmail.includes('staff') || cleanEmail.includes('nhanvien') || password === 'staff123') {
+      determinedRole = 'staff'
+      fullName = 'Lê Thị Thảo (Nhân Viên Vận Hành)'
+    }
 
     const userData = {
-      id: isAdminAccount ? 'adm_01' : 'usr_' + Date.now(),
-      name: isAdminAccount ? 'Admin TechZone' : (cleanEmail ? cleanEmail.split('@')[0] : 'Khách Hàng'),
-      email: cleanEmail || (isAdminAccount ? 'admin@techzone.vn' : 'khachhang@techzone.vn'),
-      role: isAdminAccount ? 'admin' : 'customer',
-      avatar: isAdminAccount ? 'A' : (cleanEmail ? cleanEmail.charAt(0).toUpperCase() : 'U'),
+      id: determinedRole === 'admin' ? 'adm_01' : determinedRole === 'staff' ? 'stf_01' : 'usr_' + Date.now(),
+      name: fullName,
+      email: cleanEmail || (determinedRole === 'admin' ? 'admin@techzone.vn' : determinedRole === 'staff' ? 'nhanvien@techzone.vn' : 'khachhang@techzone.vn'),
+      role: determinedRole, // 'admin' | 'staff' | 'customer'
+      avatar: fullName.charAt(0).toUpperCase(),
       lastLogin: new Date().toISOString(),
     }
 
@@ -64,6 +95,10 @@ export function AuthProvider({ children }) {
 
   const quickLoginAsAdmin = () => {
     return login('admin@techzone.vn', 'admin123', 'admin')
+  }
+
+  const quickLoginAsStaff = () => {
+    return login('nhanvien@techzone.vn', 'staff123', 'staff')
   }
 
   const quickLoginAsCustomer = () => {
@@ -80,16 +115,21 @@ export function AuthProvider({ children }) {
   }
 
   const isAdmin = user?.role === 'admin'
+  const isStaff = user?.role === 'staff'
+  const isManager = isAdmin || isStaff // Cả Admin và Nhân viên đều có thể vào trang quản lý
 
   return (
     <AuthContext.Provider
       value={{
         user,
         isAdmin,
+        isStaff,
+        isManager,
         isInitialized,
         login,
         logout,
         quickLoginAsAdmin,
+        quickLoginAsStaff,
         quickLoginAsCustomer,
       }}
     >

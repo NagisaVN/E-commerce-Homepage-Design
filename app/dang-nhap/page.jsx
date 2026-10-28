@@ -10,10 +10,21 @@ function LoginForm() {
   const searchParams = useSearchParams()
   const redirectUrl = searchParams.get('redirect')
 
-  const { user, isAdmin, login, quickLoginAsAdmin, quickLoginAsCustomer, logout } = useAuth()
+  const {
+    user,
+    isAdmin,
+    isStaff,
+    login,
+    quickLoginAsAdmin,
+    quickLoginAsStaff,
+    quickLoginAsCustomer,
+    logout,
+  } = useAuth()
 
-  // Tabs: 'customer' | 'admin'
-  const [activeRole, setActiveRole] = useState(redirectUrl?.startsWith('/admin') ? 'admin' : 'customer')
+  // Tabs: 'customer' | 'staff' | 'admin'
+  const [activeRole, setActiveRole] = useState(
+    redirectUrl?.startsWith('/admin') ? 'admin' : 'customer'
+  )
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -36,32 +47,41 @@ function LoginForm() {
     if (role === 'admin') {
       setEmail('admin@techzone.vn')
       setPassword('admin123')
+    } else if (role === 'staff') {
+      setEmail('nhanvien@techzone.vn')
+      setPassword('staff123')
     } else {
       setEmail('')
       setPassword('')
     }
   }
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault()
     setErrorMessage('')
     setIsLoading(true)
 
     try {
-      const res = login(email, password, activeRole)
+      const res = await login(email, password, activeRole)
       if (res.success) {
-        setSuccessMessage(
-          res.role === 'admin'
-            ? 'Đăng nhập Quản trị viên thành công! Đang chuyển hướng đến Admin Dashboard...'
-            : 'Đăng nhập thành công! Đang chuyển hướng...'
-        )
+        if (res.role === 'admin') {
+          setSuccessMessage('Đăng nhập Quản trị viên thành công! Đang chuyển hướng Admin...')
+        } else if (res.role === 'staff') {
+          setSuccessMessage('Đăng nhập Nhân viên vận hành thành công! Đang vào hệ thống quản lý...')
+        } else {
+          setSuccessMessage('Đăng nhập thành công! Đang chuyển hướng...')
+        }
+
         setTimeout(() => {
-          if (res.role === 'admin') {
+          if (res.role === 'admin' || res.role === 'staff') {
             router.push(redirectUrl || '/admin')
           } else {
             router.push(redirectUrl || '/')
           }
         }, 800)
+      } else {
+        setErrorMessage(res.message || 'Email hoặc mật khẩu không chính xác.')
+        setIsLoading(false)
       }
     } catch (err) {
       setErrorMessage('Đã xảy ra lỗi khi đăng nhập. Vui lòng thử lại.')
@@ -69,29 +89,38 @@ function LoginForm() {
     }
   }
 
-  const handleQuickAdmin = () => {
+  const handleQuickAdmin = async () => {
     setIsLoading(true)
-    quickLoginAsAdmin()
-    setSuccessMessage('Đăng nhập thành công với quyền Admin! Đang vào trang quản trị...')
+    await quickLoginAsAdmin()
+    setSuccessMessage('Đăng nhập Quản trị viên thành công! Đang vào trang quản trị...')
     setTimeout(() => {
       router.push(redirectUrl || '/admin')
     }, 700)
   }
 
-  const handleQuickCustomer = () => {
+  const handleQuickStaff = async () => {
     setIsLoading(true)
-    quickLoginAsCustomer()
-    setSuccessMessage('Đăng nhập thành công! Đang vào trang mua sắm...')
+    await quickLoginAsStaff()
+    setSuccessMessage('Đăng nhập Nhân viên thành công! Đang vào trang quản lý...')
     setTimeout(() => {
-      router.push('/')
+      router.push(redirectUrl || '/admin')
+    }, 700)
+  }
+
+  const handleQuickCustomer = async () => {
+    setIsLoading(true)
+    await quickLoginAsCustomer()
+    setSuccessMessage('Đăng nhập Khách hàng thành công! Đang vào trang mua sắm...')
+    setTimeout(() => {
+      router.push(redirectUrl && !redirectUrl.startsWith('/admin') ? redirectUrl : '/')
     }, 700)
   }
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-10 sm:px-6 lg:px-8 font-body">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <Link href="/" className="flex justify-center items-center gap-2 mb-4">
-          <div className="h-10 w-10 bg-brand rounded-xl flex items-center justify-center shadow-md shadow-blue-600/20">
+        <Link href="/" className="flex justify-center items-center gap-2 mb-4 group">
+          <div className="h-10 w-10 bg-brand rounded-xl flex items-center justify-center shadow-md shadow-blue-600/20 group-hover:scale-105 transition-transform">
             <svg viewBox="0 0 32 32" fill="none" className="h-6 w-6">
               <path d="M8 22V13l8-6 8 6v9H8z" stroke="white" strokeWidth="2" strokeLinejoin="round" />
               <rect x="13" y="16" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" />
@@ -103,11 +132,17 @@ function LoginForm() {
         </Link>
 
         <h2 className="text-center text-2xl sm:text-3xl font-extrabold text-gray-900 font-display">
-          {activeRole === 'admin' ? 'Đăng nhập Quản Trị Viên' : 'Đăng nhập vào tài khoản'}
+          {activeRole === 'admin'
+            ? 'Đăng nhập Quản Trị Viên'
+            : activeRole === 'staff'
+            ? 'Đăng nhập Nhân Viên Vận Hành'
+            : 'Đăng nhập Khách Hàng'}
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
           {activeRole === 'admin' ? (
-            <span className="text-amber-600 font-medium">Hệ thống quản lý TechZone Admin Dashboard</span>
+            <span className="text-amber-700 font-medium">Hệ thống toàn quyền Quản trị TechZone Admin</span>
+          ) : activeRole === 'staff' ? (
+            <span className="text-emerald-700 font-medium">Cổng thông tin Xử lý Đơn hàng & Kho vận</span>
           ) : (
             <>
               Chưa có tài khoản?{' '}
@@ -124,7 +159,7 @@ function LoginForm() {
             <svg className="w-5 h-5 flex-shrink-0 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
-            <span>Vui lòng đăng nhập bằng tài khoản <strong>Quản trị viên</strong> để tiếp tục vào trang Quản trị.</span>
+            <span>Vui lòng đăng nhập bằng tài khoản <strong>Quản trị viên</strong> hoặc <strong>Nhân viên</strong> để vào trang Quản trị.</span>
           </div>
         )}
       </div>
@@ -140,20 +175,30 @@ function LoginForm() {
               <div className="text-xs">
                 <p className="font-semibold text-gray-900">{user.name}</p>
                 <p className="text-gray-500">{user.email}</p>
-                <span className={`inline-block mt-0.5 px-2 py-0.5 text-[10px] font-bold rounded-full ${
-                  user.role === 'admin' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'
-                }`}>
-                  {user.role === 'admin' ? 'Quyền Quản trị viên' : 'Khách hàng'}
+                <span
+                  className={`inline-block mt-0.5 px-2 py-0.5 text-[10px] font-bold rounded-full ${
+                    user.role === 'admin'
+                      ? 'bg-purple-100 text-purple-700'
+                      : user.role === 'staff'
+                      ? 'bg-emerald-100 text-emerald-700'
+                      : 'bg-blue-100 text-blue-700'
+                  }`}
+                >
+                  {user.role === 'admin'
+                    ? 'Quản trị viên (Admin)'
+                    : user.role === 'staff'
+                    ? 'Nhân viên (Staff)'
+                    : 'Khách hàng'}
                 </span>
               </div>
             </div>
             <div className="flex items-center gap-1.5">
-              {user.role === 'admin' ? (
+              {user.role === 'admin' || user.role === 'staff' ? (
                 <Link
                   href="/admin"
                   className="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold shadow-xs transition-colors"
                 >
-                  Vào Admin
+                  Vào Quản Trị
                 </Link>
               ) : (
                 <Link
@@ -165,7 +210,7 @@ function LoginForm() {
               )}
               <button
                 onClick={logout}
-                className="px-2.5 py-1.5 text-xs text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                className="px-2.5 py-1.5 text-xs text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer"
                 title="Đăng xuất"
               >
                 Thoát
@@ -175,42 +220,58 @@ function LoginForm() {
         )}
 
         <div className="bg-white py-7 px-4 shadow-xl shadow-blue-900/5 sm:rounded-2xl sm:px-10 border border-gray-100">
-          {/* Role Tabs */}
-          <div className="grid grid-cols-2 gap-1.5 p-1 bg-gray-100 rounded-xl mb-6">
+          {/* Role Tabs: Khách hàng / Nhân viên / Quản trị viên */}
+          <div className="grid grid-cols-3 gap-1 p-1 bg-gray-100 rounded-xl mb-6">
             <button
               type="button"
               onClick={() => handleRoleChange('customer')}
-              className={`py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center justify-center gap-1.5 ${
+              className={`py-2 text-xs font-semibold rounded-lg transition-all flex flex-col sm:flex-row items-center justify-center gap-1 ${
                 activeRole === 'customer'
                   ? 'bg-white text-gray-900 shadow-sm'
                   : 'text-gray-500 hover:text-gray-800'
               }`}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               <span>Khách hàng</span>
             </button>
+
+            <button
+              type="button"
+              onClick={() => handleRoleChange('staff')}
+              className={`py-2 text-xs font-semibold rounded-lg transition-all flex flex-col sm:flex-row items-center justify-center gap-1 ${
+                activeRole === 'staff'
+                  ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-600/20'
+                  : 'text-gray-500 hover:text-gray-800'
+              }`}
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>Nhân viên</span>
+            </button>
+
             <button
               type="button"
               onClick={() => handleRoleChange('admin')}
-              className={`py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center justify-center gap-1.5 ${
+              className={`py-2 text-xs font-semibold rounded-lg transition-all flex flex-col sm:flex-row items-center justify-center gap-1 ${
                 activeRole === 'admin'
                   ? 'bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md shadow-blue-600/20'
                   : 'text-gray-500 hover:text-gray-800'
               }`}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              <span>Quản trị viên (Admin)</span>
+              <span>Quản trị viên</span>
             </button>
           </div>
 
-          {/* Alert thông báo */}
+          {/* Alert thông báo lỗi / thành công */}
           {errorMessage && (
             <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs rounded-xl flex items-center gap-2">
-              <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 flex-shrink-0 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
               <span>{errorMessage}</span>
@@ -230,7 +291,11 @@ function LoginForm() {
           <form className="space-y-4" onSubmit={handleLogin}>
             <div>
               <label htmlFor="email" className="block text-xs font-semibold text-gray-700">
-                {activeRole === 'admin' ? 'Tài khoản Email Quản trị' : 'Địa chỉ Email'}
+                {activeRole === 'admin'
+                  ? 'Email Quản trị viên'
+                  : activeRole === 'staff'
+                  ? 'Email Nhân viên'
+                  : 'Địa chỉ Email'}
               </label>
               <div className="mt-1 relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
@@ -248,7 +313,13 @@ function LoginForm() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="appearance-none block w-full pl-10 px-3 py-2.5 border border-gray-200 rounded-xl shadow-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand sm:text-sm transition-colors"
-                  placeholder={activeRole === 'admin' ? 'admin@techzone.vn' : 'you@example.com'}
+                  placeholder={
+                    activeRole === 'admin'
+                      ? 'admin@techzone.vn'
+                      : activeRole === 'staff'
+                      ? 'nhanvien@techzone.vn'
+                      : 'khachhang@techzone.vn'
+                  }
                 />
               </div>
             </div>
@@ -291,7 +362,7 @@ function LoginForm() {
                 </label>
               </div>
 
-              {activeRole !== 'admin' && (
+              {activeRole === 'customer' && (
                 <div>
                   <a href="#" className="font-medium text-brand hover:text-brand-dark transition-colors">
                     Quên mật khẩu?
@@ -304,9 +375,11 @@ function LoginForm() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white transition-all active:scale-[0.98] font-display ${
+                className={`w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white transition-all active:scale-[0.98] font-display cursor-pointer ${
                   activeRole === 'admin'
                     ? 'bg-gradient-to-r from-blue-700 to-indigo-600 hover:from-blue-800 hover:to-indigo-700 shadow-blue-500/20'
+                    : activeRole === 'staff'
+                    ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 shadow-emerald-500/20'
                     : 'bg-brand hover:bg-brand-dark shadow-blue-500/20'
                 } ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
@@ -320,35 +393,48 @@ function LoginForm() {
                   </span>
                 ) : (
                   <span>
-                    {activeRole === 'admin' ? 'Đăng nhập vào Hệ Thống Admin ➔' : 'Đăng nhập'}
+                    {activeRole === 'admin'
+                      ? 'Đăng nhập vào Hệ Thống Admin ➔'
+                      : activeRole === 'staff'
+                      ? 'Đăng nhập vào Hệ Thống Nhân Viên ➔'
+                      : 'Đăng nhập Mua Sắm'}
                   </span>
                 )}
               </button>
             </div>
           </form>
 
-          {/* Khối Đăng Nhập Nhanh Trải Nghiệm Demo */}
+          {/* Khối Đăng Nhập Nhanh Trải Nghiệm Demo 3 Vai Trò */}
           <div className="mt-6 pt-5 border-t border-gray-100">
             <p className="text-center text-xs font-semibold text-gray-500 mb-3 tracking-wide">
               ⚡ ĐĂNG NHẬP NHANH 1-CHẠM (DEMO)
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
               <button
                 type="button"
                 onClick={handleQuickAdmin}
-                className="flex items-center justify-center gap-2 px-3 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-blue-900 border border-blue-200/80 rounded-xl text-xs font-bold transition-all active:scale-95"
+                className="flex items-center justify-center gap-1.5 px-2.5 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-blue-900 border border-blue-200/80 rounded-xl text-xs font-bold transition-all active:scale-95 cursor-pointer"
               >
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                <span>Vào vai Admin</span>
+                <span>🛡️ Admin</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={handleQuickStaff}
+                className="flex items-center justify-center gap-1.5 px-2.5 py-2 bg-gradient-to-r from-emerald-50 to-teal-50 hover:from-emerald-100 hover:to-teal-100 text-emerald-900 border border-emerald-200/80 rounded-xl text-xs font-bold transition-all active:scale-95 cursor-pointer"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span>💼 Nhân viên</span>
               </button>
 
               <button
                 type="button"
                 onClick={handleQuickCustomer}
-                className="flex items-center justify-center gap-2 px-3 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 rounded-xl text-xs font-medium transition-all active:scale-95"
+                className="flex items-center justify-center gap-1.5 px-2.5 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 rounded-xl text-xs font-medium transition-all active:scale-95 cursor-pointer"
               >
-                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span>Vào vai Khách Hàng</span>
+                <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span>🛒 Khách hàng</span>
               </button>
             </div>
           </div>
@@ -369,7 +455,7 @@ function LoginForm() {
                 <button
                   type="button"
                   onClick={handleQuickCustomer}
-                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   <svg className="h-4 w-4" viewBox="0 0 24 24">
                     <path
@@ -395,7 +481,7 @@ function LoginForm() {
                 <button
                   type="button"
                   onClick={handleQuickCustomer}
-                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-200 rounded-xl shadow-xs bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                     <path

@@ -77,7 +77,7 @@ export default function Header() {
   const [aiModalOpen, setAiModalOpen] = useState(false)
   const [modalInitialQuery, setModalInitialQuery] = useState('')
   const { cartCount } = useCart()
-  const { user, isAdmin, logout } = useAuth()
+  const { user, isAdmin, isStaff, isManager, logout } = useAuth()
   const router = useRouter()
 
   const navItems = [
@@ -197,13 +197,17 @@ export default function Header() {
                         <p className="text-xs font-bold text-gray-900 truncate">{user.name}</p>
                         <p className="text-[11px] text-gray-400 truncate">{user.email}</p>
                         <span className={`inline-block mt-1 px-2 py-0.5 text-[10px] font-bold rounded-full ${
-                          user.role === 'admin' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'
+                          user.role === 'admin'
+                            ? 'bg-purple-100 text-purple-700'
+                            : user.role === 'staff'
+                            ? 'bg-emerald-100 text-emerald-700'
+                            : 'bg-blue-100 text-blue-700'
                         }`}>
-                          {user.role === 'admin' ? 'Quản trị viên' : 'Khách hàng'}
+                          {user.role === 'admin' ? 'Quản trị viên' : user.role === 'staff' ? 'Nhân viên vận hành' : 'Khách hàng'}
                         </span>
                       </div>
 
-                      {isAdmin && (
+                      {isManager && (
                         <Link
                           href="/admin"
                           onClick={() => setUserMenuOpen(false)}
@@ -212,7 +216,7 @@ export default function Header() {
                           <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                           </svg>
-                          Bảng điều khiển Quản Trị
+                          Bảng điều khiển {user.role === 'admin' ? 'Quản Trị' : 'Vận Hành'}
                         </Link>
                       )}
 
