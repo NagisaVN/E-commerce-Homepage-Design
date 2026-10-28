@@ -146,18 +146,12 @@ export default function CartPage() {
                 </div>
               </div>
               
-<<<<<<< HEAD
               <Link
                 href="/thanh-toan"
-                className="w-full bg-brand text-white font-bold font-display py-3.5 rounded-xl hover:bg-brand-dark transition-all shadow-lg shadow-blue-200 active:scale-[0.98] flex items-center justify-center text-center text-base"
+                className="w-full bg-brand text-white font-bold font-display py-3.5 rounded-xl hover:bg-brand-dark transition-all shadow-lg shadow-blue-200 dark:shadow-blue-950/40 active:scale-[0.98] flex items-center justify-center text-center text-base"
               >
                 Tiến hành thanh toán →
               </Link>
-=======
-              <button className="w-full bg-brand text-white font-bold font-display py-3.5 rounded-xl hover:bg-brand-dark transition-all shadow-lg shadow-blue-200 dark:shadow-blue-950/40 active:scale-[0.98]">
-                Tiến hành thanh toán
-              </button>
->>>>>>> origin/dev-roy
               
               <div className="mt-4 flex items-center justify-center gap-2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4 text-green-500"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
