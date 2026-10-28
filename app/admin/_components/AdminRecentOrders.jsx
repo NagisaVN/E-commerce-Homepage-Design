@@ -5,60 +5,28 @@ import Link from 'next/link'
 
 export default function AdminRecentOrders({ orders = [] }) {
   const [filter, setFilter] = useState('ALL')
+  const [displayOrders, setDisplayOrders] = useState(orders)
 
-  // Dữ liệu đơn hàng mẫu mở rộng kết hợp dữ liệu thực từ db.json
-  const defaultOrders = orders.length > 0 ? orders : [
-    {
-      id: 1,
-      ma_don_hang: 'DH20260918001',
-      ten_nguoi_nhan: 'Nguyễn Văn Khách',
-      dien_thoai_nguoi_nhan: '0987654321',
-      tong_tien_cuoi_cung: 15030000,
-      phuong_thuc_thanh_toan: 'COD',
-      trang_thai: 'Chờ xác nhận',
-      created_at: '2026-09-18 02:30:13',
-    },
-    {
-      id: 2,
-      ma_don_hang: 'DH20261021002',
-      ten_nguoi_nhan: 'Trần Thị Thu Thảo',
-      dien_thoai_nguoi_nhan: '0912345678',
-      tong_tien_cuoi_cung: 8900000,
-      phuong_thuc_thanh_toan: 'Chuyển khoản QR',
-      trang_thai: 'Đang giao hàng',
-      created_at: '2026-10-21 14:15:20',
-    },
-    {
-      id: 3,
-      ma_don_hang: 'DH20261022003',
-      ten_nguoi_nhan: 'Lê Hoàng Nam',
-      dien_thoai_nguoi_nhan: '0903889922',
-      tong_tien_cuoi_cung: 24500000,
-      phuong_thuc_thanh_toan: 'MoMo',
-      trang_thai: 'Đã hoàn thành',
-      created_at: '2026-10-22 08:10:05',
-    },
-    {
-      id: 4,
-      ma_don_hang: 'DH20261022004',
-      ten_nguoi_nhan: 'Phạm Minh Đức',
-      dien_thoai_nguoi_nhan: '0977112233',
-      tong_tien_cuoi_cung: 3200000,
-      phuong_thuc_thanh_toan: 'COD',
-      trang_thai: 'Chờ xác nhận',
-      created_at: '2026-10-22 08:35:12',
-    },
-    {
-      id: 5,
-      ma_don_hang: 'DH20261020005',
-      ten_nguoi_nhan: 'Đặng Thanh Hải',
-      dien_thoai_nguoi_nhan: '0933445566',
-      tong_tien_cuoi_cung: 12800000,
-      phuong_thuc_thanh_toan: 'VNPAY',
-      trang_thai: 'Đã hủy',
-      created_at: '2026-10-20 18:00:00',
-    },
-  ]
+  // Đồng bộ orders từ props và bổ sung các đơn hàng test từ localStorage nếu có
+  React.useEffect(() => {
+    let combined = [...orders]
+    try {
+      const guestOrders = JSON.parse(localStorage.getItem('techzone_guest_orders') || '[]')
+      if (guestOrders.length > 0) {
+        combined = [...guestOrders, ...combined]
+      }
+    } catch (e) {
+      console.warn('Lỗi đọc guest orders:', e)
+    }
+
+    const unique = combined.filter(
+      (v, i, a) =>
+        a.findIndex(
+          (t) => t.ma_don_hang?.trim().toLowerCase() === v.ma_don_hang?.trim().toLowerCase()
+        ) === i
+    )
+    setDisplayOrders(unique.length > 0 ? unique : orders)
+  }, [orders])
 
   const getStatusBadge = (status) => {
     const cleanStatus = status?.trim()
@@ -79,7 +47,7 @@ export default function AdminRecentOrders({ orders = [] }) {
     }
   }
 
-  const filteredOrders = defaultOrders.filter((order) => {
+  const filteredOrders = displayOrders.filter((order) => {
     if (filter === 'ALL') return true
     if (filter === 'PENDING') return order.trang_thai?.includes('Chờ')
     if (filter === 'SHIPPING') return order.trang_thai?.includes('giao')

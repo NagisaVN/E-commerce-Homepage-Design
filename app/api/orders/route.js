@@ -27,6 +27,12 @@ function saveDb(data) {
   }
 }
 
+// Khởi tạo bộ nhớ RAM server để giữ đơn hàng ngay cả khi Vercel ở chế độ read-only
+if (!globalThis.__TECHZONE_ORDERS__) {
+  const initialDb = readDb()
+  globalThis.__TECHZONE_ORDERS__ = initialDb.don_hang || []
+}
+
 // Sinh mã đơn hàng chuẩn (VD: DH202610284891)
 function generateOrderCode() {
   const now = new Date()
@@ -50,7 +56,17 @@ export async function GET(request) {
     const phone = searchParams.get('phone')?.trim()
 
     const data = readDb()
-    const orders = data.don_hang || []
+    const fileOrders = data.don_hang || []
+    const memoryOrders = globalThis.__TECHZONE_ORDERS__ || []
+
+    // Gộp cả đơn từ file db.json và đơn mới từ bộ nhớ
+    const all = [...memoryOrders, ...fileOrders]
+    const orders = all.filter(
+      (v, i, a) =>
+        a.findIndex(
+          (t) => t.ma_don_hang?.trim().toLowerCase() === v.ma_don_hang?.trim().toLowerCase()
+        ) === i
+    )
 
     if (code) {
       const found = orders.find(
@@ -84,6 +100,9 @@ export async function POST(request) {
       note = '',
       isVatInvoice = false,
       vatInfo = {},
+      existingOrderCode = null,
+      existingTrackingCode = null,
+      existingCreatedAt = null,
     } = body
 
     // Validate thông tin bắt buộc
@@ -101,9 +120,9 @@ export async function POST(request) {
       )
     }
 
-    const orderCode = generateOrderCode()
-    const trackingCode = generateTrackingCode()
-    const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19)
+    const orderCode = existingOrderCode || generateOrderCode()
+    const trackingCode = existingTrackingCode || generateTrackingCode()
+    const nowStr = existingCreatedAt || new Date().toISOString().replace('T', ' ').substring(0, 19)
 
     // Tạo địa chỉ đầy đủ
     const fullAddress = [
@@ -145,12 +164,25 @@ export async function POST(request) {
       created_at: nowStr,
     }
 
-    // Cập nhật db.json
+    // 1. Lưu vào RAM server
+    if (!globalThis.__TECHZONE_ORDERS__) {
+      globalThis.__TECHZONE_ORDERS__ = []
+    }
+    // Tránh trùng mã đơn
+    globalThis.__TECHZONE_ORDERS__ = [
+      newOrder,
+      ...globalThis.__TECHZONE_ORDERS__.filter((o) => o.ma_don_hang !== orderCode),
+    ]
+
+    // 2. Ghi vào file db.json trên đĩa
     const db = readDb()
     if (!Array.isArray(db.don_hang)) {
       db.don_hang = []
     }
-    db.don_hang.unshift(newOrder)
+    db.don_hang = [
+      newOrder,
+      ...db.don_hang.filter((o) => o.ma_don_hang !== orderCode),
+    ]
     saveDb(db)
 
     return NextResponse.json({
