@@ -19,7 +19,7 @@ export default function AdminHeader() {
   // Khởi tạo Dark mode từ class của html hoặc localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const isDarkMode = document.documentElement.classList.contains('dark') || localStorage.getItem('theme') === 'dark'
+      const isDarkMode = localStorage.getItem('theme') === 'dark'
       setIsDark(isDarkMode)
       if (isDarkMode) {
         document.documentElement.classList.add('dark')

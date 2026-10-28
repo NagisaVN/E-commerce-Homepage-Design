@@ -86,7 +86,7 @@ export default function Header() {
   // Khởi tạo và đồng bộ trạng thái Dark/Light mode từ html class hoặc localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const isDarkMode = document.documentElement.classList.contains('dark') || localStorage.getItem('theme') === 'dark'
+      const isDarkMode = localStorage.getItem('theme') === 'dark'
       setIsDark(isDarkMode)
       if (isDarkMode) {
         document.documentElement.classList.add('dark')
