@@ -195,7 +195,7 @@ export default function AdminRecentOrders({ orders = [] }) {
                 </td>
                 <td className="py-3.5 text-right whitespace-nowrap">
                   <Link
-                    href="/don-hang/theo-doi"
+                    href={`/don-hang/theo-doi?code=${encodeURIComponent(order.ma_don_hang?.trim() || '')}`}
                     target="_blank"
                     className="inline-block px-3 py-1 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:text-blue-400 dark:hover:bg-blue-950/60 rounded-lg transition-colors border border-blue-200/60 dark:border-blue-900/60"
                   >

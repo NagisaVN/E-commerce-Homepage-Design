@@ -2781,6 +2781,39 @@
   ],
   "don_hang": [
     {
+      "id": 1793196250705,
+      "ma_don_hang": "DH202610289164",
+      "ma_van_don": "VN-TZ-493872519G",
+      "ten_nguoi_nhan": "ASD",
+      "dien_thoai_nguoi_nhan": "0943592980",
+      "email_nguoi_nhan": "",
+      "dia_chi_nguoi_nhan": "asd, TP. Hồ Chí Minh",
+      "ghi_chu": "",
+      "is_guest": true,
+      "phuong_thuc_thanh_toan": "COD - Tiền mặt khi nhận hàng",
+      "payment_method_code": "COD",
+      "trang_thai": "Chờ xác nhận",
+      "trang_thai_thanh_toan": "Chưa thanh toán",
+      "tong_tien_hang": 5508804,
+      "phi_van_chuyen": 0,
+      "tong_tien_cuoi_cung": 5508804,
+      "san_pham": [
+        {
+          "id": 27,
+          "name": "Lò vi sóng Samsung Thông minh AI ZF2433",
+          "price": 5508804,
+          "originalPrice": 6578412,
+          "quantity": 1,
+          "image": "https://plain-apac-prod-public.komododecks.com/202609/10/VSp8yslKo3SyJItMsoJh/image.jpg",
+          "sku": "SKU-TZ-27",
+          "variant": "Chính hãng TechZone"
+        }
+      ],
+      "is_vat_invoice": false,
+      "vat_info": null,
+      "created_at": "2026-10-28 14:04:10"
+    },
+    {
       "id": 1,
       "id_user": 2,
       "ma_don_hang": " DH20260918001",

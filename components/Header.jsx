@@ -85,6 +85,7 @@ export default function Header() {
     { name: 'Thương hiệu', href: '/thuong-hieu' },
     { name: 'Khuyến mãi', href: '/khuyen-mai' },
     { name: 'Tin tức AI', href: '/tin-tuc' },
+    { name: 'Tra cứu đơn', href: '/don-hang/theo-doi' },
     { name: 'Hỗ trợ', href: '/ho-tro' },
   ]
 

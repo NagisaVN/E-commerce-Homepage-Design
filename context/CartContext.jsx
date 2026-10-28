@@ -7,7 +7,8 @@ const CartContext = createContext({
   cartCount: 0,
   addToCart: () => {},
   removeFromCart: () => {},
-  updateQuantity: () => {}
+  updateQuantity: () => {},
+  clearCart: () => {}
 })
 
 export function CartProvider({ children }) {
@@ -61,8 +62,17 @@ export function CartProvider({ children }) {
     ))
   }
 
+  const clearCart = () => {
+    setCartItems([])
+    try {
+      sessionStorage.removeItem('techzone_cart')
+    } catch (e) {
+      console.error('Không thể xóa sessionStorage giỏ hàng', e)
+    }
+  }
+
   return (
-    <CartContext.Provider value={{ cartItems, cartCount, addToCart, removeFromCart, updateQuantity }}>
+    <CartContext.Provider value={{ cartItems, cartCount, addToCart, removeFromCart, updateQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   )
