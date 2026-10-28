@@ -33,12 +33,26 @@ if (!globalThis.__TECHZONE_ORDERS__) {
   globalThis.__TECHZONE_ORDERS__ = initialDb.don_hang || []
 }
 
-// Sinh mã đơn hàng chuẩn (VD: DH202610284891)
+// Lấy chuỗi ngày giờ theo chuẩn múi giờ Việt Nam (UTC+7)
+function getVietnamNowString() {
+  const now = new Date()
+  const vnTime = new Date(now.getTime() + 7 * 60 * 60 * 1000)
+  const y = vnTime.getUTCFullYear()
+  const m = String(vnTime.getUTCMonth() + 1).padStart(2, '0')
+  const d = String(vnTime.getUTCDate()).padStart(2, '0')
+  const hh = String(vnTime.getUTCHours()).padStart(2, '0')
+  const mm = String(vnTime.getUTCMinutes()).padStart(2, '0')
+  const ss = String(vnTime.getUTCSeconds()).padStart(2, '0')
+  return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+}
+
+// Sinh mã đơn hàng chuẩn theo ngày giờ Việt Nam (VD: DH202610294891)
 function generateOrderCode() {
   const now = new Date()
-  const y = now.getFullYear()
-  const m = String(now.getMonth() + 1).padStart(2, '0')
-  const d = String(now.getDate()).padStart(2, '0')
+  const vnTime = new Date(now.getTime() + 7 * 60 * 60 * 1000)
+  const y = vnTime.getUTCFullYear()
+  const m = String(vnTime.getUTCMonth() + 1).padStart(2, '0')
+  const d = String(vnTime.getUTCDate()).padStart(2, '0')
   const rand = Math.floor(1000 + Math.random() * 9000)
   return `DH${y}${m}${d}${rand}`
 }
@@ -122,7 +136,7 @@ export async function POST(request) {
 
     const orderCode = existingOrderCode || generateOrderCode()
     const trackingCode = existingTrackingCode || generateTrackingCode()
-    const nowStr = existingCreatedAt || new Date().toISOString().replace('T', ' ').substring(0, 19)
+    const nowStr = existingCreatedAt || getVietnamNowString()
 
     // Tạo địa chỉ đầy đủ
     const fullAddress = [

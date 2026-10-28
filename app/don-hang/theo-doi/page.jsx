@@ -100,27 +100,70 @@ function OrderTrackingContent() {
     window.location.href = `/don-hang/theo-doi?code=${encodeURIComponent(searchCode.trim())}`
   }
 
-  // Lộ trình đơn hàng mô phỏng theo chuẩn bưu cục
-  const trackingEvents = [
-    {
-      time: '07:30',
-      date: 'Hôm nay',
-      status: 'Đơn hàng đã được xác nhận thành công trên hệ thống',
-      subtext: `Nhân viên kho TechZone đang tiến hành đóng gói tiêu chuẩn chống va đập và dán tem bảo hành điện tử.`,
-      isCurrent: true,
-      color: 'text-emerald-600 dark:text-emerald-400',
-      dotColor: 'bg-emerald-500 ring-4 ring-emerald-100 dark:ring-emerald-950',
-    },
-    {
-      time: '07:05',
-      date: 'Hôm nay',
-      status: 'Tiếp nhận thông tin đặt hàng từ khách hàng',
-      subtext: `Mã đơn hàng #${currentOrder?.ma_don_hang} đã được tạo tự động (${currentOrder?.phuong_thuc_thanh_toan}).`,
-      isCurrent: false,
-      color: 'text-gray-500 dark:text-gray-400',
-      dotColor: 'bg-gray-300 dark:bg-gray-600',
-    },
-  ]
+  // Lấy thời gian thực tế của đơn hàng theo giờ địa phương Việt Nam
+  const getOrderTimeline = (order) => {
+    let orderDate = new Date()
+
+    if (order?.id && typeof order.id === 'number' && order.id > 1700000000000) {
+      // order.id là timestamp Date.now() chính xác theo máy của người dùng
+      orderDate = new Date(order.id)
+    } else if (order?.created_at) {
+      const cleanStr = String(order.created_at).trim()
+      const match = cleanStr.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::(\d{2}))?/)
+      if (match) {
+        orderDate = new Date(
+          Number(match[1]),
+          Number(match[2]) - 1,
+          Number(match[3]),
+          Number(match[4]),
+          Number(match[5]),
+          Number(match[6] || 0)
+        )
+      } else {
+        const parsed = new Date(cleanStr)
+        if (!isNaN(parsed.getTime())) orderDate = parsed
+      }
+    }
+
+    const pad = (n) => String(n).padStart(2, '0')
+    const orderTime = `${pad(orderDate.getHours())}:${pad(orderDate.getMinutes())}`
+
+    // Mốc xác nhận: 1-2 phút sau khi khách đặt hàng
+    const confirmDate = new Date(orderDate.getTime() + 1 * 60 * 1000)
+    const confirmTime = `${pad(confirmDate.getHours())}:${pad(confirmDate.getMinutes())}`
+
+    // Nhãn ngày
+    const now = new Date()
+    const isToday =
+      orderDate.getDate() === now.getDate() &&
+      orderDate.getMonth() === now.getMonth() &&
+      orderDate.getFullYear() === now.getFullYear()
+
+    const dateLabel = isToday ? 'Hôm nay' : `${pad(orderDate.getDate())}/${pad(orderDate.getMonth() + 1)}`
+
+    return [
+      {
+        time: confirmTime,
+        date: dateLabel,
+        status: 'Đơn hàng đã được xác nhận thành công trên hệ thống',
+        subtext: 'Nhân viên kho TechZone đang tiến hành đóng gói tiêu chuẩn chống va đập và dán tem bảo hành điện tử.',
+        isCurrent: true,
+        color: 'text-emerald-600 dark:text-emerald-400',
+        dotColor: 'bg-emerald-500 ring-4 ring-emerald-100 dark:ring-emerald-950',
+      },
+      {
+        time: orderTime,
+        date: dateLabel,
+        status: 'Tiếp nhận thông tin đặt hàng từ khách hàng',
+        subtext: `Mã đơn hàng #${order?.ma_don_hang || 'TECHZONE'} đã được tạo tự động (${order?.phuong_thuc_thanh_toan || 'COD'}).`,
+        isCurrent: false,
+        color: 'text-gray-500 dark:text-gray-400',
+        dotColor: 'bg-gray-300 dark:bg-gray-600',
+      },
+    ]
+  }
+
+  const trackingEvents = getOrderTimeline(currentOrder)
 
   const products = currentOrder?.san_pham || []
 
