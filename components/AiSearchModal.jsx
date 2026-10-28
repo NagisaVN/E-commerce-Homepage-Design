@@ -104,7 +104,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-blue-100 overflow-hidden flex flex-col max-h-[88vh] transition-all"
+        className="relative w-full max-w-4xl bg-white dark:bg-gray-900 rounded-3xl shadow-2xl border border-blue-100 dark:border-gray-800 overflow-hidden flex flex-col max-h-[88vh] transition-all"
       >
         {/* Header với hiệu ứng AI Gradient */}
         <div className="bg-gradient-to-r from-brand-dark via-brand to-indigo-700 p-5 sm:p-6 text-white relative overflow-hidden flex-shrink-0">
@@ -149,7 +149,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Hỏi AI: Tìm tủ lạnh cho gia đình 4 người dưới 10 triệu..."
-                className="w-full bg-white text-gray-800 text-sm sm:text-base font-body pl-4 pr-28 py-3.5 rounded-2xl shadow-inner outline-none border-2 border-transparent focus:border-amber-400 transition-all placeholder:text-gray-400"
+                className="w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-white text-sm sm:text-base font-body pl-4 pr-28 py-3.5 rounded-2xl shadow-inner outline-none border-2 border-transparent focus:border-amber-400 transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500"
               />
               <button
                 type="submit"
@@ -202,7 +202,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
           {loading && (
             <div className="py-12 flex flex-col items-center justify-center gap-4 text-center">
               <div className="relative">
-                <div className="w-16 h-16 rounded-2xl bg-blue-50 border-2 border-brand-accent/40 flex items-center justify-center animate-pulse">
+                <div className="w-16 h-16 rounded-2xl bg-blue-50 dark:bg-blue-950/40 border-2 border-brand-accent/40 flex items-center justify-center animate-pulse">
                   <svg viewBox="0 0 24 24" className="w-8 h-8 text-brand animate-spin" fill="none">
                     <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" strokeDasharray="16" />
                   </svg>
@@ -210,10 +210,10 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                 <div className="absolute -bottom-1 -right-1 text-lg">✨</div>
               </div>
               <div>
-                <p className="font-display font-bold text-gray-800 text-base">
+                <p className="font-display font-bold text-gray-800 dark:text-white text-base">
                   TechZone AI đang xử lý yêu cầu...
                 </p>
-                <p className="text-xs text-gray-500 font-body mt-1">
+                <p className="text-xs text-gray-500 dark:text-gray-400 font-body mt-1">
                   Đang đối soát thông số 100 sản phẩm, mức giá và công nghệ tiết kiệm điện tối ưu
                 </p>
               </div>
@@ -223,18 +223,18 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
           {!loading && result && (
             <div className="space-y-6">
               {/* Thẻ tư vấn tổng hợp từ AI */}
-              <div className="bg-gradient-to-br from-blue-50 via-indigo-50/60 to-brand-pale rounded-2xl p-4 sm:p-5 border border-blue-200">
-                <div className="flex items-center gap-2 mb-2 text-brand-dark font-display font-bold text-sm">
+              <div className="bg-gradient-to-br from-blue-50 via-indigo-50/60 to-brand-pale dark:from-gray-800 dark:via-blue-950/30 dark:to-gray-800 rounded-2xl p-4 sm:p-5 border border-blue-200 dark:border-blue-900/40">
+                <div className="flex items-center gap-2 mb-2 text-brand-dark dark:text-blue-300 font-display font-bold text-sm">
                   <span className="text-lg">🤖</span>
                   <span>Kết luận & Lời khuyên từ TechZone AI</span>
                 </div>
 
-                <p className="text-sm text-gray-700 font-body leading-relaxed mb-3">
+                <p className="text-sm text-gray-700 dark:text-gray-300 font-body leading-relaxed mb-3">
                   {result.summary}
                 </p>
 
                 {result.advice && (
-                  <div className="bg-white/80 rounded-xl p-3 border border-blue-100 text-xs text-gray-700 font-body mb-3">
+                  <div className="bg-white/80 dark:bg-gray-900/80 rounded-xl p-3 border border-blue-100 dark:border-blue-900/30 text-xs text-gray-700 dark:text-gray-300 font-body mb-3">
                     <p dangerouslySetInnerHTML={{ __html: result.advice.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
                   </div>
                 )}
@@ -242,11 +242,11 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                 {/* Các tiêu chí mà AI đã nhận diện */}
                 {result.criteriaTags && result.criteriaTags.length > 0 && (
                   <div className="flex flex-wrap gap-1.5 pt-1">
-                    <span className="text-[11px] text-gray-500 font-medium self-center mr-1">Tiêu chí bóc tách:</span>
+                    <span className="text-[11px] text-gray-500 dark:text-gray-400 font-medium self-center mr-1">Tiêu chí bóc tách:</span>
                     {result.criteriaTags.map((tag, i) => (
                       <span
                         key={i}
-                        className="text-xs bg-white text-brand border border-blue-200 px-2.5 py-0.5 rounded-full font-medium shadow-xs"
+                        className="text-xs bg-white dark:bg-gray-800 text-brand dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-2.5 py-0.5 rounded-full font-medium shadow-xs"
                       >
                         {tag}
                       </span>
@@ -258,12 +258,12 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
               {/* Danh sách sản phẩm được AI đề xuất */}
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-display font-bold text-gray-900 text-base flex items-center gap-2">
+                  <h3 className="font-display font-bold text-gray-900 dark:text-white text-base flex items-center gap-2">
                     Top {result.products.length} Lựa Chọn Phù Hợp Nhất
                   </h3>
                   <button
                     onClick={handleViewFullPage}
-                    className="text-xs font-semibold text-brand hover:underline font-body"
+                    className="text-xs font-semibold text-brand dark:text-blue-400 hover:underline font-body"
                   >
                     Mở trang đầy đủ →
                   </button>
@@ -273,14 +273,14 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                   {result.products.map((product) => (
                     <div
                       key={product.id}
-                      className="group bg-white rounded-2xl border border-gray-100 p-3.5 flex gap-3.5 hover:border-brand-accent hover:shadow-lg transition-all duration-200 relative overflow-hidden"
+                      className="group bg-white dark:bg-gray-850 dark:bg-gray-800/80 rounded-2xl border border-gray-100 dark:border-gray-700/60 p-3.5 flex gap-3.5 hover:border-brand-accent dark:hover:border-blue-500 hover:shadow-lg transition-all duration-200 relative overflow-hidden"
                     >
                       {/* Badge Match Rate AI */}
-                      <div className="absolute top-2 right-2 bg-green-50 border border-green-200 text-green-700 text-[11px] font-bold font-display px-2 py-0.5 rounded-full z-10">
+                      <div className="absolute top-2 right-2 bg-green-50 dark:bg-green-950/60 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300 text-[11px] font-bold font-display px-2 py-0.5 rounded-full z-10">
                         {product.aiMatchPercent}% Phù hợp
                       </div>
 
-                      <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-gray-50 flex-shrink-0 border border-gray-100">
+                      <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-700/50 flex-shrink-0 border border-gray-100 dark:border-gray-700">
                         <img
                           src={product.image}
                           alt={product.name}
@@ -290,13 +290,13 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
 
                       <div className="flex-1 flex flex-col justify-between min-w-0 pr-12">
                         <div>
-                          <p className="text-[11px] font-semibold text-brand uppercase tracking-wider font-display">
+                          <p className="text-[11px] font-semibold text-brand dark:text-blue-400 uppercase tracking-wider font-display">
                             {product.brand}
                           </p>
                           <Link
                             href={`/san-pham/${product.slug || product.id}`}
                             onClick={onClose}
-                            className="font-display font-bold text-sm text-gray-900 hover:text-brand transition-colors line-clamp-2 leading-snug mt-0.5"
+                            className="font-display font-bold text-sm text-gray-900 dark:text-white hover:text-brand dark:hover:text-blue-400 transition-colors line-clamp-2 leading-snug mt-0.5"
                           >
                             {product.name}
                           </Link>
@@ -307,7 +307,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                               {product.aiReasons.map((reason, rIdx) => (
                                 <span
                                   key={rIdx}
-                                  className="text-[10px] bg-brand-pale text-brand-dark px-1.5 py-0.5 rounded font-body"
+                                  className="text-[10px] bg-brand-pale dark:bg-blue-950/50 text-brand-dark dark:text-blue-300 px-1.5 py-0.5 rounded font-body"
                                 >
                                   ✓ {reason}
                                 </span>
@@ -316,13 +316,13 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                           )}
                         </div>
 
-                        <div className="mt-3 flex items-baseline justify-between pt-2 border-t border-gray-50">
+                        <div className="mt-3 flex items-baseline justify-between pt-2 border-t border-gray-50 dark:border-gray-700/50">
                           <div>
-                            <span className="font-display font-bold text-base text-brand">
+                            <span className="font-display font-bold text-base text-brand dark:text-blue-400">
                               {product.price.toLocaleString('vi-VN')}₫
                             </span>
                             {product.original > product.price && (
-                              <span className="text-xs text-gray-400 line-through ml-2 font-body">
+                              <span className="text-xs text-gray-400 dark:text-gray-500 line-through ml-2 font-body">
                                 {product.original.toLocaleString('vi-VN')}₫
                               </span>
                             )}
@@ -342,7 +342,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                             <Link
                               href={`/san-pham/${product.slug || product.id}`}
                               onClick={onClose}
-                              className="text-xs font-display font-semibold px-2 py-1.5 rounded-lg border border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors"
+                              className="text-xs font-display font-semibold px-2 py-1.5 rounded-lg border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                             >
                               Xem
                             </Link>
@@ -358,13 +358,13 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
 
           {!loading && !result && (
             <div className="py-10 text-center">
-              <div className="w-14 h-14 bg-blue-50 text-brand rounded-2xl flex items-center justify-center mx-auto mb-3 text-2xl">
+              <div className="w-14 h-14 bg-blue-50 dark:bg-gray-800 text-brand dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-3 text-2xl">
                 💡
               </div>
-              <h4 className="font-display font-bold text-gray-800 text-base mb-1">
+              <h4 className="font-display font-bold text-gray-800 dark:text-white text-base mb-1">
                 Tìm kiếm thông minh hỗ trợ bởi AI
               </h4>
-              <p className="text-sm text-gray-500 font-body max-w-md mx-auto mb-6">
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-body max-w-md mx-auto mb-6">
                 Bạn không cần nhớ chính xác mã sản phẩm. Hãy nói cho AI biết bạn cần mua thiết bị gì, cho ai dùng, diện tích phòng bao nhiêu và ngân sách tối đa!
               </p>
               <div className="flex flex-wrap justify-center gap-2 max-w-lg mx-auto">
@@ -372,7 +372,7 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
                   <button
                     key={idx}
                     onClick={() => handlePromptClick(p.query)}
-                    className="text-xs bg-gray-50 hover:bg-brand-pale hover:text-brand border border-gray-200 rounded-xl px-3 py-2 font-body transition-colors"
+                    className="text-xs bg-gray-50 dark:bg-gray-800 hover:bg-brand-pale dark:hover:bg-gray-700 hover:text-brand dark:hover:text-blue-300 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-xl px-3 py-2 font-body transition-colors"
                   >
                     {p.icon} {p.query}
                   </button>
@@ -383,16 +383,16 @@ export default function AiSearchModal({ isOpen, onClose, initialQuery = '' }) {
         </div>
 
         {/* Footer của Modal */}
-        <div className="bg-gray-50 border-t border-gray-100 px-6 py-3 flex items-center justify-between text-xs text-gray-500 font-body flex-shrink-0">
+        <div className="bg-gray-50 dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 px-6 py-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 font-body flex-shrink-0">
           <div className="flex items-center gap-3">
-            <span>Bấm <kbd className="px-1.5 py-0.5 bg-white border border-gray-200 rounded font-mono text-[11px]">ESC</kbd> để đóng</span>
+            <span>Bấm <kbd className="px-1.5 py-0.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded font-mono text-[11px]">ESC</kbd> để đóng</span>
             <span>&middot;</span>
             <span>Hỗ trợ 100 sản phẩm điện máy trong kho TechZone</span>
           </div>
           {result && (
             <button
               onClick={handleViewFullPage}
-              className="font-semibold text-brand hover:underline font-display"
+              className="font-semibold text-brand dark:text-blue-400 hover:underline font-display"
             >
               Xem trang kết quả đầy đủ →
             </button>

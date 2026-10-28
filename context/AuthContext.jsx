@@ -19,12 +19,22 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const [isInitialized, setIsInitialized] = useState(false)
 
-  // Đọc thông tin user từ localStorage khi mount
+  // Đọc thông tin user từ localStorage khi mount (mặc định Admin cho môi trường demo/dev)
   useEffect(() => {
     try {
       const stored = localStorage.getItem('techzone_user')
       if (stored) {
         setUser(JSON.parse(stored))
+      } else {
+        const defaultAdmin = {
+          id: 'adm_01',
+          name: 'Quản trị viên Hệ thống',
+          email: 'admin@techzone.vn',
+          role: 'admin',
+          avatar: 'AD',
+          lastLogin: new Date().toISOString(),
+        }
+        setUser(defaultAdmin)
       }
     } catch (err) {
       console.error('Không thể đọc dữ liệu phiên đăng nhập:', err)

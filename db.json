@@ -30,7 +30,7 @@
   "banner": [
     {
       "id": 1,
-      "url": " https://plain-apac-prod-public.komododecks.com/202610/27/kzEgOw7F3h1l0pZ2dCsw/image.jpg",
+      "url": " /images/banners/banner-tet-thiet-bi-thong-minh.jpg",
       "link": " /khuyen-mai",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 1,
@@ -48,8 +48,8 @@
     },
     {
       "id": 2,
-      "url": " https://plain-apac-prod-public.komododecks.com/202610/27/URo17OpLgFGPaoivDH5n/image.jpg",
-      "link": " /danh-muc/may-lanh",
+      "url": " /images/banners/banner-may-lanh-inverter.jpg",
+      "link": " /danh-muc-san-pham/may-lanh",
       "vi_tri": "Home-Mid",
       "thu_tu_hien_thi": 2,
       "trang_thai": 0,
@@ -58,8 +58,8 @@
     },
     {
       "id": 3,
-      "url": " https://plain-apac-prod-public.komododecks.com/202610/27/ITPs5CHtcjR33jUNtHPY/image.jpg",
-      "link": " /danh-muc/may-lanh",
+      "url": " /images/banners/banner-may-lanh-inverter.jpg",
+      "link": " /danh-muc-san-pham/may-lanh",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 2,
       "trang_thai": 1,
@@ -76,8 +76,8 @@
     },
     {
       "id": 4,
-      "url": " https://plain-apac-prod-public.komododecks.com/202610/27/URo17OpLgFGPaoivDH5n/image.jpg",
-      "link": " /danh-muc/may-lanh",
+      "url": " /images/banners/banner-tu-lanh-ai.jpg",
+      "link": " /danh-muc-san-pham/tu-lanh",
       "vi_tri": "Home-Top",
       "thu_tu_hien_thi": 3,
       "trang_thai": 1,

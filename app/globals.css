@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-brand: #1D4ED8;
   --color-brand-dark: #1E3A8A;
@@ -19,6 +21,41 @@ body {
 body {
   font-family: var(--font-inter), Inter, sans-serif;
   color: #111827;
+}
+
+html.dark body {
+  color: #F9FAFB;
+  background-color: #030712;
+}
+
+/* ============================================================
+   TỐI ƯU TƯƠNG PHẢN CHỮ KHI BẬT CHẾ ĐỘ TỐI (DARK MODE HIGH CONTRAST)
+   - Đảm bảo các đoạn văn, tiêu đề mang class text-gray-* luôn rõ nét,
+     không bị chìm vào nền tối
+   ============================================================ */
+html.dark {
+  color-scheme: dark;
+}
+
+/* Tự động nâng tương phản cho các màu chữ tối khi ở giao diện dark nếu chưa có dark:text */
+html.dark :where(.text-gray-900, .text-black):not([class*="dark:text-"]):not([class*="bg-white"]):not([class*="bg-amber-100"]):not([class*="bg-yellow-"]) {
+  color: #F9FAFB;
+}
+
+html.dark :where(.text-gray-800):not([class*="dark:text-"]):not([class*="bg-white"]):not([class*="bg-amber-100"]) {
+  color: #F3F4F6;
+}
+
+html.dark :where(.text-gray-700):not([class*="dark:text-"]):not([class*="bg-white"]) {
+  color: #E5E7EB;
+}
+
+html.dark :where(.text-gray-600):not([class*="dark:text-"]):not([class*="bg-white"]) {
+  color: #D1D5DB;
+}
+
+html.dark :where(.text-brand-dark):not([class*="dark:text-"]) {
+  color: #93C5FD;
 }
 
 @keyframes fadeSlide {

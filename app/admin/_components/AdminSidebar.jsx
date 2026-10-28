@@ -126,25 +126,26 @@ export default function AdminSidebar() {
         `}
       >
         {/* Brand Header */}
-        <div className="flex items-center justify-between h-16 px-4 border-b border-gray-100 dark:border-gray-800">
-          <Link href="/admin" className="flex items-center gap-3 overflow-hidden">
-            <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 shadow-md shadow-blue-500/20 text-white font-bold text-lg">
+        <div className={`flex items-center h-16 border-b border-gray-100 dark:border-gray-800 px-4 ${isExpanded ? 'justify-between' : 'justify-center'}`}>
+          <Link href="/admin" className="flex items-center gap-3 min-w-0 flex-1 overflow-hidden group" title="Trang chủ Quản trị TechZone">
+            <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 shadow-md shadow-blue-500/20 text-white font-bold text-lg group-hover:scale-105 transition-transform">
               TZ
             </div>
             {isExpanded && (
-              <div className="flex flex-col">
-                <span className="font-extrabold text-gray-900 dark:text-white tracking-tight leading-tight">
-                  TechZone <span className="text-blue-600 text-xs px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/80 ml-1">Admin</span>
+              <div className="flex flex-col min-w-0 flex-1 overflow-hidden">
+                <span className="font-extrabold text-gray-900 dark:text-white tracking-tight leading-tight truncate text-sm">
+                  TechZone <span className="text-blue-600 text-xs px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/80 ml-1 font-bold">Admin</span>
                 </span>
-                <span className="text-[11px] text-gray-400 font-medium">Hệ thống quản trị v2.0</span>
+                <span className="text-[11px] text-gray-400 font-medium truncate">Hệ thống quản trị v2.0</span>
               </div>
             )}
           </Link>
 
-          {/* Close on mobile */}
+          {/* Close on mobile only */}
           <button
             onClick={closeMobileSidebar}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 lg:hidden"
+            type="button"
+            className="flex-shrink-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 lg:hidden cursor-pointer rounded-lg"
             title="Đóng menu"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,43 +209,35 @@ export default function AdminSidebar() {
           ))}
         </div>
 
-        {/* Footer info & Collapse Toggle */}
-        <div className="p-3 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50">
+        {/* Footer: Thông tin Quản Trị Viên (Độc lập hoàn toàn, không có nút thu gọn đè lên) */}
+        <div className="p-3 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex-shrink-0">
           {isExpanded ? (
-            <div className="flex items-center justify-between p-2 rounded-xl bg-white dark:bg-gray-800 border border-gray-200/60 dark:border-gray-700/60">
-              <div className="flex items-center gap-2.5 min-w-0">
-                <div className="relative">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold flex items-center justify-center text-xs">
-                    AD
-                  </div>
-                  <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
+            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200/60 dark:border-gray-700/60 shadow-xs">
+              <div className="relative flex-shrink-0">
+                <div className="w-9 h-9 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-bold flex items-center justify-center text-xs shadow-xs">
+                  AD
                 </div>
-                <div className="min-w-0">
-                  <p className="text-xs font-semibold text-gray-800 dark:text-white truncate">Quản Trị Viên</p>
-                  <p className="text-[10px] text-gray-400 truncate">admin@techzone.vn</p>
-                </div>
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
               </div>
-              <button
-                onClick={toggleSidebar}
-                className="p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 hidden lg:block"
-                title="Thu nhỏ sidebar"
-              >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
-                </svg>
-              </button>
+              <div className="min-w-0 flex-1 overflow-hidden">
+                <p className="text-xs font-bold text-gray-800 dark:text-white truncate">Quản Trị Viên</p>
+                <p className="text-[11px] text-gray-400 truncate">admin@techzone.vn</p>
+              </div>
             </div>
           ) : (
-            <div className="flex justify-center">
-              <button
-                onClick={toggleSidebar}
-                className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 hidden lg:block"
-                title="Mở rộng sidebar"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                </svg>
-              </button>
+            /* Khi thu gọn: Hiển thị avatar Quản trị viên AD căn giữa gọn gàng, có tooltip */
+            <div className="flex justify-center py-1">
+              <div className="relative group cursor-pointer" title="Quản Trị Viên (admin@techzone.vn)">
+                <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-bold flex items-center justify-center text-xs shadow-xs hover:ring-2 hover:ring-blue-500 transition-all">
+                  AD
+                </div>
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-gray-800"></span>
+
+                {/* Tooltip khi hover trong trạng thái thu gọn */}
+                <div className="absolute left-full ml-3 bottom-0 px-2.5 py-1.5 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50 shadow-xl">
+                  Quản Trị Viên (admin@techzone.vn)
+                </div>
+              </div>
             </div>
           )}
         </div>

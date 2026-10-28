@@ -23,8 +23,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="vi" className={`${outfit.variable} ${inter.variable}`}>
-      <body className="min-h-screen bg-white">
+    <html lang="vi" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
+      <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{const t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}}catch(e){}})()`,
+          }}
+        />
         <AuthProvider>
           <CartProvider>
             <LayoutShell>{children}</LayoutShell>

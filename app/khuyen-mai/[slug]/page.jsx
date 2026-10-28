@@ -47,7 +47,7 @@ export default async function PromotionDetailPage({ params }) {
   const { promo, otherPromotions } = result
 
   return (
-    <div className="bg-white min-h-screen py-14">
+    <div className="bg-white dark:bg-gray-950 min-h-screen py-14">
       <div className="mx-auto max-w-4xl px-4 sm:px-8">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs font-body text-gray-400 mb-6">
@@ -55,7 +55,7 @@ export default async function PromotionDetailPage({ params }) {
           <span>/</span>
           <Link href="/khuyen-mai" className="hover:text-brand transition-colors">Khuyến mãi</Link>
           <span>/</span>
-          <span className="text-gray-600 font-medium truncate max-w-xs">{promo.tieu_de?.trim()}</span>
+          <span className="text-gray-600 dark:text-gray-300 font-medium truncate max-w-xs">{promo.tieu_de?.trim()}</span>
         </nav>
 
         {/* Tiêu đề & meta */}
@@ -66,7 +66,7 @@ export default async function PromotionDetailPage({ params }) {
                 Ưu đãi Hot
               </span>
             )}
-            <span className="text-xs text-gray-500 font-body flex items-center gap-1.5">
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-body flex items-center gap-1.5">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                 <line x1="16" y1="2" x2="16" y2="6" />
@@ -77,12 +77,12 @@ export default async function PromotionDetailPage({ params }) {
             </span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 font-display leading-tight">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white font-display leading-tight">
             {promo.tieu_de?.trim()}
           </h1>
 
           {promo.mo_ta_ngan && (
-            <p className="text-base sm:text-lg text-gray-600 font-body leading-relaxed border-l-4 border-brand pl-4 py-1 italic bg-blue-50/40 rounded-r-lg">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 font-body leading-relaxed border-l-4 border-brand pl-4 py-1 italic bg-blue-50/40 dark:bg-blue-950/20 rounded-r-lg">
               {promo.mo_ta_ngan.trim()}
             </p>
           )}
@@ -90,7 +90,7 @@ export default async function PromotionDetailPage({ params }) {
 
         {/* Ảnh bài viết */}
         {promo.hinh && (
-          <div className="mb-10 overflow-hidden rounded-2xl shadow-sm border border-gray-100 aspect-[16/9] bg-gray-50">
+          <div className="mb-10 overflow-hidden rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 aspect-[16/9] bg-gray-50 dark:bg-gray-800">
             <img
               src={promo.hinh.trim()}
               alt={promo.tieu_de?.trim()}
@@ -100,7 +100,7 @@ export default async function PromotionDetailPage({ params }) {
         )}
 
         {/* Nội dung chi tiết */}
-        <article className="prose prose-blue max-w-none font-body text-gray-700 leading-relaxed mb-12">
+        <article className="prose prose-blue dark:prose-invert max-w-none font-body text-gray-700 dark:text-gray-300 leading-relaxed mb-12">
           {promo.noi_dung ? (
             <div dangerouslySetInnerHTML={{ __html: promo.noi_dung }} />
           ) : (
@@ -109,10 +109,10 @@ export default async function PromotionDetailPage({ params }) {
         </article>
 
         {/* Nút hành động */}
-        <div className="flex flex-wrap gap-4 py-6 border-t border-b border-gray-100 mb-12 justify-between items-center">
+        <div className="flex flex-wrap gap-4 py-6 border-t border-b border-gray-100 dark:border-gray-800 mb-12 justify-between items-center">
           <Link
             href="/khuyen-mai"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-brand transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-brand transition-colors"
           >
             ← Quay lại danh sách khuyến mãi
           </Link>
@@ -127,7 +127,7 @@ export default async function PromotionDetailPage({ params }) {
         {/* Các khuyến mãi khác */}
         {otherPromotions.length > 0 && (
           <div>
-            <h2 className="text-xl font-bold text-gray-900 font-display mb-6">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white font-display mb-6">
               Các chương trình ưu đãi khác
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -135,9 +135,9 @@ export default async function PromotionDetailPage({ params }) {
                 <Link
                   key={item.id}
                   href={`/khuyen-mai/${item.slug?.trim()}`}
-                  className="group block overflow-hidden rounded-xl border border-gray-100 hover:shadow-lg transition-all"
+                  className="group block overflow-hidden rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 hover:shadow-lg transition-all"
                 >
-                  <div className="aspect-[16/9] overflow-hidden bg-gray-50">
+                  <div className="aspect-[16/9] overflow-hidden bg-gray-50 dark:bg-gray-800">
                     <img
                       src={item.hinh?.trim()}
                       alt={item.tieu_de?.trim()}
@@ -145,7 +145,7 @@ export default async function PromotionDetailPage({ params }) {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-brand transition-colors font-display">
+                    <h3 className="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-brand transition-colors font-display">
                       {item.tieu_de?.trim()}
                     </h3>
                   </div>

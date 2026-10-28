@@ -89,7 +89,7 @@ function AiExplainButton({ text }) {
     <div className="relative inline-block" ref={ref}>
       <button
         onClick={() => setOpen(o => !o)}
-        className="ml-1.5 inline-flex items-center gap-1 bg-brand-pale border border-brand-light text-brand text-[11px] font-semibold font-display px-2 py-0.5 rounded-full hover:bg-brand-light transition-colors"
+        className="ml-1.5 inline-flex items-center gap-1 bg-brand-pale dark:bg-gray-800 border border-brand-light dark:border-gray-700 text-brand dark:text-blue-400 text-[11px] font-semibold font-display px-2 py-0.5 rounded-full hover:bg-brand-light dark:hover:bg-gray-700 transition-colors"
       >
         <svg viewBox="0 0 14 14" className="w-3 h-3" fill="none">
           <path d="M7 1.5l1 3h3l-2.4 1.8.9 2.7-2.5-1.8-2.5 1.8.9-2.7L3 4.5h3z" fill="#1D4ED8" />
@@ -99,18 +99,18 @@ function AiExplainButton({ text }) {
       </button>
 
       {open && (
-        <div className="absolute z-50 bottom-full left-0 mb-2 w-72 bg-white rounded-2xl shadow-2xl shadow-blue-100 border border-brand-light p-4">
-          <div className="absolute -bottom-1.5 left-4 w-3 h-3 bg-white border-r border-b border-brand-light rotate-45" />
+        <div className="absolute z-50 bottom-full left-0 mb-2 w-72 bg-white dark:bg-gray-900 rounded-2xl shadow-2xl shadow-blue-100 dark:shadow-black/50 border border-brand-light dark:border-gray-800 p-4">
+          <div className="absolute -bottom-1.5 left-4 w-3 h-3 bg-white dark:bg-gray-900 border-r border-b border-brand-light dark:border-gray-800 rotate-45" />
           <div className="flex items-start gap-2.5">
-            <div className="flex-shrink-0 w-7 h-7 bg-brand-light rounded-lg flex items-center justify-center mt-0.5">
+            <div className="flex-shrink-0 w-7 h-7 bg-brand-light dark:bg-blue-950 rounded-lg flex items-center justify-center mt-0.5">
               <svg viewBox="0 0 16 16" className="w-4 h-4" fill="none">
                 <path d="M8 1.5l1.2 3.6H13l-2.9 2.1 1.1 3.4L8 8.8l-3.2 1.8 1.1-3.4L3 5.1h3.8z" fill="#1D4ED8" />
                 <circle cx="13" cy="3" r="1.2" fill="#60A5FA" />
               </svg>
             </div>
             <div>
-              <p className="text-xs font-bold text-brand-dark font-display mb-1.5">Giải thích AI</p>
-              <p className="text-xs text-gray-600 font-body leading-relaxed">{text}</p>
+              <p className="text-xs font-bold text-brand-dark dark:text-blue-300 font-display mb-1.5">Giải thích AI</p>
+              <p className="text-xs text-gray-600 dark:text-gray-300 font-body leading-relaxed">{text}</p>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ function BrandLogo({ name }) {
   const brandName = name?.trim() || 'TechZone'
   return (
     <svg viewBox="0 0 110 30" className="h-6 w-auto">
-      <text x="2" y="24" fontFamily="Outfit, sans-serif" fontWeight="700" fontSize="24" fill="#1428A0">{brandName}</text>
+      <text x="2" y="24" fontFamily="Outfit, sans-serif" fontWeight="700" fontSize="24" className="fill-[#1428A0] dark:fill-blue-400">{brandName}</text>
     </svg>
   )
 }
@@ -225,26 +225,26 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
   const positiveRate = Math.min(98, Math.max(75, Math.round(productRating * 20)))
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors">
       {/* Breadcrumb */}
-      <div className="border-b border-gray-100 bg-brand-pale">
+      <div className="border-b border-gray-100 dark:border-gray-800 bg-brand-pale dark:bg-gray-900/60 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3">
-          <nav className="flex items-center gap-2 text-xs font-body text-gray-400">
-            <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
+          <nav className="flex items-center gap-2 text-xs font-body text-gray-400 dark:text-gray-500">
+            <Link href="/" className="hover:text-brand dark:hover:text-blue-400 transition-colors">Trang chủ</Link>
             <span>/</span>
             {danhMuc?.slug ? (
-              <Link href={`/danh-muc-san-pham/${danhMuc.slug.trim()}`} className="hover:text-brand transition-colors">{categoryName}</Link>
+              <Link href={`/danh-muc-san-pham/${danhMuc.slug.trim()}`} className="hover:text-brand dark:hover:text-blue-400 transition-colors">{categoryName}</Link>
             ) : (
-              <span className="hover:text-brand cursor-po inter transition-colors">{categoryName}</span>
+              <span className="hover:text-brand dark:hover:text-blue-400 cursor-pointer transition-colors">{categoryName}</span>
             )}
             <span>/</span>
             {thuongHieu?.slug ? (
-              <Link href={`/thuong-hieu/${thuongHieu.slug.trim()}`} className="hover:text-brand transition-colors">{brandName}</Link>
+              <Link href={`/thuong-hieu/${thuongHieu.slug.trim()}`} className="hover:text-brand dark:hover:text-blue-400 transition-colors">{brandName}</Link>
             ) : (
-              <span className="hover:text-brand cursor-pointer transition-colors">{brandName}</span>
+              <span className="hover:text-brand dark:hover:text-blue-400 cursor-pointer transition-colors">{brandName}</span>
             )}
             <span>/</span>
-            <span className="text-gray-600 font-medium truncate max-w-[200px]">{productName}</span>
+            <span className="text-gray-600 dark:text-gray-300 font-medium truncate max-w-[200px]">{productName}</span>
           </nav>
         </div>
       </div>
@@ -254,7 +254,7 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
 
           {/* Left: Gallery */}
           <div className="flex flex-col gap-4">
-            <div className="relative aspect-square bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 group">
+            <div className="relative aspect-square bg-gray-50 dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 group">
               <img
                 src={images[activeImage]}
                 alt={productName}
@@ -273,8 +273,8 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                   key={i}
                   onClick={() => setActiveImage(i)}
                   className={`aspect-square rounded-xl overflow-hidden border-2 transition-all duration-200 ${activeImage === i
-                      ? 'border-brand shadow-md shadow-blue-100 scale-95'
-                      : 'border-gray-100 hover:border-brand-accent hover:scale-95'
+                      ? 'border-brand shadow-md shadow-blue-100 dark:shadow-blue-950/50 scale-95'
+                      : 'border-gray-100 dark:border-gray-800 hover:border-brand-accent hover:scale-95'
                     }`}
                 >
                   <img src={src} alt="" className="w-full h-full object-cover" />
@@ -284,10 +284,10 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
 
             <div className="grid grid-cols-3 gap-2 mt-2">
               {policyBadges.map(b => (
-                <div key={b.label} className="bg-brand-pale rounded-xl p-3 text-center border border-brand-light">
+                <div key={b.label} className="bg-brand-pale dark:bg-gray-900 rounded-xl p-3 text-center border border-brand-light dark:border-gray-800">
                   <div className="text-xl mb-1">{b.icon}</div>
-                  <p className="text-xs font-semibold font-display text-gray-800">{b.label}</p>
-                  <p className="text-[11px] text-gray-400 font-body">{b.sub}</p>
+                  <p className="text-xs font-semibold font-display text-gray-800 dark:text-gray-200">{b.label}</p>
+                  <p className="text-[11px] text-gray-400 dark:text-gray-400 font-body">{b.sub}</p>
                 </div>
               ))}
             </div>
@@ -297,13 +297,13 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between">
               <BrandLogo name={thuongHieu?.ten} />
-              <span className="text-xs text-gray-400 font-body bg-gray-50 px-2.5 py-1 rounded-lg">
+              <span className="text-xs text-gray-400 dark:text-gray-400 font-body bg-gray-50 dark:bg-gray-900 px-2.5 py-1 rounded-lg">
                 SKU: {productSku}
               </span>
             </div>
 
             <div>
-              <h1 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 leading-tight">
+              <h1 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 dark:text-white leading-tight">
                 {productName}
               </h1>
               <div className="flex items-center gap-3 mt-3">
@@ -311,8 +311,8 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <span className="text-sm font-bold text-amber-500 font-display">{productRating}</span>
                 <span className="text-sm text-gray-400 font-body">({reviewCount.toLocaleString()} đánh giá)</span>
                 <span className={`text-xs font-semibold font-display px-2 py-0.5 rounded-full ${productStock > 0
-                    ? 'text-green-600 bg-green-50'
-                    : 'text-red-600 bg-red-50'
+                    ? 'text-green-600 bg-green-50 dark:bg-green-950/40 dark:text-green-400'
+                    : 'text-red-600 bg-red-50 dark:bg-red-950/40 dark:text-red-400'
                   }`}>
                   {productStock > 0 ? '✓ Còn hàng' : '✗ Hết hàng'}
                 </span>
@@ -320,14 +320,14 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
             </div>
 
             {/* Price */}
-            <div className="flex items-baseline gap-3 py-3 border-y border-gray-100">
-              <span className="text-4xl font-display font-bold text-gray-900">{productPrice.toLocaleString('vi-VN')}₫</span>
+            <div className="flex items-baseline gap-3 py-3 border-y border-gray-100 dark:border-gray-800">
+              <span className="text-4xl font-display font-bold text-gray-900 dark:text-white">{productPrice.toLocaleString('vi-VN')}₫</span>
               {productOriginal > productPrice && (
-                <span className="text-xl text-gray-300 line-through font-body">{productOriginal.toLocaleString('vi-VN')}₫</span>
+                <span className="text-xl text-gray-300 dark:text-gray-500 line-through font-body">{productOriginal.toLocaleString('vi-VN')}₫</span>
               )}
               {discount > 0 && (
                 <div className="ml-auto flex flex-col items-end">
-                  <span className="text-green-600 font-bold font-display text-sm">
+                  <span className="text-green-600 dark:text-green-400 font-bold font-display text-sm">
                     Tiết kiệm {(productOriginal - productPrice).toLocaleString('vi-VN')}₫
                   </span>
                   <span className="text-xs text-gray-400 font-body">Đã bao gồm thuế & phí</span>
@@ -336,7 +336,7 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
             </div>
 
             {/* AI Review Summary */}
-            <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 border border-blue-200 p-4 relative overflow-hidden">
+            <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 dark:from-blue-950/30 dark:via-indigo-950/20 dark:to-blue-950/30 border border-blue-200 dark:border-blue-900/50 p-4 relative overflow-hidden">
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-200/30 rounded-full blur-xl" />
               <div className="relative">
                 <div className="flex items-center gap-2 mb-2.5">
@@ -346,15 +346,15 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                       <circle cx="13" cy="3" r="1.2" fill="#93C5FD" />
                     </svg>
                   </div>
-                  <p className="text-sm font-bold font-display text-brand-dark">✨ Tóm tắt đánh giá AI</p>
-                  <span className="ml-auto text-[11px] text-brand bg-white border border-blue-200 px-2 py-0.5 rounded-full font-body">
+                  <p className="text-sm font-bold font-display text-brand-dark dark:text-blue-300">✨ Tóm tắt đánh giá AI</p>
+                  <span className="ml-auto text-[11px] text-brand dark:text-blue-300 bg-white dark:bg-gray-800 border border-blue-200 dark:border-blue-800 px-2 py-0.5 rounded-full font-body">
                     Dựa trên {reviewCount.toLocaleString()} đánh giá
                   </span>
                 </div>
 
-                <p className="text-sm text-gray-700 font-body leading-relaxed mb-3">
-                  {positiveRate}% người mua yêu thích sản phẩm <strong className="text-gray-900">{productName}</strong>.{' '}
-                  Điểm đánh giá trung bình <span className="text-amber-700 font-medium">{productRating}/5 sao</span> — chất lượng được khẳng định qua hàng ngàn đánh giá thực tế.
+                <p className="text-sm text-gray-700 dark:text-gray-300 font-body leading-relaxed mb-3">
+                  {positiveRate}% người mua yêu thích sản phẩm <strong className="text-gray-900 dark:text-white">{productName}</strong>.{' '}
+                  Điểm đánh giá trung bình <span className="text-amber-700 dark:text-amber-400 font-medium">{productRating}/5 sao</span> — chất lượng được khẳng định qua hàng ngàn đánh giá thực tế.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-3.5">
@@ -367,8 +367,8 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                     <div
                       key={tag.label}
                       className={`flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full font-body ${tag.color === 'green'
-                          ? 'bg-green-50 border border-green-200 text-green-700'
-                          : 'bg-amber-50 border border-amber-200 text-amber-700'
+                          ? 'bg-green-50 dark:bg-green-950/50 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300'
+                          : 'bg-amber-50 dark:bg-amber-950/50 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300'
                         }`}
                     >
                       {tag.label}
@@ -379,9 +379,9 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <div>
                   <div className="flex items-center justify-between text-[11px] font-body text-gray-400 mb-1">
                     <span>Cảm nhận chung</span>
-                    <span className="text-green-600 font-semibold">{positiveRate}% Tích cực</span>
+                    <span className="text-green-600 dark:text-green-400 font-semibold">{positiveRate}% Tích cực</span>
                   </div>
-                  <div className="h-1.5 rounded-full bg-gray-100 overflow-hidden">
+                  <div className="h-1.5 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full" style={{ width: `${positiveRate}%` }} />
                   </div>
                 </div>
@@ -391,24 +391,24 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
             {/* Quantity + CTA */}
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <span className="text-sm font-medium text-gray-600 font-body w-16">Số lượng</span>
-                <div className="flex items-center border border-gray-200 rounded-xl overflow-hidden">
+                <span className="text-sm font-medium text-gray-600 dark:text-gray-300 font-body w-16">Số lượng</span>
+                <div className="flex items-center border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
                   <button
                     onClick={() => setQty(q => Math.max(1, q - 1))}
-                    className="w-9 h-9 flex items-center justify-center hover:bg-gray-50 text-gray-600 transition-colors"
+                    className="w-9 h-9 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
                   >
                     −
                   </button>
-                  <span className="w-10 text-center text-sm font-semibold font-display text-gray-900">{qty}</span>
+                  <span className="w-10 text-center text-sm font-semibold font-display text-gray-900 dark:text-white">{qty}</span>
                   <button
                     onClick={() => setQty(q => q + 1)}
-                    className="w-9 h-9 flex items-center justify-center hover:bg-gray-50 text-gray-600 transition-colors"
+                    className="w-9 h-9 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
                   >
                     +
                   </button>
                 </div>
                 <span className="text-sm text-gray-400 font-body">
-                  × {productPrice.toLocaleString('vi-VN')}₫ = <strong className="text-gray-700">{(productPrice * qty).toLocaleString('vi-VN')}₫</strong>
+                  × {productPrice.toLocaleString('vi-VN')}₫ = <strong className="text-gray-700 dark:text-white">{(productPrice * qty).toLocaleString('vi-VN')}₫</strong>
                 </span>
               </div>
 
@@ -416,8 +416,8 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <button
                   onClick={handleBuyNow}
                   className={`flex-1 py-3.5 rounded-xl font-display font-bold text-sm transition-all duration-200 active:scale-95 shadow-lg ${buyState === 'added'
-                      ? 'bg-green-500 text-white shadow-green-200'
-                      : 'bg-brand hover:bg-brand-dark text-white shadow-blue-200'
+                      ? 'bg-green-500 text-white shadow-green-200 dark:shadow-green-950/40'
+                      : 'bg-brand hover:bg-brand-dark text-white shadow-blue-200 dark:shadow-blue-950/40'
                     }`}
                 >
                   {buyState === 'added' ? '✓ Đã đặt hàng!' : '⚡ Mua ngay'}
@@ -425,15 +425,15 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                 <button
                   onClick={handleAddCart}
                   className={`flex-1 py-3.5 rounded-xl font-display font-semibold text-sm border-2 transition-all duration-200 active:scale-95 ${cartState === 'added'
-                      ? 'bg-green-50 border-green-400 text-green-600'
-                      : 'bg-white border-brand text-brand hover:bg-brand-pale'
+                      ? 'bg-green-50 dark:bg-green-950/40 border-green-400 dark:border-green-600 text-green-600 dark:text-green-300'
+                      : 'bg-white dark:bg-gray-900 border-brand text-brand dark:text-blue-400 hover:bg-brand-pale dark:hover:bg-gray-800'
                     }`}
                 >
                   {cartState === 'added' ? '✓ Đã thêm vào giỏ' : '🛒 Thêm vào giỏ'}
                 </button>
               </div>
 
-              <p className="text-xs text-gray-400 font-body text-center">
+              <p className="text-xs text-gray-400 dark:text-gray-500 font-body text-center">
                 Miễn phí lắp đặt · Đổi trả 30 ngày · Thanh toán an toàn
               </p>
             </div>
@@ -442,14 +442,14 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
 
         {/* Tabs */}
         <div className="mt-14">
-          <div className="flex gap-1 border-b border-gray-100 mb-8">
+          <div className="flex gap-1 border-b border-gray-100 dark:border-gray-800 mb-8">
             {[['specs', 'Thông số kỹ thuật'], ['description', 'Mô tả'], ['reviews', 'Đánh giá']].map(([key, label]) => (
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
                 className={`px-5 py-2.5 text-sm font-semibold font-display transition-all ${activeTab === key
-                    ? 'text-brand border-b-2 border-brand -mb-px'
-                    : 'text-gray-400 hover:text-gray-700'
+                    ? 'text-brand dark:text-blue-400 border-b-2 border-brand dark:border-blue-400 -mb-px'
+                    : 'text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
                   }`}
               >
                 {label}
@@ -458,18 +458,18 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
           </div>
 
           {activeTab === 'specs' && (
-            <div className="overflow-hidden rounded-2xl border border-gray-100">
+            <div className="overflow-hidden rounded-2xl border border-gray-100 dark:border-gray-800">
               <table className="w-full text-sm">
                 <tbody>
                   {specs.map((row, i) => (
-                    <tr key={row.attr} className={`border-b border-gray-50 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-brand-pale/40'}`}>
-                      <td className="px-5 py-3.5 font-medium text-gray-500 font-body w-1/3 align-top">
+                    <tr key={row.attr} className={`border-b border-gray-50 dark:border-gray-800/60 last:border-0 ${i % 2 === 0 ? 'bg-white dark:bg-gray-900' : 'bg-brand-pale/40 dark:bg-gray-800/40'}`}>
+                      <td className="px-5 py-3.5 font-medium text-gray-500 dark:text-gray-400 font-body w-1/3 align-top">
                         <div className="flex items-center gap-1">
                           {row.attr}
                           {row.explain && <AiExplainButton text={row.explain} />}
                         </div>
                       </td>
-                      <td className="px-5 py-3.5 font-semibold text-gray-800 font-display">{row.value}</td>
+                      <td className="px-5 py-3.5 font-semibold text-gray-800 dark:text-gray-200 font-display">{row.value}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -479,24 +479,24 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
 
           {activeTab === 'description' && (
             <div
-              className="prose prose-sm max-w-none text-gray-700 font-body leading-relaxed
-                [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-gray-900 [&_h3]:text-base [&_h3]:mb-2 [&_h3]:mt-6 [&_h3:first-child]:mt-0
-                [&_p]:mb-3 [&_ul]:pl-5 [&_ul]:space-y-1.5 [&_li]:list-disc [&_strong]:text-gray-900"
+              className="prose prose-sm max-w-none text-gray-700 dark:text-gray-300 font-body leading-relaxed
+                [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-gray-900 dark:[&_h3]:text-white [&_h3]:text-base [&_h3]:mb-2 [&_h3]:mt-6 [&_h3:first-child]:mt-0
+                [&_p]:mb-3 [&_ul]:pl-5 [&_ul]:space-y-1.5 [&_li]:list-disc [&_strong]:text-gray-900 dark:[&_strong]:text-white"
               dangerouslySetInnerHTML={{ __html: descriptionHTML }}
             />
           )}
 
           {activeTab === 'reviews' && (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="bg-brand-pale rounded-2xl p-6 flex flex-col items-center text-center border border-brand-light">
-                <span className="text-6xl font-display font-bold text-gray-900">{productRating}</span>
+              <div className="bg-brand-pale dark:bg-gray-900 rounded-2xl p-6 flex flex-col items-center text-center border border-brand-light dark:border-gray-800">
+                <span className="text-6xl font-display font-bold text-gray-900 dark:text-white">{productRating}</span>
                 <StarRow filled={Math.floor(productRating)} half={productRating % 1 >= 0.3} />
                 <span className="text-sm text-gray-400 font-body mt-1">{reviewCount.toLocaleString()} đánh giá</span>
                 <div className="w-full mt-6 flex flex-col gap-2">
                   {ratingBreakdown.map(r => (
                     <div key={r.stars} className="flex items-center gap-2 text-xs font-body">
                       <span className="text-gray-400 w-4">{r.stars}★</span>
-                      <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="flex-1 h-1.5 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
                         <div className="h-full bg-amber-400 rounded-full" style={{ width: `${r.pct}%` }} />
                       </div>
                       <span className="text-gray-400 w-6 text-right">{r.pct}%</span>
@@ -507,12 +507,12 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
 
               <div className="lg:col-span-2 flex flex-col gap-4">
                 {defaultReviews.map(r => (
-                  <div key={r.name} className="bg-white border border-gray-100 rounded-2xl p-4 hover:border-brand-light transition-colors">
+                  <div key={r.name} className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-4 hover:border-brand-light dark:hover:border-blue-700/50 transition-colors">
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="font-semibold font-display text-sm text-gray-900">{r.name}</span>
-                          <span className="text-[11px] text-green-600 font-body bg-green-50 px-1.5 py-0.5 rounded-full">✓ Đã xác minh</span>
+                          <span className="font-semibold font-display text-sm text-gray-900 dark:text-white">{r.name}</span>
+                          <span className="text-[11px] text-green-600 dark:text-green-400 font-body bg-green-50 dark:bg-green-950/50 px-1.5 py-0.5 rounded-full">✓ Đã xác minh</span>
                         </div>
                         <div className="flex items-center gap-2 mt-0.5">
                           <StarRow filled={r.stars} />
@@ -520,8 +520,8 @@ export default function ProductDetail({ product, chiTiet, thuongHieu, hinhAnh, d
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm font-semibold font-display text-gray-800 mb-1">{r.title}</p>
-                    <p className="text-sm text-gray-500 font-body leading-relaxed">{r.body}</p>
+                    <p className="text-sm font-semibold font-display text-gray-800 dark:text-gray-200 mb-1">{r.title}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 font-body leading-relaxed">{r.body}</p>
                   </div>
                 ))}
               </div>

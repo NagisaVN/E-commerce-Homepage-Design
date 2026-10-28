@@ -18,13 +18,13 @@ export default async function AiSearchPage({ searchParams }) {
   const result = query ? await runAiSearch(query) : null
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 sm:py-14 font-body">
+    <div className="bg-gray-50 dark:bg-gray-950 min-h-screen py-10 sm:py-14 font-body transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
         {/* Breadcrumb */}
-        <nav className="mb-6 flex items-center gap-2 text-xs text-gray-400">
-          <Link href="/" className="hover:text-brand transition-colors">Trang chủ</Link>
+        <nav className="mb-6 flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+          <Link href="/" className="hover:text-brand dark:hover:text-blue-400 transition-colors">Trang chủ</Link>
           <span>/</span>
-          <span className="text-gray-600 font-medium">Tìm kiếm AI</span>
+          <span className="text-gray-600 dark:text-gray-300 font-medium">Tìm kiếm AI</span>
         </nav>
 
         {/* Thanh tìm kiếm AI đầu trang */}
@@ -49,7 +49,7 @@ export default async function AiSearchPage({ searchParams }) {
                 name="q"
                 defaultValue={query}
                 placeholder="Hỏi AI: Tìm tủ lạnh cho gia đình 4 người dưới 10 triệu..."
-                className="w-full bg-white text-gray-800 text-sm sm:text-base font-body pl-5 pr-28 py-3.5 sm:py-4 rounded-2xl shadow-inner outline-none border-2 border-transparent focus:border-amber-400 placeholder:text-gray-400"
+                className="w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-white text-sm sm:text-base font-body pl-5 pr-28 py-3.5 sm:py-4 rounded-2xl shadow-inner outline-none border-2 border-transparent focus:border-amber-400 placeholder:text-gray-400 dark:placeholder:text-gray-500"
               />
               <button
                 type="submit"
@@ -65,29 +65,29 @@ export default async function AiSearchPage({ searchParams }) {
         {result && (
           <div className="space-y-8">
             {/* Box Lời khuyên & Tiêu chí nhận diện */}
-            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
-              <div className="flex items-center gap-2.5 mb-3 text-brand-dark font-display font-bold text-lg">
+            <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 shadow-sm">
+              <div className="flex items-center gap-2.5 mb-3 text-brand-dark dark:text-blue-300 font-display font-bold text-lg">
                 <span className="text-2xl">🤖</span>
                 <h2>Phân tích & Lời khuyên chuyên gia TechZone AI</h2>
               </div>
 
-              <p className="text-gray-700 font-body text-base leading-relaxed mb-4">
+              <p className="text-gray-700 dark:text-gray-300 font-body text-base leading-relaxed mb-4">
                 {result.summary}
               </p>
 
               {result.advice && (
-                <div className="bg-brand-pale rounded-2xl p-4 sm:p-5 border border-brand-light text-sm text-gray-800 font-body mb-5">
+                <div className="bg-brand-pale dark:bg-gray-800 rounded-2xl p-4 sm:p-5 border border-brand-light dark:border-gray-700 text-sm text-gray-800 dark:text-gray-200 font-body mb-5">
                   <p dangerouslySetInnerHTML={{ __html: result.advice.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
                 </div>
               )}
 
               {result.criteriaTags && result.criteriaTags.length > 0 && (
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">
-                  <span className="text-xs text-gray-500 font-semibold self-center mr-1">Tiêu chí đã nhận diện:</span>
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+                  <span className="text-xs text-gray-500 dark:text-gray-400 font-semibold self-center mr-1">Tiêu chí đã nhận diện:</span>
                   {result.criteriaTags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="text-xs bg-blue-50 text-brand border border-blue-200 px-3 py-1 rounded-full font-medium"
+                      className="text-xs bg-blue-50 dark:bg-blue-950/60 text-brand dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-3 py-1 rounded-full font-medium"
                     >
                       {tag}
                     </span>
@@ -101,10 +101,10 @@ export default async function AiSearchPage({ searchParams }) {
               <div>
                 <div className="flex items-center justify-between mb-6">
                   <div>
-                    <h2 className="text-2xl font-bold font-display text-gray-900">
+                    <h2 className="text-2xl font-bold font-display text-gray-900 dark:text-white">
                       Sản phẩm tương thích nhất ({result.products.length})
                     </h2>
-                    <p className="text-xs text-gray-500 font-body mt-0.5">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 font-body mt-0.5">
                       Được sắp xếp theo chỉ số tương thích nhu cầu & tính năng kỹ thuật
                     </p>
                   </div>
@@ -135,14 +135,14 @@ export default async function AiSearchPage({ searchParams }) {
                 </div>
               </div>
             ) : (
-              <div className="bg-white rounded-3xl p-12 text-center border border-gray-100 shadow-sm">
-                <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+              <div className="bg-white dark:bg-gray-900 rounded-3xl p-12 text-center border border-gray-100 dark:border-gray-800 shadow-sm">
+                <div className="w-20 h-20 bg-gray-50 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
                   🔍
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 font-display mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white font-display mb-2">
                   Chưa tìm thấy sản phẩm hoàn toàn khớp
                 </h3>
-                <p className="text-gray-500 font-body text-sm mb-6 max-w-md mx-auto">
+                <p className="text-gray-500 dark:text-gray-400 font-body text-sm mb-6 max-w-md mx-auto">
                   Bạn có thể thử nới rộng ngân sách hoặc tìm kiếm theo danh mục chung (ví dụ: &quot;Tủ lạnh Inverter&quot;, &quot;Máy giặt cửa trước&quot;).
                 </p>
                 <Link
@@ -158,11 +158,11 @@ export default async function AiSearchPage({ searchParams }) {
 
         {/* Khi chưa nhập câu hỏi */}
         {!result && (
-          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-sm text-center">
-            <h3 className="text-xl font-bold font-display text-gray-900 mb-2">
+          <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-sm text-center">
+            <h3 className="text-xl font-bold font-display text-gray-900 dark:text-white mb-2">
               Các câu hỏi mẫu bạn có thể thử ngay
             </h3>
-            <p className="text-sm text-gray-500 font-body mb-8">
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-body mb-8">
               Bấm vào bất kỳ câu hỏi nào dưới đây để AI phân tích và đưa ra khuyến nghị phù hợp:
             </p>
 
@@ -178,14 +178,14 @@ export default async function AiSearchPage({ searchParams }) {
                 <Link
                   key={idx}
                   href={`/tim-kiem-ai?q=${encodeURIComponent(item.query)}`}
-                  className="group bg-brand-pale hover:bg-brand-light p-4 rounded-2xl border border-brand-light transition-all flex items-start gap-3"
+                  className="group bg-brand-pale dark:bg-gray-800 hover:bg-brand-light dark:hover:bg-gray-750 p-4 rounded-2xl border border-brand-light dark:border-gray-700 transition-all flex items-start gap-3"
                 >
                   <span className="text-2xl">{item.icon}</span>
                   <div>
-                    <h4 className="font-display font-semibold text-sm text-gray-900 group-hover:text-brand transition-colors">
+                    <h4 className="font-display font-semibold text-sm text-gray-900 dark:text-white group-hover:text-brand dark:group-hover:text-blue-400 transition-colors">
                       {item.title}
                     </h4>
-                    <p className="text-xs text-gray-500 font-body mt-1">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 font-body mt-1">
                       Bấm để AI phân tích →
                     </p>
                   </div>
