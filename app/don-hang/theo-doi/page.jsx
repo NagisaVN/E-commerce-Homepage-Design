@@ -12,9 +12,12 @@ function OrderTrackingContent() {
 
   const [copied, setCopied] = useState(false)
   const [copiedAccount, setCopiedAccount] = useState(false)
+  const [copiedField, setCopiedField] = useState('')
   const [searchCode, setSearchCode] = useState('')
   const [currentOrder, setCurrentOrder] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [paymentStatus, setPaymentStatus] = useState('PENDING')
+  const [simulating, setSimulating] = useState(false)
 
   // Tải đơn hàng dựa trên codeParam, localStorage (khách vãng lai), hoặc db.json
   useEffect(() => {
@@ -71,16 +74,60 @@ function OrderTrackingContent() {
     }
 
     setCurrentOrder(foundOrder)
+    const isOrderPaid =
+      foundOrder?.trang_thai_thanh_toan === 'Đã thanh toán' ||
+      foundOrder?.trang_thai === 'Đã hoàn thành' ||
+      searchParams.get('status') === 'PAID'
+    setPaymentStatus(isOrderPaid ? 'PAID' : 'PENDING')
     setLoading(false)
-  }, [codeParam])
+  }, [codeParam, searchParams])
 
   const trackingCode = currentOrder?.ma_van_don || 'VN-TZ-884920473G'
   const isBankTransfer =
     currentOrder?.payment_method_code === 'BANK_TRANSFER' ||
-    currentOrder?.phuong_thuc_thanh_toan?.includes('Chuyển khoản')
+    currentOrder?.phuong_thuc_thanh_toan?.includes('Chuyển khoản') ||
+    currentOrder?.phuong_thuc_thanh_toan?.includes('PayOS')
 
-  // URL VietQR tạo tự động theo đúng mã đơn hàng và số tiền
-  const vietQrUrl = `https://img.vietqr.io/image/MB-0987654321-compact2.jpg?amount=${currentOrder?.tong_tien_cuoi_cung || 0}&addInfo=${currentOrder?.ma_don_hang || 'TECHZONE'}&accountName=TECHZONE%20STORE`
+  // Tự động Polling trạng thái thanh toán từ PayOS mỗi 3 giây nếu chưa thanh toán
+  useEffect(() => {
+    if (!currentOrder?.ma_don_hang || !isBankTransfer || paymentStatus === 'PAID') return
+
+    const interval = setInterval(async () => {
+      try {
+        const res = await fetch(`/api/payos/check-status?code=${encodeURIComponent(currentOrder.ma_don_hang)}`)
+        const data = await res.json()
+        if (data.success && data.paid) {
+          setPaymentStatus('PAID')
+          setCurrentOrder((prev) => ({
+            ...prev,
+            trang_thai_thanh_toan: 'Đã thanh toán',
+            trang_thai: 'Đã xác nhận thanh toán',
+          }))
+
+          // Cập nhật localStorage
+          try {
+            const guestOrders = JSON.parse(localStorage.getItem('techzone_guest_orders') || '[]')
+            const updated = guestOrders.map((o) =>
+              o.ma_don_hang?.toLowerCase() === currentOrder.ma_don_hang.toLowerCase()
+                ? { ...o, trang_thai_thanh_toan: 'Đã thanh toán', trang_thai: 'Đã xác nhận thanh toán' }
+                : o
+            )
+            localStorage.setItem('techzone_guest_orders', JSON.stringify(updated))
+          } catch (e) {}
+
+          clearInterval(interval)
+        }
+      } catch (err) {
+        console.warn('Lỗi kiểm tra trạng thái PayOS:', err)
+      }
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [currentOrder?.ma_don_hang, isBankTransfer, paymentStatus])
+
+  // URL VietQR tạo tự động hoặc lấy từ PayOS
+  const fallbackQrUrl = `https://img.vietqr.io/image/MB-0987654321-compact2.jpg?amount=${currentOrder?.tong_tien_cuoi_cung || 0}&addInfo=${currentOrder?.ma_don_hang || 'TECHZONE'}&accountName=TECHZONE%20STORE`
+  const qrDisplayUrl = currentOrder?.payos?.qrImageUrl || currentOrder?.payos?.qrCode || fallbackQrUrl
 
   const handleCopyCode = () => {
     navigator.clipboard.writeText(trackingCode)
@@ -94,6 +141,48 @@ function OrderTrackingContent() {
     setTimeout(() => setCopiedAccount(false), 2000)
   }
 
+  const handleCopyField = (text, field) => {
+    navigator.clipboard.writeText(text)
+    setCopiedField(field)
+    setTimeout(() => setCopiedField(''), 2000)
+  }
+
+  // Giả lập thanh toán thành công tức thì (Testing mode)
+  const handleSimulatePaymentSuccess = async () => {
+    if (!currentOrder?.ma_don_hang) return
+    setSimulating(true)
+    try {
+      const res = await fetch('/api/payos/check-status', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: currentOrder.ma_don_hang }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setPaymentStatus('PAID')
+        setCurrentOrder((prev) => ({
+          ...prev,
+          trang_thai_thanh_toan: 'Đã thanh toán',
+          trang_thai: 'Đã xác nhận thanh toán',
+        }))
+
+        try {
+          const guestOrders = JSON.parse(localStorage.getItem('techzone_guest_orders') || '[]')
+          const updated = guestOrders.map((o) =>
+            o.ma_don_hang?.toLowerCase() === currentOrder.ma_don_hang.toLowerCase()
+              ? { ...o, trang_thai_thanh_toan: 'Đã thanh toán', trang_thai: 'Đã xác nhận thanh toán' }
+              : o
+          )
+          localStorage.setItem('techzone_guest_orders', JSON.stringify(updated))
+        } catch (e) {}
+      }
+    } catch (err) {
+      console.error('Lỗi khi giả lập thanh toán:', err)
+    } finally {
+      setSimulating(false)
+    }
+  }
+
   const handleSearchOrder = (e) => {
     e.preventDefault()
     if (!searchCode.trim()) return
@@ -105,7 +194,6 @@ function OrderTrackingContent() {
     let orderDate = new Date()
 
     if (order?.id && typeof order.id === 'number' && order.id > 1700000000000) {
-      // order.id là timestamp Date.now() chính xác theo máy của người dùng
       orderDate = new Date(order.id)
     } else if (order?.created_at) {
       const cleanStr = String(order.created_at).trim()
@@ -141,26 +229,43 @@ function OrderTrackingContent() {
 
     const dateLabel = isToday ? 'Hôm nay' : `${pad(orderDate.getDate())}/${pad(orderDate.getMonth() + 1)}`
 
-    return [
-      {
+    const isPaid = paymentStatus === 'PAID' || order?.trang_thai_thanh_toan === 'Đã thanh toán'
+
+    const events = []
+
+    if (isPaid) {
+      events.push({
         time: confirmTime,
         date: dateLabel,
-        status: 'Đơn hàng đã được xác nhận thành công trên hệ thống',
-        subtext: 'Nhân viên kho TechZone đang tiến hành đóng gói tiêu chuẩn chống va đập và dán tem bảo hành điện tử.',
+        status: 'Thanh toán trực tuyến PayOS hoàn tất thành công',
+        subtext: `Cổng PayOS đã ghi nhận giao dịch thanh toán cho số tiền ${(order?.tong_tien_cuoi_cung || 0).toLocaleString('vi-VN')}₫. Đơn hàng sẵn sàng đóng gói và xuất kho.`,
         isCurrent: true,
         color: 'text-emerald-600 dark:text-emerald-400',
         dotColor: 'bg-emerald-500 ring-4 ring-emerald-100 dark:ring-emerald-950',
-      },
-      {
-        time: orderTime,
-        date: dateLabel,
-        status: 'Tiếp nhận thông tin đặt hàng từ khách hàng',
-        subtext: `Mã đơn hàng #${order?.ma_don_hang || 'TECHZONE'} đã được tạo tự động (${order?.phuong_thuc_thanh_toan || 'COD'}).`,
-        isCurrent: false,
-        color: 'text-gray-500 dark:text-gray-400',
-        dotColor: 'bg-gray-300 dark:bg-gray-600',
-      },
-    ]
+      })
+    }
+
+    events.push({
+      time: confirmTime,
+      date: dateLabel,
+      status: 'Đơn hàng đã được ghi nhận trên hệ thống',
+      subtext: 'Nhân viên kho TechZone đang tiến hành kiểm tra linh kiện và dán tem bảo hành điện tử chính hãng.',
+      isCurrent: !isPaid,
+      color: isPaid ? 'text-gray-600 dark:text-gray-300' : 'text-emerald-600 dark:text-emerald-400',
+      dotColor: isPaid ? 'bg-gray-300 dark:bg-gray-600' : 'bg-emerald-500 ring-4 ring-emerald-100 dark:ring-emerald-950',
+    })
+
+    events.push({
+      time: orderTime,
+      date: dateLabel,
+      status: 'Tiếp nhận thông tin đặt hàng từ khách hàng',
+      subtext: `Mã đơn hàng #${order?.ma_don_hang || 'TECHZONE'} đã được tạo tự động (${order?.phuong_thuc_thanh_toan || 'COD'}).`,
+      isCurrent: false,
+      color: 'text-gray-500 dark:text-gray-400',
+      dotColor: 'bg-gray-300 dark:bg-gray-600',
+    })
+
+    return events
   }
 
   const trackingEvents = getOrderTimeline(currentOrder)
@@ -255,80 +360,177 @@ function OrderTrackingContent() {
           </div>
         )}
 
-        {/* KHỐI CHUYỂN KHOẢN NGÂN HÀNG VIETQR (NẾU KHÁCH CHỌN CHUYỂN KHOẢN) */}
-        {isBankTransfer && (
-          <div className="bg-white dark:bg-gray-900 p-5 sm:p-6 rounded-2xl border-2 border-brand/30 shadow-md">
-            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-100 dark:border-gray-800">
-              <span className="text-xl">🏦</span>
-              <div>
-                <h3 className="text-base font-bold text-gray-900 dark:text-white">
-                  Thanh toán Chuyển khoản VietQR
-                </h3>
-                <p className="text-xs text-gray-500">
-                  Quét mã QR bằng mọi App Ngân hàng hoặc MoMo để hoàn tất thanh toán tức thì
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-              {/* Cột ảnh QR */}
-              <div className="md:col-span-5 flex flex-col items-center">
-                <div className="p-3 bg-white rounded-2xl border border-gray-200 shadow-sm max-w-[220px]">
-                  <img
-                    src={vietQrUrl}
-                    alt="Mã VietQR thanh toán TechZone"
-                    className="w-full h-auto rounded-lg"
-                  />
+        {/* KHỐI CHUYỂN KHOẢN NGÂN HÀNG PAYOS VIETQR */}
+        {isBankTransfer && paymentStatus === 'PAID' && (
+          <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-5 sm:p-6 rounded-2xl shadow-lg border border-emerald-400/30">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-2xl flex-shrink-0 shadow-inner">
+                  ✓
                 </div>
-                <span className="text-[11px] text-gray-400 mt-2">
-                  Quét bằng App Ngân hàng bất kỳ
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-base sm:text-lg font-bold">Thanh toán PayOS thành công!</h3>
+                    <span className="text-[10px] font-black uppercase tracking-wider bg-white text-emerald-700 px-2.5 py-0.5 rounded-full shadow-xs">
+                      ĐÃ THANH TOÁN
+                    </span>
+                  </div>
+                  <p className="text-xs text-emerald-100 mt-1 leading-relaxed">
+                    Cổng Open Banking PayOS đã khớp lệnh thanh toán cho đơn hàng <strong>#{currentOrder?.ma_don_hang}</strong>. Đơn hàng đang được chuẩn bị đóng gói để giao đến bạn!
+                  </p>
+                </div>
+              </div>
+              <div className="text-left sm:text-right flex-shrink-0 bg-white/10 px-4 py-2.5 rounded-xl">
+                <span className="text-[11px] text-emerald-200 block">Số tiền đã nhận:</span>
+                <span className="text-lg font-black font-display text-white">
+                  {new Intl.NumberFormat('vi-VN').format(currentOrder?.tong_tien_cuoi_cung || 0)}₫
                 </span>
-              </div>
-
-              {/* Cột thông tin STK */}
-              <div className="md:col-span-7 space-y-3 text-xs sm:text-sm">
-                <div className="p-3 rounded-xl bg-gray-50 dark:bg-gray-800 space-y-1.5">
-                  <div className="flex justify-between text-gray-500 dark:text-gray-400">
-                    <span>Ngân hàng:</span>
-                    <strong className="text-gray-900 dark:text-white">MBBank (Ngân hàng Quân Đội)</strong>
-                  </div>
-                  <div className="flex justify-between items-center text-gray-500 dark:text-gray-400">
-                    <span>Số tài khoản:</span>
-                    <div className="flex items-center gap-2">
-                      <strong className="text-brand font-mono text-base">0987654321</strong>
-                      <button
-                        onClick={() => handleCopyAccount('0987654321')}
-                        className="text-[11px] text-blue-600 font-semibold hover:underline"
-                      >
-                        {copiedAccount ? 'Đã sao chép' : 'Sao chép'}
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex justify-between text-gray-500 dark:text-gray-400">
-                    <span>Chủ tài khoản:</span>
-                    <strong className="text-gray-900 dark:text-white uppercase">TECHZONE STORE</strong>
-                  </div>
-                  <div className="flex justify-between items-center text-gray-500 dark:text-gray-400 pt-1 border-t border-gray-200 dark:border-gray-700">
-                    <span>Số tiền:</span>
-                    <strong className="text-emerald-600 font-bold font-display text-base">
-                      {new Intl.NumberFormat('vi-VN').format(currentOrder?.tong_tien_cuoi_cung || 0)}₫
-                    </strong>
-                  </div>
-                  <div className="flex justify-between text-gray-500 dark:text-gray-400">
-                    <span>Nội dung chuyển:</span>
-                    <strong className="text-amber-600 font-mono font-bold bg-amber-50 dark:bg-amber-950 px-2 py-0.5 rounded">
-                      {currentOrder?.ma_don_hang}
-                    </strong>
-                  </div>
-                </div>
-
-                <p className="text-[11px] text-gray-500 leading-relaxed">
-                  ⚡ <em>Hệ thống sẽ tự động đối soát và kích hoạt đơn hàng trong vòng 1-3 phút sau khi nhận được chuyển khoản.</em>
-                </p>
               </div>
             </div>
           </div>
         )}
+
+        {isBankTransfer && paymentStatus !== 'PAID' && (() => {
+          const payosInfo = currentOrder?.payos
+          const bankName = payosInfo?.bin === '970422' || !payosInfo?.bin ? 'MBBank (Ngân hàng Quân Đội)' : `Ngân hàng (BIN ${payosInfo.bin})`
+          const accountNumber = payosInfo?.accountNumber || '0987654321'
+          const accountName = payosInfo?.accountName || 'TECHZONE STORE'
+          const transferDescription = payosInfo?.description || currentOrder?.ma_don_hang || 'TECHZONE'
+          const checkoutUrl = payosInfo?.checkoutUrl
+
+          return (
+            <div className="bg-white dark:bg-gray-900 p-5 sm:p-6 rounded-2xl border-2 border-brand/40 shadow-md">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-gray-100 dark:border-gray-800">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                    PayOS
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      <span>Cổng Thanh Toán PayOS (VietQR 24/7)</span>
+                      <span className="flex h-2 w-2 relative">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                      </span>
+                    </h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      Quét mã QR bằng mọi App Ngân hàng hoặc MoMo &middot; Tự động kích hoạt sau khi chuyển
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-bold text-blue-700 bg-blue-50 dark:bg-blue-950 dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-3 py-1 rounded-full whitespace-nowrap animate-pulse flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    <span>Đang lắng nghe chuyển khoản...</span>
+                  </span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                {/* Cột ảnh QR */}
+                <div className="md:col-span-5 flex flex-col items-center">
+                  <div className="p-3 bg-white rounded-2xl border-2 border-blue-100 shadow-sm max-w-[220px]">
+                    <img
+                      src={qrDisplayUrl}
+                      alt="Mã PayOS VietQR thanh toán"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                  <span className="text-[11px] text-gray-500 dark:text-gray-400 mt-2 font-medium flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>Khớp lệnh Open Banking tự động 24/7</span>
+                  </span>
+                </div>
+
+                {/* Cột thông tin STK */}
+                <div className="md:col-span-7 space-y-3 text-xs sm:text-sm">
+                  <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800 space-y-2 border border-gray-100 dark:border-gray-700/60">
+                    <div className="flex justify-between text-gray-500 dark:text-gray-400">
+                      <span>Ngân hàng thụ hưởng:</span>
+                      <strong className="text-gray-900 dark:text-white">{bankName}</strong>
+                    </div>
+
+                    <div className="flex justify-between items-center text-gray-500 dark:text-gray-400">
+                      <span>Số tài khoản:</span>
+                      <div className="flex items-center gap-2">
+                        <strong className="text-brand font-mono text-base font-bold">{accountNumber}</strong>
+                        <button
+                          onClick={() => handleCopyField(accountNumber, 'account')}
+                          className="text-[11px] text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+                        >
+                          {copiedField === 'account' ? '✓ Đã chép' : 'Sao chép'}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between text-gray-500 dark:text-gray-400">
+                      <span>Chủ tài khoản:</span>
+                      <strong className="text-gray-900 dark:text-white uppercase">{accountName}</strong>
+                    </div>
+
+                    <div className="flex justify-between items-center text-gray-500 dark:text-gray-400 pt-1 border-t border-gray-200 dark:border-gray-700">
+                      <span>Số tiền cần chuyển:</span>
+                      <div className="flex items-center gap-2">
+                        <strong className="text-emerald-600 font-bold font-display text-base">
+                          {new Intl.NumberFormat('vi-VN').format(currentOrder?.tong_tien_cuoi_cung || 0)}₫
+                        </strong>
+                        <button
+                          onClick={() => handleCopyField(String(currentOrder?.tong_tien_cuoi_cung || 0), 'amount')}
+                          className="text-[11px] text-emerald-600 font-semibold hover:underline"
+                        >
+                          {copiedField === 'amount' ? '✓ Đã chép' : 'Sao chép'}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between items-center text-gray-500 dark:text-gray-400">
+                      <span>Nội dung chuyển khoản:</span>
+                      <div className="flex items-center gap-2">
+                        <strong className="text-amber-600 font-mono font-bold bg-amber-50 dark:bg-amber-950/70 border border-amber-200 dark:border-amber-900 px-2 py-0.5 rounded">
+                          {transferDescription}
+                        </strong>
+                        <button
+                          onClick={() => handleCopyField(transferDescription, 'desc')}
+                          className="text-[11px] text-amber-700 dark:text-amber-400 font-semibold hover:underline"
+                        >
+                          {copiedField === 'desc' ? '✓ Đã chép' : 'Sao chép'}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {checkoutUrl && (
+                    <div>
+                      <a
+                        href={checkoutUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-all active:scale-98"
+                      >
+                        <span>🔗 Mở Cổng Thanh Toán PayOS (Giao diện chính thức)</span>
+                      </a>
+                    </div>
+                  )}
+
+                  {/* Nút thử nghiệm giả lập */}
+                  <div className="pt-2 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-2">
+                    <span className="text-[11px] text-gray-400">
+                      Thử nghiệm không cần tiền thật:
+                    </span>
+                    <button
+                      onClick={handleSimulatePaymentSuccess}
+                      disabled={simulating}
+                      className="px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 font-semibold text-xs transition-all active:scale-95 disabled:opacity-50 whitespace-nowrap cursor-pointer"
+                    >
+                      {simulating ? 'Đang xử lý...' : '🧪 Giả lập thanh toán thành công'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        })()}
 
         {/* KHỐI 1: THỜI GIAN NHẬN HÀNG DỰ KIẾN */}
         <div className="bg-white dark:bg-gray-900 p-4 sm:p-5 rounded-2xl border border-gray-200/80 dark:border-gray-800 shadow-xs flex items-center gap-4">

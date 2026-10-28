@@ -156,13 +156,14 @@ export async function POST(request) {
       dia_chi_nguoi_nhan: fullAddress,
       ghi_chu: note || customer.note || '',
       is_guest: true,
-      phuong_thuc_thanh_toan: paymentMethod === 'COD' ? 'COD - Tiền mặt khi nhận hàng' : 'Chuyển khoản QR TechZone Pay',
+      phuong_thuc_thanh_toan: paymentMethod === 'COD' ? 'COD - Tiền mặt khi nhận hàng' : 'Chuyển khoản PayOS VietQR',
       payment_method_code: paymentMethod, // 'COD' | 'BANK_TRANSFER'
       trang_thai: 'Chờ xác nhận',
       trang_thai_thanh_toan: paymentMethod === 'COD' ? 'Chưa thanh toán' : 'Chờ chuyển khoản',
       tong_tien_hang: totalAmount,
       phi_van_chuyen: 0,
       tong_tien_cuoi_cung: totalAmount,
+      payos: body.payos || null,
       san_pham: items.map((it) => ({
         id: it.id,
         name: it.name || it.ten_san_pham,

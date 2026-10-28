@@ -148,9 +148,22 @@ export default function AdminRecentOrders({ orders = [] }) {
                   {order.created_at?.trim() || 'Hôm nay'}
                 </td>
                 <td className="py-3.5 whitespace-nowrap">
-                  <span className="text-xs px-2.5 py-1 rounded-lg bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300 font-medium">
-                    {order.phuong_thuc_thanh_toan?.trim() || 'COD'}
-                  </span>
+                  <div className="flex flex-col gap-1 items-start">
+                    <span className="text-xs px-2.5 py-0.5 rounded-lg bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300 font-medium">
+                      {order.phuong_thuc_thanh_toan?.includes('PayOS') || order.payment_method_code === 'BANK_TRANSFER'
+                        ? 'PayOS VietQR'
+                        : (order.phuong_thuc_thanh_toan?.trim() || 'COD')}
+                    </span>
+                    {order.trang_thai_thanh_toan === 'Đã thanh toán' ? (
+                      <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 px-1.5 py-0.5 rounded">
+                        ✓ Đã thanh toán
+                      </span>
+                    ) : (
+                      <span className="text-[10px] text-gray-400">
+                        Chờ thanh toán
+                      </span>
+                    )}
+                  </div>
                 </td>
                 <td className="py-3.5 font-bold text-gray-900 dark:text-white whitespace-nowrap">
                   {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(order.tong_tien_cuoi_cung || 0)}

@@ -152,6 +152,32 @@ export default function CheckoutPage() {
 
       const createdOrder = data.order
 
+      // Nếu chọn chuyển khoản ngân hàng -> Gọi API tạo Link / QR thanh toán PayOS
+      if (formData.paymentMethod === 'BANK_TRANSFER') {
+        try {
+          const payosRes = await fetch('/api/payos/create-payment-link', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              orderCode: createdOrder.ma_don_hang,
+              amount: totalAmount,
+              description: createdOrder.ma_don_hang,
+              items: cartItems.map((it) => ({
+                name: it.name,
+                quantity: it.quantity,
+                price: it.price,
+              })),
+            }),
+          })
+          const payosJson = await payosRes.json()
+          if (payosJson.success && payosJson.data) {
+            createdOrder.payos = payosJson.data
+          }
+        } catch (payosErr) {
+          console.warn('Lỗi khởi tạo PayOS link:', payosErr)
+        }
+      }
+
       // Lưu đơn hàng vào localStorage của khách vãng lai để họ có thể tra cứu lại bất cứ lúc nào
       try {
         const storedGuestOrders = JSON.parse(localStorage.getItem('techzone_guest_orders') || '[]')
@@ -163,6 +189,12 @@ export default function CheckoutPage() {
 
       // Xóa giỏ hàng
       clearCart()
+
+      // Nếu có URL thanh toán PayOS trực tiếp (khi đã cấu hình PayOS Client ID thật)
+      if (formData.paymentMethod === 'BANK_TRANSFER' && createdOrder.payos?.checkoutUrl) {
+        window.location.href = createdOrder.payos.checkoutUrl
+        return
+      }
 
       // Chuyển hướng sang trang theo dõi đơn hàng kèm tham số mã đơn
       router.push(`/don-hang/theo-doi?code=${createdOrder.ma_don_hang}&success=true`)
@@ -478,14 +510,14 @@ export default function CheckoutPage() {
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-sm sm:text-base text-gray-900 font-display flex items-center gap-2">
-                          <span>🏦 Chuyển khoản Ngân hàng (VietQR tức thì 24/7)</span>
+                          <span>🏦 Chuyển khoản Ngân hàng (Cổng PayOS VietQR 24/7)</span>
                         </span>
                         <span className="text-[11px] font-bold text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded-full">
-                          Tự động điền số tiền
+                          PayOS Tự Động
                         </span>
                       </div>
                       <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                        Quét mã QR bằng bất kỳ App ngân hàng nào (Vietcombank, MB, Techcombank, VPBank, MoMo...). Hệ thống tự động xác nhận mã đơn hàng ngay lập tức.
+                        Thanh toán qua Cổng Open Banking PayOS (Quét mã VietQR bằng bất kỳ App ngân hàng nào hoặc MoMo, ZaloPay). Hệ thống tự động kích hoạt đơn hàng trong 3 giây.
                       </p>
 
                       {/* Thông tin chuyển khoản chi tiết */}
@@ -680,7 +712,7 @@ export default function CheckoutPage() {
                       <span>
                         {formData.paymentMethod === 'COD'
                           ? '🚀 Xác nhận đặt hàng (COD)'
-                          : '💳 Đặt hàng & Quét mã VietQR'}
+                          : '💳 Đặt hàng & Thanh toán PayOS VietQR'}
                       </span>
                     </>
                   )}
