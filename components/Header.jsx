@@ -56,7 +56,7 @@ function HeaderSearchBox({ value, onChange, onSubmit, onOpenModal }) {
           // Khi click vào ô tìm kiếm thì có thể mở Modal AI trải nghiệm cao cấp
           if (!value) onOpenModal('')
         }}
-        placeholder="Hỏi AI: Tìm tủ lạnh cho gia đình 4 người..."
+        placeholder="Tìm kiếm sản phẩm, hỏi AI..."
         aria-label="Tìm kiếm sản phẩm với AI"
         className="min-w-0 flex-1 bg-transparent text-xs sm:text-sm text-gray-700 dark:text-gray-200 outline-none placeholder:text-gray-400 dark:placeholder:text-gray-500 font-body"
         onFocus={() => setFocused(true)}
@@ -173,12 +173,12 @@ export default function Header() {
             </Link>
 
             {/* Menu điều hướng chính: không để co giãn làm gãy dòng */}
-            <nav className="ml-1 xl:ml-3 hidden flex-shrink-0 items-center gap-3.5 xl:gap-5 lg:flex" aria-label="Primary navigation">
+            <nav className="ml-1 xl:ml-3 hidden flex-shrink-0 items-center gap-2.5 xl:gap-5 lg:flex" aria-label="Primary navigation">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="whitespace-nowrap text-sm font-medium text-gray-600 dark:text-gray-300 transition-colors hover:text-brand dark:hover:text-blue-400 font-body"
+                  className="whitespace-nowrap text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 transition-colors hover:text-brand dark:hover:text-blue-400 font-body"
                 >
                   {item.name}
                 </Link>
@@ -195,19 +195,6 @@ export default function Header() {
             </div>
 
             <div className="flex flex-shrink-0 items-center gap-1 sm:gap-1.5 xl:gap-2">
-              {/* Nút Admin nhanh nếu là Quản trị viên */}
-              {isAdmin && (
-                <Link
-                  href="/admin"
-                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 text-white font-bold text-xs shadow-sm hover:shadow-md hover:from-blue-800 hover:to-indigo-700 transition-all active:scale-95"
-                >
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>Admin</span>
-                </Link>
-              )}
-
               {/* Nút chuyển đổi Giao diện Sáng / Tối */}
               <button
                 onClick={toggleDarkMode}
@@ -385,13 +372,13 @@ export default function Header() {
               </button>
 
               <div className="border-t border-gray-100 dark:border-gray-800 my-2 pt-2">
-                {isAdmin && (
+                {isManager && (
                   <Link
                     href="/admin"
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-bold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 hover:bg-blue-100 font-body"
                   >
-                    <span>🛡️ Bảng điều khiển Quản Trị</span>
+                    <span>🛡️ Bảng điều khiển {user?.role === 'admin' ? 'Quản Trị' : 'Vận Hành'}</span>
                   </Link>
                 )}
                 {user ? (
