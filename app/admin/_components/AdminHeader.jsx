@@ -9,7 +9,7 @@ import { useAdminToast } from './AdminToast'
 
 export default function AdminHeader() {
   const router = useRouter()
-  const { user, logout, quickLoginAsAdmin, quickLoginAsStaff } = useAuth()
+  const { user, logout } = useAuth()
   const { showToast } = useAdminToast()
   const { toggleMobileSidebar, toggleSidebar, isExpanded } = useAdminSidebar()
   const [isDark, setIsDark] = useState(false)
@@ -110,33 +110,6 @@ export default function AdminHeader() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
         </Link>
-
-        {/* Nút Chuyển Đổi Quyền Nhanh Admin / Nhân Viên */}
-        {user?.role === 'admin' ? (
-          <button
-            onClick={() => {
-              quickLoginAsStaff()
-              showToast('Đã chuyển sang vai trò: Nhân Viên Vận Hành (Staff)', 'info')
-            }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 dark:text-emerald-300 dark:bg-emerald-950/60 dark:hover:bg-emerald-900/60 rounded-xl transition-all border border-emerald-300/60 dark:border-emerald-800/60 shadow-xs cursor-pointer active:scale-95"
-            title="Đang là Admin. Bấm để chuyển thử nghiệm vai Nhân viên"
-          >
-            <span>👑 Admin</span>
-            <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold hidden sm:inline">➔ Đổi sang Nhân viên</span>
-          </button>
-        ) : (
-          <button
-            onClick={() => {
-              quickLoginAsAdmin()
-              showToast('Đã chuyển sang vai trò: Quản Trị Viên (Admin)', 'success')
-            }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 dark:text-blue-300 dark:bg-blue-950/60 dark:hover:bg-blue-900/60 rounded-xl transition-all border border-blue-300/60 dark:border-blue-800/60 shadow-xs cursor-pointer active:scale-95"
-            title="Đang là Nhân viên. Bấm để nâng quyền lên Quản trị viên"
-          >
-            <span>💼 Nhân viên</span>
-            <span className="text-[10px] text-blue-600 dark:text-blue-400 font-semibold hidden sm:inline">➔ Đổi sang Admin</span>
-          </button>
-        )}
 
         {/* Dark / Light Mode Toggle */}
         <button
